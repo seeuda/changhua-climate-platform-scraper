@@ -2,6 +2,20 @@
 
 爬取[氣候署平臺](https://www.cca.gov.tw/information-service/info/2095.html)所有行動方案、執行方案及成果報告文件的 metadata，輸出為結構化清單。
 
+## ⚠️ 執行前必讀
+
+1. **必須在本機（台灣網路環境）執行**。`www.cca.gov.tw` 對雲端主機、代理伺服器
+   及非瀏覽器客戶端回應 403 Forbidden，在 CI/雲端環境無法爬取。
+2. **真實下載連結不含副檔名**。平臺檔案連結格式為
+   `https://service.cca.gov.tw/File/Get/cca/zh-tw/<token>`，
+   檔案格式與大小需透過 `--probe-files`（HEAD 請求讀取 Content-Disposition /
+   Content-Length）或頁面標示取得，無法從 URL 判斷。
+3. **`demo_` 前綴的輸出是程式生成的假資料**，僅供驗證輸出流程；
+   正式清單檔名不含 `demo_` 前綴。
+4. 若爬取筆數與預期的 346 筆不符，先檢查 `data/snapshots/page_*.html`
+   快照，確認清單是否由 JavaScript 動態載入或散落在子頁面。若是動態載入，
+   需改用 Playwright/Selenium 取得渲染後的 HTML。
+
 ## 功能
 
 - ✓ 爬取 346+ 筆文件 metadata
@@ -35,6 +49,10 @@ pip install -r requirements.txt
 ```bash
 # 爬取所有文件並輸出 CSV、JSON 和報告
 python main.py
+
+# 推薦：加上 --probe-files 取得真實檔名/格式/大小（每筆多一次 HEAD 請求，
+# 346 筆約多 12 分鐘，但格式與大小欄位才會準確）
+python main.py --probe-files
 
 # 只輸出 CSV
 python main.py --format csv

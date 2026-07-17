@@ -9,7 +9,7 @@ from typing import List, Dict
 
 from output_formatter import DocumentOutputFormatter
 from report_generator import ReportGenerator
-from config import EXPECTED_DOCUMENT_COUNT
+from config import EXPECTED_DOCUMENT_COUNT, DEMO_OUTPUT_CONFIG
 
 logger = logging.getLogger(__name__)
 
@@ -35,10 +35,12 @@ class DemoScraper:
     CATEGORIES = ['能源', '運輸', '住宅建築', '產業', '農業', '水資源', '廢棄物', '其他']
 
     # Sample organizations (中央部會 + 地方政府)
+    # Central agencies = the ministries responsible for the six
+    # GHG-reduction sectors under current (post-2023) agency names:
+    # 能源/製造:經濟部, 運輸:交通部, 住商:內政部, 農業:農業部, 環境:環境部
     ORGANIZATIONS = [
-        # 中央部會 (12)
-        '環保署', '經濟部', '交通部', '內政部', '農委會', '科技部',
-        '水利署', '林務局', '文化部', '衛福部', '勞動部', '國防部',
+        # 中央部會 (6)
+        '環境部', '經濟部', '交通部', '內政部', '農業部', '國家發展委員會',
         # 地方政府 (22)
         '臺北市政府', '新北市政府', '基隆市政府', '桃園市政府', '新竹市政府', '新竹縣政府',
         '苗栗縣政府', '臺中市政府', '彰化縣政府', '南投縣政府', '雲林縣政府', '嘉義市政府',
@@ -131,6 +133,7 @@ class DemoScraper:
         """Generate statistics from sample data."""
         stats = {
             'total_documents': len(documents),
+            'by_org_type': {},
             'by_county': {},
             'by_type': {},
             'by_format': {},
@@ -138,6 +141,10 @@ class DemoScraper:
         }
 
         for doc in documents:
+            # By org type (central vs local)
+            org_type = doc.get('org_type', 'Unknown')
+            stats['by_org_type'][org_type] = stats['by_org_type'].get(org_type, 0) + 1
+
             # By county
             county = doc.get('county', 'Unknown')
             stats['by_county'][county] = stats['by_county'].get(county, 0) + 1
@@ -166,7 +173,9 @@ def main():
 
     print("\n" + "=" * 70)
     print("Climate Platform Scraper - Demo Mode")
-    print("=" * 70 + "\n")
+    print("=" * 70)
+    print("⚠️  演示資料：以下內容為程式生成的假資料，僅供測試輸出流程。")
+    print("    正式清單請在可連線 cca.gov.tw 的本機環境執行 python main.py\n")
 
     # Generate sample data
     print(f"Generating {EXPECTED_DOCUMENT_COUNT} sample documents...")
@@ -176,22 +185,24 @@ def main():
     print("Calculating statistics...")
     stats = DemoScraper.generate_statistics(documents)
 
-    # Save outputs
+    # Save outputs under demo_* names so fabricated data can never be
+    # mistaken for the real deliverables.
     print("\nSaving outputs...")
     try:
-        DocumentOutputFormatter.save_csv(documents)
-        DocumentOutputFormatter.save_json(documents)
-        print("✓ CSV and JSON files saved")
+        DocumentOutputFormatter.save_csv(documents, DEMO_OUTPUT_CONFIG['csv_file'])
+        DocumentOutputFormatter.save_json(documents, DEMO_OUTPUT_CONFIG['json_file'],
+                                          is_demo=True)
+        print("✓ CSV and JSON files saved (demo_*)")
     except Exception as e:
         print(f"✗ Error saving outputs: {e}")
         return 1
 
     # Generate report
     print("Generating report...")
-    duration = 123.45  # Dummy duration
-    report_gen = ReportGenerator(documents, stats, [], duration)
-    report_gen.generate_markdown_report()
-    print("✓ Report generated")
+    report_gen = ReportGenerator(documents, stats, [], scraper_duration=0.0,
+                                 is_demo=True)
+    report_gen.generate_markdown_report(DEMO_OUTPUT_CONFIG['report_file'])
+    print("✓ Report generated (demo)")
 
     # Print summary
     print("\n" + "=" * 70)
@@ -210,10 +221,11 @@ def main():
         print(f"  - {fmt}: {count}")
 
     print("\n✓ Demo data files created in output/ directory")
-    print("  - climate_docs_metadata.csv")
-    print("  - climate_docs_metadata.json")
-    print("  - scraper_report.md")
-    print("\n" + "=" * 70 + "\n")
+    print("  - demo_climate_docs_metadata.csv")
+    print("  - demo_climate_docs_metadata.json")
+    print("  - demo_scraper_report.md")
+    print("\n⚠️  這些是假資料。正式清單檔名不含 demo_ 前綴。")
+    print("=" * 70 + "\n")
 
     return 0
 

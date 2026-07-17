@@ -1,114 +1,128 @@
-"""Download manager for climate platform documents."""
+"""Download manager for climate platform documents.
+
+Real download URLs (service.cca.gov.tw/File/Get/<token>) carry no file
+extension, so the saved filename's extension comes from the server's
+Content-Disposition header, falling back to the metadata's file_format.
+"""
 
 import logging
-import os
-import time
-from pathlib import Path
-from typing import List, Dict, Optional, Tuple
-import requests
+import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from urllib.parse import urlparse, unquote
+from pathlib import Path
+from typing import Dict, List, Optional
 
-from config import SCRAPER_CONFIG, EXPECTED_DOCUMENT_COUNT
+import requests
+
+from config import SCRAPER_CONFIG
+from fileinfo import (extension_for_format, filename_from_disposition,
+                      format_from_headers, human_size)
+from rate_limiter import GLOBAL_RATE_LIMITER
 
 logger = logging.getLogger(__name__)
 
 
 class DownloadManager:
-    """Manage bulk downloads of documents with progress tracking."""
+    """Bulk-download documents with polite rate limiting and progress tracking."""
 
     def __init__(self, download_dir: Path = None, organize_by: str = 'organization'):
         """
-        Initialize download manager.
-
         Args:
             download_dir: Base download directory
-            organize_by: How to organize files ('organization', 'county', 'type', 'category', 'date')
+            organize_by: 'organization', 'org_type', 'county', 'type',
+                'category', or 'date'
         """
         self.download_dir = download_dir or Path("downloads")
         self.download_dir.mkdir(exist_ok=True)
         self.organize_by = organize_by
 
         self.session = requests.Session()
-        self.headers = {
+        self.session.headers.update({
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
-                         '(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-        }
+                          '(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+        })
 
-        self.stats = {
-            'total': 0,
-            'success': 0,
-            'failed': 0,
-            'skipped': 0,
-            'total_size': 0,
-        }
-        self.failed_downloads = []
+        self._stats_lock = threading.Lock()
+        self.stats = {'total': 0, 'success': 0, 'failed': 0,
+                      'skipped': 0, 'total_size': 0}
+        self.failed_downloads: List[str] = []
+
+    def _record(self, key: str, size: int = 0, error: Optional[str] = None):
+        with self._stats_lock:
+            self.stats[key] += 1
+            self.stats['total_size'] += size
+            if error:
+                self.failed_downloads.append(error)
 
     def download_documents(self, documents: List[Dict], max_workers: int = None) -> Dict:
-        """Download all documents with concurrent workers."""
+        """Download all documents. The global rate limiter keeps aggregate
+        request spacing polite regardless of worker count."""
         max_workers = max_workers or SCRAPER_CONFIG.get('max_workers', 3)
         self.stats['total'] = len(documents)
 
         logger.info("=" * 60)
-        logger.info(f"Starting document downloads ({len(documents)} files)")
-        logger.info(f"Download directory: {self.download_dir.absolute()}")
-        logger.info(f"Organization method: {self.organize_by}")
-        logger.info(f"Max concurrent downloads: {max_workers}")
+        logger.info(f"Downloading {len(documents)} files -> "
+                    f"{self.download_dir.absolute()} (by {self.organize_by})")
         logger.info("=" * 60)
 
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
             futures = {}
             for doc in documents:
-                # Determine save directory based on organization method
                 save_dir = self.get_save_directory(doc)
                 save_dir.mkdir(parents=True, exist_ok=True)
+                futures[executor.submit(self.download_document, doc, save_dir)] = doc
 
-                future = executor.submit(self.download_document, doc, save_dir)
-                futures[future] = doc
-
-            # Process completed downloads
             for idx, future in enumerate(as_completed(futures), 1):
                 doc = futures[future]
                 try:
                     result = future.result()
                     if result:
-                        logger.info(f"[{idx}/{len(documents)}] ✓ {result['filename']}")
-                    else:
-                        logger.warning(f"[{idx}/{len(documents)}] ⊘ {doc.get('title', 'Unknown')}")
+                        logger.info(f"[{idx}/{len(documents)}] OK {result['filename']}"
+                                    f" ({human_size(result['size'])})")
                 except Exception as e:
-                    logger.error(f"[{idx}/{len(documents)}] ✗ {doc.get('title', 'Unknown')}: {e}")
+                    logger.error(f"[{idx}/{len(documents)}] "
+                                 f"FAIL {doc.get('title', 'Unknown')}: {e}")
 
         return self.generate_report()
 
-    def download_document(self, doc: Dict, county_dir: Path) -> Optional[Dict]:
-        """Download a single document."""
+    def get_save_directory(self, doc: Dict) -> Path:
+        """Route a document to its directory per the classification method."""
+        org = doc.get('organization') or 'Unknown'
+        if self.organize_by == 'organization':
+            return self.download_dir / org
+        if self.organize_by == 'org_type':
+            return self.download_dir / (doc.get('org_type') or 'Unknown') / org
+        if self.organize_by == 'county':
+            return self.download_dir / (doc.get('county') or 'Unknown')
+        if self.organize_by == 'type':
+            return self.download_dir / (doc.get('type') or 'Unknown') / org
+        if self.organize_by == 'category':
+            return self.download_dir / (doc.get('category') or 'Unknown') / org
+        if self.organize_by == 'date':
+            date = (doc.get('publish_date') or 'Unknown')[:7]
+            return self.download_dir / date / org
+        return self.download_dir / org
+
+    def download_document(self, doc: Dict, save_dir: Path) -> Optional[Dict]:
+        """Download one document; skip if a file for its id already exists."""
         url = doc.get('download_url', '')
         if not url:
-            self.stats['skipped'] += 1
+            self._record('skipped')
             return None
 
+        doc_id = str(doc.get('id', '0')).zfill(5)
+        existing = list(save_dir.glob(f"{doc_id}_*"))
+        if existing:
+            self._record('skipped')
+            logger.debug(f"Already downloaded, skipping: {existing[0].name}")
+            return None
+
+        GLOBAL_RATE_LIMITER.acquire()
         try:
-            # Generate filename
-            filename = self.generate_filename(doc, county_dir)
-            filepath = county_dir / filename
-
-            # Skip if already downloaded
-            if filepath.exists():
-                file_size = filepath.stat().st_size
-                self.stats['skipped'] += 1
-                logger.debug(f"File exists, skipping: {filename}")
-                return None
-
-            # Download file
             response = self.session.get(
-                url,
-                headers=self.headers,
-                timeout=SCRAPER_CONFIG.get('request_timeout', 10),
-                stream=True
-            )
+                url, timeout=SCRAPER_CONFIG.get('request_timeout', 10), stream=True)
             response.raise_for_status()
 
-            # Save file
+            filepath = save_dir / self.build_filename(doc, response.headers)
             total_size = 0
             with open(filepath, 'wb') as f:
                 for chunk in response.iter_content(chunk_size=8192):
@@ -116,181 +130,59 @@ class DownloadManager:
                         f.write(chunk)
                         total_size += len(chunk)
 
-            self.stats['success'] += 1
-            self.stats['total_size'] += total_size
-
-            # Respect request delay
-            time.sleep(SCRAPER_CONFIG.get('request_delay', 2))
-
-            return {
-                'filename': filename,
-                'size': total_size,
-                'title': doc.get('title', ''),
-                'url': url
-            }
+            self._record('success', size=total_size)
+            return {'filename': filepath.name, 'size': total_size,
+                    'title': doc.get('title', ''), 'url': url}
 
         except requests.exceptions.RequestException as e:
-            self.stats['failed'] += 1
-            error_msg = f"{doc.get('title', 'Unknown')}: {str(e)}"
-            self.failed_downloads.append(error_msg)
-            logger.error(f"Failed to download {doc.get('title', 'Unknown')}: {e}")
+            self._record('failed', error=f"{doc.get('title', 'Unknown')}: {e}")
+            logger.error(f"Download failed {doc.get('title', 'Unknown')}: {e}")
             return None
 
-        except Exception as e:
-            self.stats['failed'] += 1
-            error_msg = f"{doc.get('title', 'Unknown')}: {str(e)}"
-            self.failed_downloads.append(error_msg)
-            logger.error(f"Error downloading {doc.get('title', 'Unknown')}: {e}")
-            return None
-
-    def get_save_directory(self, doc: Dict) -> Path:
-        """Get save directory based on organization method."""
-        if self.organize_by == 'organization':
-            # 按提交單位分類
-            org = doc.get('organization', 'Unknown')
-            return self.download_dir / org
-
-        elif self.organize_by == 'org_type':
-            # 按中央/地方分類
-            org_type = doc.get('org_type', 'Unknown')
-            org = doc.get('organization', 'Unknown')
-            return self.download_dir / org_type / org
-
-        elif self.organize_by == 'county':
-            # 按縣市分類
-            county = doc.get('county', 'Unknown')
-            return self.download_dir / county
-
-        elif self.organize_by == 'type':
-            # 按文件類型分類（行動方案/執行方案/成果報告）
-            doc_type = doc.get('type', 'Unknown')
-            org = doc.get('organization', 'Unknown')
-            return self.download_dir / doc_type / org
-
-        elif self.organize_by == 'category':
-            # 按政策領域分類（能源/運輸/etc）
-            category = doc.get('category', 'Unknown')
-            org = doc.get('organization', 'Unknown')
-            return self.download_dir / category / org
-
-        elif self.organize_by == 'date':
-            # 按年月分類
-            date = doc.get('publish_date', 'Unknown')[:7]  # YYYY-MM
-            org = doc.get('organization', 'Unknown')
-            return self.download_dir / date / org
-
-        else:
-            # Default: by organization
-            org = doc.get('organization', 'Unknown')
-            return self.download_dir / org
-
-    def generate_filename(self, doc: Dict, county_dir: Path) -> str:
-        """Generate safe filename for document."""
+    def build_filename(self, doc: Dict, headers) -> str:
+        """{id}_{title}{ext}; extension from Content-Disposition when present."""
         doc_id = str(doc.get('id', '0')).zfill(5)
-        title = doc.get('title', 'document')[:50]  # Limit title length
-
-        # Clean title for filename
-        for char in ['/', '\\', ':', '*', '?', '"', '<', '>', '|']:
+        title = (doc.get('title') or 'document')[:50]
+        for char in '/\\:*?"<>|':
             title = title.replace(char, '_')
 
-        # Get file extension from URL or use default
-        url = doc.get('download_url', '')
-        ext = self.get_file_extension(url)
+        server_name = filename_from_disposition(
+            headers.get('Content-Disposition', ''))
+        ext = Path(server_name).suffix.lower() if server_name else ''
+        if not ext:
+            fmt = format_from_headers(headers) or doc.get('file_format', '')
+            ext = extension_for_format(fmt)
 
-        filename = f"{doc_id}_{title}{ext}"
-        return filename
-
-    @staticmethod
-    def get_file_extension(url: str) -> str:
-        """Extract file extension from URL."""
-        parsed = urlparse(url)
-        path = unquote(parsed.path).lower()
-
-        # Extract extension from path
-        if '.' in path:
-            ext = path.split('.')[-1]
-            if len(ext) <= 5:  # Valid extension
-                return f".{ext}"
-
-        return ".bin"  # Default binary extension
+        return f"{doc_id}_{title}{ext}"
 
     def generate_report(self) -> Dict:
-        """Generate download report."""
         logger.info("=" * 60)
-        logger.info("Download Summary")
-        logger.info("=" * 60)
-        logger.info(f"Total documents: {self.stats['total']}")
-        logger.info(f"✓ Successful: {self.stats['success']}")
-        logger.info(f"✗ Failed: {self.stats['failed']}")
-        logger.info(f"⊘ Skipped: {self.stats['skipped']}")
-        logger.info(f"Total size: {self.format_size(self.stats['total_size'])}")
-        logger.info("=" * 60)
-
+        logger.info(f"Total: {self.stats['total']}  "
+                    f"OK: {self.stats['success']}  "
+                    f"Failed: {self.stats['failed']}  "
+                    f"Skipped: {self.stats['skipped']}  "
+                    f"Size: {human_size(self.stats['total_size'])}")
         if self.failed_downloads:
-            logger.warning(f"\nFailed downloads ({len(self.failed_downloads)}):")
+            logger.warning(f"Failed downloads ({len(self.failed_downloads)}):")
             for error in self.failed_downloads[:10]:
                 logger.warning(f"  - {error}")
             if len(self.failed_downloads) > 10:
                 logger.warning(f"  ... and {len(self.failed_downloads) - 10} more")
-
+        logger.info("=" * 60)
         return self.stats
 
     @staticmethod
     def format_size(size_bytes: int) -> str:
-        """Format bytes to human readable size."""
-        for unit in ['B', 'KB', 'MB', 'GB']:
-            if size_bytes < 1024:
-                return f"{size_bytes:.1f} {unit}"
-            size_bytes /= 1024
-        return f"{size_bytes:.1f} TB"
+        return human_size(size_bytes)
 
     def get_directory_structure(self) -> Dict:
-        """Get summary of downloaded files by county."""
+        """Summarize downloaded files by top-level directory."""
         structure = {}
-        for county_dir in self.download_dir.iterdir():
-            if county_dir.is_dir():
-                files = list(county_dir.glob('*'))
-                structure[county_dir.name] = {
+        for subdir in self.download_dir.iterdir():
+            if subdir.is_dir():
+                files = [f for f in subdir.rglob('*') if f.is_file()]
+                structure[subdir.name] = {
                     'count': len(files),
-                    'size': sum(f.stat().st_size for f in files if f.is_file())
+                    'size': sum(f.stat().st_size for f in files),
                 }
         return structure
-
-
-def main():
-    """Test download manager."""
-    logging.basicConfig(
-        level=logging.INFO,
-        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-    )
-
-    # Load documents from JSON
-    import json
-    try:
-        with open('output/climate_docs_metadata.json', encoding='utf-8-sig') as f:
-            data = json.load(f)
-            documents = data.get('documents', [])[:5]  # Test with first 5
-    except FileNotFoundError:
-        logger.error("Documents file not found. Run scraper first.")
-        return 1
-
-    if not documents:
-        logger.error("No documents to download")
-        return 1
-
-    # Download documents
-    manager = DownloadManager()
-    stats = manager.download_documents(documents, max_workers=1)
-
-    # Show directory structure
-    structure = manager.get_directory_structure()
-    logger.info("\nDirectory structure:")
-    for county, info in sorted(structure.items()):
-        logger.info(f"  {county}: {info['count']} files ({manager.format_size(info['size'])})")
-
-    return 0
-
-
-if __name__ == '__main__':
-    import sys
-    sys.exit(main())

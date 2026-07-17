@@ -33,11 +33,22 @@ SCRAPER_CONFIG = {
 }
 
 # Output configuration
+# CSV gets a UTF-8 BOM so Excel opens it correctly; JSON must NOT have a
+# BOM (json.load rejects it).
 OUTPUT_CONFIG = {
     "csv_file": OUTPUT_DIR / "climate_docs_metadata.csv",
     "json_file": OUTPUT_DIR / "climate_docs_metadata.json",
     "report_file": OUTPUT_DIR / "scraper_report.md",
-    "encoding": "utf-8-sig",  # UTF-8 with BOM for Excel compatibility
+    "csv_encoding": "utf-8-sig",
+    "json_encoding": "utf-8",
+}
+
+# Demo outputs are kept under separate names so fabricated sample data can
+# never be mistaken for real scraped deliverables.
+DEMO_OUTPUT_CONFIG = {
+    "csv_file": OUTPUT_DIR / "demo_climate_docs_metadata.csv",
+    "json_file": OUTPUT_DIR / "demo_climate_docs_metadata.json",
+    "report_file": OUTPUT_DIR / "demo_scraper_report.md",
 }
 
 # Document field mapping

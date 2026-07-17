@@ -13,11 +13,13 @@ logger = logging.getLogger(__name__)
 class ReportGenerator:
     """Generate scraped data statistics and reports."""
 
-    def __init__(self, documents: List[Dict], statistics: Dict, errors: List[str], scraper_duration: float):
+    def __init__(self, documents: List[Dict], statistics: Dict, errors: List[str],
+                 scraper_duration: float, is_demo: bool = False):
         self.documents = documents
         self.statistics = statistics
         self.errors = errors
         self.duration = scraper_duration
+        self.is_demo = is_demo
 
     def generate_markdown_report(self, output_file: Path = None) -> Path:
         """Generate a comprehensive markdown report."""
@@ -41,10 +43,14 @@ class ReportGenerator:
         timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         completion_rate = (len(self.documents) / EXPECTED_DOCUMENT_COUNT * 100) if EXPECTED_DOCUMENT_COUNT > 0 else 0
 
-        report = f"""# 氣候資訊公開平臺文件爬蟲報告
+        demo_banner = (
+            "\n> ⚠️ **本報告內容為演示用假資料**，僅供驗證輸出流程，"
+            "所有統計數字與真實平臺無關。\n" if self.is_demo else "")
+
+        report = f"""# 氣候資訊公開平臺文件爬蟲報告{'【演示資料】' if self.is_demo else ''}
 
 **生成時間**: {timestamp}
-
+{demo_banner}
 ---
 
 ## 執行摘要
@@ -61,9 +67,19 @@ class ReportGenerator:
 
 ## 文件統計
 
-### 按地方政府單位統計
+### 按機構類型統計（中央 vs 地方）
 
 """
+        by_org_type = sorted(self.statistics.get('by_org_type', {}).items(),
+                             key=lambda x: x[1], reverse=True)
+        if by_org_type:
+            report += "| 機構類型 | 筆數 | 佔比 |\n|------|------|------|\n"
+            total = len(self.documents)
+            for org_type, count in by_org_type:
+                percentage = (count / total * 100) if total > 0 else 0
+                report += f"| {org_type} | {count} | {percentage:.1f}% |\n"
+
+        report += "\n### 按縣市統計\n\n"
         # By county statistics
         by_county = sorted(self.statistics.get('by_county', {}).items(), key=lambda x: x[1], reverse=True)
         if by_county:

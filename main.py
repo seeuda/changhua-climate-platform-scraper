@@ -37,6 +37,12 @@ def main():
         '--output-dir',
         help='Custom output directory'
     )
+    parser.add_argument(
+        '--probe-files',
+        action='store_true',
+        help='HEAD each download URL to get real filename/format/size from '
+             'headers (real URLs have no extension); adds ~2s per document'
+    )
 
     args = parser.parse_args()
 
@@ -45,7 +51,7 @@ def main():
 
     try:
         # Initialize and run scraper
-        scraper = ClimateDocumentScraper()
+        scraper = ClimateDocumentScraper(probe_files=args.probe_files)
         documents = scraper.scrape()
 
         if not documents:

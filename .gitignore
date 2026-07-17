@@ -1,7 +1,14 @@
-# Output files
+# Output files (real and demo)
+output/
 climate_docs_metadata.csv
 climate_docs_metadata.json
 scraper_report.md
+demo_*.csv
+demo_*.json
+demo_scraper_report.md
+
+# HTML snapshots saved for debugging
+data/
 *.xlsx
 *.xls
 

@@ -1,330 +1,451 @@
-"""Main scraper module for climate platform documents."""
+"""Scraper for 氣候資訊公開平臺 document metadata.
+
+Target: https://www.cca.gov.tw/information-service/info/2095.html
+
+Known facts about the real site (verified via search-engine snapshots,
+since www.cca.gov.tw returns 403 to non-browser/foreign clients):
+
+- Actual document download links use the pattern
+      https://service.cca.gov.tw/File/Get/cca/zh-tw/<token>
+  with NO file extension in the URL. File format and size therefore
+  cannot be derived from the URL; they must be probed from the HTTP
+  response headers (Content-Disposition / Content-Type / Content-Length)
+  or read from labels on the page.
+
+- The site must be scraped from a normal residential/office network in
+  Taiwan with a browser User-Agent. Cloud/proxy egress IPs get 403.
+
+Extraction strategy is anchored on the File/Get link pattern rather than
+guessed CSS selectors: find every File/Get anchor, then walk up to its
+row container (tr/li) to recover title, date, and organization context.
+"""
 
 import logging
+import re
 import time
-import json
-from typing import List, Dict, Optional
+import unicodedata
 from datetime import datetime
+from pathlib import Path
+from typing import Dict, List, Optional
+from urllib.parse import urljoin, urlparse, parse_qs
+
 import requests
 from bs4 import BeautifulSoup
-from urllib.parse import urljoin, urlparse
-import re
 
-from config import CLIMATE_PLATFORM_URL, SCRAPER_CONFIG, EXPECTED_DOCUMENT_COUNT
+from config import CLIMATE_PLATFORM_URL, SCRAPER_CONFIG, DATA_DIR, EXPECTED_DOCUMENT_COUNT
+from fileinfo import (EXTENSION_FORMATS, filename_from_disposition,
+                      format_from_headers, human_size)
+from rate_limiter import GLOBAL_RATE_LIMITER
 
-# Configure logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler(SCRAPER_CONFIG['log_file']),
+        logging.FileHandler(SCRAPER_CONFIG['log_file'], encoding='utf-8'),
         logging.StreamHandler()
     ]
 )
 logger = logging.getLogger(__name__)
 
+# Verified real download-link pattern on cca.gov.tw
+FILE_LINK_MARKER = '/File/Get/'
+
+# 22 counties/cities. Titles may use 台 or 臺; normalize before matching.
+COUNTIES = [
+    '臺北市', '新北市', '桃園市', '臺中市', '臺南市', '高雄市',
+    '基隆市', '新竹市', '嘉義市',
+    '宜蘭縣', '新竹縣', '苗栗縣', '彰化縣', '南投縣', '雲林縣',
+    '嘉義縣', '屏東縣', '花蓮縣', '臺東縣', '澎湖縣', '金門縣', '連江縣',
+]
+
+# Central agencies responsible for the six GHG-reduction sectors
+# (能源/製造:經濟部, 運輸:交通部, 住商:內政部, 農業:農業部, 環境:環境部)
+CENTRAL_AGENCIES = [
+    '環境部', '經濟部', '交通部', '內政部', '農業部', '國家發展委員會',
+    '氣候變遷署', '國土管理署', '行政院',
+    # Pre-2023 names that may still appear on older documents
+    '環保署', '農委會', '行政院環境保護署',
+]
+
+DOC_TYPE_KEYWORDS = [
+    ('成果報告', '成果報告'),
+    ('執行方案', '執行方案'),
+    ('行動方案', '行動方案'),
+    ('調適計畫', '調適計畫'),
+    ('推動方案', '推動方案'),
+]
+
+def normalize_tw(text: str) -> str:
+    """Normalize for matching: full-width→half-width, 台→臺."""
+    text = unicodedata.normalize('NFKC', text or '')
+    return text.replace('台', '臺')
+
 
 class ClimateDocumentScraper:
-    """Scraper for climate platform documents."""
+    """Scraper anchored on the verified File/Get link pattern."""
 
-    def __init__(self):
+    def __init__(self, probe_files: bool = False):
+        """
+        Args:
+            probe_files: if True, send a HEAD request per document to read
+                real filename/format/size from headers. Adds ~2s x N to
+                runtime because of the polite rate limit.
+        """
         self.session = requests.Session()
-        self.headers = {
+        self.session.headers.update({
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
-                         '(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-        }
-        self.documents = []
-        self.errors = []
-        self.start_time = None
-        self.end_time = None
+                          '(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+            'Accept-Language': 'zh-TW,zh;q=0.9,en;q=0.5',
+        })
+        self.probe_files = probe_files
+        self.documents: List[Dict] = []
+        self.errors: List[str] = []
+        self.start_time: Optional[datetime] = None
+        self.end_time: Optional[datetime] = None
+        self.snapshot_dir = DATA_DIR / 'snapshots'
+        self.snapshot_dir.mkdir(parents=True, exist_ok=True)
+
+    # ------------------------------------------------------------------
+    # HTTP
+    # ------------------------------------------------------------------
 
     def fetch_page(self, url: str, params: Optional[Dict] = None) -> Optional[requests.Response]:
-        """Fetch a page with retry logic."""
+        """GET with polite rate limit, retries, and 429/503 backoff."""
         for attempt in range(SCRAPER_CONFIG['retry_attempts']):
+            GLOBAL_RATE_LIMITER.acquire()
             try:
                 logger.info(f"Fetching: {url} (attempt {attempt + 1})")
                 response = self.session.get(
-                    url,
-                    headers=self.headers,
-                    params=params,
-                    timeout=SCRAPER_CONFIG['request_timeout']
-                )
+                    url, params=params, timeout=SCRAPER_CONFIG['request_timeout'])
+
+                if response.status_code in (429, 503):
+                    retry_after = response.headers.get('Retry-After')
+                    wait = int(retry_after) if (retry_after or '').isdigit() \
+                        else SCRAPER_CONFIG['retry_delay'] * (2 ** attempt)
+                    logger.warning(f"HTTP {response.status_code}, backing off {wait}s")
+                    time.sleep(wait)
+                    continue
+
+                if response.status_code == 403:
+                    self.errors.append(
+                        f"403 Forbidden for {url} — the site blocks non-browser "
+                        f"or non-Taiwan clients; run this scraper from a local "
+                        f"machine, not a cloud/proxy environment.")
+                    logger.error(self.errors[-1])
+                    return None
+
                 response.raise_for_status()
-                logger.debug(f"Successfully fetched {url}")
                 return response
+
             except requests.exceptions.RequestException as e:
                 logger.warning(f"Error fetching {url}: {e}")
                 if attempt < SCRAPER_CONFIG['retry_attempts'] - 1:
-                    wait_time = SCRAPER_CONFIG['retry_delay'] * (2 ** attempt)
-                    logger.info(f"Retrying in {wait_time} seconds...")
-                    time.sleep(wait_time)
+                    time.sleep(SCRAPER_CONFIG['retry_delay'] * (2 ** attempt))
                 else:
-                    error_msg = f"Failed to fetch {url} after {SCRAPER_CONFIG['retry_attempts']} attempts: {e}"
-                    self.errors.append(error_msg)
-                    logger.error(error_msg)
-                    return None
+                    self.errors.append(f"Failed to fetch {url}: {e}")
         return None
 
-    def extract_documents_from_html(self, html: str) -> List[Dict]:
-        """Extract document metadata from HTML."""
-        documents = []
-        try:
-            soup = BeautifulSoup(html, 'html.parser')
+    def save_snapshot(self, name: str, html: str):
+        """Keep raw HTML so parsing failures can be diagnosed offline."""
+        path = self.snapshot_dir / name
+        path.write_text(html, encoding='utf-8')
+        logger.info(f"Saved HTML snapshot: {path}")
 
-            # Try multiple selector strategies for robustness
-            selectors = [
-                'tr[data-doc-id]',  # Custom data attribute
-                'table tr',  # Generic table rows
-                'div.document-item',  # Common class name
-            ]
+    # ------------------------------------------------------------------
+    # Extraction
+    # ------------------------------------------------------------------
 
-            rows = []
-            for selector in selectors:
-                rows = soup.select(selector)
-                if rows:
-                    logger.info(f"Found {len(rows)} rows using selector: {selector}")
-                    break
+    def extract_documents(self, html: str, base_url: str) -> List[Dict]:
+        """Find every File/Get anchor and rebuild metadata from row context."""
+        soup = BeautifulSoup(html, 'html.parser')
+        docs = []
+        seen_urls = set()
 
-            if not rows:
-                logger.warning("No document rows found in HTML")
-                return documents
-
-            for idx, row in enumerate(rows, 1):
-                try:
-                    doc = self.parse_document_row(row, idx)
-                    if doc:
-                        documents.append(doc)
-                except Exception as e:
-                    logger.warning(f"Error parsing row {idx}: {e}")
-                    continue
-
-            logger.info(f"Extracted {len(documents)} documents from HTML")
-            return documents
-
-        except Exception as e:
-            logger.error(f"Error parsing HTML: {e}")
-            self.errors.append(f"HTML parsing error: {e}")
-            return documents
-
-    def parse_document_row(self, row_element, row_number: int) -> Optional[Dict]:
-        """Parse a single document row."""
-        try:
-            cells = row_element.find_all(['td', 'th'])
-            if len(cells) < 4:
-                return None
-
-            # Extract text from cells
-            cell_texts = [cell.get_text(strip=True) for cell in cells]
-
-            # Find download link
-            download_url = ""
-            download_link = row_element.find('a')
-            if download_link and download_link.get('href'):
-                download_url = urljoin(CLIMATE_PLATFORM_URL, download_link['href'])
-
-            # Parse file format and size from download link or last cell
-            file_format = self.extract_file_format(download_url)
-            file_size = self.extract_file_size(cell_texts[-1] if cell_texts else "")
-
-            # Create document record
-            doc = {
-                'id': row_number,
-                'title': cell_texts[1] if len(cell_texts) > 1 else "",
-                'type': cell_texts[2] if len(cell_texts) > 2 else "",
-                'category': cell_texts[2] if len(cell_texts) > 2 else "",
-                'county': cell_texts[3] if len(cell_texts) > 3 else "",
-                'publish_date': self.parse_date(cell_texts[4] if len(cell_texts) > 4 else ""),
-                'status': cell_texts[5] if len(cell_texts) > 5 else "已發佈",
-                'download_url': download_url,
-                'file_format': file_format,
-                'file_size': file_size,
-            }
-
-            return doc
-
-        except Exception as e:
-            logger.debug(f"Error parsing document row: {e}")
-            return None
-
-    @staticmethod
-    def extract_file_format(url: str) -> str:
-        """Extract file format from URL."""
-        if not url:
-            return "Unknown"
-
-        path = urlparse(url).path.lower()
-        if path.endswith('.pdf'):
-            return 'PDF'
-        elif path.endswith(('.doc', '.docx')):
-            return 'Word'
-        elif path.endswith(('.xls', '.xlsx')):
-            return 'Excel'
-        elif path.endswith(('.ppt', '.pptx')):
-            return 'PowerPoint'
-        elif path.endswith('.zip'):
-            return 'ZIP'
-        else:
-            return 'Other'
-
-    @staticmethod
-    def extract_file_size(text: str) -> str:
-        """Extract file size from text."""
-        match = re.search(r'(\d+(?:\.\d+)?)\s*(KB|MB|GB|B)', text, re.IGNORECASE)
-        return match.group(0) if match else ""
-
-    @staticmethod
-    def parse_date(date_str: str) -> str:
-        """Parse and normalize date string."""
-        if not date_str:
-            return ""
-
-        # Try common date formats
-        formats = ['%Y-%m-%d', '%Y/%m/%d', '%m/%d/%Y', '%d/%m/%Y']
-        for fmt in formats:
-            try:
-                from datetime import datetime
-                parsed = datetime.strptime(date_str.strip(), fmt)
-                return parsed.strftime('%Y-%m-%d')
-            except ValueError:
+        for anchor in soup.find_all('a', href=True):
+            href = urljoin(base_url, anchor['href'])
+            if FILE_LINK_MARKER not in href:
                 continue
+            if href in seen_urls:
+                continue
+            seen_urls.add(href)
 
-        # Return as-is if parsing fails
-        return date_str.strip()
+            row = anchor.find_parent(['tr', 'li']) or anchor.parent
+            row_text = row.get_text(' ', strip=True) if row else ''
+            title = self.derive_title(anchor, row) or href
+
+            doc = {
+                'title': title,
+                'type': self.classify_type(title, row_text),
+                'category': '',
+                'organization': self.classify_organization(title, row_text),
+                'org_type': '',
+                'county': '',
+                'publish_date': self.find_date(row_text) or self.find_date(title),
+                'status': '已公開',
+                'download_url': href,
+                'file_format': self.format_from_page(anchor, row_text),
+                'file_size': self.find_size(row_text),
+            }
+            doc['org_type'] = '地方政府' if doc['organization'].endswith(('縣', '市')) \
+                or doc['organization'].endswith('政府') else '中央部會'
+            doc['county'] = doc['organization'].replace('政府', '') \
+                if doc['org_type'] == '地方政府' else '中央'
+            docs.append(doc)
+
+        logger.info(f"Extracted {len(docs)} File/Get links from page")
+        return docs
+
+    @classmethod
+    def derive_title(cls, anchor, row) -> str:
+        """Prefer meaningful anchor text; fall back to the row's title cell.
+
+        Download anchors are often bare buttons ('下載', 'PDF下載', 'ODF'),
+        in which case the document title lives in a sibling cell.
+        """
+        anchor_text = (anchor.get('title') or anchor.get_text(strip=True) or '').strip()
+        if anchor_text and not cls.is_button_text(anchor_text):
+            return anchor_text[:120]
+        if row is None:
+            return anchor_text
+        if row.name == 'tr':
+            cells = [td.get_text(' ', strip=True) for td in row.find_all(['td', 'th'])]
+            cells = [c for c in cells if c and not cls.is_button_text(c)]
+            if cells:
+                return max(cells, key=len)[:120]
+        # li or generic container: row text minus button labels
+        text = row.get_text(' ', strip=True)
+        for a in row.find_all('a'):
+            label = a.get_text(strip=True)
+            if label and cls.is_button_text(label):
+                text = text.replace(label, '')
+        return text.strip()[:120] or anchor_text
+
+    @staticmethod
+    def is_button_text(text: str) -> bool:
+        t = text.strip()
+        return len(t) <= 10 and (
+            '下載' in t
+            or t.upper() in ('PDF', 'ODF', 'WORD', 'EXCEL', 'ZIP',
+                             'DOC', 'DOCX', 'XLS', 'XLSX'))
+
+    @staticmethod
+    def classify_type(title: str, row_text: str) -> str:
+        text = title + ' ' + row_text
+        for keyword, label in DOC_TYPE_KEYWORDS:
+            if keyword in text:
+                return label
+        return '其他'
+
+    @staticmethod
+    def classify_organization(title: str, row_text: str) -> str:
+        text = normalize_tw(title + ' ' + row_text)
+        for county in COUNTIES:
+            if county in text:
+                return county + '政府'
+        for agency in CENTRAL_AGENCIES:
+            if normalize_tw(agency) in text:
+                return agency
+        return '未識別'
+
+    @staticmethod
+    def find_date(text: str) -> str:
+        """Parse 西元 (2023-05-03) and 民國 (112.05.03 / 112年5月3日) dates."""
+        if not text:
+            return ''
+        m = re.search(r'(20\d{2})[./\-年](\d{1,2})[./\-月](\d{1,2})', text)
+        if m:
+            y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
+            return f"{y:04d}-{mo:02d}-{d:02d}"
+        m = re.search(r'(?<!\d)(1[01]\d)[./\-年](\d{1,2})[./\-月](\d{1,2})', text)
+        if m:  # ROC year 100-119 → 2011-2030
+            y, mo, d = int(m.group(1)) + 1911, int(m.group(2)), int(m.group(3))
+            return f"{y:04d}-{mo:02d}-{d:02d}"
+        m = re.search(r'(?<!\d)(1[01]\d)\s*年(?:度)?', text)
+        if m:  # Year only, e.g. 112年度
+            return f"{int(m.group(1)) + 1911:04d}"
+        return ''
+
+    @staticmethod
+    def find_size(text: str) -> str:
+        m = re.search(r'(\d+(?:\.\d+)?)\s*(KB|MB|GB)', text or '', re.IGNORECASE)
+        return m.group(0) if m else ''
+
+    @staticmethod
+    def format_from_page(anchor, row_text: str) -> str:
+        """Infer format from link text/labels; URLs carry no extension."""
+        text = (anchor.get_text(' ', strip=True) + ' '
+                + (anchor.get('title') or '') + ' ' + (row_text or '')).lower()
+        for hint, label in [('pdf', 'PDF'), ('.docx', 'Word'), ('.doc', 'Word'),
+                            ('.xlsx', 'Excel'), ('.xls', 'Excel'), ('odf', 'ODF'),
+                            ('.odt', 'ODF Word'), ('.ods', 'ODF Excel'), ('zip', 'ZIP')]:
+            if hint in text:
+                return label
+        return ''  # unknown until probed
+
+    # ------------------------------------------------------------------
+    # File probing (HEAD): real format / size / server filename
+    # ------------------------------------------------------------------
+
+    def probe_file(self, doc: Dict):
+        """HEAD the download URL to fill format/size from response headers."""
+        GLOBAL_RATE_LIMITER.acquire()
+        try:
+            resp = self.session.head(
+                doc['download_url'], timeout=SCRAPER_CONFIG['request_timeout'],
+                allow_redirects=True)
+            if resp.status_code == 405:  # server rejects HEAD; try ranged GET
+                GLOBAL_RATE_LIMITER.acquire()
+                resp = self.session.get(
+                    doc['download_url'], timeout=SCRAPER_CONFIG['request_timeout'],
+                    headers={'Range': 'bytes=0-0'}, stream=True)
+                resp.close()
+            resp.raise_for_status()
+
+            filename = filename_from_disposition(
+                resp.headers.get('Content-Disposition', ''))
+            if filename:
+                doc['server_filename'] = filename
+
+            probed_format = format_from_headers(resp.headers)
+            if probed_format:
+                doc['file_format'] = probed_format
+
+            length = resp.headers.get('Content-Length') or \
+                (resp.headers.get('Content-Range', '').split('/')[-1]
+                 if '/' in resp.headers.get('Content-Range', '') else '')
+            if length.isdigit():
+                doc['file_size_bytes'] = int(length)
+                doc['file_size'] = human_size(int(length))
+
+        except requests.exceptions.RequestException as e:
+            logger.warning(f"Probe failed for {doc['download_url']}: {e}")
+
+    # ------------------------------------------------------------------
+    # Pagination: follow links the page actually renders
+    # ------------------------------------------------------------------
+
+    def discover_page_urls(self, html: str, base_url: str) -> List[str]:
+        """Collect pagination URLs present in the page (no blind ?page=N)."""
+        soup = BeautifulSoup(html, 'html.parser')
+        base_path = urlparse(base_url).path
+        urls = []
+        for anchor in soup.find_all('a', href=True):
+            href = urljoin(base_url, anchor['href'])
+            parsed = urlparse(href)
+            if parsed.path != base_path:
+                continue
+            if parse_qs(parsed.query).get('page') or parse_qs(parsed.query).get('P'):
+                if href not in urls and href != base_url:
+                    urls.append(href)
+        if urls:
+            logger.info(f"Discovered {len(urls)} pagination URLs")
+        return urls
+
+    # ------------------------------------------------------------------
+    # Main flow
+    # ------------------------------------------------------------------
 
     def scrape(self) -> List[Dict]:
-        """Main scraping method."""
         self.start_time = datetime.now()
         logger.info("=" * 60)
-        logger.info("Starting climate platform document scraper")
-        logger.info(f"Target URL: {CLIMATE_PLATFORM_URL}")
-        logger.info(f"Expected documents: {EXPECTED_DOCUMENT_COUNT}")
+        logger.info(f"Target: {CLIMATE_PLATFORM_URL}")
+        logger.info(f"Expected documents: ~{EXPECTED_DOCUMENT_COUNT}")
         logger.info("=" * 60)
 
-        try:
-            # Fetch main page
-            response = self.fetch_page(CLIMATE_PLATFORM_URL)
-            if not response:
-                logger.error("Failed to fetch main page")
-                return []
-
-            # Check if page has pagination or dynamic loading
-            self.documents = self.extract_documents_from_html(response.text)
-
-            # If documents found are less than expected, try pagination
-            if len(self.documents) < EXPECTED_DOCUMENT_COUNT:
-                logger.info(f"Found {len(self.documents)} documents, trying pagination...")
-                self.documents.extend(self.scrape_paginated())
-
-            # Deduplicate documents
-            self.documents = self.deduplicate_documents(self.documents)
-
-            self.end_time = datetime.now()
-            duration = (self.end_time - self.start_time).total_seconds()
-
-            logger.info("=" * 60)
-            logger.info(f"Scraping completed in {duration:.2f} seconds")
-            logger.info(f"Total documents found: {len(self.documents)}")
-            logger.info(f"Expected documents: {EXPECTED_DOCUMENT_COUNT}")
-            logger.info(f"Errors encountered: {len(self.errors)}")
-            logger.info("=" * 60)
-
-            return self.documents
-
-        except Exception as e:
-            logger.error(f"Scraping failed: {e}")
-            self.errors.append(f"Scraping error: {e}")
+        response = self.fetch_page(CLIMATE_PLATFORM_URL)
+        if not response:
+            logger.error("Failed to fetch main page — see errors above")
             return []
 
-    def scrape_paginated(self, max_pages: int = 50) -> List[Dict]:
-        """Scrape paginated results."""
-        documents = []
-        for page in range(1, max_pages + 1):
-            try:
-                time.sleep(SCRAPER_CONFIG['request_delay'])
+        self.save_snapshot('page_1.html', response.text)
+        self.documents = self.extract_documents(response.text, CLIMATE_PLATFORM_URL)
 
-                # Try common pagination parameters
-                params = {'page': page}
-                response = self.fetch_page(CLIMATE_PLATFORM_URL, params=params)
-                if not response:
-                    logger.info(f"Page {page} returned no content, stopping pagination")
-                    break
-
-                page_docs = self.extract_documents_from_html(response.text)
-                if not page_docs:
-                    logger.info(f"No documents in page {page}, stopping pagination")
-                    break
-
-                documents.extend(page_docs)
-                logger.info(f"Page {page}: Found {len(page_docs)} documents")
-
-                # Stop if we've found enough documents
-                if len(self.documents) + len(documents) >= EXPECTED_DOCUMENT_COUNT:
-                    break
-
-            except Exception as e:
-                logger.warning(f"Error scraping page {page}: {e}")
+        # Follow pagination links actually present in the page
+        visited = {CLIMATE_PLATFORM_URL}
+        queue = self.discover_page_urls(response.text, CLIMATE_PLATFORM_URL)
+        page_no = 1
+        while queue:
+            url = queue.pop(0)
+            if url in visited:
                 continue
+            visited.add(url)
+            page_no += 1
+            resp = self.fetch_page(url)
+            if not resp:
+                continue
+            self.save_snapshot(f'page_{page_no}.html', resp.text)
+            self.documents.extend(self.extract_documents(resp.text, url))
+            for new_url in self.discover_page_urls(resp.text, url):
+                if new_url not in visited and new_url not in queue:
+                    queue.append(new_url)
 
-        return documents
+        self.documents = self.deduplicate(self.documents)
+        for idx, doc in enumerate(self.documents, 1):
+            doc['id'] = idx
 
-    def deduplicate_documents(self, documents: List[Dict]) -> List[Dict]:
-        """Remove duplicate documents based on title and URL."""
-        seen = set()
-        unique_docs = []
+        if self.probe_files and self.documents:
+            eta = len(self.documents) * GLOBAL_RATE_LIMITER.min_interval / 60
+            logger.info(f"Probing {len(self.documents)} files via HEAD "
+                        f"(~{eta:.0f} min at polite rate)...")
+            for doc in self.documents:
+                self.probe_file(doc)
 
+        self.end_time = datetime.now()
+        duration = (self.end_time - self.start_time).total_seconds()
+        logger.info("=" * 60)
+        logger.info(f"Done in {duration:.1f}s — {len(self.documents)} documents, "
+                    f"{len(self.errors)} errors")
+        if len(self.documents) != EXPECTED_DOCUMENT_COUNT:
+            logger.warning(
+                f"Count differs from expected {EXPECTED_DOCUMENT_COUNT}. "
+                f"Inspect {self.snapshot_dir}/page_*.html to check whether the "
+                f"list is rendered by JavaScript or split across sub-pages.")
+        return self.documents
+
+    @staticmethod
+    def deduplicate(documents: List[Dict]) -> List[Dict]:
+        seen, unique = set(), []
         for doc in documents:
-            key = (doc.get('title', ''), doc.get('download_url', ''))
-            if key not in seen and key != ('', ''):
+            key = doc.get('download_url', '')
+            if key and key not in seen:
                 seen.add(key)
-                unique_docs.append(doc)
-
-        if len(unique_docs) < len(documents):
-            logger.info(f"Removed {len(documents) - len(unique_docs)} duplicate documents")
-
-        return unique_docs
+                unique.append(doc)
+        return unique
 
     def get_statistics(self) -> Dict:
-        """Calculate statistics from scraped documents."""
         stats = {
             'total_documents': len(self.documents),
-            'by_county': {},
-            'by_type': {},
-            'by_format': {},
-            'by_date': {},
+            'by_org_type': {}, 'by_organization': {}, 'by_county': {},
+            'by_type': {}, 'by_format': {}, 'by_date': {},
             'errors_count': len(self.errors),
         }
-
         for doc in self.documents:
-            # By county
-            county = doc.get('county', 'Unknown')
-            stats['by_county'][county] = stats['by_county'].get(county, 0) + 1
-
-            # By type
-            doc_type = doc.get('type', 'Unknown')
-            stats['by_type'][doc_type] = stats['by_type'].get(doc_type, 0) + 1
-
-            # By format
-            file_format = doc.get('file_format', 'Unknown')
-            stats['by_format'][file_format] = stats['by_format'].get(file_format, 0) + 1
-
-            # By date
-            date = doc.get('publish_date', 'Unknown')[:7]  # YYYY-MM
+            for field, key in [('by_org_type', 'org_type'),
+                               ('by_organization', 'organization'),
+                               ('by_county', 'county'), ('by_type', 'type'),
+                               ('by_format', 'file_format')]:
+                value = doc.get(key) or 'Unknown'
+                stats[field][value] = stats[field].get(value, 0) + 1
+            date = (doc.get('publish_date') or 'Unknown')[:7]
             stats['by_date'][date] = stats['by_date'].get(date, 0) + 1
-
         return stats
 
 
 def main():
-    """Run the scraper."""
-    scraper = ClimateDocumentScraper()
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--probe-files', action='store_true',
+                        help='HEAD each file for real format/size (slow but accurate)')
+    args = parser.parse_args()
+
+    scraper = ClimateDocumentScraper(probe_files=args.probe_files)
     documents = scraper.scrape()
-
     if documents:
-        print(f"\nSuccessfully scraped {len(documents)} documents")
-        print(f"Sample document: {json.dumps(documents[0], indent=2, ensure_ascii=False)}")
+        import json
+        print(f"\nScraped {len(documents)} documents")
+        print(json.dumps(documents[0], indent=2, ensure_ascii=False))
     else:
-        print("No documents were scraped")
-
+        print("No documents scraped — check scraper.log and data/snapshots/")
     return documents
 
 
