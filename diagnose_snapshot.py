@@ -11,6 +11,10 @@ paginated onto sub-pages, or uses a different link pattern.
 import re
 import sys
 from collections import Counter
+
+# Windows cmd defaults to a legacy codepage; force UTF-8 output so
+# Chinese text is readable instead of mojibake.
+sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 from pathlib import Path
 from urllib.parse import urlparse
 
