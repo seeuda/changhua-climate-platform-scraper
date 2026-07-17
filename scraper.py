@@ -72,6 +72,14 @@ SECTOR_MINISTRIES = {
     '環境部門': '環境部',
 }
 
+# National-level document markers: these titles belong to no single
+# ministry (published at the national level via 環境部/氣候署). Checked
+# AFTER counties and sectors so any specific attribution wins first.
+NATIONAL_KEYWORDS = [
+    '國家', '中華民國', '領域調適', '領域行動方案', '領域氣候變遷調適',
+    '階段管制目標', '行動綱領', '溫室氣體推動方案', '調適通訊',
+]
+
 # Central agencies responsible for the six GHG-reduction sectors
 # (能源/製造:經濟部, 運輸:交通部, 住商:內政部, 農業:農業部, 環境:環境部)
 CENTRAL_AGENCIES = [
@@ -258,11 +266,14 @@ class ClimateDocumentScraper:
         for sector, ministry in SECTOR_MINISTRIES.items():
             if sector in text:
                 return ministry
-        if '國家溫室氣體排放清冊' in text:  # national inventory: 環境部
-            return '環境部'
         for agency in CENTRAL_AGENCIES:
             if normalize_tw(agency) in text:
                 return agency
+        # National-level documents (inventories, adaptation-domain
+        # reports, framework directives...) name no single ministry.
+        for keyword in NATIONAL_KEYWORDS:
+            if keyword in text:
+                return '國家層級'
         return '未識別'
 
     @staticmethod

@@ -58,7 +58,7 @@ class DownloadManager:
                 into subdirectories during download
         """
         self.download_dir = download_dir or Path("downloads")
-        self.download_dir.mkdir(exist_ok=True)
+        self.download_dir.mkdir(parents=True, exist_ok=True)
         self.organize_by = organize_by
 
         self.session = make_session()
