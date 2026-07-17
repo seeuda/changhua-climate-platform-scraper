@@ -1,7 +1,9 @@
-"""End-to-end DownloadManager tests against a local HTTP server.
+"""End-to-end tests: flat archive download + post-download classification.
 
-Simulates the real platform's behavior: extension-less download URLs that
-return the actual filename via Content-Disposition.
+Simulates the real platform: extension-less download URLs that return the
+actual filename via Content-Disposition. Verifies the download-once /
+classify-afterwards flow, server-filename preference, resume-skip, and
+hardlink views.
 
 Run: python tests/test_download_manager.py
 """
@@ -12,34 +14,43 @@ import tempfile
 import threading
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
+from urllib.parse import quote
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from download_manager import DownloadManager  # noqa: E402
+from organize import build_view  # noqa: E402
 from rate_limiter import GLOBAL_RATE_LIMITER  # noqa: E402
 
 PDF_BYTES = b'%PDF-1.4 fake test payload ' * 40
 
+# Server-side filenames per token — like the real platform, the URL says
+# nothing; only Content-Disposition carries the name.
+SERVER_FILES = {
+    'tokenAAA': '溫室氣體減量行動方案核定本.pdf',
+    'tokenBBB': '112年度執行方案成果報告.pdf',
+    'tokenCCC': None,  # server sends no Content-Disposition
+}
+
 
 class FakeFileHandler(BaseHTTPRequestHandler):
-    """Serves /File/Get/<token> like service.cca.gov.tw: no extension in
-    the URL, filename only in Content-Disposition."""
-
     def do_GET(self):
-        if '/File/Get/' not in self.path:
+        token = self.path.rsplit('/', 1)[-1]
+        if '/File/Get/' not in self.path or token not in SERVER_FILES:
             self.send_error(404)
             return
         self.send_response(200)
         self.send_header('Content-Type', 'application/pdf')
-        self.send_header(
-            'Content-Disposition',
-            "attachment; filename*=UTF-8''%E6%B8%AC%E8%A9%A6%E5%A0%B1%E5%91%8A.pdf")
+        name = SERVER_FILES[token]
+        if name:
+            self.send_header('Content-Disposition',
+                             f"attachment; filename*=UTF-8''{quote(name)}")
         self.send_header('Content-Length', str(len(PDF_BYTES)))
         self.end_headers()
         self.wfile.write(PDF_BYTES)
 
     def log_message(self, *args):
-        pass  # keep test output clean
+        pass
 
 
 def make_docs(base_url):
@@ -52,9 +63,11 @@ def make_docs(base_url):
          'organization': '南投縣政府', 'org_type': '地方政府', 'county': '南投縣',
          'publish_date': '2024-01-15', 'file_format': '',
          'download_url': f'{base_url}/File/Get/cca/zh-tw/tokenBBB'},
-        {'id': 3, 'title': '無連結文件', 'type': '其他',
-         'organization': '環境部', 'org_type': '中央部會', 'county': '中央',
-         'publish_date': '', 'file_format': '', 'download_url': ''},
+        # Unidentified org — must still be downloaded and appear in views
+        {'id': 3, 'title': '某某機關調適計畫', 'type': '調適計畫',
+         'organization': '未識別', 'org_type': '中央部會', 'county': '中央',
+         'publish_date': '', 'file_format': 'PDF',
+         'download_url': f'{base_url}/File/Get/cca/zh-tw/tokenCCC'},
     ]
 
 
@@ -68,48 +81,55 @@ def main():
 
     try:
         docs = make_docs(base_url)
+        archive = tmp / 'archive'
 
-        # --- organize_by org_type: files routed to 機構類型/機關/ ---
-        manager = DownloadManager(download_dir=tmp / 'by_org_type',
-                                  organize_by='org_type')
+        # --- flat download: everything lands in one directory ---
+        manager = DownloadManager(download_dir=archive, organize_by='flat')
         stats = manager.download_documents(docs, max_workers=2)
-        assert stats['success'] == 2, stats
-        assert stats['skipped'] == 1, stats  # the empty-URL doc
+        assert stats['success'] == 3, stats
         assert stats['failed'] == 0, stats
-        assert stats['total_size'] == 2 * len(PDF_BYTES), stats
 
-        f1 = tmp / 'by_org_type' / '中央部會' / '環境部' / \
-            '00001_環境部溫室氣體減量行動方案.pdf'
-        f2 = tmp / 'by_org_type' / '地方政府' / '南投縣政府' / \
-            '00002_南投縣執行方案成果報告.pdf'
-        assert f1.exists(), f"missing {f1}; tree: {list((tmp / 'by_org_type').rglob('*'))}"
-        assert f2.exists(), f"missing {f2}"
+        # Server filename preferred (id prefix + real name, not our title)
+        f1 = archive / '00001_溫室氣體減量行動方案核定本.pdf'
+        f2 = archive / '00002_112年度執行方案成果報告.pdf'
+        assert f1.exists(), list(archive.iterdir())
+        assert f2.exists(), list(archive.iterdir())
+        # No Content-Disposition → falls back to title
+        f3 = archive / '00003_某某機關調適計畫.pdf'
+        assert f3.exists(), list(archive.iterdir())
         assert f1.read_bytes() == PDF_BYTES
-        # Extension .pdf came from Content-Disposition (URL has none)
-        print("PASS: routing + Content-Disposition extension")
+        print("PASS: flat archive + server-filename preference")
 
-        # --- rerun: everything already downloaded is skipped, not re-fetched ---
-        manager2 = DownloadManager(download_dir=tmp / 'by_org_type',
-                                   organize_by='org_type')
-        stats2 = manager2.download_documents(docs, max_workers=2)
+        # --- rerun skips everything already archived ---
+        stats2 = DownloadManager(download_dir=archive, organize_by='flat') \
+            .download_documents(docs, max_workers=2)
         assert stats2['success'] == 0 and stats2['skipped'] == 3, stats2
-        print("PASS: resume skips existing files")
+        print("PASS: resume skips archived files")
 
-        # --- organize_by county ---
-        manager3 = DownloadManager(download_dir=tmp / 'by_county',
-                                   organize_by='county')
-        manager3.download_documents(docs[:2], max_workers=1)
-        assert (tmp / 'by_county' / '中央').is_dir()
-        assert (tmp / 'by_county' / '南投縣').is_dir()
-        print("PASS: county routing")
+        # --- build two views from the same archive, no re-download ---
+        s_org = build_view(docs, archive, tmp, 'org_type')
+        s_date = build_view(docs, archive, tmp, 'date')
+        assert s_org['linked'] + s_org['copied'] == 3, s_org
+        assert s_org['missing'] == 0, s_org
 
-        # --- directory structure summary counts nested files ---
-        structure = manager2.get_directory_structure()
-        assert structure['中央部會']['count'] == 1, structure
-        assert structure['地方政府']['count'] == 1, structure
-        print("PASS: directory structure summary")
+        v1 = tmp / 'by_org_type' / '中央部會' / '環境部' / f1.name
+        v2 = tmp / 'by_org_type' / '地方政府' / '南投縣政府' / f2.name
+        v3 = tmp / 'by_org_type' / '中央部會' / '未識別' / f3.name
+        assert v1.exists() and v2.exists(), list((tmp / 'by_org_type').rglob('*'))
+        assert v3.exists(), "unidentified doc missing from view"
+        assert (tmp / 'by_date' / '2023-05' / '環境部' / f1.name).exists()
+        assert (tmp / 'by_date' / 'Unknown' / '未識別' / f3.name).exists()
 
-        print("\nALL DOWNLOAD MANAGER TESTS PASSED")
+        # Hardlinks: same inode as archive, no extra disk
+        assert v1.stat().st_ino == f1.stat().st_ino, "expected hardlink"
+        print("PASS: hardlink views (org_type + date) incl. 未識別 docs")
+
+        # --- rebuilding a view is idempotent ---
+        s_again = build_view(docs, archive, tmp, 'org_type')
+        assert s_again['skipped'] == 3 and s_again['linked'] == 0, s_again
+        print("PASS: view rebuild is idempotent")
+
+        print("\nALL DOWNLOAD + ORGANIZE TESTS PASSED")
     finally:
         server.shutdown()
         shutil.rmtree(tmp, ignore_errors=True)

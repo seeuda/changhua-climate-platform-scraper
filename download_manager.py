@@ -20,16 +20,41 @@ from rate_limiter import GLOBAL_RATE_LIMITER
 
 logger = logging.getLogger(__name__)
 
+ORGANIZE_METHODS = ['organization', 'org_type', 'county', 'type', 'category', 'date']
+
+
+def route_subpath(doc: Dict, organize_by: str) -> Path:
+    """Relative directory for a document under a given classification.
+
+    Shared by DownloadManager (legacy direct routing) and organize.py
+    (post-download views), so both always agree on the layout.
+    """
+    org = doc.get('organization') or 'Unknown'
+    if organize_by == 'flat':
+        return Path('.')
+    if organize_by == 'org_type':
+        return Path(doc.get('org_type') or 'Unknown') / org
+    if organize_by == 'county':
+        return Path(doc.get('county') or 'Unknown')
+    if organize_by == 'type':
+        return Path(doc.get('type') or 'Unknown') / org
+    if organize_by == 'category':
+        return Path(doc.get('category') or 'Unknown') / org
+    if organize_by == 'date':
+        return Path((doc.get('publish_date') or 'Unknown')[:7] or 'Unknown') / org
+    return Path(org)  # 'organization' and fallback
+
 
 class DownloadManager:
     """Bulk-download documents with polite rate limiting and progress tracking."""
 
-    def __init__(self, download_dir: Path = None, organize_by: str = 'organization'):
+    def __init__(self, download_dir: Path = None, organize_by: str = 'flat'):
         """
         Args:
             download_dir: Base download directory
-            organize_by: 'organization', 'org_type', 'county', 'type',
-                'category', or 'date'
+            organize_by: 'flat' (default; classify afterwards with
+                organize.py), or one of ORGANIZE_METHODS to route files
+                into subdirectories during download
         """
         self.download_dir = download_dir or Path("downloads")
         self.download_dir.mkdir(exist_ok=True)
@@ -86,21 +111,7 @@ class DownloadManager:
 
     def get_save_directory(self, doc: Dict) -> Path:
         """Route a document to its directory per the classification method."""
-        org = doc.get('organization') or 'Unknown'
-        if self.organize_by == 'organization':
-            return self.download_dir / org
-        if self.organize_by == 'org_type':
-            return self.download_dir / (doc.get('org_type') or 'Unknown') / org
-        if self.organize_by == 'county':
-            return self.download_dir / (doc.get('county') or 'Unknown')
-        if self.organize_by == 'type':
-            return self.download_dir / (doc.get('type') or 'Unknown') / org
-        if self.organize_by == 'category':
-            return self.download_dir / (doc.get('category') or 'Unknown') / org
-        if self.organize_by == 'date':
-            date = (doc.get('publish_date') or 'Unknown')[:7]
-            return self.download_dir / date / org
-        return self.download_dir / org
+        return self.download_dir / route_subpath(doc, self.organize_by)
 
     def download_document(self, doc: Dict, save_dir: Path) -> Optional[Dict]:
         """Download one document; skip if a file for its id already exists."""
@@ -140,20 +151,27 @@ class DownloadManager:
             return None
 
     def build_filename(self, doc: Dict, headers) -> str:
-        """{id}_{title}{ext}; extension from Content-Disposition when present."""
+        """{id}_{server filename} — the platform's own filename, not a
+        preset one. The id prefix guarantees uniqueness (many documents
+        share generic names like 成果報告.pdf) and drives resume-skip.
+        Falls back to the page title only when the server sends no name.
+        """
         doc_id = str(doc.get('id', '0')).zfill(5)
-        title = (doc.get('title') or 'document')[:50]
-        for char in '/\\:*?"<>|':
-            title = title.replace(char, '_')
 
         server_name = filename_from_disposition(
             headers.get('Content-Disposition', ''))
-        ext = Path(server_name).suffix.lower() if server_name else ''
-        if not ext:
-            fmt = format_from_headers(headers) or doc.get('file_format', '')
-            ext = extension_for_format(fmt)
+        if server_name:
+            return f"{doc_id}_{self.sanitize(server_name)[:120]}"
 
-        return f"{doc_id}_{title}{ext}"
+        title = self.sanitize((doc.get('title') or 'document')[:50])
+        fmt = format_from_headers(headers) or doc.get('file_format', '')
+        return f"{doc_id}_{title}{extension_for_format(fmt)}"
+
+    @staticmethod
+    def sanitize(name: str) -> str:
+        for char in '/\\:*?"<>|':
+            name = name.replace(char, '_')
+        return name.strip()
 
     def generate_report(self) -> Dict:
         logger.info("=" * 60)

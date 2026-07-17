@@ -1,80 +1,89 @@
-# 第二階段：檔案下載與 GCS 上傳
+# 第二階段：下載一次，事後分類
 
 ## 流程
 
 ```
-output/climate_docs_metadata.json → download_manager → 本機 downloads/ → (可選) GCS
+metadata.json ─→ ① 全部下載到 downloads/archive/（扁平、只下載一次）
+                 ② 事後建立分類檢視 downloads/by_*/（硬連結，不佔額外空間）
+                 ③（可選）上傳 archive 到 GCS
 ```
 
-**檔案存在你的本機**，不會進 GitHub（`.gitignore` 已排除）。
-全部 346 筆（中央部會 + 地方政府）都會下載，分類方式見 `STORAGE_OPTIONS.md`。
-
-## 重要：檔名與副檔名的來源
-
-平臺下載 URL 不含副檔名（`.../File/Get/cca/zh-tw/<token>`）。
-下載器以下列優先序決定存檔副檔名：
-
-1. 回應標頭 `Content-Disposition` 中的伺服器檔名（最可靠）
-2. `Content-Type` 對應的格式
-3. metadata 中的 `file_format` 欄位
-4. 都沒有時存為 `.bin`
-
-存檔名格式：`{5位序號}_{標題前50字}{副檔名}`，例如
-`00001_南投縣第二期溫室氣體減量執行方案（核定本）.pdf`
+- **不預設名稱、不過濾**：metadata 裡的每一筆都會下載，包括機關「未識別」的文件
+- **檔名用平臺自己的檔名**：從 Content-Disposition 取得伺服器真實檔名，
+  只加 5 位序號前綴防重名，例如 `00001_溫室氣體減量行動方案核定本.pdf`；
+  伺服器沒給檔名時才退回用頁面標題
+- **重新分類永遠不需重新下載**：檢視是指向 archive 的硬連結，
+  可隨時增刪、六種並存、不佔額外磁碟空間
+- 檔案存在**你的本機**，不會進 GitHub
 
 ## 使用
 
 ```bash
-# 前置：先完成階段一（在可連 cca.gov.tw 的本機）
+# 前置：先在可連 cca.gov.tw 的本機完成階段一
 python main.py --probe-files
 
-# 下載全部 346 筆，預設按提交機關分類
+# 下載全部 + 建立預設檢視（by_org_type：中央/地方 → 機關）
 python phase2_download.py
 
-# 按中央/地方 → 機關兩層分類（推薦）
-python phase2_download.py --organize-by org_type
+# 下載全部 + 一次建立全部六種檢視
+python phase2_download.py --organize-by all
 
-# 其他分類：county / type / category / date（詳見 STORAGE_OPTIONS.md）
+# 只下載，不建檢視
+python phase2_download.py --organize-by none
+
+# 之後隨時補建/重建檢視（不重新下載）
+python organize.py --by county --by date
+python organize.py --all
+
+# 已有 archive、只想重建檢視
+python phase2_download.py --skip-download --organize-by all
 ```
 
-**併發與禮貌**：`--max-workers` 控制併發數，但全域速率限制器保證對伺服器
-總請求間隔 ≥2 秒——加大 worker 數不會提高請求頻率，只是讓大檔下載時間重疊。
-346 筆 × 2 秒 ≈ 至少 12 分鐘，加上傳輸時間預估 30-60 分鐘。
+## 目錄結構
 
-**續傳**：重跑會自動跳過已存在的檔案（以序號前綴比對），中斷後直接重跑即可。
+```
+downloads/
+├── archive/                          ← 唯一的實體檔案存放處
+│   ├── 00001_溫室氣體減量行動方案核定本.pdf
+│   ├── 00002_112年度執行方案成果報告.pdf
+│   └── ...（全部 346 筆）
+├── by_org_type/                      ← 檢視（硬連結，零額外空間）
+│   ├── 中央部會/環境部/...
+│   ├── 地方政府/南投縣政府/...
+│   └── 中央部會/未識別/...           ← 比對不到機關的也在
+├── by_county/ by_type/ by_date/ ...  ← 想建幾種就建幾種
+└── download_log.json
+```
 
-**日誌**：`download.log`（過程）、`downloads/download_log.json`(統計)。
+## 續傳與重試
+
+- 重跑 `phase2_download.py` 會以序號前綴比對，已在 archive 的直接跳過
+- 失敗的檔案重跑時自動補抓；明細在 `download.log` 的 FAIL 行
+
+## 併發與禮貌
+
+`--max-workers` 控制併發，但全域速率限制器保證對伺服器總請求間隔 ≥2 秒。
+346 筆至少 12 分鐘，加傳輸時間估 30–60 分鐘；磁碟預留 1.5 GB。
 
 ## GCS 上傳（可選）
 
+只上傳 `archive/`（檢視是硬連結，上傳會在 GCS 變成重複物件）：
+
 ```bash
 pip install google-cloud-storage
-
-export GOOGLE_APPLICATION_CREDENTIALS="/path/to/service-account-key.json"
+export GOOGLE_APPLICATION_CREDENTIALS="/path/to/key.json"
 export GCP_PROJECT_ID="your-project-id"
 export GCS_BUCKET_NAME="your-bucket-name"
 
-python phase2_download.py --upload --dry-run   # 先預覽
-python phase2_download.py --upload             # 實際上傳
+python phase2_download.py --skip-download --organize-by none --upload --dry-run
+python phase2_download.py --skip-download --organize-by none --upload
 ```
-
-上傳後生成 `downloads/public_urls.json`（GCS 物件清單與 URL）。
-
-大量檔案用 `gsutil` 更快：
-
-```bash
-gsutil -m cp -r downloads/* gs://your-bucket/climate-docs/
-```
-
-## 磁碟空間
-
-346 筆估計 500 MB – 1 GB，預留 1.5 GB。
 
 ## 故障排除
 
 | 症狀 | 處理 |
 |------|------|
 | 403 Forbidden | 你在雲端/代理環境——換到本機台灣網路執行 |
-| 存成 .bin | 伺服器沒回 Content-Disposition；查 metadata 的 file_format 手動改名 |
-| 部分下載失敗 | 看 `download.log` 的 FAIL 行；重跑會補抓失敗的（成功的自動跳過） |
+| 檢視報 missing | 該序號在 archive 沒有檔案——先重跑下載補齊 |
+| 檔名亂碼 | 回報 `download.log` 中該筆的 Content-Disposition 內容 |
 | GCS 403 | 服務帳戶需 `storage.objects.create` 權限 |
