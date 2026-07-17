@@ -182,35 +182,43 @@ def discover_candidates(page_html: str):
     return sqn, query_template, candidates
 
 
-def try_known_endpoint(sqn, query_template):
-    """POST the QueryData shape to the confirmed NewsList endpoint.
+def build_body(sqn, cga='all', p=1, dc=60):
+    """Exact request body reverse-engineered from SearchData()/SearchAjax()
+    in apifun.js and the page's default form state.
 
-    Integer types matter (the JS does parseInt); '查無任何資訊' comes back
-    when the body is malformed. Try a large dc first to get everything
-    in one page, then normal variants.
+    Every filter must be its default 'everything selected' value — empty
+    strings and nulls mean 'match nothing' server-side, which is why
+    earlier attempts got 查無任何資訊. Lang must be a string (null gives
+    HTTP 500) and dc must be one of the whitelisted page sizes
+    (15/30/45/60 — dc=500 also gives HTTP 500).
     """
-    template = dict(query_template) if query_template else {
-        'MainSN': 0, 'Lang': None, 'start': None, 'end': None, 'q': None,
-        'c4': None, 'c5': None, 'c6': None, 'c7': None, 'ct': None,
-        'zc': None, 'p': 1, 'dc': 15, 'r': None, 'mc': None, 'cga': None,
-        'cgp': None, 'cgac': None, 'gt': None, 'cgd': None, 'cgf': None,
-        'cgr': None, 'cgs': None, 'cgys': None, 'cgye': None,
-        'bilingualkeyword': None}
+    return {
+        'MainSN': int(sqn), 'Lang': 'zh-tw', 'q': '',
+        'c4': '', 'c5': '', 'c6': '', 'ct': '', 'zc': '', 'mc': '',
+        'p': p, 'dc': dc,
+        'cga': cga,          # all | ClimateGovernanceCentral | ClimateGovernancePlace
+        'cgp': '', 'cgac': '',
+        'gt': 'GT1,GT2',     # 溫室氣體減量 + 氣候變遷調適
+        'cgd': 'all',        # 部門 D1-D6
+        'cgf': 'all',        # 調適類別 F1-F9
+        'cgr': 'all',        # 報告類型 R1-R7
+        'cgs': 'S1,S2,S3',   # 進度狀態
+        'cgys': '', 'cgye': '',
+        'bilingualkeyword': '',
+    }
 
-    for dc, lang in [(500, None), (500, 'zh-tw'), (15, None), (15, 'zh-tw')]:
-        body = dict(template)
-        body['MainSN'] = int(sqn)
-        body['p'] = 1
-        body['dc'] = dc
-        if lang is not None:
-            body['Lang'] = lang
+
+def try_known_endpoint(sqn, query_template):
+    """POST the exact default-search body to the NewsList endpoint."""
+    for dc in (60, 15):
+        body = build_body(sqn, dc=dc)
         try:
             resp = polite('POST', KNOWN_ENDPOINT, json=body)
         except Exception as e:
             log.warning(f"known endpoint failed: {e}")
             continue
         urls = file_urls_in(resp.text)
-        log.info(f"POST NewsList dc={dc} Lang={lang!r} -> HTTP "
+        log.info(f"POST NewsList cga=all dc={dc} -> HTTP "
                  f"{resp.status_code}, {len(resp.text):,}B, "
                  f"{len(urls)} File/Get urls")
         if resp.status_code == 200 and urls:
@@ -320,37 +328,102 @@ def finalize_org(doc, scraper):
                      if doc['org_type'] == '地方政府' else '中央')
 
 
-def harvest(url, method, style, params, first_resp, scraper):
-    all_docs, seen = [], set()
+DETAIL_RE = re.compile(r'/(?:information-service|affairs)/[\w/-]*?(\d+)\.html')
+
+
+def stub_docs_from_fragment(text, scraper):
+    """List rows that link to detail pages instead of files directly."""
+    soup = BeautifulSoup(text, 'html.parser')
+    stubs, seen = [], set()
+    for a in soup.find_all('a', href=True):
+        if not DETAIL_RE.search(a['href']):
+            continue
+        url = urljoin(BASE + '/', a['href'])
+        if url in seen:
+            continue
+        seen.add(url)
+        row = a.find_parent(['tr', 'li']) or a.parent
+        row_text = row.get_text(' ', strip=True) if row else ''
+        stubs.append({'title': scraper.derive_title(a, row),
+                      'detail_url': url, 'row_text': row_text})
+    return stubs
+
+
+def harvest(url, method, param_sets, first_resp, scraper):
+    """Page through every parameter set, dedupe by download URL, and —
+    when rows link to detail pages rather than files — fetch each detail
+    page and extract its attachments."""
+    all_docs, seen, stubs, seen_detail = [], set(), [], set()
 
     def absorb(text):
         new = 0
-        for doc in docs_from_payload(text, scraper):
+        payload_docs = docs_from_payload(text, scraper)
+        for doc in payload_docs:
             key = doc['download_url']
             if key not in seen:
                 seen.add(key)
                 all_docs.append(doc)
                 new += 1
+        if not payload_docs:
+            for stub in stub_docs_from_fragment(text, scraper):
+                if stub['detail_url'] not in seen_detail:
+                    seen_detail.add(stub['detail_url'])
+                    stubs.append(stub)
+                    new += 1
         return new
 
-    new = absorb(first_resp.text)
-    log.info(f"page 1: +{new} documents")
+    for set_no, base_params in enumerate(param_sets, 1):
+        for page in range(1, MAX_PAGES + 1):
+            if set_no == 1 and page == 1:
+                text = first_resp.text
+            else:
+                p = dict(base_params)
+                p['p'] = page
+                try:
+                    kw = {'params': p} if method == 'GET' else {'json': p}
+                    resp = polite(method, url, **kw)
+                except Exception as e:
+                    log.warning(f"set {set_no} page {page} failed: {e}")
+                    break
+                if resp.status_code != 200:
+                    log.info(f"set {set_no} page {page}: "
+                             f"HTTP {resp.status_code}, stopping set")
+                    break
+                text = resp.text
+            new = absorb(text)
+            log.info(f"set {set_no} page {page}: +{new} "
+                     f"(files {len(all_docs)}, detail-links {len(stubs)})")
+            if new == 0:
+                break
 
-    for page in range(2, MAX_PAGES + 1):
-        p = dict(params)
-        p['p'] = page
-        try:
-            kw = {'params': p} if method == 'GET' else {'json': p}
-            resp = polite(method, url, **kw)
-        except Exception as e:
-            log.warning(f"page {page} failed: {e}")
-            break
-        if resp.status_code != 200:
-            break
-        new = absorb(resp.text)
-        log.info(f"page {page}: +{new} documents (total {len(all_docs)})")
-        if new == 0:
-            break
+    if stubs:
+        eta = len(stubs) * GLOBAL_RATE_LIMITER.min_interval / 60
+        log.info(f"Rows link to {len(stubs)} detail pages; "
+                 f"fetching each (~{eta:.0f} min)...")
+        for i, stub in enumerate(stubs, 1):
+            try:
+                resp = polite('GET', stub['detail_url'])
+            except Exception as e:
+                log.warning(f"detail {stub['detail_url']}: {e}")
+                continue
+            if resp.status_code != 200:
+                continue
+            found = 0
+            for doc in scraper.extract_documents(resp.text,
+                                                 stub['detail_url']):
+                key = doc['download_url']
+                if key in seen:
+                    continue
+                seen.add(key)
+                if len(doc.get('title', '')) < 8 <= len(stub['title']):
+                    doc['title'] = stub['title']
+                if not doc.get('publish_date'):
+                    doc['publish_date'] = scraper.find_date(stub['row_text'])
+                doc['detail_url'] = stub['detail_url']
+                all_docs.append(doc)
+                found += 1
+            log.info(f"detail {i}/{len(stubs)}: +{found} files "
+                     f"({stub['title'][:40]})")
 
     for idx, doc in enumerate(all_docs, 1):
         doc['id'] = idx
@@ -394,7 +467,17 @@ def main():
                       "Paste autopilot.log back to the developer.")
             return 1
         url, method, style, params, first_resp = hit
-        docs = harvest(url, method, style, params, first_resp, scraper)
+        if style == 'known':
+            # Union the 全部/中央/地方 tabs in case cga=all misses rows
+            dc = params.get('dc', 15)
+            param_sets = [params,
+                          build_body(int(params['MainSN']),
+                                     cga='ClimateGovernanceCentral', dc=dc),
+                          build_body(int(params['MainSN']),
+                                     cga='ClimateGovernancePlace', dc=dc)]
+        else:
+            param_sets = [params]
+        docs = harvest(url, method, param_sets, first_resp, scraper)
 
     if not docs:
         log.error("Discovery succeeded but produced no documents — "
