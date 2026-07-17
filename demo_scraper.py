@@ -17,9 +17,13 @@ logger = logging.getLogger(__name__)
 class DemoScraper:
     """Generate sample data for demonstration purposes."""
 
-    # Sample counties
+    # Sample counties (22 counties and cities in Taiwan)
     COUNTIES = [
+        # 6 direct-controlled cities
         '臺北市', '新北市', '桃園市', '臺中市', '臺南市', '高雄市',
+        # 3 special cities
+        '基隆市', '新竹市', '嘉義市',
+        # 13 counties
         '宜蘭縣', '新竹縣', '苗栗縣', '彰化縣', '南投縣', '雲林縣',
         '嘉義縣', '屏東縣', '花蓮縣', '臺東縣', '澎湖縣', '金門縣', '連江縣'
     ]
