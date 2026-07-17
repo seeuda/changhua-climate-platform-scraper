@@ -16,6 +16,7 @@ import requests
 from config import SCRAPER_CONFIG
 from fileinfo import (extension_for_format, filename_from_disposition,
                       format_from_headers, human_size)
+from http_client import make_session
 from rate_limiter import GLOBAL_RATE_LIMITER
 
 logger = logging.getLogger(__name__)
@@ -60,11 +61,7 @@ class DownloadManager:
         self.download_dir.mkdir(exist_ok=True)
         self.organize_by = organize_by
 
-        self.session = requests.Session()
-        self.session.headers.update({
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
-                          '(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
-        })
+        self.session = make_session()
 
         self._stats_lock = threading.Lock()
         self.stats = {'total': 0, 'success': 0, 'failed': 0,

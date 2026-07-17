@@ -35,6 +35,7 @@ from bs4 import BeautifulSoup
 from config import CLIMATE_PLATFORM_URL, SCRAPER_CONFIG, DATA_DIR, EXPECTED_DOCUMENT_COUNT
 from fileinfo import (EXTENSION_FORMATS, filename_from_disposition,
                       format_from_headers, human_size)
+from http_client import make_session
 from rate_limiter import GLOBAL_RATE_LIMITER
 
 logging.basicConfig(
@@ -91,12 +92,7 @@ class ClimateDocumentScraper:
                 real filename/format/size from headers. Adds ~2s x N to
                 runtime because of the polite rate limit.
         """
-        self.session = requests.Session()
-        self.session.headers.update({
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
-                          '(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
-            'Accept-Language': 'zh-TW,zh;q=0.9,en;q=0.5',
-        })
+        self.session = make_session()
         self.probe_files = probe_files
         self.documents: List[Dict] = []
         self.errors: List[str] = []
