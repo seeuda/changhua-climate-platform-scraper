@@ -34,10 +34,6 @@ def main():
         help='Skip generating report'
     )
     parser.add_argument(
-        '--output-dir',
-        help='Custom output directory'
-    )
-    parser.add_argument(
         '--probe-files',
         action='store_true',
         help='HEAD each download URL to get real filename/format/size from '

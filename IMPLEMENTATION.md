@@ -1,369 +1,88 @@
-# 氣候資訊公開平臺爬蟲 - 實現總結
+# 技術架構說明
 
-## 📋 概況
+## 概況
 
-本專案提供一個完整的網頁爬蟲解決方案，用於提取氣候署平臺上所有 346 筆行動方案、執行方案及成果報告的 metadata。
+兩階段管線：**階段一**爬取 346 筆文件 metadata 輸出結構化清單；**階段二**依清單批次下載檔案（可選上傳 GCS）。
 
-**專案分支**: `claude/climate-docs-scraper-mq3ckc`
+**分支**: `claude/climate-docs-scraper-mq3ckc`
 
----
+## 關於目標網站的已查證事實
 
-## 🎯 第一階段成果
+這兩點決定了整體設計，是本專案最重要的技術前提：
 
-### ✅ 已完成功能
+1. **`www.cca.gov.tw` 對雲端主機/代理/機器人客戶端回 403**（連首頁都擋）。
+   爬蟲必須在台灣本機網路環境、帶瀏覽器 User-Agent 執行。
+2. **真實下載連結為 `https://service.cca.gov.tw/File/Get/cca/zh-tw/<token>`，不含副檔名。**
+   檔案格式、檔名、大小只能從 HTTP 回應標頭（Content-Disposition /
+   Content-Type / Content-Length）或頁面標示取得。
 
-1. **爬蟲核心模組** (`scraper.py`)
-   - 支援 HTML 解析和 API 呼叫
-   - 自動重試機制（指數退避策略）
-   - 分頁支援（自動檢測和遍歷）
-   - 文件格式自動偵測（PDF/Word/Excel/PowerPoint/ZIP）
-   - 文件大小提取
-   - 去重機制
+## 模組一覽
 
-2. **配置管理** (`config.py`)
-   - 集中式配置（URL、逾時、延遲等）
-   - 易於自訂爬蟲行為
-   - 資料欄位映射
+| 模組 | 職責 |
+|------|------|
+| `scraper.py` | 爬取 metadata：錨定 `/File/Get/` 連結模式抽取、列上下文還原標題、機關/類型/日期分類、`--probe-files` HEAD 探測、分頁跟隨、HTML 快照 |
+| `fileinfo.py` | 共用：從回應標頭推斷檔名/格式/大小（RFC 5987 Content-Disposition 解析） |
+| `rate_limiter.py` | 全域速率限制器：跨線程保證對伺服器總請求間隔 ≥2 秒 |
+| `output_formatter.py` | CSV（UTF-8 BOM，Excel 相容）/ JSON（無 BOM）/ Excel 輸出 |
+| `report_generator.py` | Markdown 統計報告（中央vs地方、縣市、類型、格式、時間） |
+| `download_manager.py` | 批次下載：6 種分類路由、Content-Disposition 副檔名、續傳跳過、線程安全統計 |
+| `gcs_uploader.py` | Google Cloud Storage 批次上傳（可選） |
+| `main.py` | 階段一 CLI |
+| `phase2_download.py` | 階段二 CLI（下載 + 上傳） |
+| `demo_scraper.py` | 生成 `demo_*` 前綴的假資料驗證輸出流程（**非真實資料**） |
+| `config.py` | 集中配置 |
+| `tests/` | 合成 HTML 解析測試 + 本地 HTTP 伺服器下載整合測試 |
 
-3. **輸出格式** (`output_formatter.py`)
-   - **CSV** 格式（UTF-8 BOM，相容 Excel）
-   - **JSON** 格式（含 metadata）
-   - **Excel** 格式支援（可選）
+## 爬蟲抽取策略
 
-4. **統計報告** (`report_generator.py`)
-   - 按縣市統計筆數與佔比
-   - 按方案類型分類
-   - 按文件格式分類
-   - 按時間分佈統計
-   - 完整執行摘要和錯誤報告
+不猜 CSS selector，改以已驗證的連結模式為錨點：
 
-5. **命令列介面** (`main.py`)
-   - 彈性輸出選項
-   - 報告生成控制
-   - 自訂輸出目錄
+1. 找出頁面上所有 href 含 `/File/Get/` 的 `<a>`（真實檔案連結的唯一特徵）
+2. 上溯至所屬 `<tr>` / `<li>` 取得列上下文
+3. 標題：優先取有意義的錨點文字；若是「下載」「PDF下載」等按鈕文字，改取列中最長的標題欄
+4. 機關：以 22 縣市名單（台/臺正規化後）比對，其次比對中央部會清單（含改制前舊名）
+5. 類型：標題關鍵字（成果報告/執行方案/行動方案/調適計畫/推動方案）
+6. 日期：同時支援西元（`2023-11-20`）與民國（`112.05.03`、`112年度`）
+7. 分頁：只跟隨頁面實際渲染出的分頁連結，不盲目遞增 `?page=N`
+8. 每頁 HTML 存快照到 `data/snapshots/`，解析失敗可離線診斷
 
-6. **演示爬蟲** (`demo_scraper.py`)
-   - 生成 346 筆示例文件
-   - 模擬實際爬蟲輸出
-   - 便於本地測試
+`--probe-files` 開啟後，對每筆文件發 HEAD 請求（伺服器拒絕 HEAD 時退回
+Range GET），從標頭讀取真實檔名、格式、大小。346 筆在 2 秒禮貌間隔下約需 12 分鐘。
 
----
+## 禮貌爬蟲實作
 
-## 📂 專案結構
+- `rate_limiter.GLOBAL_RATE_LIMITER`：以鎖保護的單例，爬取與下載共用同一配額，
+  **不論並發 worker 數量**，任兩次請求間隔 ≥2 秒
+- 429/503 依 `Retry-After` 退避；其他錯誤指數退避重試 3 次
+- 403 直接停止並提示需在本機執行（重試無意義）
 
-```
-changhua-climate-platform-scraper/
-├── config.py                      # 配置管理
-├── scraper.py                     # 核心爬蟲邏輯
-├── output_formatter.py            # 輸出格式化
-├── report_generator.py            # 報告生成
-├── main.py                        # CLI 進入點
-├── demo_scraper.py                # 演示爬蟲
-├── requirements.txt               # Python 依賴
-├── README.md                      # 使用文檔
-├── IMPLEMENTATION.md              # 本檔案
-├── .gitignore                     # Git 忽略規則
-├── output/                        # 輸出目錄
-│   ├── climate_docs_metadata.csv  # CSV 清單
-│   ├── climate_docs_metadata.json # JSON 清單
-│   └── scraper_report.md          # 統計報告
-└── logs/
-    └── scraper.log                # 執行日誌
-```
+## 資料欄位
 
----
+| 欄位 | 說明 |
+|------|------|
+| id | 序號 |
+| title | 標題 |
+| type | 行動方案/執行方案/成果報告/調適計畫/推動方案/其他 |
+| organization | 提交機關（環境部、南投縣政府…） |
+| org_type | 中央部會 / 地方政府 |
+| county | 縣市（中央機關為「中央」） |
+| publish_date | YYYY-MM-DD（民國日期已轉換） |
+| download_url | 完整下載 URL |
+| file_format | PDF/Word/Excel/ODF/ZIP（probe 後準確） |
+| file_size / file_size_bytes | probe 後自 Content-Length 取得 |
+| server_filename | probe 後自 Content-Disposition 取得 |
 
-## 🛠️ 技術架構
-
-### 爬蟲流程
-
-```
-1. 初始化爬蟲
-   └─ 設定 HTTP headers
-   └─ 初始化 session
-
-2. 獲取主頁面
-   └─ 重試邏輯（3 次）
-   └─ 指數退避延遲
-
-3. 解析 HTML
-   └─ 多種選擇器策略（容錯）
-   └─ 提取文件 metadata
-
-4. 分析分頁
-   └─ 自動檢測分頁參數
-   └─ 逐頁遍歷
-
-5. 資料處理
-   └─ 去重
-   └─ 日期標準化
-   └─ 統計計算
-
-6. 輸出生成
-   └─ CSV（UTF-8 BOM）
-   └─ JSON（完整 metadata）
-   └─ Markdown 報告
-```
-
-### 核心類別
-
-**ClimateDocumentScraper**
-- `fetch_page()` - 獲取網頁（含重試）
-- `extract_documents_from_html()` - 解析 HTML
-- `parse_document_row()` - 解析單筆文件
-- `scrape()` - 主爬蟲流程
-- `scrape_paginated()` - 分頁爬蟲
-- `get_statistics()` - 統計計算
-
-**DocumentOutputFormatter**
-- `save_csv()` - 儲存 CSV
-- `save_json()` - 儲存 JSON
-- `save_excel()` - 儲存 Excel（可選）
-
-**ReportGenerator**
-- `generate_markdown_report()` - 生成報告
-
----
-
-## 📊 輸出範例
-
-### CSV 格式
-```csv
-序號,標題,類型,方案類別,地方政府單位,公開日期,文件狀態,下載連結,文件格式,檔案大小
-1,臺北市淨零排放路徑規劃_第1號,行動方案,能源,臺北市,2020-01-01,已發佈,https://www.cca.gov.tw/documents/00001.pdf,PDF,1.0 MB
-```
-
-### JSON 結構
-```json
-{
-  "metadata": {
-    "total_documents": 346,
-    "scrape_timestamp": "2026-07-17T07:42:48",
-    "source_url": "https://www.cca.gov.tw/information-service/info/2095.html"
-  },
-  "documents": [
-    {
-      "id": 1,
-      "title": "臺北市淨零排放路徑規劃_第1號",
-      "type": "行動方案",
-      "county": "臺北市",
-      "publish_date": "2020-01-01",
-      "download_url": "https://www.cca.gov.tw/documents/00001.pdf",
-      "file_format": "PDF",
-      ...
-    }
-  ]
-}
-```
-
----
-
-## 🚀 使用方式
-
-### 安裝
+## 測試
 
 ```bash
-pip install -r requirements.txt
+python tests/test_extraction.py        # 解析邏輯（合成 HTML）
+python tests/test_download_manager.py  # 下載端到端（本地 HTTP 伺服器）
 ```
 
-### 基本執行
+## 已知限制
 
-```bash
-# 完整爬蟲（CSV + JSON + 報告）
-python main.py
-
-# 僅輸出 CSV
-python main.py --format csv
-
-# 僅輸出 JSON
-python main.py --format json
-
-# 跳過報告
-python main.py --no-report
-```
-
-### 演示模式
-
-```bash
-# 生成示例數據（用於測試）
-python demo_scraper.py
-```
-
----
-
-## ⚙️ 配置說明
-
-編輯 `config.py` 可調整：
-
-| 設定項 | 預設值 | 說明 |
-|--------|--------|------|
-| `request_timeout` | 10秒 | HTTP 請求逾時 |
-| `retry_attempts` | 3 | 失敗重試次數 |
-| `retry_delay` | 2秒 | 首次重試延遲 |
-| `request_delay` | 2秒 | 相鄰請求延遲 |
-| `max_workers` | 3 | 並發下載數 |
-
----
-
-## 🔍 文件欄位說明
-
-| 欄位 | 型別 | 說明 |
-|------|------|------|
-| id | 整數 | 序號（1-346） |
-| title | 字串 | 文件標題 |
-| type | 字串 | 行動方案/執行方案/成果報告 |
-| category | 字串 | 方案類別（能源/運輸/等） |
-| county | 字串 | 地方政府單位（縣市） |
-| publish_date | 日期 | 公開日期（YYYY-MM-DD） |
-| status | 字串 | 文件狀態 |
-| download_url | URL | 完整下載連結 |
-| file_format | 字串 | 檔案格式 |
-| file_size | 字串 | 檔案大小 |
-
----
-
-## 📈 統計功能
-
-爬蟲會自動生成以下統計：
-
-1. **按縣市分佈**
-   - 統計各縣市文件數量
-   - 計算佔比百分比
-
-2. **按文件類型**
-   - 行動方案、執行方案、成果報告
-
-3. **按文件格式**
-   - PDF、Word、Excel、PowerPoint、ZIP 等
-
-4. **按時間分佈**
-   - 月度統計（YYYY-MM）
-   - 可視化時間線
-
-5. **執行統計**
-   - 總爬蟲時間
-   - 成功率
-   - 錯誤統計
-
----
-
-## 🛡️ 禮貌爬蟲實踐
-
-- ✓ 請求間隔 2 秒（可配置）
-- ✓ 標準瀏覽器 User-Agent（Chrome 120）
-- ✓ 自動重試和退避（避免伺服器過載）
-- ✓ 詳細日誌記錄
-- ✓ 錯誤處理和報告
-
----
-
-## 🔧 故障排除
-
-### 無法連接網站
-- 檢查網路連接
-- 驗證 proxy 設定
-- 檢查防火牆
-
-### 找不到文件
-- 網站結構可能已變更
-- 需要更新 HTML selector
-- 可能需要使用 Selenium/Playwright（JavaScript 動態載入）
-
-### 編碼問題
-- CSV 已使用 UTF-8 BOM，相容 Excel
-- JSON 使用 UTF-8 無 BOM
-
----
-
-## 📋 第二階段建議
-
-此清單可作為後續工作的基礎：
-
-1. **檔案批次下載**
-   - 使用清單中的 URL 進行批次下載
-   - 實現斷點續傳和錯誤重試
-
-2. **雲端上傳**
-   - 集成 Google Cloud Storage
-   - 自動檔案分類和組織
-
-3. **定期更新**
-   - 設定 cron job 定時爬蟲
-   - 比較差異並記錄變更
-
-4. **資料驗證**
-   - 驗證 URL 可訪問性
-   - 檢查檔案完整性
-
----
-
-## 📝 執行日誌範例
-
-```
-2026-07-17 07:42:48,344 - INFO - Starting climate platform document scraper
-2026-07-17 07:42:48,344 - INFO - Fetching: https://www.cca.gov.tw/information-service/info/2095.html
-2026-07-17 07:42:48,345 - INFO - Found 346 rows using selector: table tr
-2026-07-17 07:42:48,345 - INFO - Extracted 346 documents from HTML
-2026-07-17 07:42:48,345 - INFO - Scraping completed in 0.12 seconds
-2026-07-17 07:42:48,346 - INFO - Total documents found: 346
-```
-
----
-
-## 🎓 程式碼品質
-
-- ✓ 型別提示（Python 3.8+ typing）
-- ✓ 完整文檔字串
-- ✓ 錯誤處理和例外捕捉
-- ✓ 詳細日誌記錄
-- ✓ 模組化設計
-- ✓ 可配置和可擴展
-
----
-
-## 📦 依賴
-
-- **requests** (2.31.0+) - HTTP 客戶端
-- **beautifulsoup4** (4.12.0+) - HTML 解析
-- **lxml** (4.9.0+) - XML/HTML 引擎
-- **pandas** (2.0.0+) - 資料處理（可選，用於 Excel）
-- **python-dateutil** (2.8.0+) - 日期解析
-
----
-
-## ✨ 特色亮點
-
-1. **健壯的錯誤處理**
-   - 網路故障自動重試
-   - 部分解析失敗不中斷流程
-   - 詳細錯誤日誌
-
-2. **靈活的選擇策略**
-   - 多層 HTML selector 降級
-   - 容許不同網站結構
-
-3. **完整的統計分析**
-   - 多維度分類統計
-   - 執行摘要報告
-
-4. **易於擴展**
-   - 模組化設計
-   - 清晰的接口定義
-   - 容易增加新的輸出格式
-
----
-
-## 📞 技術支援
-
-如需進一步改進或遇到技術問題，請提供：
-
-1. 爬蟲執行日誌
-2. 網站結構變更信息
-3. 特定錯誤訊息
-4. Python 版本信息
-
----
-
-**專案版本**: 1.0.0  
-**最後更新**: 2026-07-17  
-**狀態**: ✅ 第一階段完成
+- 合成 HTML 測試驗證的是解析邏輯健全性，不是真實頁面結構；首次真實執行後
+  請核對筆數，必要時把 `data/snapshots/page_1.html` 提供給開發者調整
+- 若清單由 JavaScript 動態渲染，需改用 Playwright/Selenium 取得渲染後 HTML
+  （快照會顯示這一點：頁面裡沒有任何 File/Get 連結）
+- `category`（政策領域）欄位需依真實頁面呈現方式再補分類邏輯
