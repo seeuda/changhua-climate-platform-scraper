@@ -77,7 +77,9 @@ UNIT_KEYS = ['Unit', 'UnitName', 'Org', 'OrgName', 'Dept', 'County', 'City',
 def polite(method, url, **kw):
     GLOBAL_RATE_LIMITER.acquire()
     fn = session.get if method == 'GET' else session.post
-    return fn(url, timeout=15, **kw)
+    resp = fn(url, timeout=15, **kw)
+    resp.encoding = 'utf-8'  # server may omit charset; avoid mojibake
+    return resp
 
 
 def file_urls_in(text: str):
@@ -209,7 +211,10 @@ def build_body(sqn, cga='all', p=1, dc=60):
 
 
 def try_known_endpoint(sqn, query_template):
-    """POST the exact default-search body to the NewsList endpoint."""
+    """POST the exact default-search body to the NewsList endpoint.
+
+    A hit is a 200 whose body contains either direct File/Get links or
+    方案成果 rows linking to detail pages (the actual production shape)."""
     for dc in (60, 15):
         body = build_body(sqn, dc=dc)
         try:
@@ -218,10 +223,13 @@ def try_known_endpoint(sqn, query_template):
             log.warning(f"known endpoint failed: {e}")
             continue
         urls = file_urls_in(resp.text)
+        details = len(set(DETAIL_RE.findall(resp.text)))
         log.info(f"POST NewsList cga=all dc={dc} -> HTTP "
                  f"{resp.status_code}, {len(resp.text):,}B, "
-                 f"{len(urls)} File/Get urls")
-        if resp.status_code == 200 and urls:
+                 f"{len(urls)} File/Get urls, {details} detail links")
+        (DATA_DIR / 'newslist_p1.html').write_text(resp.text,
+                                                   encoding='utf-8')
+        if resp.status_code == 200 and (urls or details):
             log.info("HIT on known endpoint")
             return KNOWN_ENDPOINT, 'POST', 'known', body, resp
         log.info(f"response head: {resp.text[:300]!r}")
@@ -328,11 +336,15 @@ def finalize_org(doc, scraper):
                      if doc['org_type'] == '地方政府' else '中央')
 
 
-DETAIL_RE = re.compile(r'/(?:information-service|affairs)/[\w/-]*?(\d+)\.html')
+# Detail-page links inside 方案成果 rows: /information-service/info/13445.html
+# or /information-service/publications/<slug>/34874.html. Exclude /events/
+# (that pattern belongs to the meetings table on the same page).
+DETAIL_RE = re.compile(r'/information-service/(?!events)[\w/-]*?(\d+)\.html')
 
 
 def stub_docs_from_fragment(text, scraper):
-    """List rows that link to detail pages instead of files directly."""
+    """Parse 方案成果 rows: div[role=row] with data-title cells
+    (項次/報告名稱/類型/報告/進度/公開年度) linking to a detail page."""
     soup = BeautifulSoup(text, 'html.parser')
     stubs, seen = [], set()
     for a in soup.find_all('a', href=True):
@@ -342,10 +354,38 @@ def stub_docs_from_fragment(text, scraper):
         if url in seen:
             continue
         seen.add(url)
-        row = a.find_parent(['tr', 'li']) or a.parent
-        row_text = row.get_text(' ', strip=True) if row else ''
-        stubs.append({'title': scraper.derive_title(a, row),
-                      'detail_url': url, 'row_text': row_text})
+
+        row = (a.find_parent(attrs={'role': 'row'})
+               or a.find_parent(['tr', 'li']) or a.parent)
+        cells = {}
+        if row:
+            for cell in row.find_all(attrs={'data-title': True}):
+                cells[cell['data-title']] = cell.get_text(' ', strip=True)
+
+        year = ''
+        m = re.search(r'\d{2,4}', cells.get('公開年度', ''))
+        if m:
+            y = int(m.group(0))
+            year = str(y + 1911 if y < 1000 else y)
+
+        title_guess = cells.get('報告名稱') or scraper.derive_title(a, row)
+        stubs.append({
+            'title': title_guess,
+            'detail_url': url,
+            'row_text': row.get_text(' ', strip=True) if row else '',
+            'category': cells.get('類型', ''),   # 溫室氣體減量 / 氣候變遷調適
+            'rtype': cells.get('報告', ''),      # 清冊 / 設立/方案 / 成果報告…
+            'status': cells.get('進度', ''),     # 已核定…
+            'unit': cells.get('主辦單位', ''),
+            'year': year,
+            'has_cells': bool(cells),
+        })
+
+    # Sidebar/nav anchors also match DETAIL_RE but sit outside the
+    # data-title table rows. When genuine table rows exist in this
+    # fragment, everything without cells is navigation noise.
+    if any(st['has_cells'] for st in stubs):
+        stubs = [st for st in stubs if st['has_cells']]
     return stubs
 
 
@@ -415,10 +455,25 @@ def harvest(url, method, param_sets, first_resp, scraper):
                 if key in seen:
                     continue
                 seen.add(key)
+                # The list row carries authoritative metadata the
+                # attachment anchor lacks — prefer it.
                 if len(doc.get('title', '')) < 8 <= len(stub['title']):
                     doc['title'] = stub['title']
+                doc['list_title'] = stub['title']
+                if stub.get('category'):
+                    doc['category'] = stub['category']
+                if stub.get('rtype'):
+                    doc['type'] = stub['rtype']
+                if stub.get('status'):
+                    doc['status'] = stub['status']
                 if not doc.get('publish_date'):
-                    doc['publish_date'] = scraper.find_date(stub['row_text'])
+                    doc['publish_date'] = (scraper.find_date(stub['row_text'])
+                                           or stub.get('year', ''))
+                if doc.get('organization') == '未識別':
+                    org = scraper.classify_organization(
+                        stub.get('unit', '') + ' ' + stub['title'], '')
+                    if org != '未識別':
+                        doc['organization'] = org
                 doc['detail_url'] = stub['detail_url']
                 all_docs.append(doc)
                 found += 1

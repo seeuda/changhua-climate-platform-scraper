@@ -59,6 +59,19 @@ COUNTIES = [
     '嘉義縣', '屏東縣', '花蓮縣', '臺東縣', '澎湖縣', '金門縣', '連江縣',
 ]
 
+# Sector action plans (e.g. 第二期能源部門溫室氣體減量行動方案) name a
+# sector, not a ministry; map each sector to its responsible ministry.
+# Checked before the plain agency list so 環境部門 resolves via the
+# sector rule rather than accidental substring match.
+SECTOR_MINISTRIES = {
+    '能源部門': '經濟部',
+    '製造部門': '經濟部',
+    '住商部門': '內政部',
+    '運輸部門': '交通部',
+    '農業部門': '農業部',
+    '環境部門': '環境部',
+}
+
 # Central agencies responsible for the six GHG-reduction sectors
 # (能源/製造:經濟部, 運輸:交通部, 住商:內政部, 農業:農業部, 環境:環境部)
 CENTRAL_AGENCIES = [
@@ -121,6 +134,10 @@ class ClimateDocumentScraper:
                     logger.warning(f"HTTP {response.status_code}, backing off {wait}s")
                     time.sleep(wait)
                     continue
+
+                # The server sometimes omits charset; requests then falls
+                # back to latin-1 and every snapshot turns to mojibake.
+                response.encoding = 'utf-8'
 
                 if response.status_code == 403:
                     self.errors.append(
@@ -238,6 +255,11 @@ class ClimateDocumentScraper:
         for county in COUNTIES:
             if county in text:
                 return county + '政府'
+        for sector, ministry in SECTOR_MINISTRIES.items():
+            if sector in text:
+                return ministry
+        if '國家溫室氣體排放清冊' in text:  # national inventory: 環境部
+            return '環境部'
         for agency in CENTRAL_AGENCIES:
             if normalize_tw(agency) in text:
                 return agency
