@@ -17,9 +17,17 @@ logger = logging.getLogger(__name__)
 class DownloadManager:
     """Manage bulk downloads of documents with progress tracking."""
 
-    def __init__(self, download_dir: Path = None):
+    def __init__(self, download_dir: Path = None, organize_by: str = 'organization'):
+        """
+        Initialize download manager.
+
+        Args:
+            download_dir: Base download directory
+            organize_by: How to organize files ('organization', 'county', 'type', 'category', 'date')
+        """
         self.download_dir = download_dir or Path("downloads")
         self.download_dir.mkdir(exist_ok=True)
+        self.organize_by = organize_by
 
         self.session = requests.Session()
         self.headers = {
@@ -44,18 +52,18 @@ class DownloadManager:
         logger.info("=" * 60)
         logger.info(f"Starting document downloads ({len(documents)} files)")
         logger.info(f"Download directory: {self.download_dir.absolute()}")
+        logger.info(f"Organization method: {self.organize_by}")
         logger.info(f"Max concurrent downloads: {max_workers}")
         logger.info("=" * 60)
 
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
             futures = {}
             for doc in documents:
-                # Create county directory
-                county = doc.get('county', 'Unknown')
-                county_dir = self.download_dir / county
-                county_dir.mkdir(exist_ok=True)
+                # Determine save directory based on organization method
+                save_dir = self.get_save_directory(doc)
+                save_dir.mkdir(parents=True, exist_ok=True)
 
-                future = executor.submit(self.download_document, doc, county_dir)
+                future = executor.submit(self.download_document, doc, save_dir)
                 futures[future] = doc
 
             # Process completed downloads
@@ -134,6 +142,47 @@ class DownloadManager:
             self.failed_downloads.append(error_msg)
             logger.error(f"Error downloading {doc.get('title', 'Unknown')}: {e}")
             return None
+
+    def get_save_directory(self, doc: Dict) -> Path:
+        """Get save directory based on organization method."""
+        if self.organize_by == 'organization':
+            # 按提交單位分類
+            org = doc.get('organization', 'Unknown')
+            return self.download_dir / org
+
+        elif self.organize_by == 'org_type':
+            # 按中央/地方分類
+            org_type = doc.get('org_type', 'Unknown')
+            org = doc.get('organization', 'Unknown')
+            return self.download_dir / org_type / org
+
+        elif self.organize_by == 'county':
+            # 按縣市分類
+            county = doc.get('county', 'Unknown')
+            return self.download_dir / county
+
+        elif self.organize_by == 'type':
+            # 按文件類型分類（行動方案/執行方案/成果報告）
+            doc_type = doc.get('type', 'Unknown')
+            org = doc.get('organization', 'Unknown')
+            return self.download_dir / doc_type / org
+
+        elif self.organize_by == 'category':
+            # 按政策領域分類（能源/運輸/etc）
+            category = doc.get('category', 'Unknown')
+            org = doc.get('organization', 'Unknown')
+            return self.download_dir / category / org
+
+        elif self.organize_by == 'date':
+            # 按年月分類
+            date = doc.get('publish_date', 'Unknown')[:7]  # YYYY-MM
+            org = doc.get('organization', 'Unknown')
+            return self.download_dir / date / org
+
+        else:
+            # Default: by organization
+            org = doc.get('organization', 'Unknown')
+            return self.download_dir / org
 
     def generate_filename(self, doc: Dict, county_dir: Path) -> str:
         """Generate safe filename for document."""

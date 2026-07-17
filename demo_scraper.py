@@ -31,8 +31,20 @@ class DemoScraper:
     # Sample document types
     DOC_TYPES = ['行動方案', '執行方案', '成果報告']
 
-    # Sample categories
+    # Sample categories (政策領域)
     CATEGORIES = ['能源', '運輸', '住宅建築', '產業', '農業', '水資源', '廢棄物', '其他']
+
+    # Sample organizations (中央部會 + 地方政府)
+    ORGANIZATIONS = [
+        # 中央部會 (12)
+        '環保署', '經濟部', '交通部', '內政部', '農委會', '科技部',
+        '水利署', '林務局', '文化部', '衛福部', '勞動部', '國防部',
+        # 地方政府 (22)
+        '臺北市政府', '新北市政府', '基隆市政府', '桃園市政府', '新竹市政府', '新竹縣政府',
+        '苗栗縣政府', '臺中市政府', '彰化縣政府', '南投縣政府', '雲林縣政府', '嘉義市政府',
+        '嘉義縣政府', '臺南市政府', '高雄市政府', '屏東縣政府', '宜蘭縣政府', '花蓮縣政府',
+        '臺東縣政府', '澎湖縣政府', '金門縣政府', '連江縣政府'
+    ]
 
     # Sample file formats
     FILE_FORMATS = ['PDF', 'Word', 'Excel', 'PowerPoint', 'ZIP']
@@ -52,7 +64,7 @@ class DemoScraper:
 
     @staticmethod
     def generate_sample_data(count: int = None) -> List[Dict]:
-        """Generate sample document data."""
+        """Generate sample document data with central and local organizations."""
         if count is None:
             count = EXPECTED_DOCUMENT_COUNT
 
@@ -60,14 +72,22 @@ class DemoScraper:
         base_date = datetime(2020, 1, 1)
 
         for i in range(1, count + 1):
-            # Distribute documents across counties
-            county = DemoScraper.COUNTIES[(i - 1) % len(DemoScraper.COUNTIES)]
+            # Distribute across organizations (central + local)
+            org = DemoScraper.ORGANIZATIONS[(i - 1) % len(DemoScraper.ORGANIZATIONS)]
 
             # Distribute across document types
             doc_type = DemoScraper.DOC_TYPES[(i - 1) % len(DemoScraper.DOC_TYPES)]
 
             # Distribute across categories
             category = DemoScraper.CATEGORIES[(i - 1) % len(DemoScraper.CATEGORIES)]
+
+            # Determine county from organization
+            if '政府' in org:  # 地方政府
+                county = org.replace('政府', '')
+                org_type = '地方政府'
+            else:  # 中央部會
+                county = '中央'
+                org_type = '中央部會'
 
             # Generate publish date (spread over time)
             days_offset = (i - 1) * 4  # Roughly one doc every 4 days
@@ -85,13 +105,15 @@ class DemoScraper:
 
             # Generate title
             title_base = DemoScraper.SAMPLE_TITLES[(i - 1) % len(DemoScraper.SAMPLE_TITLES)]
-            title = f"{county}{title_base}_第{i}號"
+            title = f"{org}{title_base}_第{i}號"
 
             doc = {
                 'id': i,
                 'title': title,
                 'type': doc_type,
                 'category': category,
+                'organization': org,  # 提交單位
+                'org_type': org_type,  # 中央/地方
                 'county': county,
                 'publish_date': publish_date.strftime('%Y-%m-%d'),
                 'status': '已發佈',

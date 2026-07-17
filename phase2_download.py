@@ -42,14 +42,14 @@ def load_documents(metadata_file: Path = None) -> list:
         return []
 
 
-def download_phase(documents: list, max_workers: int = 3) -> bool:
+def download_phase(documents: list, max_workers: int = 3, organize_by: str = 'organization') -> bool:
     """Phase 1: Download documents."""
     if not documents:
         logger.error("No documents to download")
         return False
 
     try:
-        manager = DownloadManager(download_dir=Path('downloads'))
+        manager = DownloadManager(download_dir=Path('downloads'), organize_by=organize_by)
         stats = manager.download_documents(documents, max_workers=max_workers)
 
         # Show directory structure
@@ -172,6 +172,12 @@ def main():
         action='store_true',
         help='Show what would be uploaded without uploading'
     )
+    parser.add_argument(
+        '--organize-by',
+        choices=['organization', 'org_type', 'county', 'type', 'category', 'date'],
+        default='organization',
+        help='How to organize downloaded files (default: organization)'
+    )
 
     args = parser.parse_args()
 
@@ -186,7 +192,7 @@ def main():
 
     # Download phase
     if args.download:
-        if not download_phase(documents, max_workers=args.max_workers):
+        if not download_phase(documents, max_workers=args.max_workers, organize_by=args.organize_by):
             logger.error("Download phase failed")
             return 1
 
