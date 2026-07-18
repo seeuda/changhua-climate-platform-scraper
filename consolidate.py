@@ -16,6 +16,7 @@ yield little or no text and are flagged in place; no OCR is attempted.
 """
 
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -54,6 +55,20 @@ def find_archive_file(doc_id: int):
     return matches[0] if matches else None
 
 
+# Lesson from the W04 upload debugging sessions: Vertex AI happily
+# ingests garbage — control characters must be stripped BEFORE upload,
+# and any pathological unbroken run of text must be force-chunked or the
+# layout parser buffer overflows.
+INVALID_XML_CHARS = re.compile(
+    '[^\x09\x0a\x0d\x20-퟿-�\U00010000-\U0010ffff]')
+
+
+def clean_text(text: str) -> str:
+    text = INVALID_XML_CHARS.sub('', text)
+    # Break any unbroken run longer than 1000 chars (W04 lesson #4)
+    return re.sub(r'([^\n]{1000})', r'\1\n', text)
+
+
 def extract_pdf_text(path: Path) -> str:
     from pypdf import PdfReader
     try:
@@ -67,7 +82,7 @@ def extract_pdf_text(path: Path) -> str:
             if total > MAX_CHARS_PER_ATTACHMENT:
                 parts.append('\n…（內容過長，以下截斷）')
                 break
-        return '\n'.join(parts).strip()
+        return clean_text('\n'.join(parts).strip())
     except Exception as e:
         return f'（無法解析此 PDF：{e}）'
 
@@ -136,6 +151,9 @@ def main():
                         help='output extension (default txt — Gemini '
                              'Enterprise/Vertex AI Search data stores do '
                              'not list .md as a supported type)')
+    parser.add_argument('--gcs-base', default='gs://BUCKET/climate-docs-consolidated',
+                        help='gs:// prefix used inside manifest.jsonl '
+                             '(edit to your real bucket before importing)')
     args = parser.parse_args()
 
     try:
@@ -168,6 +186,7 @@ def main():
     if args.limit:
         case_items = case_items[:args.limit]
 
+    manifest_lines = []
     for case_no, (detail_url, case_docs) in enumerate(case_items, 1):
         title, markdown = build_case_markdown(case_docs, case_no)
         fname = f"{case_no:03d}_{sanitize(title)[:60]}.{args.ext}"
@@ -177,14 +196,40 @@ def main():
             f"{case_no}. [{title}]({fname}) — "
             f"{first.get('organization', '-')}／{first.get('type', '-')}"
             f"／{first.get('publish_date', '-')}")
+
+        # Vertex AI Search import manifest, in the exact native-Document
+        # format proven during the W04 uploads: id must be the MD5 of the
+        # filename (no CJK, <=63 chars), plain `id` (NOT `_id`), and no
+        # data_schema="custom" at import time or content.uri is ignored.
+        doc_id = hashlib.md5(fname.encode('utf-8')).hexdigest()
+        manifest_lines.append(json.dumps({
+            'id': doc_id,
+            'structData': {
+                'title': title,
+                'organization': first.get('organization', ''),
+                'org_type': first.get('org_type', ''),
+                'county': first.get('county', ''),
+                'category': first.get('category', ''),
+                'report_type': first.get('type', ''),
+                'status': first.get('status', ''),
+                'publish_date': first.get('publish_date', ''),
+                'detail_url': first.get('detail_url', ''),
+            },
+            'content': {'mimeType': 'text/plain',
+                        'uri': f"{args.gcs_base.rstrip('/')}/{fname}"},
+        }, ensure_ascii=False))
+
         if case_no % 25 == 0 or case_no == len(case_items):
             print(f"  consolidated {case_no}/{len(case_items)}")
+
+    (OUT_DIR / 'manifest.jsonl').write_text('\n'.join(manifest_lines),
+                                            encoding='utf-8')
 
     (OUT_DIR / f'INDEX.{args.ext}').write_text('\n'.join(index_lines),
                                                encoding='utf-8')
     total_size = sum(f.stat().st_size for f in OUT_DIR.glob(f'*.{args.ext}'))
-    print(f"\nDone: {len(case_items)} case files + INDEX.md in {OUT_DIR}"
-          f" ({human_size(total_size)})")
+    print(f"\nDone: {len(case_items)} case files + INDEX.{args.ext} + "
+          f"manifest.jsonl in {OUT_DIR} ({human_size(total_size)})")
 
     if args.upload:
         project = os.getenv('GCP_PROJECT_ID')
