@@ -132,6 +132,10 @@ def main():
                         help='upload downloads/consolidated/ to GCS')
     parser.add_argument('--limit', type=int,
                         help='only process first N cases (for testing)')
+    parser.add_argument('--ext', choices=['md', 'txt'], default='txt',
+                        help='output extension (default txt — Gemini '
+                             'Enterprise/Vertex AI Search data stores do '
+                             'not list .md as a supported type)')
     args = parser.parse_args()
 
     try:
@@ -166,7 +170,7 @@ def main():
 
     for case_no, (detail_url, case_docs) in enumerate(case_items, 1):
         title, markdown = build_case_markdown(case_docs, case_no)
-        fname = f"{case_no:03d}_{sanitize(title)[:60]}.md"
+        fname = f"{case_no:03d}_{sanitize(title)[:60]}.{args.ext}"
         (OUT_DIR / fname).write_text(markdown, encoding='utf-8')
         first = case_docs[0]
         index_lines.append(
@@ -176,9 +180,9 @@ def main():
         if case_no % 25 == 0 or case_no == len(case_items):
             print(f"  consolidated {case_no}/{len(case_items)}")
 
-    (OUT_DIR / 'INDEX.md').write_text('\n'.join(index_lines),
-                                      encoding='utf-8')
-    total_size = sum(f.stat().st_size for f in OUT_DIR.glob('*.md'))
+    (OUT_DIR / f'INDEX.{args.ext}').write_text('\n'.join(index_lines),
+                                               encoding='utf-8')
+    total_size = sum(f.stat().st_size for f in OUT_DIR.glob(f'*.{args.ext}'))
     print(f"\nDone: {len(case_items)} case files + INDEX.md in {OUT_DIR}"
           f" ({human_size(total_size)})")
 
