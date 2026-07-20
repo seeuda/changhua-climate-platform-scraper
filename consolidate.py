@@ -34,7 +34,18 @@ GCS_PREFIX = 'climate-docs-consolidated'
 
 MAX_PDFS_PER_CASE = 30       # inventories can carry hundreds of table PDFs
 MAX_CHARS_PER_ATTACHMENT = 500_000
+# Vertex AI Search rejected our 4 largest consolidated documents (the
+# 2023-2026 national GHG inventory reports) with "Document segmentation
+# stage failure: Request contains an invalid argument" — the per-document
+# processing ceiling was exceeded. Cap total body text per case well
+# under that ceiling; overflow is listed in the attachment table only.
+MAX_CASE_BODY_BYTES = 1_500_000
 TABLE_EXTS = {'.xlsx', '.xls', '.ods', '.csv', '.odt', '.zip'}
+# The platform's "全文下載" (full-report) PDF duplicates every chapter
+# PDF already present in the same case. Keeping both roughly doubles the
+# exported text for no benefit and was the direct cause of the four
+# oversized documents above.
+FULL_REPORT_RE = re.compile(r'全文下載|^\d+\.?\s*全文\b')
 
 
 def sanitize(name: str) -> str:
@@ -103,41 +114,66 @@ def build_case_markdown(case_docs, case_no):
     lines.append(f"| 附件數 | {len(case_docs)} |")
     lines.append("")
 
-    # Attachment inventory (everything listed, tables flagged)
+    # Resolve archive files once so both the attachment table and the
+    # body pass see the same set.
+    resolved = [(doc, find_archive_file(doc['id'])) for doc in case_docs]
+    all_pdfs = [(doc, f) for doc, f in resolved if f and f.suffix.lower() == '.pdf']
+
+    # Identify duplicate full-report PDFs to exclude from the body (see
+    # FULL_REPORT_RE above) — only when chapter-level PDFs exist too, so
+    # a case with just one PDF never loses its only content.
+    dup_ids = set()
+    if len(all_pdfs) > 1:
+        for doc, f in all_pdfs:
+            if FULL_REPORT_RE.search(unquote(f.name)):
+                dup_ids.add(doc['id'])
+
+    # Attachment inventory (everything listed, tables and duplicates flagged)
     lines += ["## 附件清單", ""]
-    pdf_files = []
-    for doc in case_docs:
-        f = find_archive_file(doc['id'])
+    body_targets = []
+    for doc, f in resolved:
         name = unquote(f.name) if f else f"{doc['id']:05d}（未下載）"
         size = human_size(f.stat().st_size) if f else '-'
         ext = f.suffix.lower() if f else ''
         tag = ''
         if ext in TABLE_EXTS:
             tag = '（表格/資料檔，未納入內文）'
+        elif doc['id'] in dup_ids:
+            tag = '（與其餘章節內容重複，未納入內文以節省空間）'
         elif ext == '.pdf' and f:
-            pdf_files.append((doc, f))
-        elif ext not in ('.pdf',):
+            body_targets.append((doc, f))
+        elif f and ext != '.pdf':
             tag = '（非 PDF，未納入內文）'
         lines.append(f"- {name} — {size} {tag}  ")
         lines.append(f"  來源: {doc.get('download_url', '-')}")
     lines.append("")
 
-    # Body: extracted text from PDFs
+    # Body: extracted text from PDFs, bounded by an attachment-count cap
+    # and a total-size cap (see MAX_CASE_BODY_BYTES above).
     lines += ["## 內文（自 PDF 附件抽取）", ""]
-    if not pdf_files:
+    if not body_targets:
         lines.append("（本案件無 PDF 附件，或 PDF 未成功下載）")
-    skipped = 0
-    for i, (doc, f) in enumerate(pdf_files):
+    skipped_count = 0
+    skipped_reason = ''
+    body_bytes = 0
+    for i, (doc, f) in enumerate(body_targets):
         if i >= MAX_PDFS_PER_CASE:
-            skipped = len(pdf_files) - MAX_PDFS_PER_CASE
+            skipped_count = len(body_targets) - MAX_PDFS_PER_CASE
+            skipped_reason = '單案附件數量上限'
+            break
+        if body_bytes >= MAX_CASE_BODY_BYTES:
+            skipped_count = len(body_targets) - i
+            skipped_reason = '單案內容大小上限'
             break
         lines += [f"### {unquote(f.name)}", ""]
         text = extract_pdf_text(f)
         if len(text) < 40:
             text = text or '（此 PDF 無文字層，可能為掃描影像檔；未進行 OCR）'
+        body_bytes += len(text.encode('utf-8'))
         lines += [text, ""]
-    if skipped:
-        lines.append(f"（另有 {skipped} 個 PDF 附件超出單案上限，僅列於附件清單）")
+    if skipped_count:
+        lines.append(f"（另有 {skipped_count} 個 PDF 附件超出{skipped_reason}，"
+                     f"僅列於附件清單，請至來源下載）")
 
     return title, '\n'.join(lines)
 
