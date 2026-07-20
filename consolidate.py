@@ -21,6 +21,7 @@ import json
 import os
 import re
 import sys
+from urllib.parse import unquote
 from collections import defaultdict
 from pathlib import Path
 
@@ -107,7 +108,7 @@ def build_case_markdown(case_docs, case_no):
     pdf_files = []
     for doc in case_docs:
         f = find_archive_file(doc['id'])
-        name = f.name if f else f"{doc['id']:05d}（未下載）"
+        name = unquote(f.name) if f else f"{doc['id']:05d}（未下載）"
         size = human_size(f.stat().st_size) if f else '-'
         ext = f.suffix.lower() if f else ''
         tag = ''
@@ -130,7 +131,7 @@ def build_case_markdown(case_docs, case_no):
         if i >= MAX_PDFS_PER_CASE:
             skipped = len(pdf_files) - MAX_PDFS_PER_CASE
             break
-        lines += [f"### {f.name}", ""]
+        lines += [f"### {unquote(f.name)}", ""]
         text = extract_pdf_text(f)
         if len(text) < 40:
             text = text or '（此 PDF 無文字層，可能為掃描影像檔；未進行 OCR）'

@@ -32,14 +32,24 @@ CONTENT_TYPE_EXTENSIONS = {v: k for k, v in EXTENSION_FORMATS.items()}
 
 
 def filename_from_disposition(disposition: str) -> str:
-    """Parse filename from a Content-Disposition header (RFC 5987 aware)."""
+    """Parse filename from a Content-Disposition header (RFC 5987 aware).
+
+    cca.gov.tw sends percent-encoded names in the plain filename= form
+    (not filename*=), so those are unquoted too."""
     if not disposition:
         return ''
     m = re.search(r"filename\*=(?:UTF-8'')?([^;]+)", disposition, re.IGNORECASE)
     if m:
         return unquote(m.group(1).strip().strip('"'))
     m = re.search(r'filename="?([^";]+)"?', disposition, re.IGNORECASE)
-    return m.group(1).strip() if m else ''
+    if not m:
+        return ''
+    name = m.group(1).strip()
+    if '%' in name:
+        decoded = unquote(name)
+        if '�' not in decoded:
+            return decoded
+    return name
 
 
 def format_from_headers(headers) -> str:

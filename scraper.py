@@ -289,8 +289,9 @@ class ClimateDocumentScraper:
         if m:  # ROC year 100-119 → 2011-2030
             y, mo, d = int(m.group(1)) + 1911, int(m.group(2)), int(m.group(3))
             return f"{y:04d}-{mo:02d}-{d:02d}"
-        m = re.search(r'(?<!\d)(1[01]\d)\s*年(?:度)?', text)
-        if m:  # Year only, e.g. 112年度
+        m = re.search(r'(?<![\d\-–~至])(1[01]\d)\s*年(?:度)?', text)
+        if m:  # Year only, e.g. 112年度 — but not the tail of a range
+            # like 115-119年, which would misdate the document (119→2030)
             return f"{int(m.group(1)) + 1911:04d}"
         return ''
 

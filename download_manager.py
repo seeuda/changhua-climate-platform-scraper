@@ -158,7 +158,11 @@ class DownloadManager:
         server_name = filename_from_disposition(
             headers.get('Content-Disposition', ''))
         if server_name:
-            return f"{doc_id}_{self.sanitize(server_name)[:120]}"
+            # Truncate the stem only — chopping the whole string can cut
+            # off the extension, which downstream steps rely on.
+            clean = self.sanitize(server_name)
+            stem, ext = Path(clean).stem, Path(clean).suffix
+            return f"{doc_id}_{stem[:100]}{ext[:10]}"
 
         title = self.sanitize((doc.get('title') or 'document')[:50])
         fmt = format_from_headers(headers) or doc.get('file_format', '')

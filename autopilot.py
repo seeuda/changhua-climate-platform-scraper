@@ -467,8 +467,10 @@ def harvest(url, method, param_sets, first_resp, scraper):
                 if stub.get('status'):
                     doc['status'] = stub['status']
                 if not doc.get('publish_date'):
-                    doc['publish_date'] = (scraper.find_date(stub['row_text'])
-                                           or stub.get('year', ''))
+                    # The 公開年度 cell is authoritative; row-text date
+                    # parsing can misfire on period ranges like 115-119年
+                    doc['publish_date'] = (stub.get('year', '')
+                                           or scraper.find_date(stub['row_text']))
                 if doc.get('organization') == '未識別':
                     org = scraper.classify_organization(
                         stub.get('unit', '') + ' ' + stub['title'], '')
