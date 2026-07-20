@@ -175,7 +175,8 @@ def build_case_markdown(case_docs, case_no):
         lines.append(f"（另有 {skipped_count} 個 PDF 附件超出{skipped_reason}，"
                      f"僅列於附件清單，請至來源下載）")
 
-    return title, '\n'.join(lines)
+    stats = {'deduped': bool(dup_ids), 'size_capped': skipped_reason == '單案內容大小上限'}
+    return title, '\n'.join(lines), stats
 
 
 def main():
@@ -224,8 +225,14 @@ def main():
         case_items = case_items[:args.limit]
 
     manifest_lines = []
+    deduped_cases = []
+    capped_cases = []
     for case_no, (detail_url, case_docs) in enumerate(case_items, 1):
-        title, markdown = build_case_markdown(case_docs, case_no)
+        title, markdown, stats = build_case_markdown(case_docs, case_no)
+        if stats['deduped']:
+            deduped_cases.append(title)
+        if stats['size_capped']:
+            capped_cases.append(title)
         fname = f"{case_no:03d}_{sanitize(title)[:60]}.{args.ext}"
         (OUT_DIR / fname).write_text(markdown, encoding='utf-8')
         first = case_docs[0]
@@ -267,6 +274,19 @@ def main():
     total_size = sum(f.stat().st_size for f in OUT_DIR.glob(f'*.{args.ext}'))
     print(f"\nDone: {len(case_items)} case files + INDEX.{args.ext} + "
           f"manifest.jsonl in {OUT_DIR} ({human_size(total_size)})")
+
+    if deduped_cases:
+        print(f"\n{len(deduped_cases)} 案排除了重複的「全文下載」附件"
+              f"（節省空間、避免重複內容）：")
+        for t in deduped_cases:
+            print(f"  - {t}")
+    if capped_cases:
+        print(f"\n{len(capped_cases)} 案觸及單案內容大小上限，"
+              f"部分附件僅列於清單未納入內文：")
+        for t in capped_cases:
+            print(f"  - {t}")
+    if not deduped_cases and not capped_cases:
+        print("\n沒有案件觸發去重複或大小上限規則。")
 
     if args.upload:
         project = os.getenv('GCP_PROJECT_ID')
