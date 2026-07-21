@@ -215,6 +215,29 @@ A: 重新執行爬蟲即可，會自動去重。
 **Q: 可以下載實際檔案嗎？**
 A: 目前只爬取 metadata，檔案下載可在第二階段實現。
 
+## 第四階段：查詢（本機工具，不需 Gemini Enterprise 應用程式）
+
+如果 Gemini Enterprise 的聊天介面（應用程式層）到期未續訂，資料儲存庫
+本身（走標準 GCP 用量計費）不受影響，可改用這裡的工具直接查詢：
+
+```bash
+pip install -r requirements.txt
+
+set GCP_PROJECT_ID=你的專案ID
+set DATA_STORE_ID=你的資料儲存庫ID
+
+# 命令列查詢
+python query_search.py "彰化縣執行方案的減量目標是什麼"
+
+# 本機瀏覽器介面（含縣市／報告種類篩選），開啟 http://127.0.0.1:5000
+python webapp.py
+```
+
+`webapp.py` 只在本機執行，預設只有你自己的電腦能存取；兩者都是呼叫
+Discovery Engine Search API（見 `search_client.py`），成本與行為和
+Gemini Enterprise 聊天介面查詢相同，差別只在介面。詳見 `COST_POLICY.md`
+規則五。
+
 ## License
 
 MIT

@@ -9,3 +9,7 @@ google-cloud-storage>=2.10.0
 
 # Phase 3: per-case consolidation (optional)
 pypdf>=4.0.0
+
+# Phase 4: querying the Vertex AI Search data store (optional)
+google-cloud-discoveryengine>=0.11.0
+flask>=3.0.0
