@@ -1,7 +1,14 @@
 """Unit tests for search_client's response-parsing logic.
 
-No live GCP call is made — a fake Discovery Engine response object is
-built by hand so parse_response() can be tested without credentials.
+No live GCP call is made. Struct-backed fields (struct_data /
+derived_struct_data) are built as real google.protobuf.struct_pb2.Struct
+messages rather than plain Python dicts, so these tests exercise the
+same MapComposite-style conversion path the real Discovery Engine client
+returns. An earlier version of this suite used plain dicts, which
+happened to satisfy `isinstance(x, dict)` checks that silently failed
+against the real API's MapComposite objects — the tests passed while
+production dropped every result's snippets. _struct_to_dict() and its
+dedicated tests exist specifically to catch that class of bug.
 
 Run: python tests/test_search_client.py
 """
@@ -12,14 +19,35 @@ from types import SimpleNamespace
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from search_client import parse_response  # noqa: E402
+from google.protobuf import struct_pb2  # noqa: E402
+
+from search_client import _struct_to_dict, parse_response  # noqa: E402
+
+
+def make_struct(data: dict) -> struct_pb2.Struct:
+    s = struct_pb2.Struct()
+    s.update(data)
+    return s
+
+
+class _ProtoPlusStyleWrapper:
+    """Mimics proto-plus's MapComposite: not a dict subclass, exposes
+    the raw protobuf message via ._pb — the shape _struct_to_dict must
+    handle for real API responses."""
+
+    def __init__(self, pb_struct):
+        self._pb = pb_struct
+
+    def __bool__(self):
+        return True
 
 
 class FakeDoc:
     def __init__(self, doc_id, struct_data=None, derived_struct_data=None):
         self.id = doc_id
-        self.struct_data = struct_data or {}
-        self.derived_struct_data = derived_struct_data or {}
+        self.struct_data = _ProtoPlusStyleWrapper(make_struct(struct_data or {}))
+        self.derived_struct_data = _ProtoPlusStyleWrapper(
+            make_struct(derived_struct_data or {}))
 
 
 class FakeResult:
@@ -30,6 +58,24 @@ class FakeResult:
 def make_response(summary_text=None, results=None):
     summary = SimpleNamespace(summary_text=summary_text) if summary_text is not None else None
     return SimpleNamespace(summary=summary, results=results or [])
+
+
+def test_struct_to_dict_nested_list_of_dicts():
+    """The exact shape (list of dicts under a struct field) that the
+    isinstance(x, dict) bug silently dropped."""
+    s = make_struct({'title': 'X', 'snippets': [{'snippet': 'a'}, {'snippet': 'b'}]})
+    out = _struct_to_dict(s)
+    assert out == {'title': 'X', 'snippets': [{'snippet': 'a'}, {'snippet': 'b'}]}
+
+
+def test_struct_to_dict_handles_proto_plus_wrapper():
+    wrapped = _ProtoPlusStyleWrapper(make_struct({'a': 1}))
+    assert _struct_to_dict(wrapped) == {'a': 1}
+
+
+def test_struct_to_dict_empty():
+    assert _struct_to_dict(None) == {}
+    assert _struct_to_dict({}) == {}
 
 
 def test_parse_with_summary_and_snippets():
@@ -51,7 +97,9 @@ def test_parse_with_summary_and_snippets():
     assert r['county'] == '南投縣'
     assert r['report_type'] == '計畫/方案'
     assert r['detail_url'] == 'https://x/1001.html'
-    assert len(r['snippets']) == 2
+    # This is the assertion that would have caught the MapComposite bug:
+    # snippets must actually come through, not silently end up empty.
+    assert r['snippets'] == ['本案減量目標為...', '執行期程為 115-119 年']
 
 
 def test_parse_without_summary():
@@ -85,6 +133,9 @@ def test_snippets_capped_at_two():
 
 
 if __name__ == '__main__':
+    test_struct_to_dict_nested_list_of_dicts()
+    test_struct_to_dict_handles_proto_plus_wrapper()
+    test_struct_to_dict_empty()
     test_parse_with_summary_and_snippets()
     test_parse_without_summary()
     test_parse_empty_results()

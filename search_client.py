@@ -49,6 +49,27 @@ def search_documents(query: str, project: str, data_store: str,
     return parse_response(response, with_summary=with_summary)
 
 
+def _struct_to_dict(struct_value) -> dict:
+    """Convert a Discovery Engine struct field (struct_data /
+    derived_struct_data) to plain Python dict/list/str.
+
+    These fields arrive as proto-plus MapComposite objects wrapping a
+    protobuf Struct — NOT dict subclasses. `dict(map_composite)` only
+    converts the top level; nested values (e.g. the list under
+    'snippets') stay as MapComposite/RepeatedComposite, so a later
+    `isinstance(x, dict)` check on them is always False. That silently
+    dropped every result's snippets — 'only see the report link, never
+    the actual excerpted content' was this bug, not a data/config
+    problem. MessageToDict on the underlying raw protobuf message does
+    a full, correct conversion at every nesting level.
+    """
+    if not struct_value:
+        return {}
+    from google.protobuf.json_format import MessageToDict
+    pb = struct_value._pb if hasattr(struct_value, '_pb') else struct_value
+    return MessageToDict(pb)
+
+
 def parse_response(response, with_summary: bool = True) -> dict:
     """Extract plain dicts from a Discovery Engine SearchResponse.
 
@@ -62,8 +83,8 @@ def parse_response(response, with_summary: bool = True) -> dict:
     results = []
     for result in response.results:
         doc = result.document
-        derived = dict(doc.derived_struct_data) if doc.derived_struct_data else {}
-        struct = dict(doc.struct_data) if doc.struct_data else {}
+        derived = _struct_to_dict(doc.derived_struct_data)
+        struct = _struct_to_dict(doc.struct_data)
 
         title = (struct.get('title') or derived.get('title')
                  or derived.get('link', '').split('/')[-1] or doc.id)
