@@ -129,6 +129,63 @@ def test_snippets_capped_at_two():
     assert len(out['results'][0]['snippets']) == 2
 
 
+def test_extractive_segments_preferred_over_snippets():
+    """extractive_content_spec segments read as coherent paragraphs;
+    when present they should win over the choppier raw snippets."""
+    doc = make_doc('prefer-test', derived_struct_data={
+        'extractive_segments': [{'content': '完整段落內容，包含具體措施說明。'}],
+        'snippets': [{'snippet': '……零碎片段……'}]})
+    resp = make_response(docs=[doc])
+    out = parse_response(resp, with_summary=False)
+    assert out['results'][0]['snippets'] == ['完整段落內容，包含具體措施說明。']
+
+
+def test_extractive_answers_used_when_no_segments():
+    doc = make_doc('answers-test', derived_struct_data={
+        'extractive_answers': [{'content': '直接回答內容'}]})
+    resp = make_response(docs=[doc])
+    out = parse_response(resp, with_summary=False)
+    assert out['results'][0]['snippets'] == ['直接回答內容']
+
+
+def test_falls_back_to_snippets_when_no_extractive_content():
+    doc = make_doc('fallback-test', derived_struct_data={
+        'snippets': [{'snippet': '一般片段'}]})
+    resp = make_response(docs=[doc])
+    out = parse_response(resp, with_summary=False)
+    assert out['results'][0]['snippets'] == ['一般片段']
+
+
+def test_search_request_construction_does_not_raise():
+    """Smoke test: build the real SearchRequest/ContentSearchSpec object
+    graph used by search_documents() (no live call) to catch a typo'd
+    field name (e.g. extractive_content_spec) at test time instead of
+    only at the next real query."""
+    request = discoveryengine.SearchRequest(
+        serving_config='projects/x/locations/global/collections/'
+                       'default_collection/dataStores/y/servingConfigs/'
+                       'default_config',
+        query='test',
+        page_size=10,
+        content_search_spec=discoveryengine.SearchRequest.ContentSearchSpec(
+            snippet_spec=discoveryengine.SearchRequest.ContentSearchSpec
+            .SnippetSpec(return_snippet=True),
+            extractive_content_spec=discoveryengine.SearchRequest
+            .ContentSearchSpec.ExtractiveContentSpec(
+                max_extractive_segment_count=3,
+                max_extractive_answer_count=1),
+            summary_spec=discoveryengine.SearchRequest.ContentSearchSpec
+            .SummarySpec(
+                summary_result_count=5, include_citations=True,
+                language_code='zh-TW', use_semantic_chunks=True,
+                ignore_non_summary_seeking_query=False,
+                ignore_adversarial_query=False,
+                ignore_low_relevant_content=False)))
+    assert request.query == 'test'
+    assert request.content_search_spec.extractive_content_spec \
+        .max_extractive_segment_count == 3
+
+
 if __name__ == '__main__':
     test_struct_to_dict_nested_list_of_dicts()
     test_struct_to_dict_never_assigned_field_is_none()
@@ -137,4 +194,8 @@ if __name__ == '__main__':
     test_parse_empty_results()
     test_title_fallback_to_doc_id()
     test_snippets_capped_at_two()
+    test_extractive_segments_preferred_over_snippets()
+    test_extractive_answers_used_when_no_segments()
+    test_falls_back_to_snippets_when_no_extractive_content()
+    test_search_request_construction_does_not_raise()
     print("ALL SEARCH CLIENT TESTS PASSED")

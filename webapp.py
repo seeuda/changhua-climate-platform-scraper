@@ -75,7 +75,8 @@ PAGE = """
   .doc { border-bottom: 1px solid #e5e5e5; padding: 0.8rem 0; }
   .doc h3 { margin: 0 0 0.3rem; font-size: 1.05rem; }
   .doc .meta { color: #666; font-size: 0.85rem; margin-bottom: 0.3rem; }
-  .doc .snippet { font-size: 0.9rem; color: #333; }
+  .doc .snippet { font-size: 0.9rem; color: #333; line-height: 1.6;
+                  margin: 0.4rem 0; white-space: pre-wrap; }
   .doc a { color: #1a5fb4; text-decoration: none; }
   #status { color: #888; font-size: 0.9rem; }
 </style>
@@ -129,10 +130,16 @@ async function doSearch() {
     return;
   }
 
+  const s = document.getElementById('summary');
   if (data.summary) {
-    const s = document.getElementById('summary');
     s.style.display = 'block';
     s.textContent = data.summary;
+  } else {
+    // Show why there's no AI summary instead of just hiding the box —
+    // "the box vanished" and "the box is empty and says why" read very
+    // differently to someone testing whether the tool is working.
+    s.style.display = 'block';
+    s.textContent = '（此查詢未產生 AI 摘要，以下為各文件的重點段落）';
   }
 
   const container = document.getElementById('results');
@@ -148,7 +155,9 @@ async function doSearch() {
       : doc.title;
     const meta = [doc.organization, doc.report_type, doc.publish_date]
       .filter(Boolean).join(' ／ ');
-    const snippets = doc.snippets.map(s => `<div class="snippet">…${s}…</div>`).join('');
+    const snippets = doc.snippets.length
+      ? doc.snippets.map(s => `<div class="snippet">${s}</div>`).join('')
+      : '<div class="snippet" style="color:#999">（此文件未擷取到與查詢相關的重點段落）</div>';
     div.innerHTML = `<h3>${link}</h3><div class="meta">${meta}</div>${snippets}`;
     container.appendChild(div);
   });
