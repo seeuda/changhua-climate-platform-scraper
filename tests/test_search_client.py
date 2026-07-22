@@ -1,14 +1,23 @@
 """Unit tests for search_client's response-parsing logic.
 
-No live GCP call is made. Struct-backed fields (struct_data /
-derived_struct_data) are built as real google.protobuf.struct_pb2.Struct
-messages rather than plain Python dicts, so these tests exercise the
-same MapComposite-style conversion path the real Discovery Engine client
-returns. An earlier version of this suite used plain dicts, which
-happened to satisfy `isinstance(x, dict)` checks that silently failed
-against the real API's MapComposite objects — the tests passed while
-production dropped every result's snippets. _struct_to_dict() and its
-dedicated tests exist specifically to catch that class of bug.
+No live GCP call is made, but the fakes are built from the REAL
+google.cloud.discoveryengine_v1.Document type (constructed locally,
+without any network call) rather than a hand-rolled stand-in — this
+history has already burned us twice on that shortcut:
+
+  1. Plain-dict fakes made `isinstance(snip, dict)` pass in tests while
+     the real API's MapComposite/RepeatedComposite wrappers made the
+     same check silently fail in production — the tests were green
+     while every result's snippets were being dropped.
+  2. A second attempted fix used `._pb` + `MessageToDict`, which looked
+     right and would have passed a fake built the same way, but broke
+     against the real client: struct_data/derived_struct_data are
+     map<string, Value>-typed fields, whose `._pb` is a raw
+     MessageMapContainer with no `.DESCRIPTOR`, not a `Struct` message.
+
+Building fakes from the real Document type sidesteps both traps by
+construction — there is no separate "fake shape" to accidentally get
+wrong.
 
 Run: python tests/test_search_client.py
 """
@@ -19,74 +28,62 @@ from types import SimpleNamespace
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from google.protobuf import struct_pb2  # noqa: E402
+from google.cloud import discoveryengine_v1 as discoveryengine  # noqa: E402
 
 from search_client import _struct_to_dict, parse_response  # noqa: E402
 
 
-def make_struct(data: dict) -> struct_pb2.Struct:
-    s = struct_pb2.Struct()
-    s.update(data)
-    return s
+def make_doc(doc_id, struct_data=None, derived_struct_data=None):
+    doc = discoveryengine.Document()
+    doc.id = doc_id
+    if struct_data is not None:
+        doc.struct_data = struct_data
+    if derived_struct_data is not None:
+        doc.derived_struct_data = derived_struct_data
+    return doc
 
 
-class _ProtoPlusStyleWrapper:
-    """Mimics proto-plus's MapComposite: not a dict subclass, exposes
-    the raw protobuf message via ._pb — the shape _struct_to_dict must
-    handle for real API responses."""
-
-    def __init__(self, pb_struct):
-        self._pb = pb_struct
-
-    def __bool__(self):
-        return True
-
-
-class FakeDoc:
-    def __init__(self, doc_id, struct_data=None, derived_struct_data=None):
-        self.id = doc_id
-        self.struct_data = _ProtoPlusStyleWrapper(make_struct(struct_data or {}))
-        self.derived_struct_data = _ProtoPlusStyleWrapper(
-            make_struct(derived_struct_data or {}))
-
-
-class FakeResult:
-    def __init__(self, document):
-        self.document = document
-
-
-def make_response(summary_text=None, results=None):
+def make_response(summary_text=None, docs=None):
     summary = SimpleNamespace(summary_text=summary_text) if summary_text is not None else None
-    return SimpleNamespace(summary=summary, results=results or [])
+    results = [SimpleNamespace(document=d) for d in (docs or [])]
+    return SimpleNamespace(summary=summary, results=results)
 
 
 def test_struct_to_dict_nested_list_of_dicts():
-    """The exact shape (list of dicts under a struct field) that the
-    isinstance(x, dict) bug silently dropped."""
-    s = make_struct({'title': 'X', 'snippets': [{'snippet': 'a'}, {'snippet': 'b'}]})
-    out = _struct_to_dict(s)
+    """The exact shape (map field containing a list of maps) that the
+    isinstance(x, dict) bug silently dropped, and that the MessageToDict
+    attempt then broke on."""
+    doc = make_doc('x', struct_data={'title': 'X',
+                                     'snippets': [{'snippet': 'a'}, {'snippet': 'b'}]})
+    out = _struct_to_dict(doc.struct_data)
     assert out == {'title': 'X', 'snippets': [{'snippet': 'a'}, {'snippet': 'b'}]}
+    assert isinstance(out, dict)
+    assert isinstance(out['snippets'], list)
+    assert isinstance(out['snippets'][0], dict)
 
 
-def test_struct_to_dict_handles_proto_plus_wrapper():
-    wrapped = _ProtoPlusStyleWrapper(make_struct({'a': 1}))
-    assert _struct_to_dict(wrapped) == {'a': 1}
-
-
-def test_struct_to_dict_empty():
-    assert _struct_to_dict(None) == {}
-    assert _struct_to_dict({}) == {}
+def test_struct_to_dict_never_assigned_field_is_none():
+    """An untouched struct_data/derived_struct_data reads back as
+    Python None (not an empty MapComposite) — verified against a live
+    Document. _struct_to_dict must not crash on it (it just passes
+    None through); callers that need a dict use `or {}` at the call
+    site (see parse_response), which is what actually matters for a
+    document with no matched snippets — exercised end-to-end by
+    test_title_fallback_to_doc_id below."""
+    doc = make_doc('empty')  # struct_data/derived_struct_data never assigned
+    assert _struct_to_dict(doc.struct_data) is None
+    assert _struct_to_dict(doc.derived_struct_data) is None
 
 
 def test_parse_with_summary_and_snippets():
-    doc = FakeDoc(
+    doc = make_doc(
         'abc123',
         struct_data={'title': '南投縣第二期溫室氣體減量執行方案', 'organization': '南投縣政府',
                     'org_type': '地方政府', 'county': '南投縣', 'report_type': '計畫/方案',
                     'publish_date': '2023', 'detail_url': 'https://x/1001.html'},
         derived_struct_data={'snippets': [{'snippet': '本案減量目標為...'},
                                           {'snippet': '執行期程為 115-119 年'}]})
-    resp = make_response(summary_text='南投縣的減量目標包含...', results=[FakeResult(doc)])
+    resp = make_response(summary_text='南投縣的減量目標包含...', docs=[doc])
 
     out = parse_response(resp, with_summary=True)
     assert out['summary'] == '南投縣的減量目標包含...'
@@ -97,45 +94,44 @@ def test_parse_with_summary_and_snippets():
     assert r['county'] == '南投縣'
     assert r['report_type'] == '計畫/方案'
     assert r['detail_url'] == 'https://x/1001.html'
-    # This is the assertion that would have caught the MapComposite bug:
-    # snippets must actually come through, not silently end up empty.
+    # The assertion that would have caught both prior bugs: snippets
+    # must actually come through, not end up empty or raise.
     assert r['snippets'] == ['本案減量目標為...', '執行期程為 115-119 年']
 
 
 def test_parse_without_summary():
-    doc = FakeDoc('def456', struct_data={'title': '測試文件'})
-    resp = make_response(summary_text=None, results=[FakeResult(doc)])
+    doc = make_doc('def456', struct_data={'title': '測試文件'})
+    resp = make_response(summary_text=None, docs=[doc])
     out = parse_response(resp, with_summary=False)
     assert out['summary'] == ''
     assert out['results'][0]['title'] == '測試文件'
 
 
 def test_parse_empty_results():
-    resp = make_response(summary_text='', results=[])
+    resp = make_response(summary_text='', docs=[])
     out = parse_response(resp, with_summary=True)
     assert out['summary'] == ''
     assert out['results'] == []
 
 
 def test_title_fallback_to_doc_id():
-    doc = FakeDoc('fallback-id-789', struct_data={}, derived_struct_data={})
-    resp = make_response(results=[FakeResult(doc)])
+    doc = make_doc('fallback-id-789')
+    resp = make_response(docs=[doc])
     out = parse_response(resp, with_summary=False)
     assert out['results'][0]['title'] == 'fallback-id-789'
 
 
 def test_snippets_capped_at_two():
-    doc = FakeDoc('cap-test', derived_struct_data={
+    doc = make_doc('cap-test', derived_struct_data={
         'snippets': [{'snippet': f's{i}'} for i in range(5)]})
-    resp = make_response(results=[FakeResult(doc)])
+    resp = make_response(docs=[doc])
     out = parse_response(resp, with_summary=False)
     assert len(out['results'][0]['snippets']) == 2
 
 
 if __name__ == '__main__':
     test_struct_to_dict_nested_list_of_dicts()
-    test_struct_to_dict_handles_proto_plus_wrapper()
-    test_struct_to_dict_empty()
+    test_struct_to_dict_never_assigned_field_is_none()
     test_parse_with_summary_and_snippets()
     test_parse_without_summary()
     test_parse_empty_results()
