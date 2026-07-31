@@ -1,0 +1,5285 @@
+{
+ "source": "彰化縣社區發展協會名冊（社區資料）",
+ "pii_removed": [
+  "理事長",
+  "總幹事",
+  "會址(通訊處)"
+ ],
+ "count": 586,
+ "records": [
+  {
+   "id": "CASSOC_001",
+   "town": "線西鄉",
+   "name": "線西社區發展協會",
+   "community": "線西",
+   "category": "社區發展協會",
+   "address": "彰化縣線西鄉線西村中央路二段536巷31號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_002",
+   "town": "線西鄉",
+   "name": "下犁社區發展協會",
+   "community": "下犁",
+   "category": "社區發展協會",
+   "address": "彰化縣線西鄉下犁村下犁路139-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_003",
+   "town": "線西鄉",
+   "name": "德興社區發展協會",
+   "community": "德興",
+   "category": "社區發展協會",
+   "address": "彰化縣線西鄉德興村線東路二段447號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_004",
+   "town": "線西鄉",
+   "name": "溝內社區發展協會",
+   "community": "溝內",
+   "category": "社區發展協會",
+   "address": "線西鄉溝內村溝內路113-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_005",
+   "town": "線西鄉",
+   "name": "寓埔社區發展協會",
+   "community": "寓埔",
+   "category": "社區發展協會",
+   "address": "彰化縣線西鄉寓埔村寓埔路177-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_006",
+   "town": "線西鄉",
+   "name": "塭仔社區發展協會",
+   "community": "塭仔",
+   "category": "社區發展協會",
+   "address": "彰化縣線西鄉塭仔村塭仔路141號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_007",
+   "town": "線西鄉",
+   "name": "頂犁社區發展協會",
+   "community": "頂犁",
+   "category": "社區發展協會",
+   "address": "彰化縣線西鄉頂犁村頂犁路48-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_008",
+   "town": "線西鄉",
+   "name": "頂庄社區發展協會",
+   "community": "頂庄",
+   "category": "社區發展協會",
+   "address": "線西鄉頂庄村沿海路二段334巷32號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_009",
+   "town": "福興鄉",
+   "name": "福興社區發展協會",
+   "community": "福興",
+   "category": "社區發展協會",
+   "address": "彰化縣福興鄉福興村50-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_010",
+   "town": "福興鄉",
+   "name": "福南社區發展協會",
+   "community": "福南",
+   "category": "社區發展協會",
+   "address": "福興鄉福興村福興路51巷6號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_011",
+   "town": "福興鄉",
+   "name": "福寶社區發展協會",
+   "community": "福寶",
+   "category": "社區發展協會",
+   "address": "彰化縣福興鄉福寶村新生路24-10號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_012",
+   "town": "福興鄉",
+   "name": "二港社區發展協會",
+   "community": "二港",
+   "category": "社區發展協會",
+   "address": "彰化縣福興鄉二港村福正路21巷13-33號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_013",
+   "town": "福興鄉",
+   "name": "頂粘社區發展協會",
+   "community": "頂粘",
+   "category": "社區發展協會",
+   "address": "彰化縣福興鄉頂粘村305號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_014",
+   "town": "福興鄉",
+   "name": "麥厝社區發展協會",
+   "community": "麥厝",
+   "category": "社區發展協會",
+   "address": "彰化縣福興鄉麥厝村沿海路一段678號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_015",
+   "town": "福興鄉",
+   "name": "秀厝社區發展協會",
+   "community": "秀厝",
+   "category": "社區發展協會",
+   "address": "彰化縣福興鄉秀厝二街147號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_016",
+   "town": "福興鄉",
+   "name": "同安社區發展協會",
+   "community": "同安",
+   "category": "社區發展協會",
+   "address": "福興鄉同安村33-7號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_017",
+   "town": "福興鄉",
+   "name": "西勢社區發展協會",
+   "community": "西勢",
+   "category": "社區發展協會",
+   "address": "彰化縣福興鄉西勢街18-4號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_018",
+   "town": "福興鄉",
+   "name": "橋頭社區發展協會",
+   "community": "橋頭",
+   "category": "社區發展協會",
+   "address": "彰化縣福興鄉橋頭村彰鹿路七段330巷127弄26號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_019",
+   "town": "福興鄉",
+   "name": "番婆社區發展協會",
+   "community": "番婆",
+   "category": "社區發展協會",
+   "address": "彰化縣福興鄉番婆村番婆街16-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_020",
+   "town": "福興鄉",
+   "name": "社尾社區發展協會",
+   "community": "社尾",
+   "category": "社區發展協會",
+   "address": "彰化縣福興鄉社尾村浮景巷9-12號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_021",
+   "town": "福興鄉",
+   "name": "番社社區發展協會",
+   "community": "番社",
+   "category": "社區發展協會",
+   "address": "彰化縣福興鄉番社村番社街17號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_022",
+   "town": "福興鄉",
+   "name": "元中社區發展協會",
+   "community": "元中",
+   "category": "社區發展協會",
+   "address": "彰化縣福興鄉橫圳巷10-18號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_023",
+   "town": "福興鄉",
+   "name": "外中社區發展協會",
+   "community": "外中",
+   "category": "社區發展協會",
+   "address": "彰化縣福興鄉外中村外中街50號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_024",
+   "town": "福興鄉",
+   "name": "大崙社區發展協會",
+   "community": "大崙",
+   "category": "社區發展協會",
+   "address": "彰化縣福興鄉大崙村大崙街31-5號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_025",
+   "town": "福興鄉",
+   "name": "外埔社區發展協會",
+   "community": "外埔",
+   "category": "社區發展協會",
+   "address": "彰化縣福興鄉外埔村復興路16-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_026",
+   "town": "福興鄉",
+   "name": "萬豐社區發展協會",
+   "community": "萬豐",
+   "category": "社區發展協會",
+   "address": "福興鄉萬豐村萬豐巷14-36號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_027",
+   "town": "福興鄉",
+   "name": "廈粘社區發展協會",
+   "community": "廈粘",
+   "category": "社區發展協會",
+   "address": "福興鄉廈粘村廈粘街8號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_028",
+   "town": "福興鄉",
+   "name": "三汴社區發展協會",
+   "community": "三汴",
+   "category": "社區發展協會",
+   "address": "彰化縣福興鄉三汴村彰水路346巷47號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_029",
+   "town": "福興鄉",
+   "name": "鎮平社區發展協會",
+   "community": "鎮平",
+   "category": "社區發展協會",
+   "address": "福興鄉鎮平村鎮平街14-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_030",
+   "town": "福興鄉",
+   "name": "三和社區發展協會",
+   "community": "三和",
+   "category": "社區發展協會",
+   "address": "彰化縣福興鄉三和村南興街66-8號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_031",
+   "town": "福興鄉",
+   "name": "永豐社區發展協會",
+   "community": "永豐",
+   "category": "社區發展協會",
+   "address": "福興鄉番社村番花路2段558號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_032",
+   "town": "彰化市",
+   "name": "三村社區發展協會",
+   "community": "三村",
+   "category": "社區發展協會",
+   "address": "彰化市三村里三村路836巷57號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_033",
+   "town": "彰化市",
+   "name": "中正社區發展協會",
+   "community": "中正",
+   "category": "社區發展協會",
+   "address": "同上",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_034",
+   "town": "彰化市",
+   "name": "田中社區發展協會",
+   "community": "田中",
+   "category": "社區發展協會",
+   "address": "同上",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_035",
+   "town": "彰化市",
+   "name": "永生社區發展協會",
+   "community": "永生",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市永樂街57巷15號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_036",
+   "town": "彰化市",
+   "name": "萬壽社區發展協會",
+   "community": "萬壽",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_037",
+   "town": "彰化市",
+   "name": "國聖社區發展協會",
+   "community": "國聖",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市國聖里175巷139號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_038",
+   "town": "彰化市",
+   "name": "寶廍社區發展協會",
+   "community": "寶廍",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市寶廍里寶廍路139號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_039",
+   "town": "彰化市",
+   "name": "茄苳社區發展協會",
+   "community": "茄苳",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市茄苳里茄苳莊45-10號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_040",
+   "town": "彰化市",
+   "name": "快官社區發展協會",
+   "community": "快官",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市快官里彰南路4段566號之1",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_041",
+   "town": "彰化市",
+   "name": "牛埔社區發展協會",
+   "community": "牛埔",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市牛埔里彰南路3段234巷22號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_042",
+   "town": "彰化市",
+   "name": "大竹社區發展協會",
+   "community": "大竹",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市大竹里40-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_043",
+   "town": "彰化市",
+   "name": "香山社區發展協會",
+   "community": "香山",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市香山里彰南路2段618巷11號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_044",
+   "town": "彰化市",
+   "name": "福山社區發展協會",
+   "community": "福山",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市福山里福山街168號(公文寄送地)",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_045",
+   "town": "彰化市",
+   "name": "泰和社區發展協會",
+   "community": "泰和",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市古夷里泰和路3段364號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_046",
+   "town": "彰化市",
+   "name": "福田社區發展協會",
+   "community": "福田",
+   "category": "社區發展協會",
+   "address": "彰化市快官里彰南路5段8號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_047",
+   "town": "彰化市",
+   "name": "竹中社區發展協會",
+   "community": "竹中",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_048",
+   "town": "彰化市",
+   "name": "台鳳社區發展協會",
+   "community": "台鳳",
+   "category": "社區發展協會",
+   "address": "彰化市台鳳里一德南路225號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_049",
+   "town": "彰化市",
+   "name": "石牌社區發展協會",
+   "community": "石牌",
+   "category": "社區發展協會",
+   "address": "彰化市石牌里石牌路1段192巷3號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_050",
+   "town": "彰化市",
+   "name": "中庄社區發展協會",
+   "community": "中庄",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_051",
+   "town": "彰化市",
+   "name": "阿夷社區發展協會",
+   "community": "阿夷",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市阿夷里泰和路2段211之1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_052",
+   "town": "彰化市",
+   "name": "復興社區發展協會",
+   "community": "復興",
+   "category": "社區發展協會",
+   "address": "彰化市竹和路176-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_053",
+   "town": "彰化市",
+   "name": "茄南社區發展協會",
+   "community": "茄南",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市茄南里金馬路二段260號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_054",
+   "town": "彰化市",
+   "name": "竹巷社區發展協會",
+   "community": "竹巷",
+   "category": "社區發展協會",
+   "address": "彰化市竹巷里彰南路5段8號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_055",
+   "town": "彰化市",
+   "name": "卦山社區發展協會",
+   "community": "卦山",
+   "category": "社區發展協會",
+   "address": "彰化市旭光路39號3樓",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_056",
+   "town": "彰化市",
+   "name": "下廍社區發展協會",
+   "community": "下廍",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市下廍里泰安二街115號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_057",
+   "town": "彰化市",
+   "name": "新華社區發展協會",
+   "community": "新華",
+   "category": "社區發展協會",
+   "address": "彰化市新興里彰新路1段117號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_058",
+   "town": "彰化市",
+   "name": "安溪社區發展協會",
+   "community": "安溪",
+   "category": "社區發展協會",
+   "address": "彰化市安溪里安溪路81巷5號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_059",
+   "town": "彰化市",
+   "name": "文化社區發展協會",
+   "community": "文化",
+   "category": "社區發展協會",
+   "address": "彰化市長壽街14號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_060",
+   "town": "彰化市",
+   "name": "新興社區發展協會",
+   "community": "新興",
+   "category": "社區發展協會",
+   "address": "彰化市新興里彰新路1段117號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_061",
+   "town": "彰化市",
+   "name": "民生社區發展協會",
+   "community": "民生",
+   "category": "社區發展協會",
+   "address": "彰化市陽明街1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_062",
+   "town": "彰化市",
+   "name": "萬安社區發展協會",
+   "community": "萬安",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市萬安里建國南路42-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_063",
+   "town": "彰化市",
+   "name": "興北社區發展協會",
+   "community": "興北",
+   "category": "社區發展協會",
+   "address": "無",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_064",
+   "town": "彰化市",
+   "name": "光復社區發展協會",
+   "community": "光復",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市民生路281-5號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_065",
+   "town": "彰化市",
+   "name": "中山社區發展協會",
+   "community": "中山",
+   "category": "社區發展協會",
+   "address": "無",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_066",
+   "town": "彰化市",
+   "name": "光華社區發展協會",
+   "community": "光華",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_067",
+   "town": "彰化市",
+   "name": "信義社區發展協會",
+   "community": "信義",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市民生路279-3號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_068",
+   "town": "彰化市",
+   "name": "和調社區發展協會",
+   "community": "和調",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_069",
+   "town": "彰化市",
+   "name": "永福社區發展協會",
+   "community": "永福",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_070",
+   "town": "彰化市",
+   "name": "新興華社區發展協會",
+   "community": "新興華",
+   "category": "社區發展協會",
+   "address": "彰化市新興里永安街336號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_071",
+   "town": "彰化市",
+   "name": "陽明社區發展協會",
+   "community": "陽明",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市三民路436號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_072",
+   "town": "彰化市",
+   "name": "龍山社區發展協會",
+   "community": "龍山",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_073",
+   "town": "彰化市",
+   "name": "南美社區發展協會",
+   "community": "南美",
+   "category": "社區發展協會",
+   "address": "社區自行興建",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_074",
+   "town": "彰化市",
+   "name": "平和社區發展協會",
+   "community": "平和",
+   "category": "社區發展協會",
+   "address": "彰化市平安街64巷12號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_075",
+   "town": "彰化市",
+   "name": "永興社區發展協會",
+   "community": "永興",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市磚瑤里彰南路443巷44弄15號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_076",
+   "town": "彰化市",
+   "name": "永芳社區發展協會",
+   "community": "永芳",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市東芳里永芳路468號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_077",
+   "town": "彰化市",
+   "name": "莿桐社區發展協會",
+   "community": "莿桐",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市莿桐里彰水路53巷8號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_078",
+   "town": "彰化市",
+   "name": "西興社區發展協會",
+   "community": "西興",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市中華西路21-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_079",
+   "town": "彰化市",
+   "name": "五權社區發展協會",
+   "community": "五權",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_080",
+   "town": "彰化市",
+   "name": "西勢社區發展協會",
+   "community": "西勢",
+   "category": "社區發展協會",
+   "address": "彰化市西勢里忠誠路1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_081",
+   "town": "彰化市",
+   "name": "忠權社區發展協會",
+   "community": "忠權",
+   "category": "社區發展協會",
+   "address": "彰化市忠權里自立街155號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_082",
+   "town": "彰化市",
+   "name": "南安社區發展協會",
+   "community": "南安",
+   "category": "社區發展協會",
+   "address": "彰化市南安里彰鹿路120巷147弄18號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_083",
+   "town": "彰化市",
+   "name": "民權社區發展協會",
+   "community": "民權",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市民權路155號(民權市場地下室1樓)",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_084",
+   "town": "彰化市",
+   "name": "忠孝社區發展協會",
+   "community": "忠孝",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_085",
+   "town": "彰化市",
+   "name": "磚磘社區發展協會",
+   "community": "磚磘",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_086",
+   "town": "彰化市",
+   "name": "崙平社區發展協會",
+   "community": "崙平",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市平和里38號之1",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_087",
+   "town": "彰化市",
+   "name": "向陽社區發展協會",
+   "community": "向陽",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市向陽里崙平南路39號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_088",
+   "town": "彰化市",
+   "name": "長樂社區發展協會",
+   "community": "長樂",
+   "category": "社區發展協會",
+   "address": "彰化市長樂里和平路173號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_089",
+   "town": "彰化市",
+   "name": "富貴社區發展協會",
+   "community": "富貴",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市民權路155號(民權市場地下室1樓)",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_090",
+   "town": "彰化市",
+   "name": "桃源社區發展協會",
+   "community": "桃源",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市桃源里公園路2段102之1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_091",
+   "town": "彰化市",
+   "name": "延平社區發展協會",
+   "community": "延平",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市延平里文心街55號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_092",
+   "town": "彰化市",
+   "name": "延和社區發展協會",
+   "community": "延和",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市延和里埔西街111號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_093",
+   "town": "彰化市",
+   "name": "華陽社區發展協會",
+   "community": "華陽",
+   "category": "社區發展協會",
+   "address": "彰化市旭光路39號3樓",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_094",
+   "town": "彰化市",
+   "name": "光南社區發展協會",
+   "community": "光南",
+   "category": "社區發展協會",
+   "address": "彰化市旭光路39號3樓",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_095",
+   "town": "彰化市",
+   "name": "介壽社區發展協會",
+   "community": "介壽",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市介壽里介壽新村21號99年建物",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_096",
+   "town": "彰化市",
+   "name": "南興社區發展協會",
+   "community": "南興",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市南興里中山路一段189巷49號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_097",
+   "town": "彰化市",
+   "name": "福安社區發展協會",
+   "community": "福安",
+   "category": "社區發展協會",
+   "address": "無",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_098",
+   "town": "彰化市",
+   "name": "西安社區發展協會",
+   "community": "西安",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市民族路369號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_099",
+   "town": "彰化市",
+   "name": "彰安社區發展協會",
+   "community": "彰安",
+   "category": "社區發展協會",
+   "address": "彰化市仁愛路102巷118號(彰安宮3樓)",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_100",
+   "town": "彰化市",
+   "name": "成功社區發展協會",
+   "community": "成功",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市成功里旭光西路39號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_101",
+   "town": "彰化市",
+   "name": "南瑤社區發展協會",
+   "community": "南瑤",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市中正路二段675巷33號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_102",
+   "town": "彰化市",
+   "name": "大同社區發展協會",
+   "community": "大同",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_103",
+   "town": "彰化市",
+   "name": "建寶社區發展協會",
+   "community": "建寶",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市建寶里介壽南路69巷6號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_104",
+   "town": "彰化市",
+   "name": "東興社區發展協會",
+   "community": "東興",
+   "category": "社區發展協會",
+   "address": "彰化市旭光路39號3樓",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_105",
+   "town": "彰化市",
+   "name": "華北社區發展協會",
+   "community": "華北",
+   "category": "社區發展協會",
+   "address": "彰化市旭光路39號3樓",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_106",
+   "town": "彰化市",
+   "name": "中央社區發展協會",
+   "community": "中央",
+   "category": "社區發展協會",
+   "address": "彰化縣彰化市民權路155號(民權市場地下室1樓)",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_107",
+   "town": "溪湖鎮",
+   "name": "光華社區發展協會",
+   "community": "光華",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_108",
+   "town": "溪湖鎮",
+   "name": "大庭社區發展協會",
+   "community": "大庭",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_109",
+   "town": "溪湖鎮",
+   "name": "忠覺社區發展協會",
+   "community": "忠覺",
+   "category": "社區發展協會",
+   "address": "溪湖鎮忠覺里崙子腳路94號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_110",
+   "town": "溪湖鎮",
+   "name": "湖東社區發展協會",
+   "community": "湖東",
+   "category": "社區發展協會",
+   "address": "溪湖鎮湖東里員鹿路二段559號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_111",
+   "town": "溪湖鎮",
+   "name": "太平社區發展協會",
+   "community": "太平",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_112",
+   "town": "溪湖鎮",
+   "name": "光平社區發展協會",
+   "community": "光平",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_113",
+   "town": "溪湖鎮",
+   "name": "平和社區發展協會",
+   "community": "平和",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_114",
+   "town": "溪湖鎮",
+   "name": "頂庄社區發展協會",
+   "community": "頂庄",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_115",
+   "town": "溪湖鎮",
+   "name": "湳底社區發展協會",
+   "community": "湳底",
+   "category": "社區發展協會",
+   "address": "彰化縣溪湖鎮湳底路27-2號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_116",
+   "town": "溪湖鎮",
+   "name": "西勢社區發展協會",
+   "community": "西勢",
+   "category": "社區發展協會",
+   "address": "彰化縣溪湖鎮西勢里西安路117巷26號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_117",
+   "town": "溪湖鎮",
+   "name": "河東社區發展協會",
+   "community": "河東",
+   "category": "社區發展協會",
+   "address": "彰化縣溪湖鎮河東路281號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_118",
+   "town": "溪湖鎮",
+   "name": "大突社區發展協會",
+   "community": "大突",
+   "category": "社區發展協會",
+   "address": "溪湖鎮大突里二溪路大突巷10之50號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_119",
+   "town": "溪湖鎮",
+   "name": "東寮社區發展協會",
+   "community": "東寮",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_120",
+   "town": "溪湖鎮",
+   "name": "汴頭社區發展協會",
+   "community": "汴頭",
+   "category": "社區發展協會",
+   "address": "溪湖鎮汴頭里福德路261巷32號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_121",
+   "town": "溪湖鎮",
+   "name": "中竹社區發展協會",
+   "community": "中竹",
+   "category": "社區發展協會",
+   "address": "彰化縣溪湖鎮竹福路181號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_122",
+   "town": "溪湖鎮",
+   "name": "巫厝社區發展協會",
+   "community": "巫厝",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_123",
+   "town": "溪湖鎮",
+   "name": "番婆社區發展協會",
+   "community": "番婆",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_124",
+   "town": "溪湖鎮",
+   "name": "西溪社區發展協會",
+   "community": "西溪",
+   "category": "社區發展協會",
+   "address": "彰化縣溪湖鎮西溪里員鹿路後溪巷49號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_125",
+   "town": "溪湖鎮",
+   "name": "大竹社區發展協會",
+   "community": "大竹",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_126",
+   "town": "溪湖鎮",
+   "name": "湖西社區發展協會",
+   "community": "湖西",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_127",
+   "town": "溪湖鎮",
+   "name": "中山社區發展協會",
+   "community": "中山",
+   "category": "社區發展協會",
+   "address": "彰化縣溪湖鎮中山里大溪路一段466巷53號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_128",
+   "town": "溪湖鎮",
+   "name": "北勢社區發展協會",
+   "community": "北勢",
+   "category": "社區發展協會",
+   "address": "彰化縣溪湖鎮二溪路2段北勢2巷37號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_129",
+   "town": "溪湖鎮",
+   "name": "田中社區發展協會",
+   "community": "田中",
+   "category": "社區發展協會",
+   "address": "彰化縣溪湖鎮田中里田中巷216號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_130",
+   "town": "溪湖鎮",
+   "name": "媽厝社區發展協會",
+   "community": "媽厝",
+   "category": "社區發展協會",
+   "address": "彰化縣溪湖鎮湳底路102-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_131",
+   "town": "溪湖鎮",
+   "name": "西寮社區發展協會",
+   "community": "西寮",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_132",
+   "town": "溪州鄉",
+   "name": "三條社區發展協會",
+   "community": "三條",
+   "category": "社區發展協會",
+   "address": "彰化縣溪州鄉三條村九甲一巷4號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_133",
+   "town": "溪州鄉",
+   "name": "成功社區發展協會",
+   "community": "成功",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_134",
+   "town": "溪州鄉",
+   "name": "潮洋社區發展協會",
+   "community": "潮洋",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_135",
+   "town": "溪州鄉",
+   "name": "舊眉社區發展協會",
+   "community": "舊眉",
+   "category": "社區發展協會",
+   "address": "彰化縣溪州鄉舊眉村登山路四段27號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_136",
+   "town": "溪州鄉",
+   "name": "水尾社區發展協會",
+   "community": "水尾",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_137",
+   "town": "溪州鄉",
+   "name": "溪厝社區發展協會",
+   "community": "溪厝",
+   "category": "社區發展協會",
+   "address": "彰化縣溪州鄉溪厝村中和路79號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_138",
+   "town": "溪州鄉",
+   "name": "坑厝社區發展協會",
+   "community": "坑厝",
+   "category": "社區發展協會",
+   "address": "彰化縣溪州鄉溪厝村中和路79號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_139",
+   "town": "溪州鄉",
+   "name": "東州社區發展協會",
+   "community": "東州",
+   "category": "社區發展協會",
+   "address": "彰化縣溪州鄉東州村保安路16號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_140",
+   "town": "溪州鄉",
+   "name": "大庄社區發展協會",
+   "community": "大庄",
+   "category": "社區發展協會",
+   "address": "彰化縣溪州鄉大庄村中橫巷1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_141",
+   "town": "溪州鄉",
+   "name": "菜公社區發展協會",
+   "community": "菜公",
+   "category": "社區發展協會",
+   "address": "彰化縣溪州鄉菜公村民生路二段154號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_142",
+   "town": "溪州鄉",
+   "name": "西畔社區發展協會",
+   "community": "西畔",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_143",
+   "town": "溪州鄉",
+   "name": "三圳社區發展協會",
+   "community": "三圳",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_144",
+   "town": "溪州鄉",
+   "name": "張厝社區發展協會",
+   "community": "張厝",
+   "category": "社區發展協會",
+   "address": "彰化縣溪州鄉張厝村民生路1段295巷12號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_145",
+   "town": "溪州鄉",
+   "name": "柑園社區發展協會",
+   "community": "柑園",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_146",
+   "town": "溪州鄉",
+   "name": "榮光社區發展協會",
+   "community": "榮光",
+   "category": "社區發展協會",
+   "address": "彰化縣溪州鄉榮光村政民路27-2號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_147",
+   "town": "溪州鄉",
+   "name": "瓦厝社區發展協會",
+   "community": "瓦厝",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_148",
+   "town": "溪州鄉",
+   "name": "圳寮社區發展協會",
+   "community": "圳寮",
+   "category": "社區發展協會",
+   "address": "彰化縣溪州鄉圳寮村下樹巷29號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_149",
+   "town": "溪州鄉",
+   "name": "溪州社區發展協會",
+   "community": "溪州",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_150",
+   "town": "溪州鄉",
+   "name": "尾厝社區發展協會",
+   "community": "尾厝",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_151",
+   "town": "鹿港鎮",
+   "name": "草中社區發展協會",
+   "community": "草中",
+   "category": "社區發展協會",
+   "address": "彰化縣鹿港鎮草中里(巷)174號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_152",
+   "town": "鹿港鎮",
+   "name": "草港社區發展協會",
+   "community": "草港",
+   "category": "社區發展協會",
+   "address": "彰化縣鹿港鎮草中里慶安街65號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_153",
+   "town": "鹿港鎮",
+   "name": "頭崙社區發展協會",
+   "community": "頭崙",
+   "category": "社區發展協會",
+   "address": "彰化縣鹿港鎮頭崙社區活動中心",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_154",
+   "town": "鹿港鎮",
+   "name": "頂番社區發展協會",
+   "community": "頂番",
+   "category": "社區發展協會",
+   "address": "彰化縣鹿港鎮頂番里彰頂路326巷137號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_155",
+   "town": "鹿港鎮",
+   "name": "洋厝社區發展協會",
+   "community": "洋厝",
+   "category": "社區發展協會",
+   "address": "彰化縣鹿港鎮洋厝里1鄰洋厝巷42-3號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_156",
+   "town": "鹿港鎮",
+   "name": "新厝社區發展協會",
+   "community": "新厝",
+   "category": "社區發展協會",
+   "address": "彰化縣鹿港鎮洋厝里新厝巷53號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_157",
+   "town": "鹿港鎮",
+   "name": "溝墘社區發展協會",
+   "community": "溝墘",
+   "category": "社區發展協會",
+   "address": "彰化縣鹿港鎮溝墘里棋盤巷77號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_158",
+   "town": "鹿港鎮",
+   "name": "東崎社區發展協會",
+   "community": "東崎",
+   "category": "社區發展協會",
+   "address": "彰化縣鹿港鎮東崎社區活動中心(東崎7巷3號旁)",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_159",
+   "town": "鹿港鎮",
+   "name": "南勢社區發展協會",
+   "community": "南勢",
+   "category": "社區發展協會",
+   "address": "彰化縣鹿港鎮南勢社區活動中心",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_160",
+   "town": "鹿港鎮",
+   "name": "廖厝社區發展協會",
+   "community": "廖厝",
+   "category": "社區發展協會",
+   "address": "彰化縣鹿港鎮廖厝里楊厝巷62-21號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_161",
+   "town": "鹿港鎮",
+   "name": "山寮社區發展協會",
+   "community": "山寮",
+   "category": "社區發展協會",
+   "address": "鄧安宮廣場",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_162",
+   "town": "鹿港鎮",
+   "name": "山崙社區發展協會",
+   "community": "山崙",
+   "category": "社區發展協會",
+   "address": "彰化縣鹿港鎮山崙里山寮巷52號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_163",
+   "town": "鹿港鎮",
+   "name": "福崙社區發展協會",
+   "community": "福崙",
+   "category": "社區發展協會",
+   "address": "鹿港鎮山崙里崙尾巷26-9號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_164",
+   "town": "鹿港鎮",
+   "name": "東昇社區發展協會",
+   "community": "東昇",
+   "category": "社區發展協會",
+   "address": "彰化縣鹿港鎮東崎里打鐵厝(巷)9號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_165",
+   "town": "鹿港鎮",
+   "name": "頂厝社區發展協會",
+   "community": "頂厝",
+   "category": "社區發展協會",
+   "address": "彰化縣鹿港鎮頂厝里鹿興路91號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_166",
+   "town": "鹿港鎮",
+   "name": "萬興社區發展協會",
+   "community": "萬興",
+   "category": "社區發展協會",
+   "address": "彰化縣鹿港鎮頂草路2段150號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_167",
+   "town": "鹿港鎮",
+   "name": "菜園社區發展協會",
+   "community": "菜園",
+   "category": "社區發展協會",
+   "address": "彰化縣鹿港鎮菜園里復興南路422巷18號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_168",
+   "town": "鹿港鎮",
+   "name": "學子社區發展協會",
+   "community": "學子",
+   "category": "社區發展協會",
+   "address": "無",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_169",
+   "town": "鹿港鎮",
+   "name": "景福社區發展協會",
+   "community": "景福",
+   "category": "社區發展協會",
+   "address": "彰化縣鹿港鎮景福里萬壽路244號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_170",
+   "town": "鹿港鎮",
+   "name": "街尾社區發展協會",
+   "community": "街尾",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_171",
+   "town": "鹿港鎮",
+   "name": "埔崙社區發展協會",
+   "community": "埔崙",
+   "category": "社區發展協會",
+   "address": "無",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_172",
+   "town": "鹿港鎮",
+   "name": "永順社區發展協會",
+   "community": "永順",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_173",
+   "town": "鹿港鎮",
+   "name": "泰興社區發展協會",
+   "community": "泰興",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_174",
+   "town": "鹿港鎮",
+   "name": "富麗社區發展協會",
+   "community": "富麗",
+   "category": "社區發展協會",
+   "address": "彰化縣鹿港鎮鹿東路二段667號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_175",
+   "town": "鹿港鎮",
+   "name": "椹橋社區發展協會",
+   "community": "椹橋",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_176",
+   "town": "鹿港鎮",
+   "name": "詔安社區發展協會",
+   "community": "詔安",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_177",
+   "town": "埤頭鄉",
+   "name": "興農社區發展協會",
+   "community": "興農",
+   "category": "社區發展協會",
+   "address": "埤頭鄉興農村中興巷87號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_178",
+   "town": "埤頭鄉",
+   "name": "和豐社區發展協會",
+   "community": "和豐",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_179",
+   "town": "埤頭鄉",
+   "name": "埤頭社區發展協會",
+   "community": "埤頭",
+   "category": "社區發展協會",
+   "address": "彰化縣埤頭鄉埤頭村中南路145號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_180",
+   "town": "埤頭鄉",
+   "name": "豐崙社區發展協會",
+   "community": "豐崙",
+   "category": "社區發展協會",
+   "address": "彰化縣埤頭鄉豐崙村校前路128號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_181",
+   "town": "埤頭鄉",
+   "name": "崙子社區發展協會",
+   "community": "崙子",
+   "category": "社區發展協會",
+   "address": "彰化縣埤頭鄉崙子村崙子路11號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_182",
+   "town": "埤頭鄉",
+   "name": "永豐社區發展協會",
+   "community": "永豐",
+   "category": "社區發展協會",
+   "address": "彰化縣埤頭鄉永豐村東西路421號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_183",
+   "town": "埤頭鄉",
+   "name": "合興社區發展協會",
+   "community": "合興",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_184",
+   "town": "埤頭鄉",
+   "name": "平原社區發展協會",
+   "community": "平原",
+   "category": "社區發展協會",
+   "address": "彰化縣埤頭鄉平原村平原路171號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_185",
+   "town": "埤頭鄉",
+   "name": "崙腳社區發展協會",
+   "community": "崙腳",
+   "category": "社區發展協會",
+   "address": "彰化縣埤頭鄉崙腳村和平路271巷12號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_186",
+   "town": "埤頭鄉",
+   "name": "元埔社區發展協會",
+   "community": "元埔",
+   "category": "社區發展協會",
+   "address": "彰化縣埤頭鄉元埔村文化路459巷11號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_187",
+   "town": "埤頭鄉",
+   "name": "芙朝社區發展協會",
+   "community": "芙朝",
+   "category": "社區發展協會",
+   "address": "彰化縣埤頭鄉芙朝村文化路829號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_188",
+   "town": "埤頭鄉",
+   "name": "新庄社區發展協會",
+   "community": "新庄",
+   "category": "社區發展協會",
+   "address": "彰化縣埤頭鄉新庄村光華路124號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_189",
+   "town": "埤頭鄉",
+   "name": "陸嘉社區發展協會",
+   "community": "陸嘉",
+   "category": "社區發展協會",
+   "address": "彰化縣埤頭鄉陸嘉村中華路434號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_190",
+   "town": "埤頭鄉",
+   "name": "竹圍社區發展協會",
+   "community": "竹圍",
+   "category": "社區發展協會",
+   "address": "彰化縣埤頭鄉竹圍村竹圍路187號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_191",
+   "town": "埤頭鄉",
+   "name": "中和社區發展協會",
+   "community": "中和",
+   "category": "社區發展協會",
+   "address": "彰化縣埤頭鄉中和村廟前路68號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_192",
+   "town": "埤頭鄉",
+   "name": "庄內社區發展協會",
+   "community": "庄內",
+   "category": "社區發展協會",
+   "address": "彰化縣埤頭鄉庄內村光明路276號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_193",
+   "town": "埤頭鄉",
+   "name": "大湖社區發展協會",
+   "community": "大湖",
+   "category": "社區發展協會",
+   "address": "彰化縣埤頭鄉大湖村大湖路260號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_194",
+   "town": "埔鹽鄉",
+   "name": "埔鹽社區發展協會",
+   "community": "埔鹽",
+   "category": "社區發展協會",
+   "address": "無",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_195",
+   "town": "埔鹽鄉",
+   "name": "廍子社區發展協會",
+   "community": "廍子",
+   "category": "社區發展協會",
+   "address": "埔鹽鄉廍子村光明路1段101號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_196",
+   "town": "埔鹽鄉",
+   "name": "南港社區發展協會",
+   "community": "南港",
+   "category": "社區發展協會",
+   "address": "同會址",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_197",
+   "town": "埔鹽鄉",
+   "name": "打廉社區發展協會",
+   "community": "打廉",
+   "category": "社區發展協會",
+   "address": "彰化縣埔鹽鄉打廉村埔打路7-7號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_198",
+   "town": "埔鹽鄉",
+   "name": "豐澤社區發展協會",
+   "community": "豐澤",
+   "category": "社區發展協會",
+   "address": "埔鹽鄉豐澤村埔打路臨48-28號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_199",
+   "town": "埔鹽鄉",
+   "name": "崑崙社區發展協會",
+   "community": "崑崙",
+   "category": "社區發展協會",
+   "address": "彰化縣埔鹽鄉崑崙村彰水路48號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_200",
+   "town": "埔鹽鄉",
+   "name": "角樹社區發展協會",
+   "community": "角樹",
+   "category": "社區發展協會",
+   "address": "彰化縣埔鹽鄉角樹村員鹿路1段74號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_201",
+   "town": "埔鹽鄉",
+   "name": "好修社區發展協會",
+   "community": "好修",
+   "category": "社區發展協會",
+   "address": "彰化縣埔鹽鄉好修村員鹿路2段97巷12-3號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_202",
+   "town": "埔鹽鄉",
+   "name": "西湖社區發展協會",
+   "community": "西湖",
+   "category": "社區發展協會",
+   "address": "彰化縣埔鹽鄉西湖村大新路2巷22-6號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_203",
+   "town": "埔鹽鄉",
+   "name": "大有社區發展協會",
+   "community": "大有",
+   "category": "社區發展協會",
+   "address": "埔鹽鄉大有村員鹿路三段68-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_204",
+   "town": "埔鹽鄉",
+   "name": "新興社區發展協會",
+   "community": "新興",
+   "category": "社區發展協會",
+   "address": "埔鹽鄉新興村員鹿路3段689號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_205",
+   "town": "埔鹽鄉",
+   "name": "永平社區發展協會",
+   "community": "永平",
+   "category": "社區發展協會",
+   "address": "彰化縣埔鹽鄉永平村番金路100-29號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_206",
+   "town": "埔鹽鄉",
+   "name": "永樂社區發展協會",
+   "community": "永樂",
+   "category": "社區發展協會",
+   "address": "彰化縣埔鹽鄉永樂路435號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_207",
+   "town": "埔鹽鄉",
+   "name": "石埤社區發展協會",
+   "community": "石埤",
+   "category": "社區發展協會",
+   "address": "彰化縣埔鹽鄉石埤村番金路87-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_208",
+   "town": "埔鹽鄉",
+   "name": "天盛社區發展協會",
+   "community": "天盛",
+   "category": "社區發展協會",
+   "address": "彰化縣埔鹽鄉天盛村成功路3段286號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_209",
+   "town": "埔鹽鄉",
+   "name": "太平社區發展協會",
+   "community": "太平",
+   "category": "社區發展協會",
+   "address": "彰化縣埔鹽鄉太平村番金路58號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_210",
+   "town": "埔鹽鄉",
+   "name": "新水社區發展協會",
+   "community": "新水",
+   "category": "社區發展協會",
+   "address": "彰化縣埔鹽鄉新水村大新路21號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_211",
+   "town": "埔鹽鄉",
+   "name": "三省社區發展協會",
+   "community": "三省",
+   "category": "社區發展協會",
+   "address": "彰化縣埔鹽鄉三省村好金路2巷5-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_212",
+   "town": "埔鹽鄉",
+   "name": "南新社區發展協會",
+   "community": "南新",
+   "category": "社區發展協會",
+   "address": "彰化縣埔鹽鄉南新村好金路61號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_213",
+   "town": "埔鹽鄉",
+   "name": "埔南社區發展協會",
+   "community": "埔南",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_214",
+   "town": "埔鹽鄉",
+   "name": "瓦磘社區發展協會",
+   "community": "瓦磘",
+   "category": "社區發展協會",
+   "address": "埔鹽鄉瓦嗂村光明路2段60-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_215",
+   "town": "埔鹽鄉",
+   "name": "出水社區發展協會",
+   "community": "出水",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_216",
+   "town": "埔心鄉",
+   "name": "東門社區發展協會",
+   "community": "東門",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_217",
+   "town": "埔心鄉",
+   "name": "義民社區發展協會",
+   "community": "義民",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_218",
+   "town": "埔心鄉",
+   "name": "太平社區發展協會",
+   "community": "太平",
+   "category": "社區發展協會",
+   "address": "彰化縣埔心鄉太平村太平路170號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_219",
+   "town": "埔心鄉",
+   "name": "經口社區發展協會",
+   "community": "經口",
+   "category": "社區發展協會",
+   "address": "彰化縣埔心鄉經口村明道路36號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_220",
+   "town": "埔心鄉",
+   "name": "瓦中社區發展協會",
+   "community": "瓦中",
+   "category": "社區發展協會",
+   "address": "彰化縣埔心鄉瓦中村明聖路四段180號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_221",
+   "town": "埔心鄉",
+   "name": "瓦南社區發展協會",
+   "community": "瓦南",
+   "category": "社區發展協會",
+   "address": "彰化縣埔心鄉瓦南村明聖路三段128巷3號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_222",
+   "town": "埔心鄉",
+   "name": "瓦北社區發展協會",
+   "community": "瓦北",
+   "category": "社區發展協會",
+   "address": "彰化縣埔心鄉瓦北村瑤鳳路一段51號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_223",
+   "town": "埔心鄉",
+   "name": "埔心社區發展協會",
+   "community": "埔心",
+   "category": "社區發展協會",
+   "address": "彰化縣埔心鄉埔心村武英北路301號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_224",
+   "town": "埔心鄉",
+   "name": "芎蕉社區發展協會",
+   "community": "芎蕉",
+   "category": "社區發展協會",
+   "address": "彰化縣埔心鄉芎蕉村仁安路65巷103號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_225",
+   "town": "埔心鄉",
+   "name": "油車社區發展協會",
+   "community": "油車",
+   "category": "社區發展協會",
+   "address": "彰化縣埔心鄉油車村瑤鳳路二段347號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_226",
+   "town": "埔心鄉",
+   "name": "大華社區發展協會",
+   "community": "大華",
+   "category": "社區發展協會",
+   "address": "彰化縣埔心鄉大華村大明路202號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_227",
+   "town": "埔心鄉",
+   "name": "仁里社區發展協會",
+   "community": "仁里",
+   "category": "社區發展協會",
+   "address": "彰化縣埔心鄉仁里村仁聖路171號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_228",
+   "town": "埔心鄉",
+   "name": "羅厝社區發展協會",
+   "community": "羅厝",
+   "category": "社區發展協會",
+   "address": "彰化縣埔心鄉羅厝村羅厝路二段138號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_229",
+   "town": "埔心鄉",
+   "name": "二重社區發展協會",
+   "community": "二重",
+   "category": "社區發展協會",
+   "address": "彰化縣埔心鄉二重村瑤鳳路三段467號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_230",
+   "town": "埔心鄉",
+   "name": "埤霞社區發展協會",
+   "community": "埤霞",
+   "category": "社區發展協會",
+   "address": "彰化縣埔心鄉埤霞村五通北路23號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_231",
+   "town": "埔心鄉",
+   "name": "梧鳳社區發展協會",
+   "community": "梧鳳",
+   "category": "社區發展協會",
+   "address": "彰化縣埔心鄉梧鳳村瑤鳳路四段361號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_232",
+   "town": "埔心鄉",
+   "name": "埤腳社區發展協會",
+   "community": "埤腳",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_233",
+   "town": "埔心鄉",
+   "name": "舊館社區發展協會",
+   "community": "舊館",
+   "category": "社區發展協會",
+   "address": "埔心鄉舊館村興霖路233號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_234",
+   "town": "埔心鄉",
+   "name": "新舘社區發展協會",
+   "community": "新舘",
+   "category": "社區發展協會",
+   "address": "彰化縣埔心鄉新舘村新舘路87號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_235",
+   "town": "埔心鄉",
+   "name": "南館社區發展協會",
+   "community": "南館",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_236",
+   "town": "員林市",
+   "name": "源潭社區發展協會",
+   "community": "源潭",
+   "category": "社區發展協會",
+   "address": "彰化縣員林市源潭里三潭巷27之1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_237",
+   "town": "員林市",
+   "name": "大埔社區發展協會",
+   "community": "大埔",
+   "category": "社區發展協會",
+   "address": "員林市員大路2段50號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_238",
+   "town": "員林市",
+   "name": "中央社區發展協會",
+   "community": "中央",
+   "category": "社區發展協會",
+   "address": "彰化縣員林市中央里中央路115巷170號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_239",
+   "town": "員林市",
+   "name": "大饒社區發展協會",
+   "community": "大饒",
+   "category": "社區發展協會",
+   "address": "彰化縣員林市大饒里員集路二段244巷119號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_240",
+   "town": "員林市",
+   "name": "崙雅社區發展協會",
+   "community": "崙雅",
+   "category": "社區發展協會",
+   "address": "彰化縣員林市崙雅里崙雅巷一段449巷47號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_241",
+   "town": "員林市",
+   "name": "出水社區發展協會",
+   "community": "出水",
+   "category": "社區發展協會",
+   "address": "彰化縣員林市出水里出水巷18-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_242",
+   "town": "員林市",
+   "name": "大峰社區發展協會",
+   "community": "大峰",
+   "category": "社區發展協會",
+   "address": "員林市大峰里大峰巷326弄1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_243",
+   "town": "員林市",
+   "name": "浮圳社區發展協會",
+   "community": "浮圳",
+   "category": "社區發展協會",
+   "address": "彰化縣員林市浮圳里浮圳巷8之14號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_244",
+   "town": "員林市",
+   "name": "西東社區發展協會",
+   "community": "西東",
+   "category": "社區發展協會",
+   "address": "員林市西東里浮圳路一段365巷56弄36號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_245",
+   "town": "員林市",
+   "name": "南東社區發展協會",
+   "community": "南東",
+   "category": "社區發展協會",
+   "address": "彰化縣員林市山腳路四段49號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_246",
+   "town": "員林市",
+   "name": "東北社區發展協會",
+   "community": "東北",
+   "category": "社區發展協會",
+   "address": "彰化縣員林市東北里山腳路六段77巷21號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_247",
+   "town": "員林市",
+   "name": "南興社區發展協會",
+   "community": "南興",
+   "category": "社區發展協會",
+   "address": "彰化縣員林市源泉路78-100號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_248",
+   "town": "員林市",
+   "name": "鎮興社區發展協會",
+   "community": "鎮興",
+   "category": "社區發展協會",
+   "address": "彰化縣員林市鎮興里山腳路三段2巷150號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_249",
+   "town": "員林市",
+   "name": "南平社區發展協會",
+   "community": "南平",
+   "category": "社區發展協會",
+   "address": "彰化縣員林市南平里新生路354號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_250",
+   "town": "員林市",
+   "name": "三義社區發展協會",
+   "community": "三義",
+   "category": "社區發展協會",
+   "address": "彰化縣員林市三義里員鹿路245巷112號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_251",
+   "town": "員林市",
+   "name": "新生社區發展協會",
+   "community": "新生",
+   "category": "社區發展協會",
+   "address": "彰化縣員林市新生里雙景街50號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_252",
+   "town": "員林市",
+   "name": "振興社區發展協會",
+   "community": "振興",
+   "category": "社區發展協會",
+   "address": "彰化縣員林市山腳路二段606號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_253",
+   "town": "員林市",
+   "name": "湖水社區發展協會",
+   "community": "湖水",
+   "category": "社區發展協會",
+   "address": "彰化縣員林市湖水里湖水巷26號之10",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_254",
+   "town": "員林市",
+   "name": "林厝社區發展協會",
+   "community": "林厝",
+   "category": "社區發展協會",
+   "address": "彰化縣員林市林厝里山腳路1段48巷57號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_255",
+   "town": "員林市",
+   "name": "仁愛社區發展協會",
+   "community": "仁愛",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_256",
+   "town": "員林市",
+   "name": "溝皂社區發展協會",
+   "community": "溝皂",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_257",
+   "town": "員林市",
+   "name": "中正社區發展協會",
+   "community": "中正",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_258",
+   "town": "員林市",
+   "name": "萬年社區發展協會",
+   "community": "萬年",
+   "category": "社區發展協會",
+   "address": "彰化縣員林市萬年里萬年巷13號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_259",
+   "town": "員林市",
+   "name": "中東社區發展協會",
+   "community": "中東",
+   "category": "社區發展協會",
+   "address": "彰化縣員林市中東里山腳路5段184巷86號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_260",
+   "town": "員林市",
+   "name": "忠孝社區發展協會",
+   "community": "忠孝",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_261",
+   "town": "員林市",
+   "name": "三和社區發展協會",
+   "community": "三和",
+   "category": "社區發展協會",
+   "address": "彰化縣員林市三和里和平東街61號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_262",
+   "town": "員林市",
+   "name": "大明社區發展協會",
+   "community": "大明",
+   "category": "社區發展協會",
+   "address": "彰化縣員林市大明里大饒路803巷21號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_263",
+   "town": "員林市",
+   "name": "民生社區發展協會",
+   "community": "民生",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_264",
+   "town": "員林市",
+   "name": "和平社區發展協會",
+   "community": "和平",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_265",
+   "town": "員林市",
+   "name": "三條社區發展協會",
+   "community": "三條",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_266",
+   "town": "員林市",
+   "name": "十七份社區發展協會",
+   "community": "十七份",
+   "category": "社區發展協會",
+   "address": "員林市三多里興華街21號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_267",
+   "town": "員林市",
+   "name": "惠來社區發展協會",
+   "community": "惠來",
+   "category": "社區發展協會",
+   "address": "無",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_268",
+   "town": "員林市",
+   "name": "黎明社區發展協會",
+   "community": "黎明",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_269",
+   "town": "員林市",
+   "name": "仁美社區發展協會",
+   "community": "仁美",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_270",
+   "town": "芬園鄉",
+   "name": "大埔社區發展協會",
+   "community": "大埔",
+   "category": "社區發展協會",
+   "address": "彰化縣芬園鄉大埔村大埔路一段156號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_271",
+   "town": "芬園鄉",
+   "name": "德興社區發展協會",
+   "community": "德興",
+   "category": "社區發展協會",
+   "address": "彰化縣芬園鄉舊社村彰南路5段451巷36號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_272",
+   "town": "芬園鄉",
+   "name": "楓坑社區發展協會",
+   "community": "楓坑",
+   "category": "社區發展協會",
+   "address": "彰化縣芬園鄉楓坑村楓林街629號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_273",
+   "town": "芬園鄉",
+   "name": "竹林社區發展協會",
+   "community": "竹林",
+   "category": "社區發展協會",
+   "address": "彰化縣芬園鄉竹林村太平路77巷12號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_274",
+   "town": "芬園鄉",
+   "name": "社口社區發展協會",
+   "community": "社口",
+   "category": "社區發展協會",
+   "address": "彰化縣芬園鄉社口村忠孝路27號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_275",
+   "town": "芬園鄉",
+   "name": "縣庄社區發展協會",
+   "community": "縣庄",
+   "category": "社區發展協會",
+   "address": "彰化縣芬園鄉縣庄村彰南路二段385巷41號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_276",
+   "town": "芬園鄉",
+   "name": "溪頭社區發展協會",
+   "community": "溪頭",
+   "category": "社區發展協會",
+   "address": "彰化縣芬園鄉溪頭村碧園路一段21號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_277",
+   "town": "芬園鄉",
+   "name": "同安社區發展協會",
+   "community": "同安",
+   "category": "社區發展協會",
+   "address": "彰化縣芬園鄉同安村大彰路三段147巷13號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_278",
+   "town": "芬園鄉",
+   "name": "中崙社區發展協會",
+   "community": "中崙",
+   "category": "社區發展協會",
+   "address": "彰化縣芬園鄉中崙村大彰路3段934巷11號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_279",
+   "town": "芬園鄉",
+   "name": "大竹社區發展協會",
+   "community": "大竹",
+   "category": "社區發展協會",
+   "address": "彰化縣芬園鄉大竹村大彰路一段617號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_280",
+   "town": "芬園鄉",
+   "name": "茄荖社區發展協會",
+   "community": "茄荖",
+   "category": "社區發展協會",
+   "address": "芬園鄉嘉興村芬草路一段93巷126號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_281",
+   "town": "芬園鄉",
+   "name": "嘉興社區發展協會",
+   "community": "嘉興",
+   "category": "社區發展協會",
+   "address": "彰化縣芬園鄉嘉興村芬草路一段93巷126號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_282",
+   "town": "芬園鄉",
+   "name": "新興社區發展協會",
+   "community": "新興",
+   "category": "社區發展協會",
+   "address": "彰化縣芬園鄉舊社村新興路1段504號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_283",
+   "town": "芬園鄉",
+   "name": "舊社社區發展協會",
+   "community": "舊社",
+   "category": "社區發展協會",
+   "address": "彰化縣芬園鄉舊社村彰南路五段2巷20號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_284",
+   "town": "芬園鄉",
+   "name": "進芬社區發展協會",
+   "community": "進芬",
+   "category": "社區發展協會",
+   "address": "彰化縣芬園鄉進芬村中華路9號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_285",
+   "town": "芬園鄉",
+   "name": "芬園社區發展協會",
+   "community": "芬園",
+   "category": "社區發展協會",
+   "address": "彰化縣芬園鄉芬園村南妙街427號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_286",
+   "town": "芬園鄉",
+   "name": "寶山社區發展協會",
+   "community": "寶山",
+   "category": "社區發展協會",
+   "address": "彰化縣芬園鄉圳墘村碧園路二段305之1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_287",
+   "town": "芬園鄉",
+   "name": "嘉東社區發展協會",
+   "community": "嘉東",
+   "category": "社區發展協會",
+   "address": "彰化縣芬園鄉嘉興村嘉東街845巷26號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_288",
+   "town": "芬園鄉",
+   "name": "嘉北社區發展協會",
+   "community": "嘉北",
+   "category": "社區發展協會",
+   "address": "彰化縣芬園鄉茄荖村慶功街211巷48號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_289",
+   "town": "花壇鄉",
+   "name": "花壇社區發展協會",
+   "community": "花壇",
+   "category": "社區發展協會",
+   "address": "彰化縣花壇鄉花壇村平和街76號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_290",
+   "town": "花壇鄉",
+   "name": "岩竹社區發展協會",
+   "community": "岩竹",
+   "category": "社區發展協會",
+   "address": "花壇鄉岩竹村虎山街137號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_291",
+   "town": "花壇鄉",
+   "name": "文德社區發展協會",
+   "community": "文德",
+   "category": "社區發展協會",
+   "address": "彰化縣花壇鄉文德村宏宅街39號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_292",
+   "town": "花壇鄉",
+   "name": "橋頭社區發展協會",
+   "community": "橋頭",
+   "category": "社區發展協會",
+   "address": "彰化縣花壇鄉橋頭村花橋街117-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_293",
+   "town": "花壇鄉",
+   "name": "白沙社區發展協會",
+   "community": "白沙",
+   "category": "社區發展協會",
+   "address": "彰化縣花壇鄉白沙村溪北街191號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_294",
+   "town": "花壇鄉",
+   "name": "永春社區發展協會",
+   "community": "永春",
+   "category": "社區發展協會",
+   "address": "無",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_295",
+   "town": "花壇鄉",
+   "name": "長春社區發展協會",
+   "community": "長春",
+   "category": "社區發展協會",
+   "address": "彰化縣花壇鄉長春村彰員路1段172巷45號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_296",
+   "town": "花壇鄉",
+   "name": "金墩社區發展協會",
+   "community": "金墩",
+   "category": "社區發展協會",
+   "address": "彰化縣花壇鄉金墩村金福街101號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_297",
+   "town": "花壇鄉",
+   "name": "中庄社區發展協會",
+   "community": "中庄",
+   "category": "社區發展協會",
+   "address": "無",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_298",
+   "town": "花壇鄉",
+   "name": "崙雅社區發展協會",
+   "community": "崙雅",
+   "category": "社區發展協會",
+   "address": "彰化縣花壇鄉菕雅村花秀路446號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_299",
+   "town": "花壇鄉",
+   "name": "劉厝社區發展協會",
+   "community": "劉厝",
+   "category": "社區發展協會",
+   "address": "花壇鄉劉厝村明雅街40巷1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_300",
+   "town": "花壇鄉",
+   "name": "長沙社區發展協會",
+   "community": "長沙",
+   "category": "社區發展協會",
+   "address": "彰化縣花壇鄉長沙村彰員路2段586-3號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_301",
+   "town": "花壇鄉",
+   "name": "南口社區發展協會",
+   "community": "南口",
+   "category": "社區發展協會",
+   "address": "彰化縣花壇鄉南口村中山路二段369號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_302",
+   "town": "花壇鄉",
+   "name": "北口社區發展協會",
+   "community": "北口",
+   "category": "社區發展協會",
+   "address": "彰化縣花壇鄉北口村彰花路450巷8號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_303",
+   "town": "花壇鄉",
+   "name": "中口社區發展協會",
+   "community": "中口",
+   "category": "社區發展協會",
+   "address": "無",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_304",
+   "town": "花壇鄉",
+   "name": "灣東社區發展協會",
+   "community": "灣東",
+   "category": "社區發展協會",
+   "address": "彰化縣花壇鄉灣東村隴西二巷161號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_305",
+   "town": "花壇鄉",
+   "name": "灣雅社區發展協會",
+   "community": "灣雅",
+   "category": "社區發展協會",
+   "address": "彰化縣花壇鄉灣雅村彰員路一段852",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_306",
+   "town": "花壇鄉",
+   "name": "三春社區發展協會",
+   "community": "三春",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_307",
+   "town": "芳苑鄉",
+   "name": "新街社區發展協會",
+   "community": "新街",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_308",
+   "town": "芳苑鄉",
+   "name": "五俊社區發展協會",
+   "community": "五俊",
+   "category": "社區發展協會",
+   "address": "芳苑鄉芳埤段184號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_309",
+   "town": "芳苑鄉",
+   "name": "新寶社區發展協會",
+   "community": "新寶",
+   "category": "社區發展協會",
+   "address": "彰化縣芳苑鄉新寶村芳漢路新寶段108-91號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_310",
+   "town": "芳苑鄉",
+   "name": "崙腳社區發展協會",
+   "community": "崙腳",
+   "category": "社區發展協會",
+   "address": "彰化縣芳苑鄉崙腳村中正路33號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_311",
+   "town": "芳苑鄉",
+   "name": "建平社區發展協會",
+   "community": "建平",
+   "category": "社區發展協會",
+   "address": "彰化縣芳苑鄉建平村建平段405號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_312",
+   "town": "芳苑鄉",
+   "name": "王功社區發展協會",
+   "community": "王功",
+   "category": "社區發展協會",
+   "address": "彰化縣芳苑鄉王功村功湖路王功段417巷36號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_313",
+   "town": "芳苑鄉",
+   "name": "和平社區發展協會",
+   "community": "和平",
+   "category": "社區發展協會",
+   "address": "彰化縣芳苑鄉和平村西北巷6號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_314",
+   "town": "芳苑鄉",
+   "name": "興仁社區發展協會",
+   "community": "興仁",
+   "category": "社區發展協會",
+   "address": "彰化縣芳苑鄉興仁村97巷11號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_315",
+   "town": "芳苑鄉",
+   "name": "永興社區發展協會",
+   "community": "永興",
+   "category": "社區發展協會",
+   "address": "無",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_316",
+   "town": "芳苑鄉",
+   "name": "路平社區發展協會",
+   "community": "路平",
+   "category": "社區發展協會",
+   "address": "彰化縣芳苑鄉路平村路平路36-42號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_317",
+   "town": "芳苑鄉",
+   "name": "三合社區發展協會",
+   "community": "三合",
+   "category": "社區發展協會",
+   "address": "芳苑鄉三合村斗苑路三合段238巷86號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_318",
+   "town": "芳苑鄉",
+   "name": "文津社區發展協會",
+   "community": "文津",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_319",
+   "town": "芳苑鄉",
+   "name": "新生社區發展協會",
+   "community": "新生",
+   "category": "社區發展協會",
+   "address": "彰化縣芳苑鄉新生村草崙路15之1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_320",
+   "town": "芳苑鄉",
+   "name": "芳苑社區發展協會",
+   "community": "芳苑",
+   "category": "社區發展協會",
+   "address": "彰化縣芳苑鄉芳苑村芳漢路2段179號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_321",
+   "town": "芳苑鄉",
+   "name": "漢寶社區發展協會",
+   "community": "漢寶",
+   "category": "社區發展協會",
+   "address": "彰化縣芳苑鄉漢寶村成功一路45號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_322",
+   "town": "芳苑鄉",
+   "name": "博愛社區發展協會",
+   "community": "博愛",
+   "category": "社區發展協會",
+   "address": "彰化縣芳苑鄉博愛村芳漢路王功段458號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_323",
+   "town": "芳苑鄉",
+   "name": "頂廍社區發展協會",
+   "community": "頂廍",
+   "category": "社區發展協會",
+   "address": "彰化縣芳苑鄉頂廍村上林路頂部段407號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_324",
+   "town": "芳苑鄉",
+   "name": "後寮社區發展協會",
+   "community": "後寮",
+   "category": "社區發展協會",
+   "address": "芳苑鄉後寮村寮北巷5號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_325",
+   "town": "芳苑鄉",
+   "name": "民生社區發展協會",
+   "community": "民生",
+   "category": "社區發展協會",
+   "address": "528彰化縣芳苑鄉民生村芳功段1232地號(無地址)2層樓",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_326",
+   "town": "芳苑鄉",
+   "name": "信義社區發展協會",
+   "community": "信義",
+   "category": "社區發展協會",
+   "address": "無",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_327",
+   "town": "芳苑鄉",
+   "name": "仁愛社區發展協會",
+   "community": "仁愛",
+   "category": "社區發展協會",
+   "address": "無",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_328",
+   "town": "芳苑鄉",
+   "name": "草湖社區發展協會",
+   "community": "草湖",
+   "category": "社區發展協會",
+   "address": "528彰化縣芳苑鄉芳草段420地號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_329",
+   "town": "芳苑鄉",
+   "name": "路上社區發展協會",
+   "community": "路上",
+   "category": "社區發展協會",
+   "address": "芳苑鄉路上村新厝路19號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_330",
+   "town": "芳苑鄉",
+   "name": "三成社區發展協會",
+   "community": "三成",
+   "category": "社區發展協會",
+   "address": "芳苑鄉三成村中平巷2號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_331",
+   "town": "芳苑鄉",
+   "name": "福榮社區發展協會",
+   "community": "福榮",
+   "category": "社區發展協會",
+   "address": "無",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_332",
+   "town": "社頭鄉",
+   "name": "廣興社區發展協會",
+   "community": "廣興",
+   "category": "社區發展協會",
+   "address": "彰化縣社頭鄉廣興村廣興巷13號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_333",
+   "town": "社頭鄉",
+   "name": "舊社社區發展協會",
+   "community": "舊社",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_334",
+   "town": "社頭鄉",
+   "name": "福竹社區發展協會",
+   "community": "福竹",
+   "category": "社區發展協會",
+   "address": "彰化縣社頭鄉松竹村社石路979-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_335",
+   "town": "社頭鄉",
+   "name": "橋頭社區發展協會",
+   "community": "橋頭",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_336",
+   "town": "社頭鄉",
+   "name": "張厝社區發展協會",
+   "community": "張厝",
+   "category": "社區發展協會",
+   "address": "彰化縣社頭鄉張厝村張厝一巷30號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_337",
+   "town": "社頭鄉",
+   "name": "埤斗社區發展協會",
+   "community": "埤斗",
+   "category": "社區發展協會",
+   "address": "彰化縣社頭鄉埤斗村山腳路一段178號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_338",
+   "town": "社頭鄉",
+   "name": "朝興社區發展協會",
+   "community": "朝興",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_339",
+   "town": "社頭鄉",
+   "name": "仁和社區發展協會",
+   "community": "仁和",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_340",
+   "town": "社頭鄉",
+   "name": "泰安社區發展協會",
+   "community": "泰安",
+   "category": "社區發展協會",
+   "address": "社頭鄉仁和村山腳路2段833號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_341",
+   "town": "社頭鄉",
+   "name": "湳雅社區發展協會",
+   "community": "湳雅",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_342",
+   "town": "社頭鄉",
+   "name": "平和社區發展協會",
+   "community": "平和",
+   "category": "社區發展協會",
+   "address": "彰化縣社頭鄉平和村山腳路3段264巷5號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_343",
+   "town": "社頭鄉",
+   "name": "龍井社區發展協會",
+   "community": "龍井",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_344",
+   "town": "社頭鄉",
+   "name": "清水社區發展協會",
+   "community": "清水",
+   "category": "社區發展協會",
+   "address": "彰化縣社頭鄉清水村山腳路一段466巷188號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_345",
+   "town": "社頭鄉",
+   "name": "里仁社區發展協會",
+   "community": "里仁",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_346",
+   "town": "社頭鄉",
+   "name": "湳底社區發展協會",
+   "community": "湳底",
+   "category": "社區發展協會",
+   "address": "彰化縣社頭鄉湳底村湳底巷261號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_347",
+   "town": "社頭鄉",
+   "name": "新厝社區發展協會",
+   "community": "新厝",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_348",
+   "town": "社頭鄉",
+   "name": "崙雅社區發展協會",
+   "community": "崙雅",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_349",
+   "town": "社頭鄉",
+   "name": "山湖社區發展協會",
+   "community": "山湖",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_350",
+   "town": "社頭鄉",
+   "name": "協和社區發展協會",
+   "community": "協和",
+   "category": "社區發展協會",
+   "address": "彰化縣社頭鄉協和村山腳路4段252巷27號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_351",
+   "town": "社頭鄉",
+   "name": "美雅社區發展協會",
+   "community": "美雅",
+   "category": "社區發展協會",
+   "address": "彰化縣社頭鄉美雅村員集路一段710號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_352",
+   "town": "社頭鄉",
+   "name": "社頭社區發展協會",
+   "community": "社頭",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_353",
+   "town": "社頭鄉",
+   "name": "東興社區發展協會",
+   "community": "東興",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_354",
+   "town": "社頭鄉",
+   "name": "廣福社區發展協會",
+   "community": "廣福",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_355",
+   "town": "社頭鄉",
+   "name": "仁雅社區發展協會",
+   "community": "仁雅",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_356",
+   "town": "和美鎮",
+   "name": "和西社區發展協會",
+   "community": "和西",
+   "category": "社區發展協會",
+   "address": "無",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_357",
+   "town": "和美鎮",
+   "name": "詔安社區發展協會",
+   "community": "詔安",
+   "category": "社區發展協會",
+   "address": "彰化縣和美鎮詔安里彰和路二段172號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_358",
+   "town": "和美鎮",
+   "name": "嘉犁社區發展協會",
+   "community": "嘉犁",
+   "category": "社區發展協會",
+   "address": "彰化縣和美鎮嘉犁里東坡路臨22號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_359",
+   "town": "和美鎮",
+   "name": "嘉寶社區發展協會",
+   "community": "嘉寶",
+   "category": "社區發展協會",
+   "address": "和美鎮嘉寶里福北路219號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_360",
+   "town": "和美鎮",
+   "name": "四張社區發展協會",
+   "community": "四張",
+   "category": "社區發展協會",
+   "address": "彰化縣和美鎮四張里鎮西路74號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_361",
+   "town": "和美鎮",
+   "name": "好修社區發展協會",
+   "community": "好修",
+   "category": "社區發展協會",
+   "address": "彰化縣和美鎮好修里月北路400巷21號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_362",
+   "town": "和美鎮",
+   "name": "犁盛社區發展協會",
+   "community": "犁盛",
+   "category": "社區發展協會",
+   "address": "無",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_363",
+   "town": "和美鎮",
+   "name": "源埤社區發展協會",
+   "community": "源埤",
+   "category": "社區發展協會",
+   "address": "彰化縣和美鎮源埤里南安路105號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_364",
+   "town": "和美鎮",
+   "name": "月眉社區發展協會",
+   "community": "月眉",
+   "category": "社區發展協會",
+   "address": "彰化縣和美鎮月眉里和厝路一段276號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_365",
+   "town": "和美鎮",
+   "name": "竹營社區發展協會",
+   "community": "竹營",
+   "category": "社區發展協會",
+   "address": "彰化縣和美鎮竹營里和頭路237-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_366",
+   "town": "和美鎮",
+   "name": "大霞社區發展協會",
+   "community": "大霞",
+   "category": "社區發展協會",
+   "address": "彰化縣和美鎮大霞里彰和路3段422號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_367",
+   "town": "和美鎮",
+   "name": "面前社區發展協會",
+   "community": "面前",
+   "category": "社區發展協會",
+   "address": "彰化縣和美鎮面前里雅安路265號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_368",
+   "town": "和美鎮",
+   "name": "還社社區發展協會",
+   "community": "還社",
+   "category": "社區發展協會",
+   "address": "無",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_369",
+   "town": "和美鎮",
+   "name": "糖友社區發展協會",
+   "community": "糖友",
+   "category": "社區發展協會",
+   "address": "彰化縣和美鎮糖友里糖友1街80號2樓；82號2樓",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_370",
+   "town": "和美鎮",
+   "name": "頭前社區發展協會",
+   "community": "頭前",
+   "category": "社區發展協會",
+   "address": "彰化縣和美鎮頭前里和頭路595號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_371",
+   "town": "和美鎮",
+   "name": "新庄社區發展協會",
+   "community": "新庄",
+   "category": "社區發展協會",
+   "address": "彰化縣和美鎮新庄里東發路100巷36-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_372",
+   "town": "和美鎮",
+   "name": "鎮平社區發展協會",
+   "community": "鎮平",
+   "category": "社區發展協會",
+   "address": "彰化縣和美鎮鎮平里南平路11號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_373",
+   "town": "和美鎮",
+   "name": "南佃社區發展協會",
+   "community": "南佃",
+   "category": "社區發展協會",
+   "address": "彰化縣和美鎮南佃里嘉佃路145號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_374",
+   "town": "和美鎮",
+   "name": "雅溝社區發展協會",
+   "community": "雅溝",
+   "category": "社區發展協會",
+   "address": "彰化縣和美鎮雅溝里南軒路359巷7號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_375",
+   "town": "和美鎮",
+   "name": "鐵山社區發展協會",
+   "community": "鐵山",
+   "category": "社區發展協會",
+   "address": "彰化縣和美鎮鐵山里鎮東路臨196號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_376",
+   "town": "和美鎮",
+   "name": "柑井社區發展協會",
+   "community": "柑井",
+   "category": "社區發展協會",
+   "address": "彰化縣和美鎮柑井里柑竹路331巷21號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_377",
+   "town": "和美鎮",
+   "name": "中寮社區發展協會",
+   "community": "中寮",
+   "category": "社區發展協會",
+   "address": "彰化縣和美鎮中寮里東興路25號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_378",
+   "town": "和美鎮",
+   "name": "中圍社區發展協會",
+   "community": "中圍",
+   "category": "社區發展協會",
+   "address": "彰化縣和美鎮中圍里竹社路125號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_379",
+   "town": "和美鎮",
+   "name": "塗厝社區發展協會",
+   "community": "塗厝",
+   "category": "社區發展協會",
+   "address": "彰化縣和美鎮塗厝里和厝路2段485號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_380",
+   "town": "和美鎮",
+   "name": "地潭社區發展協會",
+   "community": "地潭",
+   "category": "社區發展協會",
+   "address": "彰化縣和美鎮地潭里晉北路臨456號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_381",
+   "town": "和美鎮",
+   "name": "湖內社區發展協會",
+   "community": "湖內",
+   "category": "社區發展協會",
+   "address": "彰化縣和美鎮湖內里湖竹路5號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_382",
+   "town": "和美鎮",
+   "name": "山犁社區發展協會",
+   "community": "山犁",
+   "category": "社區發展協會",
+   "address": "無",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_383",
+   "town": "和美鎮",
+   "name": "竹園社區發展協會",
+   "community": "竹園",
+   "category": "社區發展協會",
+   "address": "彰化縣和美鎮竹園里彰新路４段115號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_384",
+   "town": "和美鎮",
+   "name": "仁愛社區發展協會",
+   "community": "仁愛",
+   "category": "社區發展協會",
+   "address": "和美鎮仁愛里和健路193巷98號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_385",
+   "town": "和美鎮",
+   "name": "和東社區發展協會",
+   "community": "和東",
+   "category": "社區發展協會",
+   "address": "無",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_386",
+   "town": "秀水鄉",
+   "name": "馬興社區發展協會",
+   "community": "馬興",
+   "category": "社區發展協會",
+   "address": "彰化縣秀水鄉馬興村西銘巷6-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_387",
+   "town": "秀水鄉",
+   "name": "港墘社區發展協會",
+   "community": "港墘",
+   "category": "社區發展協會",
+   "address": "彰化縣秀水鄉秀水村開南巷87號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_388",
+   "town": "秀水鄉",
+   "name": "莊雅社區發展協會",
+   "community": "莊雅",
+   "category": "社區發展協會",
+   "address": "彰化縣秀水鄉莊雅村秀中街82巷67弄3號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_389",
+   "town": "秀水鄉",
+   "name": "陝西社區發展協會",
+   "community": "陝西",
+   "category": "社區發展協會",
+   "address": "彰化縣秀水鄉陜西村埔南巷92號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_390",
+   "town": "秀水鄉",
+   "name": "金興社區發展協會",
+   "community": "金興",
+   "category": "社區發展協會",
+   "address": "秀水鄉金興村正興巷18-16號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_391",
+   "town": "秀水鄉",
+   "name": "安東社區發展協會",
+   "community": "安東",
+   "category": "社區發展協會",
+   "address": "彰化縣秀水鄉安東村枋林巷60號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_392",
+   "town": "秀水鄉",
+   "name": "鶴鳴社區發展協會",
+   "community": "鶴鳴",
+   "category": "社區發展協會",
+   "address": "彰化縣秀水鄉鶴鳴村明山街臨182號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_393",
+   "town": "秀水鄉",
+   "name": "頭前社區發展協會",
+   "community": "頭前",
+   "category": "社區發展協會",
+   "address": "彰化縣秀水鄉鶴鳴村永興巷臨61號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_394",
+   "town": "秀水鄉",
+   "name": "雅興社區發展協會",
+   "community": "雅興",
+   "category": "社區發展協會",
+   "address": "秀水鄉雅興村雅興街260巷8-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_395",
+   "town": "秀水鄉",
+   "name": "義興社區發展協會",
+   "community": "義興",
+   "category": "社區發展協會",
+   "address": "秀水鄉義興村義興街13號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_396",
+   "town": "秀水鄉",
+   "name": "福安社區發展協會",
+   "community": "福安",
+   "category": "社區發展協會",
+   "address": "彰化縣秀水鄉福安村長美巷臨53號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_397",
+   "town": "秀水鄉",
+   "name": "埔崙社區發展協會",
+   "community": "埔崙",
+   "category": "社區發展協會",
+   "address": "彰化縣秀水鄉埔崙村蘇周巷162號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_398",
+   "town": "秀水鄉",
+   "name": "曾厝社區發展協會",
+   "community": "曾厝",
+   "category": "社區發展協會",
+   "address": "彰化縣秀水鄉曾厝村大厝巷臨66號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_399",
+   "town": "秀水鄉",
+   "name": "金陵社區發展協會",
+   "community": "金陵",
+   "category": "社區發展協會",
+   "address": "秀水鄉金陵村竹圍巷3號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_400",
+   "town": "秀水鄉",
+   "name": "惠來社區發展協會",
+   "community": "惠來",
+   "category": "社區發展協會",
+   "address": "彰化縣秀水鄉下崙村三聖巷15號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_401",
+   "town": "秀水鄉",
+   "name": "秀水社區發展協會",
+   "community": "秀水",
+   "category": "社區發展協會",
+   "address": "彰化縣秀水鄉花秀路37號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_402",
+   "town": "秀水鄉",
+   "name": "安溪社區發展協會",
+   "community": "安溪",
+   "category": "社區發展協會",
+   "address": "秀水鄉安溪村安溪街98號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_403",
+   "town": "秀水鄉",
+   "name": "下崙社區發展協會",
+   "community": "下崙",
+   "category": "社區發展協會",
+   "address": "秀水鄉下崙村1鄰民生街206號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_404",
+   "town": "伸港鄉",
+   "name": "汴頭社區發展協會",
+   "community": "汴頭",
+   "category": "社區發展協會",
+   "address": "彰化縣伸港鄉汴頭村汴頭路183-3號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_405",
+   "town": "伸港鄉",
+   "name": "溪底社區發展協會",
+   "community": "溪底",
+   "category": "社區發展協會",
+   "address": "彰化縣伸港鄉溪底村溪底路103-2號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_406",
+   "town": "伸港鄉",
+   "name": "定興社區發展協會",
+   "community": "定興",
+   "category": "社區發展協會",
+   "address": "彰化縣伸港鄉定興村定興路63號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_407",
+   "town": "伸港鄉",
+   "name": "全興社區發展協會",
+   "community": "全興",
+   "category": "社區發展協會",
+   "address": "彰化縣伸港鄉全興村東全路11號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_408",
+   "town": "伸港鄉",
+   "name": "海尾社區發展協會",
+   "community": "海尾",
+   "category": "社區發展協會",
+   "address": "彰化縣伸港鄉海尾村海尾路3-2號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_409",
+   "town": "伸港鄉",
+   "name": "什股社區發展協會",
+   "community": "什股",
+   "category": "社區發展協會",
+   "address": "彰化縣伸港鄉什股村什股路99-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_410",
+   "town": "伸港鄉",
+   "name": "大同社區發展協會",
+   "community": "大同",
+   "category": "社區發展協會",
+   "address": "彰化縣伸港鄉大同村大同路82號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_411",
+   "town": "伸港鄉",
+   "name": "蚵寮社區發展協會",
+   "community": "蚵寮",
+   "category": "社區發展協會",
+   "address": "彰化縣伸港鄉蚵寮村蚵寮路155-3號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_412",
+   "town": "伸港鄉",
+   "name": "曾家社區發展協會",
+   "community": "曾家",
+   "category": "社區發展協會",
+   "address": "彰化縣伸港鄉曾家村曾家路65-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_413",
+   "town": "伸港鄉",
+   "name": "埤墘社區發展協會",
+   "community": "埤墘",
+   "category": "社區發展協會",
+   "address": "伸港鄉埤墘村埤墘一路154號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_414",
+   "town": "伸港鄉",
+   "name": "泉厝社區發展協會",
+   "community": "泉厝",
+   "category": "社區發展協會",
+   "address": "彰化縣伸港鄉泉厝村泉厝路44-3號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_415",
+   "town": "伸港鄉",
+   "name": "新港社區發展協會",
+   "community": "新港",
+   "category": "社區發展協會",
+   "address": "彰化縣伸港鄉新港村自強路臨30號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_416",
+   "town": "伸港鄉",
+   "name": "七嘉社區發展協會",
+   "community": "七嘉",
+   "category": "社區發展協會",
+   "address": "彰化縣伸港鄉七嘉村嘉二路47號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_417",
+   "town": "伸港鄉",
+   "name": "泉州社區發展協會",
+   "community": "泉州",
+   "category": "社區發展協會",
+   "address": "彰化縣伸港鄉泉州村仁愛路123號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_418",
+   "town": "竹塘鄉",
+   "name": "竹元社區發展協會",
+   "community": "竹元",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_419",
+   "town": "竹塘鄉",
+   "name": "竹塘社區發展協會",
+   "community": "竹塘",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_420",
+   "town": "竹塘鄉",
+   "name": "小西社區發展協會",
+   "community": "小西",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_421",
+   "town": "竹塘鄉",
+   "name": "竹林社區發展協會",
+   "community": "竹林",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_422",
+   "town": "竹塘鄉",
+   "name": "土庫社區發展協會",
+   "community": "土庫",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_423",
+   "town": "竹塘鄉",
+   "name": "長安社區發展協會",
+   "community": "長安",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_424",
+   "town": "竹塘鄉",
+   "name": "樹腳社區發展協會",
+   "community": "樹腳",
+   "category": "社區發展協會",
+   "address": "彰化縣竹塘鄉樹腳村竹林路一段大新巷35之2號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_425",
+   "town": "竹塘鄉",
+   "name": "溪墘社區發展協會",
+   "community": "溪墘",
+   "category": "社區發展協會",
+   "address": "竹塘鄉溪墘村河陽路20號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_426",
+   "town": "竹塘鄉",
+   "name": "新廣社區發展協會",
+   "community": "新廣",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_427",
+   "town": "竹塘鄉",
+   "name": "田頭社區發展協會",
+   "community": "田頭",
+   "category": "社區發展協會",
+   "address": "竹塘鄉田頭村光明路竹田巷74號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_428",
+   "town": "竹塘鄉",
+   "name": "民靖社區發展協會",
+   "community": "民靖",
+   "category": "社區發展協會",
+   "address": "彰化縣竹塘鄉民靖村竹林路二段85號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_429",
+   "town": "竹塘鄉",
+   "name": "五庄社區發展協會",
+   "community": "五庄",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_430",
+   "town": "竹塘鄉",
+   "name": "內新社區發展協會",
+   "community": "內新",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_431",
+   "town": "竹塘鄉",
+   "name": "永安社區發展協會",
+   "community": "永安",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_432",
+   "town": "田尾鄉",
+   "name": "田尾社區發展協會",
+   "community": "田尾",
+   "category": "社區發展協會",
+   "address": "彰化縣田尾鄉田尾村光復路3段538巷1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_433",
+   "town": "田尾鄉",
+   "name": "豐田社區發展協會",
+   "community": "豐田",
+   "category": "社區發展協會",
+   "address": "彰化縣田尾鄉豐田村光復路114號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_434",
+   "town": "田尾鄉",
+   "name": "饒平社區發展協會",
+   "community": "饒平",
+   "category": "社區發展協會",
+   "address": "彰化縣田尾鄉饒平村東平巷143號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_435",
+   "town": "田尾鄉",
+   "name": "北曾社區發展協會",
+   "community": "北曾",
+   "category": "社區發展協會",
+   "address": "彰化縣田尾鄉北曾村福德巷359號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_436",
+   "town": "田尾鄉",
+   "name": "南曾社區發展協會",
+   "community": "南曾",
+   "category": "社區發展協會",
+   "address": "彰化縣田尾鄉南曾村光復路2段481巷20號號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_437",
+   "town": "田尾鄉",
+   "name": "睦宜社區發展協會",
+   "community": "睦宜",
+   "category": "社區發展協會",
+   "address": "彰化縣田尾鄉睦宜村地政路157號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_438",
+   "town": "田尾鄉",
+   "name": "新生社區發展協會",
+   "community": "新生",
+   "category": "社區發展協會",
+   "address": "彰化縣田尾鄉新生村延平路150號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_439",
+   "town": "田尾鄉",
+   "name": "北鎮社區發展協會",
+   "community": "北鎮",
+   "category": "社區發展協會",
+   "address": "彰化縣田尾鄉北鎮村平和路2段275號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_440",
+   "town": "田尾鄉",
+   "name": "南鎮社區發展協會",
+   "community": "南鎮",
+   "category": "社區發展協會",
+   "address": "彰化縣田尾鄉南鎮村平和路1段140號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_441",
+   "town": "田尾鄉",
+   "name": "福田社區發展協會",
+   "community": "福田",
+   "category": "社區發展協會",
+   "address": "彰化縣田尾鄉福田村光復路1段98巷19號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_442",
+   "town": "田尾鄉",
+   "name": "新興社區發展協會",
+   "community": "新興",
+   "category": "社區發展協會",
+   "address": "彰化縣田尾鄉新興村新興路1段140號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_443",
+   "town": "田尾鄉",
+   "name": "溪畔社區發展協會",
+   "community": "溪畔",
+   "category": "社區發展協會",
+   "address": "彰化縣田尾鄉溪畔村溪畔巷101弄4號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_444",
+   "town": "田尾鄉",
+   "name": "打簾社區發展協會",
+   "community": "打簾",
+   "category": "社區發展協會",
+   "address": "彰化縣田尾鄉打簾村民生路1段80號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_445",
+   "town": "田尾鄉",
+   "name": "柳鳳社區發展協會",
+   "community": "柳鳳",
+   "category": "社區發展協會",
+   "address": "彰化縣田尾鄉柳鳳村民族路2段362巷7號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_446",
+   "town": "田尾鄉",
+   "name": "陸豐社區發展協會",
+   "community": "陸豐",
+   "category": "社區發展協會",
+   "address": "彰化縣田尾鄉陸豐村陸豐路48號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_447",
+   "town": "田尾鄉",
+   "name": "海豐社區發展協會",
+   "community": "海豐",
+   "category": "社區發展協會",
+   "address": "彰化縣田尾鄉海豐村光榮巷546號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_448",
+   "town": "田尾鄉",
+   "name": "仁里社區發展協會",
+   "community": "仁里",
+   "category": "社區發展協會",
+   "address": "彰化縣田尾鄉仁里村中正路2段195巷20號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_449",
+   "town": "田尾鄉",
+   "name": "新厝社區發展協會",
+   "community": "新厝",
+   "category": "社區發展協會",
+   "address": "彰化縣田尾鄉新厝村光明巷54號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_450",
+   "town": "田尾鄉",
+   "name": "溪頂社區發展協會",
+   "community": "溪頂",
+   "category": "社區發展協會",
+   "address": "彰化縣田尾鄉溪頂村三溪路1段209號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_451",
+   "town": "田尾鄉",
+   "name": "正義社區發展協會",
+   "community": "正義",
+   "category": "社區發展協會",
+   "address": "田尾鄉正義村中正路一段233號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_452",
+   "town": "田中鎮",
+   "name": "舊街社區發展協會",
+   "community": "舊街",
+   "category": "社區發展協會",
+   "address": "彰化縣田中鎮沙崙里酪農路191號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_453",
+   "town": "田中鎮",
+   "name": "新民社區發展協會",
+   "community": "新民",
+   "category": "社區發展協會",
+   "address": "彰化縣田中鎮新民里公館路258號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_454",
+   "town": "田中鎮",
+   "name": "梅州社區發展協會",
+   "community": "梅州",
+   "category": "社區發展協會",
+   "address": "彰化縣田中鎮梅州里斗中路一段443巷121-2號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_455",
+   "town": "田中鎮",
+   "name": "三光社區發展協會",
+   "community": "三光",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_456",
+   "town": "田中鎮",
+   "name": "頂潭社區發展協會",
+   "community": "頂潭",
+   "category": "社區發展協會",
+   "address": "彰化縣田中鎮頂潭里崁頂路143號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_457",
+   "town": "田中鎮",
+   "name": "龍潭社區發展協會",
+   "community": "龍潭",
+   "category": "社區發展協會",
+   "address": "彰化縣田中鎮龍潭里大社路一段216巷100弄20號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_458",
+   "town": "田中鎮",
+   "name": "大社社區發展協會",
+   "community": "大社",
+   "category": "社區發展協會",
+   "address": "彰化縣田中鎮大社里大社路2段647號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_459",
+   "town": "田中鎮",
+   "name": "東興社區發展協會",
+   "community": "東興",
+   "category": "社區發展協會",
+   "address": "彰化縣田中鎮復興里山腳路四段253巷32號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_460",
+   "town": "田中鎮",
+   "name": "東源社區發展協會",
+   "community": "東源",
+   "category": "社區發展協會",
+   "address": "彰化縣田中鎮東源里中南路二段608巷32號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_461",
+   "town": "田中鎮",
+   "name": "香山社區發展協會",
+   "community": "香山",
+   "category": "社區發展協會",
+   "address": "彰化縣田中鎮香山里山腳路二段98巷66號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_462",
+   "town": "田中鎮",
+   "name": "新庄社區發展協會",
+   "community": "新庄",
+   "category": "社區發展協會",
+   "address": "彰化縣田中鎮新庄里中山街134號2F",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_463",
+   "town": "田中鎮",
+   "name": "三安社區發展協會",
+   "community": "三安",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_464",
+   "town": "田中鎮",
+   "name": "大崙社區發展協會",
+   "community": "大崙",
+   "category": "社區發展協會",
+   "address": "彰化縣田中鎮大崙里大安路二段320號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_465",
+   "town": "田中鎮",
+   "name": "中潭社區發展協會",
+   "community": "中潭",
+   "category": "社區發展協會",
+   "address": "彰化縣田中鎮中潭里員集路三段125巷255號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_466",
+   "town": "田中鎮",
+   "name": "西路社區發展協會",
+   "community": "西路",
+   "category": "社區發展協會",
+   "address": "彰化縣田中鎮西路里長順街8號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_467",
+   "town": "田中鎮",
+   "name": "太平社區發展協會",
+   "community": "太平",
+   "category": "社區發展協會",
+   "address": "彰化縣田中鎮平和里山腳路五段246號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_468",
+   "town": "田中鎮",
+   "name": "復興社區發展協會",
+   "community": "復興",
+   "category": "社區發展協會",
+   "address": "書鄉苑 無(豬舍改建、閒置空間再利用)",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_469",
+   "town": "田中鎮",
+   "name": "三民社區發展協會",
+   "community": "三民",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_470",
+   "town": "田中鎮",
+   "name": "北路社區發展協會",
+   "community": "北路",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_471",
+   "town": "田中鎮",
+   "name": "南路社區發展協會",
+   "community": "南路",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_472",
+   "town": "田中鎮",
+   "name": "中路社區發展協會",
+   "community": "中路",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_473",
+   "town": "田中鎮",
+   "name": "東路社區發展協會",
+   "community": "東路",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_474",
+   "town": "田中鎮",
+   "name": "碧峰社區發展協會",
+   "community": "碧峰",
+   "category": "社區發展協會",
+   "address": "田中鎮碧峰里中南路二段509號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_475",
+   "town": "永靖鄉",
+   "name": "港西社區發展協會",
+   "community": "港西",
+   "category": "社區發展協會",
+   "address": "永靖鄉港西村五福巷118號之2",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_476",
+   "town": "永靖鄉",
+   "name": "永東社區發展協會",
+   "community": "永東",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_477",
+   "town": "永靖鄉",
+   "name": "永安社區發展協會",
+   "community": "永安",
+   "category": "社區發展協會",
+   "address": "永靖鄉永西村瑚璉路臨356-2號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_478",
+   "town": "永靖鄉",
+   "name": "瑚璉社區發展協會",
+   "community": "瑚璉",
+   "category": "社區發展協會",
+   "address": "彰化縣永靖鄉瑚璉村錫壽路3號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_479",
+   "town": "永靖鄉",
+   "name": "湳港社區發展協會",
+   "community": "湳港",
+   "category": "社區發展協會",
+   "address": "通訊地址:永靖鄉湳港村永社路186號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_480",
+   "town": "永靖鄉",
+   "name": "福興社區發展協會",
+   "community": "福興",
+   "category": "社區發展協會",
+   "address": "彰化縣永靖鄉福興村中肚巷52號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_481",
+   "town": "永靖鄉",
+   "name": "同安社區發展協會",
+   "community": "同安",
+   "category": "社區發展協會",
+   "address": "彰化縣永靖鄉同安村西畔巷11-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_482",
+   "town": "永靖鄉",
+   "name": "光雲社區發展協會",
+   "community": "光雲",
+   "category": "社區發展協會",
+   "address": "彰化縣永靖鄉光雲村意善巷78-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_483",
+   "town": "永靖鄉",
+   "name": "同仁社區發展協會",
+   "community": "同仁",
+   "category": "社區發展協會",
+   "address": "彰化縣永靖鄉同仁村東畔路7-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_484",
+   "town": "永靖鄉",
+   "name": "東寧社區發展協會",
+   "community": "東寧",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_485",
+   "town": "永靖鄉",
+   "name": "新莊社區發展協會",
+   "community": "新莊",
+   "category": "社區發展協會",
+   "address": "彰化縣永靖鄉新莊村永社路75-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_486",
+   "town": "永靖鄉",
+   "name": "五汴社區發展協會",
+   "community": "五汴",
+   "category": "社區發展協會",
+   "address": "彰化縣永靖鄉五汴村五汴巷1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_487",
+   "town": "永靖鄉",
+   "name": "浮圳社區發展協會",
+   "community": "浮圳",
+   "category": "社區發展協會",
+   "address": "彰化縣永靖鄉東寧村浮圳路490號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_488",
+   "town": "永靖鄉",
+   "name": "永興社區發展協會",
+   "community": "永興",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_489",
+   "town": "永靖鄉",
+   "name": "崙子社區發展協會",
+   "community": "崙子",
+   "category": "社區發展協會",
+   "address": "彰化縣永靖鄉崙子村九分路216號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_490",
+   "town": "永靖鄉",
+   "name": "五福社區發展協會",
+   "community": "五福",
+   "category": "社區發展協會",
+   "address": "彰化縣永靖鄉五福村五福巷99-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_491",
+   "town": "永靖鄉",
+   "name": "崙美社區發展協會",
+   "community": "崙美",
+   "category": "社區發展協會",
+   "address": "彰化縣永靖鄉崙美村獨鰲路270巷8-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_492",
+   "town": "永靖鄉",
+   "name": "永南社區發展協會",
+   "community": "永南",
+   "category": "社區發展協會",
+   "address": "彰化縣永靖鄉永西路155號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_493",
+   "town": "永靖鄉",
+   "name": "永北社區發展協會",
+   "community": "永北",
+   "category": "社區發展協會",
+   "address": "彰化縣永靖鄉永北村水尾路192巷1-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_494",
+   "town": "永靖鄉",
+   "name": "湳墘社區發展協會",
+   "community": "湳墘",
+   "category": "社區發展協會",
+   "address": "彰化縣永靖鄉湳墘村忠心路13-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_495",
+   "town": "永靖鄉",
+   "name": "四芳社區發展協會",
+   "community": "四芳",
+   "category": "社區發展協會",
+   "address": "彰化縣永靖鄉四芳村四湳路55-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_496",
+   "town": "永靖鄉",
+   "name": "獨鰲社區發展協會",
+   "community": "獨鰲",
+   "category": "社區發展協會",
+   "address": "彰化縣永靖鄉獨鰲村獨鰲路一段3號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_497",
+   "town": "永靖鄉",
+   "name": "敦厚社區發展協會",
+   "community": "敦厚",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_498",
+   "town": "永靖鄉",
+   "name": "竹子社區發展協會",
+   "community": "竹子",
+   "category": "社區發展協會",
+   "address": "彰化縣永靖鄉竹子村竹中巷41號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_499",
+   "town": "北斗鎮",
+   "name": "七星社區發展協會",
+   "community": "七星",
+   "category": "社區發展協會",
+   "address": "彰化縣北斗鎮七星里神農路2-3號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_500",
+   "town": "北斗鎮",
+   "name": "大道社區發展協會",
+   "community": "大道",
+   "category": "社區發展協會",
+   "address": "彰化縣北斗鎮大道里大道路187巷17號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_501",
+   "town": "北斗鎮",
+   "name": "新生社區發展協會",
+   "community": "新生",
+   "category": "社區發展協會",
+   "address": "北斗鎮新生里興農路一段537號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_502",
+   "town": "北斗鎮",
+   "name": "中和社區發展協會",
+   "community": "中和",
+   "category": "社區發展協會",
+   "address": "彰化縣北斗鎮中和里中圳路305號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_503",
+   "town": "北斗鎮",
+   "name": "中寮社區發展協會",
+   "community": "中寮",
+   "category": "社區發展協會",
+   "address": "彰化縣北斗鎮中寮里中央路30巷31號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_504",
+   "town": "北斗鎮",
+   "name": "大新社區發展協會",
+   "community": "大新",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_505",
+   "town": "北斗鎮",
+   "name": "西德社區發展協會",
+   "community": "西德",
+   "category": "社區發展協會",
+   "address": "彰化縣北斗鎮西德里舜耕路27-4號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_506",
+   "town": "北斗鎮",
+   "name": "螺陽社區發展協會",
+   "community": "螺陽",
+   "category": "社區發展協會",
+   "address": "北斗鎮西安里復興路862巷7號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_507",
+   "town": "北斗鎮",
+   "name": "居仁社區發展協會",
+   "community": "居仁",
+   "category": "社區發展協會",
+   "address": "北斗鎮居仁里宮後二巷11號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_508",
+   "town": "北斗鎮",
+   "name": "文昌社區發展協會",
+   "community": "文昌",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_509",
+   "town": "北斗鎮",
+   "name": "重慶社區發展協會",
+   "community": "重慶",
+   "category": "社區發展協會",
+   "address": "北斗鎮重慶里武英巷24號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_510",
+   "town": "北斗鎮",
+   "name": "西安社區發展協會",
+   "community": "西安",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_511",
+   "town": "北斗鎮",
+   "name": "東光社區發展協會",
+   "community": "東光",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_512",
+   "town": "大城鄉",
+   "name": "西城社區發展協會",
+   "community": "西城",
+   "category": "社區發展協會",
+   "address": "彰化縣大城鄉西城村西勢路31-2號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_513",
+   "town": "大城鄉",
+   "name": "山腳社區發展協會",
+   "community": "山腳",
+   "category": "社區發展協會",
+   "address": "彰化縣大城鄉山腳村大山路47號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_514",
+   "town": "大城鄉",
+   "name": "頂庄社區發展協會",
+   "community": "頂庄",
+   "category": "社區發展協會",
+   "address": "彰化縣大城鄉頂庄村東厝路70號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_515",
+   "town": "大城鄉",
+   "name": "公館社區發展協會",
+   "community": "公館",
+   "category": "社區發展協會",
+   "address": "彰化縣大城鄉公館村東西路43號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_516",
+   "town": "大城鄉",
+   "name": "東港社區發展協會",
+   "community": "東港",
+   "category": "社區發展協會",
+   "address": "彰化縣大城鄉東港村中央路2-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_517",
+   "town": "大城鄉",
+   "name": "西港社區發展協會",
+   "community": "西港",
+   "category": "社區發展協會",
+   "address": "彰化縣大城鄉西港村永鎮路35號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_518",
+   "town": "大城鄉",
+   "name": "豐美社區發展協會",
+   "community": "豐美",
+   "category": "社區發展協會",
+   "address": "彰化縣大城鄉豐美村平和路31號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_519",
+   "town": "大城鄉",
+   "name": "大城社區發展協會",
+   "community": "大城",
+   "category": "社區發展協會",
+   "address": "彰化縣大城鄉大城村西平路176號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_520",
+   "town": "大城鄉",
+   "name": "東城社區發展協會",
+   "community": "東城",
+   "category": "社區發展協會",
+   "address": "彰化縣大城鄉東城村中平路161號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_521",
+   "town": "大城鄉",
+   "name": "菜寮社區發展協會",
+   "community": "菜寮",
+   "category": "社區發展協會",
+   "address": "彰化縣大城鄉菜寮村東平路6號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_522",
+   "town": "大城鄉",
+   "name": "上山社區發展協會",
+   "community": "上山",
+   "category": "社區發展協會",
+   "address": "彰化縣大城鄉上山村大山路2之1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_523",
+   "town": "大城鄉",
+   "name": "潭墘社區發展協會",
+   "community": "潭墘",
+   "category": "社區發展協會",
+   "address": "彰化縣大城鄉潭墘村光復路1-5號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_524",
+   "town": "大城鄉",
+   "name": "尤仕社區發展協會",
+   "community": "尤仕",
+   "category": "社區發展協會",
+   "address": "彰化縣大城鄉潭墘村天惠路42-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_525",
+   "town": "大城鄉",
+   "name": "永和社區發展協會",
+   "community": "永和",
+   "category": "社區發展協會",
+   "address": "彰化縣大城鄉永和村青埔路7-3號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_526",
+   "town": "大城鄉",
+   "name": "三豐社區發展協會",
+   "community": "三豐",
+   "category": "社區發展協會",
+   "address": "彰化縣大城鄉三豐村平康路1-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_527",
+   "town": "大城鄉",
+   "name": "台西社區發展協會",
+   "community": "台西",
+   "category": "社區發展協會",
+   "address": "彰化縣大城鄉台西村順應路4號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_528",
+   "town": "大村鄉",
+   "name": "大村社區發展協會",
+   "community": "大村",
+   "category": "社區發展協會",
+   "address": "彰化縣大村鄉大村村茄苳路1段203號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_529",
+   "town": "大村鄉",
+   "name": "茄苳社區發展協會",
+   "community": "茄苳",
+   "category": "社區發展協會",
+   "address": "彰化縣大村鄉茄苳村茄苳路2段141巷31號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_530",
+   "town": "大村鄉",
+   "name": "田洋社區發展協會",
+   "community": "田洋",
+   "category": "社區發展協會",
+   "address": "彰化縣大村鄉田洋村田洋巷11號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_531",
+   "town": "大村鄉",
+   "name": "貢旗社區發展協會",
+   "community": "貢旗",
+   "category": "社區發展協會",
+   "address": "彰化縣大村鄉貢旗村大崙路2-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_532",
+   "town": "大村鄉",
+   "name": "加錫社區發展協會",
+   "community": "加錫",
+   "category": "社區發展協會",
+   "address": "大村鄉加錫村加錫二巷3之8號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_533",
+   "town": "大村鄉",
+   "name": "大崙社區發展協會",
+   "community": "大崙",
+   "category": "社區發展協會",
+   "address": "大村鄉大崙村大崙二巷28-2號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_534",
+   "town": "大村鄉",
+   "name": "新興社區發展協會",
+   "community": "新興",
+   "category": "社區發展協會",
+   "address": "彰化縣大村鄉新興村新興巷6-3號彰化縣大村鄉新興村新興巷11號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_535",
+   "town": "大村鄉",
+   "name": "南勢社區發展協會",
+   "community": "南勢",
+   "category": "社區發展協會",
+   "address": "彰化縣大村鄉南勢村南一橫巷3-11號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_536",
+   "town": "大村鄉",
+   "name": "過溝社區發展協會",
+   "community": "過溝",
+   "category": "社區發展協會",
+   "address": "彰化縣大村鄉過溝村過溝三巷36-2號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_537",
+   "town": "大村鄉",
+   "name": "擺塘社區發展協會",
+   "community": "擺塘",
+   "category": "社區發展協會",
+   "address": "彰化縣大村鄉擺塘村擺塘橫巷1-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_538",
+   "town": "大村鄉",
+   "name": "大橋社區發展協會",
+   "community": "大橋",
+   "category": "社區發展協會",
+   "address": "彰化縣大村鄉大橋村中山路三段193巷69號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_539",
+   "town": "大村鄉",
+   "name": "村上社區發展協會",
+   "community": "村上",
+   "category": "社區發展協會",
+   "address": "彰化縣大村鄉村上村中正東路98巷2號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_540",
+   "town": "大村鄉",
+   "name": "美港社區發展協會",
+   "community": "美港",
+   "category": "社區發展協會",
+   "address": "彰化縣大村鄉美港村中山路一段118號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_541",
+   "town": "大村鄉",
+   "name": "黃厝社區發展協會",
+   "community": "黃厝",
+   "category": "社區發展協會",
+   "address": "彰化縣大村鄉黃厝村山腳路34-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_542",
+   "town": "大村鄉",
+   "name": "福興社區發展協會",
+   "community": "福興",
+   "category": "社區發展協會",
+   "address": "彰化縣大村鄉福興村山腳路88-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_543",
+   "town": "大村鄉",
+   "name": "平和社區發展協會",
+   "community": "平和",
+   "category": "社區發展協會",
+   "address": "彰化縣大村鄉平和村聖瑤東路77號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_544",
+   "town": "二林鎮",
+   "name": "西斗社區發展協會",
+   "community": "西斗",
+   "category": "社區發展協會",
+   "address": "彰化縣二林鎮西斗里再發路6號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_545",
+   "town": "二林鎮",
+   "name": "廣興社區發展協會",
+   "community": "廣興",
+   "category": "社區發展協會",
+   "address": "二林鎮廣興里廣興巷2-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_546",
+   "town": "二林鎮",
+   "name": "外竹社區發展協會",
+   "community": "外竹",
+   "category": "社區發展協會",
+   "address": "彰化縣二林鎮外竹里中南巷2號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_547",
+   "town": "二林鎮",
+   "name": "復豐社區發展協會",
+   "community": "復豐",
+   "category": "社區發展協會",
+   "address": "彰化縣二林鎮復豐里𥕟瑤巷5號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_548",
+   "town": "二林鎮",
+   "name": "東勢社區發展協會",
+   "community": "東勢",
+   "category": "社區發展協會",
+   "address": "彰化縣二林鎮東勢里面前巷2-20號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_549",
+   "town": "二林鎮",
+   "name": "東興社區發展協會",
+   "community": "東興",
+   "category": "社區發展協會",
+   "address": "彰化縣二林鎮東興里福建巷45號之1",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_550",
+   "town": "二林鎮",
+   "name": "中西社區發展協會",
+   "community": "中西",
+   "category": "社區發展協會",
+   "address": "彰化縣二林鎮中西里中三路1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_551",
+   "town": "二林鎮",
+   "name": "原斗社區發展協會",
+   "community": "原斗",
+   "category": "社區發展協會",
+   "address": "彰化縣二林鎮原斗里中正巷12之1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_552",
+   "town": "二林鎮",
+   "name": "大永社區發展協會",
+   "community": "大永",
+   "category": "社區發展協會",
+   "address": "彰化縣二林鎮大永路17之1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_553",
+   "town": "二林鎮",
+   "name": "梅芳社區發展協會",
+   "community": "梅芳",
+   "category": "社區發展協會",
+   "address": "彰化縣二林鎮梅芳里太平路四段臨69號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_554",
+   "town": "二林鎮",
+   "name": "萬合社區發展協會",
+   "community": "萬合",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_555",
+   "town": "二林鎮",
+   "name": "華崙社區發展協會",
+   "community": "華崙",
+   "category": "社區發展協會",
+   "address": "彰化縣二林鎮華崙里光復路44號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_556",
+   "town": "二林鎮",
+   "name": "萬興社區發展協會",
+   "community": "萬興",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_557",
+   "town": "二林鎮",
+   "name": "南光社區發展協會",
+   "community": "南光",
+   "category": "社區發展協會",
+   "address": "彰化縣二林鎮南光里懷仁街8號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_558",
+   "town": "二林鎮",
+   "name": "西庄社區發展協會",
+   "community": "西庄",
+   "category": "社區發展協會",
+   "address": "彰化縣二林鎮西庄里泉西巷31號之1",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_559",
+   "town": "二林鎮",
+   "name": "香田社區發展協會",
+   "community": "香田",
+   "category": "社區發展協會",
+   "address": "彰化縣二林鎮香田里儒林路10-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_560",
+   "town": "二林鎮",
+   "name": "後厝社區發展協會",
+   "community": "後厝",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_561",
+   "town": "二林鎮",
+   "name": "溝頭社區發展協會",
+   "community": "溝頭",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_562",
+   "town": "二林鎮",
+   "name": "趙甲社區發展協會",
+   "community": "趙甲",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_563",
+   "town": "二林鎮",
+   "name": "西平社區發展協會",
+   "community": "西平",
+   "category": "社區發展協會",
+   "address": "彰化縣二林鎮西平里民族巷8號之1",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_564",
+   "town": "二林鎮",
+   "name": "北平社區發展協會",
+   "community": "北平",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_565",
+   "town": "二林鎮",
+   "name": "豐田社區發展協會",
+   "community": "豐田",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_566",
+   "town": "二林鎮",
+   "name": "永興社區發展協會",
+   "community": "永興",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_567",
+   "town": "二林鎮",
+   "name": "興華社區發展協會",
+   "community": "興華",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_568",
+   "town": "二林鎮",
+   "name": "振興社區發展協會",
+   "community": "振興",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_569",
+   "town": "二林鎮",
+   "name": "東和社區發展協會",
+   "community": "東和",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_570",
+   "town": "二水鄉",
+   "name": "修仁社區發展協會",
+   "community": "修仁",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_571",
+   "town": "二水鄉",
+   "name": "復興社區發展協會",
+   "community": "復興",
+   "category": "社區發展協會",
+   "address": "彰化縣二水鄉復興村員集路5段472號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_572",
+   "town": "二水鄉",
+   "name": "十五社區發展協會",
+   "community": "十五",
+   "category": "社區發展協會",
+   "address": "彰化縣二水鄉十五村十五路33-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_573",
+   "town": "二水鄉",
+   "name": "合和社區發展協會",
+   "community": "合和",
+   "category": "社區發展協會",
+   "address": "彰化縣二水鄉合和村番田二巷17號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_574",
+   "town": "二水鄉",
+   "name": "海豐社區發展協會",
+   "community": "海豐",
+   "category": "社區發展協會",
+   "address": "彰化縣二水鄉上豐村山腳路113-5號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_575",
+   "town": "二水鄉",
+   "name": "過圳社區發展協會",
+   "community": "過圳",
+   "category": "社區發展協會",
+   "address": "彰化縣二水鄉過圳村三義巷30-7號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_576",
+   "town": "二水鄉",
+   "name": "五伯社區發展協會",
+   "community": "五伯",
+   "category": "社區發展協會",
+   "address": "彰化縣二水鄉五伯村過圳路222號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_577",
+   "town": "二水鄉",
+   "name": "光化社區發展協會",
+   "community": "光化",
+   "category": "社區發展協會",
+   "address": "彰化縣二水鄉光化村光聖巷37號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_578",
+   "town": "二水鄉",
+   "name": "聖化社區發展協會",
+   "community": "聖化",
+   "category": "社區發展協會",
+   "address": "彰化縣二水鄉聖化村溪邊巷72號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_579",
+   "town": "二水鄉",
+   "name": "二水社區發展協會",
+   "community": "二水",
+   "category": "社區發展協會",
+   "address": "彰化縣二水鄉二水村員集路3段625號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_580",
+   "town": "二水鄉",
+   "name": "惠民社區發展協會",
+   "community": "惠民",
+   "category": "社區發展協會",
+   "address": "彰化縣二水鄉惠民村山腳路48-1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_581",
+   "town": "二水鄉",
+   "name": "大園社區發展協會",
+   "community": "大園",
+   "category": "社區發展協會",
+   "address": "彰化縣二水鄉大園村大園巷11-9號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_582",
+   "town": "二水鄉",
+   "name": "合興社區發展協會",
+   "community": "合興",
+   "category": "社區發展協會",
+   "address": "彰化縣二水鄉合興村英義路12巷46號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_583",
+   "town": "二水鄉",
+   "name": "源泉社區發展協會",
+   "community": "源泉",
+   "category": "社區發展協會",
+   "address": "彰化縣二水鄉源泉村月眉巷1-2號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_584",
+   "town": "二水鄉",
+   "name": "文化社區發展協會",
+   "community": "文化",
+   "category": "社區發展協會",
+   "address": "彰化縣二水鄉文化村文化一巷1號",
+   "address_kind": "活動中心"
+  },
+  {
+   "id": "CASSOC_585",
+   "town": "二水鄉",
+   "name": "裕民社區發展協會",
+   "community": "裕民",
+   "category": "社區發展協會",
+   "address": "",
+   "address_kind": null
+  },
+  {
+   "id": "CASSOC_586",
+   "town": "二水鄉",
+   "name": "倡和社區發展協會",
+   "community": "倡和",
+   "category": "社區發展協會",
+   "address": "彰化縣二水鄉倡和村倡和路41-1號",
+   "address_kind": "活動中心"
+  }
+ ]
+}

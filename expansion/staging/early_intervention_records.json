@@ -1,0 +1,61 @@
+{
+ "source": "彰化縣早療機構及身障機構(含兼辦早療日托)單位 114/8/19",
+ "count": 5,
+ "records": [
+  {
+   "id": "EARLY_001",
+   "town": "彰化市",
+   "name": "彰化縣寶貝成長家園",
+   "sub_type": "早療機構",
+   "phone": "04-7288908",
+   "address": "彰化縣彰化市南郭路一段47巷13號2樓",
+   "preschool_cognitive": true,
+   "note": "身心障礙及發展遲緩兒童日托服務，不提供時段療育",
+   "category": "早療服務單位"
+  },
+  {
+   "id": "EARLY_002",
+   "town": "北斗鎮",
+   "name": "南區寶貝成長家園",
+   "sub_type": "早療機構",
+   "phone": "04-8874891",
+   "address": "彰化縣北斗鎮復興路270號5樓",
+   "preschool_cognitive": true,
+   "note": null,
+   "category": "早療服務單位"
+  },
+  {
+   "id": "EARLY_003",
+   "town": "員林市",
+   "name": "聖家啟智中心",
+   "sub_type": "身障機構兼辦早療業務",
+   "phone": "04-8374936",
+   "address": "彰化縣員林市光明里民生路50號",
+   "preschool_cognitive": true,
+   "note": null,
+   "category": "早療服務單位"
+  },
+  {
+   "id": "EARLY_004",
+   "town": "和美鎮",
+   "name": "家扶發展學園",
+   "sub_type": "身障機構",
+   "phone": "04-7569336",
+   "address": "彰化縣和美鎮彰美路5段160號",
+   "preschool_cognitive": true,
+   "note": "身心障礙兒童日托服務，不提供時段療育",
+   "category": "早療服務單位"
+  },
+  {
+   "id": "EARLY_005",
+   "town": "溪州鄉",
+   "name": "聖智啟智中心",
+   "sub_type": "身障機構",
+   "phone": "04-8893730、04-8899677",
+   "address": "彰化縣溪州鄉中山路3段512號",
+   "preschool_cognitive": true,
+   "note": null,
+   "category": "早療服務單位"
+  }
+ ]
+}

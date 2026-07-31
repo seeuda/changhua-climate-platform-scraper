@@ -1,0 +1,218 @@
+{
+ "source": "彰化縣水患自主防災社區清單（10 鄉鎮市 21 村里 22 社區）",
+ "note": "社區名以「村里名+社區」推定，僅潭墘村兩社區（潭墘、尤士）為名冊明載；其餘待確認",
+ "count": 21,
+ "records": [
+  {
+   "id": "FRC_01",
+   "town": "大城鄉",
+   "village": "東城村",
+   "communities": [
+    "東城社區"
+   ],
+   "category": "水患自主防災社區",
+   "geometry_source": "待併村里界圖資（內政部）"
+  },
+  {
+   "id": "FRC_02",
+   "town": "大城鄉",
+   "village": "東港村",
+   "communities": [
+    "東港社區"
+   ],
+   "category": "水患自主防災社區",
+   "geometry_source": "待併村里界圖資（內政部）"
+  },
+  {
+   "id": "FRC_03",
+   "town": "大城鄉",
+   "village": "西港村",
+   "communities": [
+    "西港社區"
+   ],
+   "category": "水患自主防災社區",
+   "geometry_source": "待併村里界圖資（內政部）"
+  },
+  {
+   "id": "FRC_04",
+   "town": "大城鄉",
+   "village": "潭墘村",
+   "communities": [
+    "潭墘社區",
+    "尤士社區"
+   ],
+   "category": "水患自主防災社區",
+   "geometry_source": "待併村里界圖資（內政部）"
+  },
+  {
+   "id": "FRC_05",
+   "town": "芳苑鄉",
+   "village": "崙腳村",
+   "communities": [
+    "崙腳社區"
+   ],
+   "category": "水患自主防災社區",
+   "geometry_source": "待併村里界圖資（內政部）"
+  },
+  {
+   "id": "FRC_06",
+   "town": "芳苑鄉",
+   "village": "新生村",
+   "communities": [
+    "新生社區"
+   ],
+   "category": "水患自主防災社區",
+   "geometry_source": "待併村里界圖資（內政部）"
+  },
+  {
+   "id": "FRC_07",
+   "town": "芳苑鄉",
+   "village": "永興村",
+   "communities": [
+    "永興社區"
+   ],
+   "category": "水患自主防災社區",
+   "geometry_source": "待併村里界圖資（內政部）"
+  },
+  {
+   "id": "FRC_08",
+   "town": "芳苑鄉",
+   "village": "漢寶村",
+   "communities": [
+    "漢寶社區"
+   ],
+   "category": "水患自主防災社區",
+   "geometry_source": "待併村里界圖資（內政部）"
+  },
+  {
+   "id": "FRC_09",
+   "town": "永靖鄉",
+   "village": "五福村",
+   "communities": [
+    "五福社區"
+   ],
+   "category": "水患自主防災社區",
+   "geometry_source": "待併村里界圖資（內政部）"
+  },
+  {
+   "id": "FRC_10",
+   "town": "永靖鄉",
+   "village": "港西村",
+   "communities": [
+    "港西社區"
+   ],
+   "category": "水患自主防災社區",
+   "geometry_source": "待併村里界圖資（內政部）"
+  },
+  {
+   "id": "FRC_11",
+   "town": "員林市",
+   "village": "新生里",
+   "communities": [
+    "新生社區"
+   ],
+   "category": "水患自主防災社區",
+   "geometry_source": "待併村里界圖資（內政部）"
+  },
+  {
+   "id": "FRC_12",
+   "town": "鹿港鎮",
+   "village": "洋厝里",
+   "communities": [
+    "洋厝社區"
+   ],
+   "category": "水患自主防災社區",
+   "geometry_source": "待併村里界圖資（內政部）"
+  },
+  {
+   "id": "FRC_13",
+   "town": "鹿港鎮",
+   "village": "頭南里",
+   "communities": [
+    "頭南社區"
+   ],
+   "category": "水患自主防災社區",
+   "geometry_source": "待併村里界圖資（內政部）"
+  },
+  {
+   "id": "FRC_14",
+   "town": "二林鎮",
+   "village": "華崙里",
+   "communities": [
+    "華崙社區"
+   ],
+   "category": "水患自主防災社區",
+   "geometry_source": "待併村里界圖資（內政部）"
+  },
+  {
+   "id": "FRC_15",
+   "town": "埔鹽鄉",
+   "village": "埔南村",
+   "communities": [
+    "埔南社區"
+   ],
+   "category": "水患自主防災社區",
+   "geometry_source": "待併村里界圖資（內政部）"
+  },
+  {
+   "id": "FRC_16",
+   "town": "埔鹽鄉",
+   "village": "廍子村",
+   "communities": [
+    "廍子社區"
+   ],
+   "category": "水患自主防災社區",
+   "geometry_source": "待併村里界圖資（內政部）"
+  },
+  {
+   "id": "FRC_17",
+   "town": "溪湖鎮",
+   "village": "西勢里",
+   "communities": [
+    "西勢社區"
+   ],
+   "category": "水患自主防災社區",
+   "geometry_source": "待併村里界圖資（內政部）"
+  },
+  {
+   "id": "FRC_18",
+   "town": "溪湖鎮",
+   "village": "湖東里",
+   "communities": [
+    "湖東社區"
+   ],
+   "category": "水患自主防災社區",
+   "geometry_source": "待併村里界圖資（內政部）"
+  },
+  {
+   "id": "FRC_19",
+   "town": "伸港鄉",
+   "village": "海尾村",
+   "communities": [
+    "海尾社區"
+   ],
+   "category": "水患自主防災社區",
+   "geometry_source": "待併村里界圖資（內政部）"
+  },
+  {
+   "id": "FRC_20",
+   "town": "福興鄉",
+   "village": "福寶村",
+   "communities": [
+    "福寶社區"
+   ],
+   "category": "水患自主防災社區",
+   "geometry_source": "待併村里界圖資（內政部）"
+  },
+  {
+   "id": "FRC_21",
+   "town": "福興鄉",
+   "village": "橋頭村",
+   "communities": [
+    "橋頭社區"
+   ],
+   "category": "水患自主防災社區",
+   "geometry_source": "待併村里界圖資（內政部）"
+  }
+ ]
+}

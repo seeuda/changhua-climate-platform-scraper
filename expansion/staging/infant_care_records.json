@@ -1,0 +1,616 @@
+{
+ "source": "彰化縣私立托嬰中心名冊 115/07/14 ＋ 準公共化簽約名單 115/07/24",
+ "count": 61,
+ "records": [
+  {
+   "id": "INFCARE_001",
+   "seq": 1,
+   "town": "彰化市",
+   "name": "勁寶兒海頓托嬰中心",
+   "phone": "04-7111738",
+   "address": "彰化市瑞陽街30號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_002",
+   "seq": 2,
+   "town": "彰化市",
+   "name": "彰化基督教醫療財團法人附設彰化縣私立彰基托嬰中心",
+   "phone": "04-7112095",
+   "address": "彰化市大埔路485巷106號1樓",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_003",
+   "seq": 3,
+   "town": "彰化市",
+   "name": "鵝媽媽托嬰中心",
+   "phone": "04-7121157",
+   "address": "彰化市大埔路485巷10號1樓",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_004",
+   "seq": 4,
+   "town": "彰化市",
+   "name": "嘟嘟托嬰中心",
+   "phone": "04-7203646",
+   "address": "彰化市仁愛路67巷11號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_005",
+   "seq": 5,
+   "town": "彰化市",
+   "name": "探索吉兒園托嬰中心",
+   "phone": "04-7226857",
+   "address": "彰化市忠誠路48號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_006",
+   "seq": 6,
+   "town": "彰化市",
+   "name": "太陽貝兒托嬰中心",
+   "phone": "04-7232789",
+   "address": "彰化市金馬路一段477號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_007",
+   "seq": 7,
+   "town": "彰化市",
+   "name": "綠荳籽托嬰中心",
+   "phone": "04-7252511",
+   "address": "彰化市泰和中街282號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_008",
+   "seq": 8,
+   "town": "彰化市",
+   "name": "向陽托嬰中心",
+   "phone": "04-7261091",
+   "address": "彰化市光南里南校街56號1-3樓",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_009",
+   "seq": 9,
+   "town": "彰化市",
+   "name": "小甜甜托嬰中心",
+   "phone": "04-7271657",
+   "address": "彰化市和調里實踐路58之1號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_010",
+   "seq": 10,
+   "town": "彰化市",
+   "name": "富幼托嬰中心",
+   "phone": "04-7271990",
+   "address": "彰化市成功路313號1-2樓",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_011",
+   "seq": 11,
+   "town": "彰化市",
+   "name": "袋鼠媽咪托嬰中心",
+   "phone": "04-7272789",
+   "address": "彰化市辭修路128巷1號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_012",
+   "seq": 12,
+   "town": "彰化市",
+   "name": "袋鼠貝比托嬰中心",
+   "phone": "04-7282968",
+   "address": "彰化市長壽街161、163號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_013",
+   "seq": 13,
+   "town": "彰化市",
+   "name": "貝恩托嬰中心",
+   "phone": "04-7287456",
+   "address": "彰化市民族路129巷2號1-2樓",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_014",
+   "seq": 14,
+   "town": "彰化市",
+   "name": "太陽托嬰中心",
+   "phone": "04-7293789",
+   "address": "彰化市公園路1段284號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_015",
+   "seq": 15,
+   "town": "彰化市",
+   "name": "喬依思寶貝托嬰中心",
+   "phone": "04-7331658",
+   "address": "彰化市辭修北路198巷66號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_016",
+   "seq": 16,
+   "town": "彰化市",
+   "name": "安芯托嬰中心",
+   "phone": "04-7381071",
+   "address": "彰化市彰南路2段164巷36號1-2樓",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_017",
+   "seq": 17,
+   "town": "彰化市",
+   "name": "愛堡托嬰中心",
+   "phone": "04-7620273",
+   "address": "彰化市南館街72號2樓",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_018",
+   "seq": 18,
+   "town": "彰化市",
+   "name": "秀傳醫療社團法人附設彰化縣私立秀傳托嬰中心",
+   "phone": "04-7256166#85088",
+   "address": "彰化市中山路一段556巷21弄2號2-3樓",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_019",
+   "seq": 19,
+   "town": "彰化市",
+   "name": "稻和四季托嬰中心",
+   "phone": "04-7522511",
+   "address": "彰化市平和里平順二街28號1-3樓",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_020",
+   "seq": 20,
+   "town": "和美鎮",
+   "name": "和美小豆豆托嬰中心",
+   "phone": "04-7366626",
+   "address": "和美鎮糖友里彰新路3段226號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_021",
+   "seq": 21,
+   "town": "和美鎮",
+   "name": "朧樂托嬰中心",
+   "phone": "04-7555267",
+   "address": "和美鎮仁昌路66號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_022",
+   "seq": 22,
+   "town": "秀水鄉",
+   "name": "康橋托嬰中心",
+   "phone": "04-7687657",
+   "address": "秀水鄉福安村中山路436巷6弄1號1-2樓",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_023",
+   "seq": 23,
+   "town": "秀水鄉",
+   "name": "大家托嬰中心",
+   "phone": "04-7689831",
+   "address": "彰化縣秀水鄉秀中街115巷47號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_024",
+   "seq": 24,
+   "town": "秀水鄉",
+   "name": "愛兒托嬰中心",
+   "phone": "04-7697098",
+   "address": "秀水鄉安東村枋林巷75-12號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_025",
+   "seq": 25,
+   "town": "鹿港鎮",
+   "name": "秀傳醫療財團法人附設彰化縣私立彰濱托嬰中心",
+   "phone": "04-7813888",
+   "address": "鹿港鎮鹿工路1-1號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_026",
+   "seq": 26,
+   "town": "花壇鄉",
+   "name": "一畝田托嬰中心",
+   "phone": "04-7872618",
+   "address": "花壇鄉中正路35號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_027",
+   "seq": 27,
+   "town": "花壇鄉",
+   "name": "育成托嬰中心",
+   "phone": "04-7872679",
+   "address": "花壇鄉長沙村中正路66號1樓",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_028",
+   "seq": 28,
+   "town": "永靖鄉",
+   "name": "強森永靖托嬰中心",
+   "phone": "04-8220957",
+   "address": "永靖鄉永寧街46巷20號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_029",
+   "seq": 29,
+   "town": "員林市",
+   "name": "迪士尼托嬰中心",
+   "phone": "04-8328882",
+   "address": "員林市忠孝街257號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_030",
+   "seq": 30,
+   "town": "員林市",
+   "name": "寶貝兒托嬰中心",
+   "phone": "04-8337328",
+   "address": "員林市建國路49號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_031",
+   "seq": 31,
+   "town": "員林市",
+   "name": "愛婗托嬰中心",
+   "phone": "04-8351914",
+   "address": "員林市仁美里和平東街34號1-2樓",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_032",
+   "seq": 32,
+   "town": "員林市",
+   "name": "亞亞托嬰中心",
+   "phone": "04-8393456",
+   "address": "員林市明倫路229號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_033",
+   "seq": 33,
+   "town": "員林市",
+   "name": "童之韻托嬰中心",
+   "phone": "04-8330648",
+   "address": "員林市溝皂里21鄰溝皂五街21號1-1樓",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_034",
+   "seq": 34,
+   "town": "大村鄉",
+   "name": "快樂寶貝托嬰中心",
+   "phone": "04-8531831",
+   "address": "大村鄉中正西路280巷2弄53號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_035",
+   "seq": 35,
+   "town": "溪湖鎮",
+   "name": "百晨托嬰中心",
+   "phone": "04-8612906",
+   "address": "溪湖鎮培英路76號1-2樓",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_036",
+   "seq": 36,
+   "town": "溪湖鎮",
+   "name": "皮亞諾托嬰中心",
+   "phone": "04-8815166",
+   "address": "溪湖鎮大公路347號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_037",
+   "seq": 37,
+   "town": "溪湖鎮",
+   "name": "樂遊托嬰中心",
+   "phone": "04-8851088",
+   "address": "溪湖鎮西環路88號2樓",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_038",
+   "seq": 38,
+   "town": "北斗鎮",
+   "name": "勁寶兒北斗托嬰中心",
+   "phone": "04-8870686",
+   "address": "北斗鎮東斗路10-11號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_039",
+   "seq": 39,
+   "town": "鹿港鎮",
+   "name": "普林斯頓托嬰中心",
+   "phone": "04-7715366",
+   "address": "鹿港鎮鹿和路3段500號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_040",
+   "seq": 40,
+   "town": "田中鎮",
+   "name": "向上心托嬰中心",
+   "phone": "04-8755575",
+   "address": "田中鎮南路里興工路388號1樓",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_041",
+   "seq": 41,
+   "town": "員林市",
+   "name": "晨曦托嬰中心",
+   "phone": "04-8362100",
+   "address": "員林市條和六街70號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_042",
+   "seq": 42,
+   "town": "員林市",
+   "name": "咕咕鳥員林托嬰中心",
+   "phone": "04-8311867",
+   "address": "員林市至善街181號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_043",
+   "seq": 43,
+   "town": "員林市",
+   "name": "悠悠小象托嬰中心",
+   "phone": "04-8392176",
+   "address": "員林市溝皂一街32號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_044",
+   "seq": 44,
+   "town": "員林市",
+   "name": "禾亞托嬰中心",
+   "phone": "04-8366333",
+   "address": "員林市興仁街73號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_045",
+   "seq": 45,
+   "town": "彰化市",
+   "name": "愛妮爾托嬰中心",
+   "phone": "04-7388871",
+   "address": "彰南路二段256-9號1-3樓",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_046",
+   "seq": 46,
+   "town": "彰化市",
+   "name": "可妮托嬰中心",
+   "phone": "04-7388552",
+   "address": "彰南路二段256-18號1-3樓",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_047",
+   "seq": 47,
+   "town": "溪湖鎮",
+   "name": "加昕托嬰中心",
+   "phone": "04-8612266",
+   "address": "溪湖鎮東寮里8鄰富貴街102號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_048",
+   "seq": 48,
+   "town": "大村鄉",
+   "name": "沐禾托嬰中心",
+   "phone": "04-8522777",
+   "address": "大村村忠孝街18號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_049",
+   "seq": 49,
+   "town": "員林市",
+   "name": "好好托嬰中心",
+   "phone": "04-8382198",
+   "address": "員林市至平街11號2樓",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_050",
+   "seq": 50,
+   "town": "員林市",
+   "name": "晴天家托嬰中心",
+   "phone": "04-8382296",
+   "address": "員林市三條里成功東路259號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_051",
+   "seq": 51,
+   "town": "彰化市",
+   "name": "探索托嬰中心",
+   "phone": "04-7516671",
+   "address": "彰化市中正路二段851號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_052",
+   "seq": 52,
+   "town": "員林市",
+   "name": "勁寶兒員林托嬰中心",
+   "phone": "04-8390365",
+   "address": "員林市員林大道六段365號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_053",
+   "seq": 53,
+   "town": "和美鎮",
+   "name": "朧悅館托嬰中心",
+   "phone": "04-7558128",
+   "address": "和美鎮美寮路二段480號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_054",
+   "seq": 54,
+   "town": "彰化市",
+   "name": "培陽托嬰中心",
+   "phone": "04-7622239",
+   "address": "彰化市平順一街27號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_055",
+   "seq": 55,
+   "town": "彰化市",
+   "name": "恩光托嬰中心",
+   "phone": "04-7522277",
+   "address": "彰化市平和五街100號1-3樓",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_056",
+   "seq": 56,
+   "town": "花壇鄉",
+   "name": "二畝田托嬰中心",
+   "phone": "04-7872688",
+   "address": "花壇鄉成功街208巷9號1-3樓",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_057",
+   "seq": 57,
+   "town": "溪湖鎮",
+   "name": "加安托嬰中心",
+   "phone": "04-8822166",
+   "address": "溪湖鎮行政街306號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_058",
+   "seq": 58,
+   "town": "秀水鄉",
+   "name": "優兒托嬰中心",
+   "phone": "04-7687266",
+   "address": "秀水鄉鶴鳴村明山街37巷66號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_059",
+   "seq": 59,
+   "town": "彰化市",
+   "name": "沐星托嬰中心",
+   "phone": "04-7355082",
+   "address": "彰化市建國北路181號1-3樓",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_060",
+   "seq": 60,
+   "town": "伸港鄉",
+   "name": "昕田托嬰中心",
+   "phone": "04-7980228",
+   "address": "伸港鄉大同村11鄰大同一街111號",
+   "category": "托嬰中心",
+   "public_contract": true
+  },
+  {
+   "id": "INFCARE_061",
+   "seq": 61,
+   "town": "和美鎮",
+   "name": "英橋托嬰中心",
+   "phone": "04-7551057",
+   "address": "和美鎮道周路438號2-3樓",
+   "category": "托嬰中心",
+   "public_contract": true
+  }
+ ]
+}
