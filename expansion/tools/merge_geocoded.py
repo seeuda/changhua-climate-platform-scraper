@@ -59,11 +59,18 @@ def main():
     outdir.mkdir(parents=True, exist_ok=True)
 
     coords = {}
-    with open(geocoded_csv, encoding='utf-8-sig') as f:
-        for row in csv.DictReader(f):
-            if row['status'] == 'ok' and row['x'] and row['y']:
-                coords[row['address']] = (float(row['x']), float(row['y']),
-                                          row.get('full_address') or '')
+    # 第一輪已通過驗證的結果
+    accepted = Path(staging) / 'geocode_accepted.json'
+    if accepted.exists():
+        for a, v in json.loads(accepted.read_text(encoding='utf-8')).items():
+            coords[a] = (v['x'], v['y'], v.get('full_address') or '')
+    # 重試輪結果（geocode.py 已於查詢時驗證，status=ok 即可信）
+    if Path(geocoded_csv).exists():
+        with open(geocoded_csv, encoding='utf-8-sig') as f:
+            for row in csv.DictReader(f):
+                if row.get('status') == 'ok' and row.get('x') and row.get('y'):
+                    coords[row['address']] = (float(row['x']), float(row['y']),
+                                              row.get('full_address') or '')
 
     for src, dst in DATASETS.items():
         path = staging / src
@@ -74,7 +81,10 @@ def main():
         feats, misses = [], []
         for r in d['records']:
             addr = r.get('address') or ''
-            hit = coords.get(addr)
+            # 待編碼清單建立時補過縣市前綴，查表要用同一把 key
+            key = addr if addr.startswith('彰化縣') else \
+                '彰化縣' + (r.get('town') or '') + addr
+            hit = coords.get(key) or coords.get(addr)
             if not hit:
                 misses.append(r.get('id'))
                 continue

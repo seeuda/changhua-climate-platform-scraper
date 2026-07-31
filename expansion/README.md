@@ -27,13 +27,42 @@ ETL 階段已全數剔除，只保留機構層級欄位（名稱/地址/機構�
 **原始名冊檔案一律不入版控。** 社區發展協會的「會址」常為私人住宅，
 不收錄、不上圖；一律以「活動中心」欄位定位。
 
+## 地理編碼現況（第一輪完成）
+
+第一輪 1,395 個唯一地址已查詢完畢，但**內政部 query-single 是模糊比對**：
+找不到精確門牌時會拿路名／號碼在全台猜一個最像的回傳，且不附信心度。
+實測有 96 筆配到別的鄉鎮甚至別的縣市，例如：
+
+    彰化縣二水鄉上豐村山腳路113-5號 → 苗栗縣通霄鎮南和里南和113之5號
+    彰化縣彰化市大竹里40-1號        → 嘉義市西區美源里新庄街40之1號
+
+因此新增 `addr_util.py`（正規化＋回應驗證），並將驗證整合進 `geocode.py`：
+送查前正規化與產生候選寫法，收到回應後比對縣市／鄉鎮／門牌號／路名，
+不通過即拒收。以此重判第一輪結果：
+
+| 資料集 | 已驗證可用 | 待重試 | 不可編碼 |
+|--------|-----------|--------|---------|
+| 避難收容處所 | 321/401 (80.0%) | 80 | 0 |
+| 救濟站 | 276/334 (82.6%) | 58 | 0 |
+| 關懷據點 | 269/377 (71.4%) | 108 | 0 |
+| 社區發展協會 | 279/477 (58.5%) | 168 | 30 |
+| 托嬰中心 | 39/61 (63.9%) | 22 | 0 |
+| 早療服務單位 | 4/5 (80.0%) | 1 | 0 |
+| **合計** | **1,188/1,655 (71.8%)** | **437** | **30** |
+
+- `geocode_accepted.json`：991 個唯一地址的可信座標（已通過驗證）
+- `addresses_retry.csv`：387 個唯一地址，各附 1-3 種候選寫法待重跑
+- `geocode_not_addressable.json`：30 筆確定無法編碼（28 筆非地址如
+  「無」「同上」「社區自行興建」，2 筆為地號需另一支 API）
+
 ## 執行流程
 
 ```
 [雲端] ETL（已完成）──> staging/*.json + addresses_to_geocode.csv
-[本機] set MOI_API_KEY=...
-       python tools/geocode.py expansion/staging/addresses_to_geocode.csv
-       （政府 API 擋雲端 IP，僅能在本機執行；key 只放環境變數）
+[本機] $env:MOI_API_KEY = "..."
+       python geocode.py addresses_retry.csv
+       （政府 API 擋雲端 IP，僅能在本機執行；key 只放環境變數。
+         geocode.py 與 addr_util.py 需放同一資料夾）
 [本機] 從 data.gov.tw 下載「村(里)界(TWD97經緯度)」GeoJSON（同樣擋雲端）
 [雲端] python tools/merge_geocoded.py expansion/staging geocoded_addresses.csv out/
        python tools/extract_villages.py 村里界.geojson

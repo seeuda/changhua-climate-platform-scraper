@@ -1,0 +1,212 @@
+[
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_033",
+  "name": "中正社區發展協會",
+  "address": "彰化縣彰化市同上",
+  "reason": "not_address"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_034",
+  "name": "田中社區發展協會",
+  "address": "彰化縣彰化市同上",
+  "reason": "not_address"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_063",
+  "name": "興北社區發展協會",
+  "address": "彰化縣彰化市無",
+  "reason": "not_address"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_065",
+  "name": "中山社區發展協會",
+  "address": "彰化縣彰化市無",
+  "reason": "not_address"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_073",
+  "name": "南美社區發展協會",
+  "address": "彰化縣彰化市社區自行興建",
+  "reason": "not_address"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_097",
+  "name": "福安社區發展協會",
+  "address": "彰化縣彰化市無",
+  "reason": "not_address"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_153",
+  "name": "頭崙社區發展協會",
+  "address": "彰化縣鹿港鎮頭崙社區活動中心",
+  "reason": "not_address"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_159",
+  "name": "南勢社區發展協會",
+  "address": "彰化縣鹿港鎮南勢社區活動中心",
+  "reason": "not_address"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_161",
+  "name": "山寮社區發展協會",
+  "address": "彰化縣鹿港鎮鄧安宮廣場",
+  "reason": "not_address"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_168",
+  "name": "學子社區發展協會",
+  "address": "彰化縣鹿港鎮無",
+  "reason": "not_address"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_171",
+  "name": "埔崙社區發展協會",
+  "address": "彰化縣鹿港鎮無",
+  "reason": "not_address"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_194",
+  "name": "埔鹽社區發展協會",
+  "address": "彰化縣埔鹽鄉無",
+  "reason": "not_address"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_196",
+  "name": "南港社區發展協會",
+  "address": "彰化縣埔鹽鄉同會址",
+  "reason": "not_address"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_267",
+  "name": "惠來社區發展協會",
+  "address": "彰化縣員林市無",
+  "reason": "not_address"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_294",
+  "name": "永春社區發展協會",
+  "address": "彰化縣花壇鄉無",
+  "reason": "not_address"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_297",
+  "name": "中庄社區發展協會",
+  "address": "彰化縣花壇鄉無",
+  "reason": "not_address"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_303",
+  "name": "中口社區發展協會",
+  "address": "彰化縣花壇鄉無",
+  "reason": "not_address"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_305",
+  "name": "灣雅社區發展協會",
+  "address": "彰化縣花壇鄉灣雅村彰員路一段852",
+  "reason": "not_address"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_315",
+  "name": "永興社區發展協會",
+  "address": "彰化縣芳苑鄉無",
+  "reason": "not_address"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_325",
+  "name": "民生社區發展協會",
+  "address": "彰化縣芳苑鄉528彰化縣芳苑鄉民生村芳功段1232地號(無地址)2層樓",
+  "reason": "parcel"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_326",
+  "name": "信義社區發展協會",
+  "address": "彰化縣芳苑鄉無",
+  "reason": "not_address"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_327",
+  "name": "仁愛社區發展協會",
+  "address": "彰化縣芳苑鄉無",
+  "reason": "not_address"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_328",
+  "name": "草湖社區發展協會",
+  "address": "彰化縣芳苑鄉528彰化縣芳苑鄉芳草段420地號",
+  "reason": "parcel"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_331",
+  "name": "福榮社區發展協會",
+  "address": "彰化縣芳苑鄉無",
+  "reason": "not_address"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_356",
+  "name": "和西社區發展協會",
+  "address": "彰化縣和美鎮無",
+  "reason": "not_address"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_362",
+  "name": "犁盛社區發展協會",
+  "address": "彰化縣和美鎮無",
+  "reason": "not_address"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_368",
+  "name": "還社社區發展協會",
+  "address": "彰化縣和美鎮無",
+  "reason": "not_address"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_382",
+  "name": "山犁社區發展協會",
+  "address": "彰化縣和美鎮無",
+  "reason": "not_address"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_385",
+  "name": "和東社區發展協會",
+  "address": "彰化縣和美鎮無",
+  "reason": "not_address"
+ },
+ {
+  "dataset": "assoc",
+  "id": "CASSOC_468",
+  "name": "復興社區發展協會",
+  "address": "彰化縣田中鎮書鄉苑 無(豬舍改建、閒置空間再利用)",
+  "reason": "not_address"
+ }
+]
