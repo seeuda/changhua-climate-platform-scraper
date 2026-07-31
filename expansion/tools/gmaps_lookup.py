@@ -62,6 +62,13 @@ def main():
                  '&& python -m playwright install chromium')
 
     path = Path(args.csv_path)
+    if not path.exists():
+        here = sorted(x.name for x in Path('.').glob('*.csv'))
+        sys.exit(f'找不到 {path}\n'
+                 f'目前資料夾：{Path.cwd()}\n'
+                 f'這裡的 CSV：{here or "(沒有)"}\n'
+                 f'請把 unlocated_with_links.csv 放到同一個資料夾，'
+                 f'或用完整路徑指定。')
     rows = list(csv.DictReader(open(path, encoding='utf-8-sig')))
     cols = list(rows[0].keys())
     for c in ('google_url', 'lat', 'lng', 'note'):
