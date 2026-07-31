@@ -8519,5 +8519,12 @@
   "y": 2639670.641,
   "full_address": "彰化縣田中鎮東路里013鄰復興路７８８號",
   "accepted_variant": "彰化縣田中鎮復興路788號"
+ },
+ "彰化縣彰化市埔西街212-246號": {
+  "lon": 120.540099,
+  "lat": 24.06064,
+  "source": "google_maps:place(!3d!4d)",
+  "coordinate_review_status": "manually_reviewed",
+  "note": "Google 地圖：彰化市延和球場（延和公園內）"
  }
 }

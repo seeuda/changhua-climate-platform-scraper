@@ -70,6 +70,38 @@ ETL 階段已全數剔除，只保留機構層級欄位（名稱/地址/機構�
 | `merge_geocoded.py` | 併回座標、TWD97→WGS84、產出前端 GeoJSON |
 | `crosscheck_care.py` | 以協會名冊校驗關懷據點的跨鄉鎮地址 |
 | `extract_villages.py` | 從全國村里界篩出水患自主防災社區 21 村里 |
+| `manual_coords.py` | 人工補座標：產生 Google 地圖查詢連結清單、回填後驗證併入 |
+
+### 人工補座標
+
+門牌 API 查不到的點位（鄉間巷弄、公園球場、無門牌設施），可用 Google
+地圖以地址或地點名稱查詢：
+
+```bash
+python manual_coords.py links staging/unlocated_points.csv 待查_附連結.csv
+# 在 google_url 欄貼上網址（或直接填 lat/lng），然後：
+python manual_coords.py merge 待查_附連結.csv staging
+```
+
+取座標時，**查到地點後按「分享」→ 複製連結 → 貼上網址列前往**，此時網址
+`data=` 參數裡的 `!3d<緯度>!4d<經度>` 是**地點本身**的座標；網址開頭的
+`@<緯度>,<經度>` 則是**地圖視窗中心**，會受側面板與拖曳影響。實測同一
+地點兩者可差約 260 公尺（120.5375241 vs 120.5400990），故工具優先採用
+`!3d/!4d`。Google 地圖座標為 WGS84，與本專案輸出一致，不需轉換。
+
+人工補的點位 `coordinate_review_status` 記為 `manually_reviewed`，並帶
+`coordinate_source`，與 API 定位的 `pending_review` 區隔。
+
+**授權注意**：Google Maps 服務條款限制擷取其內容建立資料集供非 Google
+底圖使用。本系統為 GitHub Pages 靜態站，若採用非 Google 底圖，逐筆人工
+查詢與大量擷取的性質不同，建議僅用於少量補遺；若要整批補齊，改用內政部
+「全國門牌地址資料」開放檔離線比對較無疑慮（見下）。
+
+### 替代方案：門牌坐標開放資料離線比對
+
+內政部於政府資料開放平臺提供全國門牌坐標檔。下載彰化縣部分後離線精確
+比對，可同時解決兩件事：`query-single` 的模糊比對問題，以及 62 筆
+「API 查無此門牌」——後者多為 API 端點的索引問題，完整檔案未必沒有。
 
 ## 執行流程
 

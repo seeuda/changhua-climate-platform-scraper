@@ -4,9 +4,8 @@
   "source": "彰化縣115年各鄉鎮市避難收容處所資料清冊",
   "pii_removed": null,
   "total_records": 401,
-  "geocoded": 356,
+  "geocoded": 357,
   "geocode_missing_ids": [
-   "SHELTER_038",
    "SHELTER_063",
    "SHELTER_069",
    "SHELTER_075",
@@ -1273,6 +1272,38 @@
     "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
     "geocoded_full_address": "彰化縣彰化市和調里001鄰工校街１號",
     "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.540099,
+     24.06064
+    ]
+   },
+   "properties": {
+    "id": "SHELTER_038",
+    "town": "彰化市",
+    "village": "延和里",
+    "name": "延和公園棒壘球場",
+    "category": "避難收容處所",
+    "address": "彰化縣彰化市埔西街212-246號",
+    "hazard_flood": false,
+    "hazard_quake": true,
+    "hazard_debris": false,
+    "hazard_tsunami": true,
+    "hazard_forest_fire": true,
+    "suitable_vulnerable": true,
+    "indoor": false,
+    "outdoor": true,
+    "flag_order_note": "欄序依表頭推定：水災/地震/土石流/海嘯/森林火災/適合避難弱者/室內/室外，待人工抽核",
+    "served_villages": "延和里、南興里、南瑤里、延平里",
+    "geocoded_full_address": null,
+    "coordinate_review_status": "manually_reviewed",
+    "coordinate_source": "google_maps:place(!3d!4d)",
+    "coordinate_note": "Google 地圖：彰化市延和球場（延和公園內）"
    }
   },
   {

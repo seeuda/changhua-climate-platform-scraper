@@ -63,14 +63,23 @@ def main():
     accepted = Path(staging) / 'geocode_accepted.json'
     if accepted.exists():
         for a, v in json.loads(accepted.read_text(encoding='utf-8')).items():
-            coords[a] = (v['x'], v['y'], v.get('full_address') or '')
+            # 門牌 API 的結果是 TWD97 x/y；人工補的（Google 地圖）已是
+            # WGS84 lon/lat。後者 abs<=180，下方會直接採用不做轉換。
+            if 'x' in v and 'y' in v:
+                xy = (v['x'], v['y'])
+            else:
+                xy = (v['lon'], v['lat'])
+            coords[a] = (*xy, v.get('full_address') or '',
+                         v.get('coordinate_review_status'), v.get('source'),
+                         v.get('note'))
     # 重試輪結果（geocode.py 已於查詢時驗證，status=ok 即可信）
     if Path(geocoded_csv).exists():
         with open(geocoded_csv, encoding='utf-8-sig') as f:
             for row in csv.DictReader(f):
                 if row.get('status') == 'ok' and row.get('x') and row.get('y'):
                     coords[row['address']] = (float(row['x']), float(row['y']),
-                                              row.get('full_address') or '')
+                                              row.get('full_address') or '',
+                                              None, None, None)
 
     for src, dst in DATASETS.items():
         path = staging / src
@@ -88,7 +97,7 @@ def main():
             if not hit:
                 misses.append(r.get('id'))
                 continue
-            x, y, full = hit
+            x, y, full, review, coord_source, coord_note = hit
             props = {k: v for k, v in r.items() if k != 'seq'}
             if abs(x) <= 180:
                 lon, lat = x, y
@@ -97,7 +106,12 @@ def main():
                 props.update(source_x=x, source_y=y,
                              source_crs='TWD97 / TM2 zone 121 (EPSG:3826)')
             props['geocoded_full_address'] = full or None
-            props['coordinate_review_status'] = 'pending_review'
+            # 人工查核者保留其狀態，不覆寫回 pending_review
+            props['coordinate_review_status'] = review or 'pending_review'
+            if coord_source:
+                props['coordinate_source'] = coord_source
+            if coord_note:
+                props['coordinate_note'] = coord_note
             feats.append({'type': 'Feature',
                           'geometry': {'type': 'Point', 'coordinates': [round(lon, 6), round(lat, 6)]},
                           'properties': props})
