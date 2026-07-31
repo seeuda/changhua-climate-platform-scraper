@@ -37,6 +37,10 @@ from addr_util import TOWN_RE, clean, validate, variants  # noqa: E402
 
 API_URL = 'https://adrid.moi.gov.tw/iisi/api/api-key/query-single'
 CACHE_PATH = Path('geocode_cache.json')
+# 快取結構版本。第一輪的快取是「未經驗證」的結果（status=ok 只代表 API
+# 有回傳，不代表配對正確），若被沿用會讓整輪重試變成空跑，所以版本不符
+# 一律作廢重查。
+CACHE_VERSION = 2
 OUT_PATH = Path('geocoded_addresses.csv')
 DELAY_SEC = 0.6
 RETRY = 3
@@ -74,7 +78,20 @@ def make_session(insecure=False):
 
 
 def load_cache():
-    return json.loads(CACHE_PATH.read_text(encoding='utf-8')) if CACHE_PATH.exists() else {}
+    if not CACHE_PATH.exists():
+        return {'_version': CACHE_VERSION}
+    try:
+        raw = json.loads(CACHE_PATH.read_text(encoding='utf-8'))
+    except json.JSONDecodeError:
+        print('快取檔毀損，重新建立', file=sys.stderr)
+        return {'_version': CACHE_VERSION}
+    if raw.get('_version') != CACHE_VERSION:
+        n = len([k for k in raw if not k.startswith('_')])
+        bak = CACHE_PATH.with_suffix('.v1.bak.json')
+        CACHE_PATH.replace(bak)
+        print(f'偵測到舊版快取（{n} 筆，未經驗證），已備份為 {bak.name} 並全部重查')
+        return {'_version': CACHE_VERSION}
+    return raw
 
 
 def save_cache(cache):
@@ -190,6 +207,7 @@ def main():
     cache = load_cache()
     todo = [(a, t) for a, t in pairs
             if a not in cache or cache[a].get('status') in ('error',)]
+    # '_version' 是結構標記，不是地址，不參與統計與輸出
     print(f'共 {len(pairs)} 個唯一地址，其中 {len(todo)} 個待查'
           f'（每筆最多嘗試 3 種寫法，回應會逐一驗證）')
 
@@ -216,6 +234,7 @@ def main():
     write_output(pairs, cache)
     from collections import Counter
     st = Counter(cache.get(a, {}).get('status', 'missing') for a, _ in pairs)
+    st.pop('_version', None)
     print(f'完成，結果在 {OUT_PATH}')
     for k, v in st.most_common():
         print(f'   {k}: {v}')
