@@ -53,6 +53,11 @@ def clean(addr, town=None):
     if NOT_ADDRESS.match(core) or LANDMARK_ONLY.search(core):
         return '', 'not_address'
 
+    # 多門牌（一址跨兩戶，例：長壽街161、163號）→ 取第一個
+    a = re.sub(r'(\d+)\s*[、,，]\s*\d+號', r'\1號', a)
+    # 門牌數字間的異常符號（例：2'2號，輸入法誤觸）→ 先併成 22號，
+    # 另一種讀法「2之2號」由 variants() 併送，交給門牌 API 裁決
+    a = re.sub(r"(\d)['’‘`\"]+(\d)", r'\1\2', a)
     # 截到第一個「號」，剝除樓層／「旁」「對面」／括號註記
     m = re.search(r'^(.*?\d+(?:[之\-]\d+)?號(?:之\d+)?)', a)
     if m:
@@ -83,6 +88,12 @@ def variants(addr, town=None):
     # 「之」還原成「-」
     if '之' in base:
         out.append(base.replace('之', '-'))
+    # 原地址門牌含異常符號時，另備「N之N」讀法一併送查
+    m = re.search(r"(\d)['’‘`\"]+(\d+)號", addr or '')
+    if m:
+        alt = re.sub(r'(\d+)號', f'{m.group(1)}之{m.group(2)}號', base, count=1)
+        if alt != base:
+            out.append(alt)
     return list(dict.fromkeys(out)), 'ok'
 
 
