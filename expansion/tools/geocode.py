@@ -40,7 +40,7 @@ CACHE_PATH = Path('geocode_cache.json')
 # 快取結構版本。第一輪的快取是「未經驗證」的結果（status=ok 只代表 API
 # 有回傳，不代表配對正確），若被沿用會讓整輪重試變成空跑，所以版本不符
 # 一律作廢重查。
-CACHE_VERSION = 2
+CACHE_VERSION = 3
 OUT_PATH = Path('geocoded_addresses.csv')
 DELAY_SEC = 0.6
 RETRY = 3
@@ -128,41 +128,52 @@ def raw_query(session, addr, key):
 
 
 def geocode_one(session, addr, town, key):
-    """依序試候選寫法，回傳第一個通過驗證的結果。"""
+    """依序試候選寫法，回傳第一個通過驗證的結果。
+
+    每個候選的**原始回應**都會保存在 raw 裡。驗證邏輯日後若修正，可直接
+    對 raw 重跑（revalidate.py），不必再打一次 API。
+    """
     cands, st = variants(addr, town)
     if st != 'ok':
-        return {'status': st}, False
-    reasons = []
+        return {'status': st, 'raw': []}, False
+    raw, reasons = [], []
     for cand in cands:
         data, failed = raw_query(session, cand, key)
         if failed:
-            return {'status': 'error'}, True
+            return {'status': 'error', 'raw': raw}, True
+        entry = {'candidate': cand,
+                 'x': (data or {}).get('x'), 'y': (data or {}).get('y'),
+                 'address_id': (data or {}).get('addressId'),
+                 'full_address': (data or {}).get('fullAddress') or ''}
+        raw.append(entry)
         if not data:
             reasons.append(f'{cand}:no_result')
             time.sleep(DELAY_SEC)
             continue
-        full = data.get('fullAddress') or ''
-        x, y = data.get('x'), data.get('y')
-        accepted, why = validate(cand, full, town)
-        if accepted and x and y:
+        accepted, why = validate(cand, entry['full_address'], town)
+        if accepted and entry['x'] and entry['y']:
             return {'status': 'ok', 'accepted_variant': cand,
-                    'x': x, 'y': y, 'address_id': data.get('addressId'),
-                    'full_address': full}, False
+                    'x': entry['x'], 'y': entry['y'],
+                    'address_id': entry['address_id'],
+                    'full_address': entry['full_address'], 'raw': raw}, False
         reasons.append(f'{cand}:{why if not accepted else "no_coords"}')
         time.sleep(DELAY_SEC)
+    last = raw[-1] if raw else {}
     return {'status': 'rejected', 'reject_reason': ' | '.join(reasons),
-            'full_address': full if 'full' in dir() else ''}, False
+            'full_address': last.get('full_address', ''),
+            'x': last.get('x'), 'y': last.get('y'), 'raw': raw}, False
 
 
 def write_output(rows, cache):
     cols = ['address', 'expected_town', 'status', 'accepted_variant', 'x', 'y',
-            'address_id', 'full_address', 'reject_reason']
+            'address_id', 'full_address', 'reject_reason', 'raw_json']
     with open(OUT_PATH, 'w', encoding='utf-8-sig', newline='') as f:
         w = csv.DictWriter(f, fieldnames=cols)
         w.writeheader()
         for addr, town in rows:
             c = dict(cache.get(addr, {'status': 'missing'}))
             c['address'], c['expected_town'] = addr, town
+            c['raw_json'] = json.dumps(c.get('raw', []), ensure_ascii=False)
             w.writerow({k: c.get(k, '') for k in cols})
 
 

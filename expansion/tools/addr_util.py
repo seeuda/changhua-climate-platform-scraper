@@ -98,12 +98,32 @@ def variants(addr, town=None):
     return list(dict.fromkeys(out)), 'ok'
 
 
+ROAD_TOKEN = re.compile(r'[^\d\s]{1,6}?(?:路|街|巷|道)')
+
+
+def _strip_village_prefix(s):
+    """剝掉開頭的村里名。
+
+    村里名本身可能含「路／街／道」（大道里、北路里、街尾里、路上村），
+    所以不能用排除字元類來比對，只能錨定在字串開頭。剝除後若剩下的部分
+    已不含路名，代表剝過頭（把路名當成村里），則還原。
+    """
+    # 貪婪比對：村名可能與鄉鎮名重疊（大村鄉大村村），非貪婪只會剝掉一半
+    m = re.match(r'^[^\d]{1,4}[村里]', s)
+    if not m:
+        return s
+    rest = s[m.end():]
+    return rest if ROAD_TOKEN.search(rest) else s
+
+
 def _norm_for_compare(s):
     s = (s or '').translate(FULLWIDTH).translate(VARIANT_CHARS)
     s = re.sub(r'\d{1,3}鄰', '', s)
     s = s.replace('彰化縣', '')
     s = TOWN_RE.sub('', s)
-    s = re.sub(r'[^\d路街巷道段號之]{1,4}[村里]', '', s)
+    s = _strip_village_prefix(s)
+    # 門牌的「-」與「之」同義，統一以利比對（158-1號 == 158之1號）
+    s = re.sub(r'(\d+)-(\d+)', r'\1之\2', s)
     s = re.sub(r'([一二三四五六七八九])段',
                lambda m: SEC_NUM[m.group(1)] + '段', s)
     return s
@@ -119,7 +139,7 @@ def house_number(s):
 
 
 def road_names(s):
-    return set(re.findall(r'([^\d\s]{1,6}?(?:路|街|巷|道))', _norm_for_compare(s)))
+    return set(ROAD_TOKEN.findall(_norm_for_compare(s)))
 
 
 def validate(requested, full_address, expected_town=None):
