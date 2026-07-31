@@ -1,0 +1,118 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "source": "彰化縣早療機構及身障機構(含兼辦早療日托)單位 114/8/19",
+  "pii_removed": null,
+  "total_records": 5,
+  "geocoded": 4,
+  "geocode_missing_ids": [
+   "EARLY_005"
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.545408,
+     24.075804
+    ]
+   },
+   "properties": {
+    "id": "EARLY_001",
+    "town": "彰化市",
+    "name": "彰化縣寶貝成長家園",
+    "sub_type": "早療機構",
+    "phone": "04-7288908",
+    "address": "彰化縣彰化市南郭路一段47巷13號2樓",
+    "preschool_cognitive": true,
+    "note": "身心障礙及發展遲緩兒童日托服務，不提供時段療育",
+    "category": "早療服務單位",
+    "source_x": 203775.85,
+    "source_y": 2663493.06,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市東興里020鄰南郭路一段４７巷１３號二樓",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.528397,
+     23.878513
+    ]
+   },
+   "properties": {
+    "id": "EARLY_002",
+    "town": "北斗鎮",
+    "name": "南區寶貝成長家園",
+    "sub_type": "早療機構",
+    "phone": "04-8874891",
+    "address": "彰化縣北斗鎮復興路270號5樓",
+    "preschool_cognitive": true,
+    "note": null,
+    "category": "早療服務單位",
+    "source_x": 201973.09,
+    "source_y": 2641648.91,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣北斗鎮文昌里015鄰復興路２７０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.57495,
+     23.956734
+    ]
+   },
+   "properties": {
+    "id": "EARLY_003",
+    "town": "員林市",
+    "name": "聖家啟智中心",
+    "sub_type": "身障機構兼辦早療業務",
+    "phone": "04-8374936",
+    "address": "彰化縣員林市光明里民生路50號",
+    "preschool_cognitive": true,
+    "note": null,
+    "category": "早療服務單位",
+    "source_x": 206739.98,
+    "source_y": 2650296.7,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市光明里022鄰民生路５０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.501932,
+     24.108285
+    ]
+   },
+   "properties": {
+    "id": "EARLY_004",
+    "town": "和美鎮",
+    "name": "家扶發展學園",
+    "sub_type": "身障機構",
+    "phone": "04-7569336",
+    "address": "彰化縣和美鎮彰美路5段160號",
+    "preschool_cognitive": true,
+    "note": "身心障礙兒童日托服務，不提供時段療育",
+    "category": "早療服務單位",
+    "source_x": 199367.87,
+    "source_y": 2667105.31,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮和東里023鄰彰美路五段１６０號",
+    "coordinate_review_status": "pending_review"
+   }
+  }
+ ]
+}

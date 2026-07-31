@@ -1,0 +1,1408 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "source": "彰化縣私立托嬰中心名冊 115/07/14 ＋ 準公共化簽約名單 115/07/24",
+  "pii_removed": null,
+  "total_records": 61,
+  "geocoded": 58,
+  "geocode_missing_ids": [
+   "INFCARE_002",
+   "INFCARE_051",
+   "INFCARE_061"
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.544455,
+     24.064394
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_001",
+    "town": "彰化市",
+    "name": "勁寶兒海頓托嬰中心",
+    "phone": "04-7111738",
+    "address": "彰化市瑞陽街30號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 203674.92,
+    "source_y": 2662229.67,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市延平里041鄰瑞陽街３０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.541849,
+     24.064208
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_003",
+    "town": "彰化市",
+    "name": "鵝媽媽托嬰中心",
+    "phone": "04-7121157",
+    "address": "彰化市大埔路485巷10號1樓",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 203409.76,
+    "source_y": 2662209.94,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市延平里022鄰大埔路４８５巷１０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.538863,
+     24.06917
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_004",
+    "town": "彰化市",
+    "name": "嘟嘟托嬰中心",
+    "phone": "04-7203646",
+    "address": "彰化市仁愛路67巷11號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 203108.0,
+    "source_y": 2662760.47,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市成功里019鄰仁愛路６７巷１１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.533234,
+     24.084352
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_005",
+    "town": "彰化市",
+    "name": "探索吉兒園托嬰中心",
+    "phone": "04-7226857",
+    "address": "彰化市忠誠路48號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 202541.16,
+    "source_y": 2664443.81,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市西勢里009鄰忠誠路４８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.553978,
+     24.098048
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_006",
+    "town": "彰化市",
+    "name": "太陽貝兒托嬰中心",
+    "phone": "04-7232789",
+    "address": "彰化市金馬路一段477號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 204655.16,
+    "source_y": 2665953.82,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市阿夷里006鄰金馬路一段４７７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.553793,
+     24.095911
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_007",
+    "town": "彰化市",
+    "name": "綠荳籽托嬰中心",
+    "phone": "04-7252511",
+    "address": "彰化市泰和中街282號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 204635.57,
+    "source_y": 2665717.21,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市阿夷里003鄰泰和中街２８２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.546471,
+     24.072015
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_008",
+    "town": "彰化市",
+    "name": "向陽托嬰中心",
+    "phone": "04-7261091",
+    "address": "彰化市光南里南校街56號1-3樓",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 203882.65,
+    "source_y": 2663073.11,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市光南里015鄰南校街５６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.554547,
+     24.083248
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_009",
+    "town": "彰化市",
+    "name": "小甜甜托嬰中心",
+    "phone": "04-7271657",
+    "address": "彰化市和調里實踐路58之1號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 204707.76,
+    "source_y": 2664314.45,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市和調里016鄰實踐路５８之１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.541146,
+     24.082858
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_010",
+    "town": "彰化市",
+    "name": "富幼托嬰中心",
+    "phone": "04-7271990",
+    "address": "彰化市成功路313號1-2樓",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 203345.09,
+    "source_y": 2664275.69,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市信義里011鄰成功路３１３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.537806,
+     24.086256
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_011",
+    "town": "彰化市",
+    "name": "袋鼠媽咪托嬰中心",
+    "phone": "04-7272789",
+    "address": "彰化市辭修路128巷1號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 203006.71,
+    "source_y": 2664653.19,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市忠孝里010鄰辭修路１２８巷１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.542665,
+     24.083467
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_012",
+    "town": "彰化市",
+    "name": "袋鼠貝比托嬰中心",
+    "phone": "04-7282968",
+    "address": "彰化市長壽街161、163號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 203499.74,
+    "source_y": 2664342.69,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市信義里005鄰長壽街１６１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.53792,
+     24.068895
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_013",
+    "town": "彰化市",
+    "name": "貝恩托嬰中心",
+    "phone": "04-7287456",
+    "address": "彰化市民族路129巷2號1-2樓",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 203011.96,
+    "source_y": 2662730.35,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市南瑶里008鄰民族路１２９巷２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.551057,
+     24.075033
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_014",
+    "town": "彰化市",
+    "name": "太陽托嬰中心",
+    "phone": "04-7293789",
+    "address": "彰化市公園路1段284號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 204349.99,
+    "source_y": 2663405.79,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市東興里007鄰公園路一段２８４號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.54202,
+     24.091933
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_015",
+    "town": "彰化市",
+    "name": "喬依思寶貝托嬰中心",
+    "phone": "04-7331658",
+    "address": "彰化市辭修北路198巷66號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 203437.19,
+    "source_y": 2665280.45,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市新興里021鄰辭修北路１９８巷６６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.580441,
+     24.083956
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_016",
+    "town": "彰化市",
+    "name": "安芯托嬰中心",
+    "phone": "04-7381071",
+    "address": "彰化市彰南路2段164巷36號1-2樓",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 207340.87,
+    "source_y": 2664384.83,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市大竹里008鄰彰南路二段１６４巷３６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.527634,
+     24.069259
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_017",
+    "town": "彰化市",
+    "name": "愛堡托嬰中心",
+    "phone": "04-7620273",
+    "address": "彰化市南館街72號2樓",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 201966.11,
+    "source_y": 2662774.15,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市崙平里008鄰南館街７２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.538714,
+     24.06571
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_018",
+    "town": "彰化市",
+    "name": "秀傳醫療社團法人附設彰化縣私立秀傳托嬰中心",
+    "phone": "04-7256166#85088",
+    "address": "彰化市中山路一段556巷21弄2號2-3樓",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 203091.52,
+    "source_y": 2662377.32,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市南瑶里018鄰中山路一段５５６巷２１弄２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.524237,
+     24.068569
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_019",
+    "town": "彰化市",
+    "name": "稻和四季托嬰中心",
+    "phone": "04-7522511",
+    "address": "彰化市平和里平順二街28號1-3樓",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 201620.45,
+    "source_y": 2662698.88,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市平和里012鄰平順二街２８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.529343,
+     24.109628
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_020",
+    "town": "和美鎮",
+    "name": "和美小豆豆托嬰中心",
+    "phone": "04-7366626",
+    "address": "和美鎮糖友里彰新路3段226號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 202154.85,
+    "source_y": 2667244.5,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮糖友里011鄰彰新路三段２２６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.495427,
+     24.106491
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_021",
+    "town": "和美鎮",
+    "name": "朧樂托嬰中心",
+    "phone": "04-7555267",
+    "address": "和美鎮仁昌路66號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 198705.81,
+    "source_y": 2666909.01,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮山犁里013鄰仁昌路６６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.496402,
+     24.033615
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_022",
+    "town": "秀水鄉",
+    "name": "康橋托嬰中心",
+    "phone": "04-7687657",
+    "address": "秀水鄉福安村中山路436巷6弄1號1-2樓",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 198775.992,
+    "source_y": 2658837.632,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉福安村001鄰中山路４３６巷６弄１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.503973,
+     24.033754
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_023",
+    "town": "秀水鄉",
+    "name": "大家托嬰中心",
+    "phone": "04-7689831",
+    "address": "彰化縣秀水鄉秀中街115巷47號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 199546.195,
+    "source_y": 2658850.264,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉莊雅村015鄰秀中街１１５巷４７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.50002,
+     24.039728
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_024",
+    "town": "秀水鄉",
+    "name": "愛兒托嬰中心",
+    "phone": "04-7697098",
+    "address": "秀水鄉安東村枋林巷75-12號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 199146.39,
+    "source_y": 2659513.3,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉安東村013鄰枋林巷７５之１２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.412597,
+     24.07547
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_025",
+    "town": "鹿港鎮",
+    "name": "秀傳醫療財團法人附設彰化縣私立彰濱托嬰中心",
+    "phone": "04-7813888",
+    "address": "鹿港鎮鹿工路1-1號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 190270.93,
+    "source_y": 2663506.13,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣鹿港鎮東石里025鄰鹿工路１之１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.54794,
+     24.027978
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_026",
+    "town": "花壇鄉",
+    "name": "一畝田托嬰中心",
+    "phone": "04-7872618",
+    "address": "花壇鄉中正路35號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 204016.31,
+    "source_y": 2658195.48,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣花壇鄉長沙村034鄰中正路３５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.546218,
+     24.028002
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_027",
+    "town": "花壇鄉",
+    "name": "育成托嬰中心",
+    "phone": "04-7872679",
+    "address": "花壇鄉長沙村中正路66號1樓",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 203841.14,
+    "source_y": 2658198.65,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣花壇鄉長沙村034鄰中正路６６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.548003,
+     23.92247
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_028",
+    "town": "永靖鄉",
+    "name": "強森永靖托嬰中心",
+    "phone": "04-8220957",
+    "address": "永靖鄉永寧街46巷20號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 203985.281,
+    "source_y": 2646510.548,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣永靖鄉永東村003鄰永寧街４６巷２０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.579007,
+     23.956734
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_029",
+    "town": "員林市",
+    "name": "迪士尼托嬰中心",
+    "phone": "04-8328882",
+    "address": "員林市忠孝街257號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 207152.94,
+    "source_y": 2650295.45,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市忠孝里009鄰忠孝街２５７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.580931,
+     23.966097
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_030",
+    "town": "員林市",
+    "name": "寶貝兒托嬰中心",
+    "phone": "04-8337328",
+    "address": "員林市建國路49號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 207351.86,
+    "source_y": 2651331.8,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市三和里009鄰建國路４９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.576484,
+     23.96258
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_031",
+    "town": "員林市",
+    "name": "愛婗托嬰中心",
+    "phone": "04-8351914",
+    "address": "員林市仁美里和平東街34號1-2樓",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 206898.05,
+    "source_y": 2650943.63,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市仁美里024鄰和平東街３４號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.585388,
+     23.952984
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_032",
+    "town": "員林市",
+    "name": "亞亞托嬰中心",
+    "phone": "04-8393456",
+    "address": "員林市明倫路229號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 207801.15,
+    "source_y": 2649878.22,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市萬年里013鄰明倫路２２９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.571043,
+     23.948329
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_033",
+    "town": "員林市",
+    "name": "童之韻托嬰中心",
+    "phone": "04-8330648",
+    "address": "員林市溝皂里21鄰溝皂五街21號1-1樓",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 206339.51,
+    "source_y": 2649367.09,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市溝皂里021鄰溝皂五街２１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.547643,
+     23.995753
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_034",
+    "town": "大村鄉",
+    "name": "快樂寶貝托嬰中心",
+    "phone": "04-8531831",
+    "address": "大村鄉中正西路280巷2弄53號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 203974.69,
+    "source_y": 2654626.68,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大村鄉大村村001鄰中正西路２８０巷２弄５３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.480945,
+     23.967686
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_035",
+    "town": "溪湖鎮",
+    "name": "百晨托嬰中心",
+    "phone": "04-8612906",
+    "address": "溪湖鎮培英路76號1-2樓",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 197176.839,
+    "source_y": 2651541.656,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮東寮里021鄰培英路７６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.469499,
+     23.961124
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_036",
+    "town": "溪湖鎮",
+    "name": "皮亞諾托嬰中心",
+    "phone": "04-8815166",
+    "address": "溪湖鎮大公路347號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 196009.249,
+    "source_y": 2650819.265,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮大突里017鄰大公路３４７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.47942,
+     23.956169
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_037",
+    "town": "溪湖鎮",
+    "name": "樂遊托嬰中心",
+    "phone": "04-8851088",
+    "address": "溪湖鎮西環路88號2樓",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 197016.93,
+    "source_y": 2650266.75,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮大竹里007鄰西環路８８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.530222,
+     23.872386
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_038",
+    "town": "北斗鎮",
+    "name": "勁寶兒北斗托嬰中心",
+    "phone": "04-8870686",
+    "address": "北斗鎮東斗路10-11號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 202156.64,
+    "source_y": 2640969.68,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣北斗鎮東光里008鄰東斗路１０之１１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.477583,
+     24.083786
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_039",
+    "town": "鹿港鎮",
+    "name": "普林斯頓托嬰中心",
+    "phone": "04-7715366",
+    "address": "鹿港鎮鹿和路3段500號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 196882.39,
+    "source_y": 2664401.06,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣鹿港鎮溝墘里016鄰鹿和路三段５００號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.592881,
+     23.852935
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_040",
+    "town": "田中鎮",
+    "name": "向上心托嬰中心",
+    "phone": "04-8755575",
+    "address": "田中鎮南路里興工路388號1樓",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 208531.84,
+    "source_y": 2638795.85,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮南路里010鄰興工路３８８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.586751,
+     23.960393
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_041",
+    "town": "員林市",
+    "name": "晨曦托嬰中心",
+    "phone": "04-8362100",
+    "address": "員林市條和六街70號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 207942.33,
+    "source_y": 2650698.33,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市三條里001鄰條和六街７０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.567512,
+     23.959863
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_042",
+    "town": "員林市",
+    "name": "咕咕鳥員林托嬰中心",
+    "phone": "04-8311867",
+    "address": "員林市至善街181號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 205984.1,
+    "source_y": 2650645.54,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市新生里012鄰至善街１８１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.574225,
+     23.948567
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_043",
+    "town": "員林市",
+    "name": "悠悠小象托嬰中心",
+    "phone": "04-8392176",
+    "address": "員林市溝皂一街32號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 206663.54,
+    "source_y": 2649392.43,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市溝皂里010鄰溝皂一街３２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.561619,
+     23.96679
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_044",
+    "town": "員林市",
+    "name": "禾亞托嬰中心",
+    "phone": "04-8366333",
+    "address": "員林市興仁街73號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 205386.7,
+    "source_y": 2651414.53,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市南興里006鄰興仁街７３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.583175,
+     24.083782
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_045",
+    "town": "彰化市",
+    "name": "愛妮爾托嬰中心",
+    "phone": "04-7388871",
+    "address": "彰南路二段256-9號1-3樓",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 207618.78,
+    "source_y": 2664364.68,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市大竹里014鄰彰南路二段２５６之９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.583532,
+     24.083634
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_046",
+    "town": "彰化市",
+    "name": "可妮托嬰中心",
+    "phone": "04-7388552",
+    "address": "彰南路二段256-18號1-3樓",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 207655.08,
+    "source_y": 2664348.23,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市大竹里014鄰彰南路二段２５６之１８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.474699,
+     23.96632
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_047",
+    "town": "溪湖鎮",
+    "name": "加昕托嬰中心",
+    "phone": "04-8612266",
+    "address": "溪湖鎮東寮里8鄰富貴街102號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 196540.62,
+    "source_y": 2651392.7,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮東寮里008鄰富貴街１０２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.546164,
+     23.994978
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_048",
+    "town": "大村鄉",
+    "name": "沐禾托嬰中心",
+    "phone": "04-8522777",
+    "address": "大村村忠孝街18號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 203823.87,
+    "source_y": 2654541.29,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大村鄉大村村005鄰忠孝街１８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.564644,
+     23.95967
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_049",
+    "town": "員林市",
+    "name": "好好托嬰中心",
+    "phone": "04-8382198",
+    "address": "員林市至平街11號2樓",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 205692.15,
+    "source_y": 2650625.08,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市新生里021鄰至平街１１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.583031,
+     23.95933
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_050",
+    "town": "員林市",
+    "name": "晴天家托嬰中心",
+    "phone": "04-8382296",
+    "address": "員林市三條里成功東路259號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 207563.37,
+    "source_y": 2650581.74,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市三條里008鄰成功東路２５９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.561987,
+     23.960162
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_052",
+    "town": "員林市",
+    "name": "勁寶兒員林托嬰中心",
+    "phone": "04-8390365",
+    "address": "員林市員林大道六段365號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 205421.84,
+    "source_y": 2650680.4,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市南興里002鄰員林大道六段３６５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.503958,
+     24.113552
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_053",
+    "town": "和美鎮",
+    "name": "朧悅館托嬰中心",
+    "phone": "04-7558128",
+    "address": "和美鎮美寮路二段480號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 199575.84,
+    "source_y": 2667687.93,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮竹營里018鄰美寮路二段４８０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.523677,
+     24.067081
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_054",
+    "town": "彰化市",
+    "name": "培陽托嬰中心",
+    "phone": "04-7622239",
+    "address": "彰化市平順一街27號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 201562.93,
+    "source_y": 2662534.34,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市平和里012鄰平順一街２７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.531933,
+     24.068417
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_055",
+    "town": "彰化市",
+    "name": "恩光托嬰中心",
+    "phone": "04-7522277",
+    "address": "彰化市平和五街100號1-3樓",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 202403.01,
+    "source_y": 2662679.41,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市崙平里002鄰平和五街１００號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.540586,
+     24.028013
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_056",
+    "town": "花壇鄉",
+    "name": "二畝田托嬰中心",
+    "phone": "04-7872688",
+    "address": "花壇鄉成功街208巷9號1-3樓",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 203268.26,
+    "source_y": 2658201.74,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣花壇鄉長沙村021鄰成功街２０８巷９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.481948,
+     23.9611
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_057",
+    "town": "溪湖鎮",
+    "name": "加安托嬰中心",
+    "phone": "04-8822166",
+    "address": "溪湖鎮行政街306號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 197276.239,
+    "source_y": 2650811.825,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮光平里001鄰行政街３０６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.500591,
+     24.054262
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_058",
+    "town": "秀水鄉",
+    "name": "優兒托嬰中心",
+    "phone": "04-7687266",
+    "address": "秀水鄉鶴鳴村明山街37巷66號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 199210.23,
+    "source_y": 2661122.75,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉鶴鳴村005鄰明山街３７巷６６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.548971,
+     24.096145
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_059",
+    "town": "彰化市",
+    "name": "沐星托嬰中心",
+    "phone": "04-7355082",
+    "address": "彰化市建國北路181號1-3樓",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 204145.45,
+    "source_y": 2665744.66,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市茄南里012鄰建國北路１８１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.492502,
+     24.151573
+    ]
+   },
+   "properties": {
+    "id": "INFCARE_060",
+    "town": "伸港鄉",
+    "name": "昕田托嬰中心",
+    "phone": "04-7980228",
+    "address": "伸港鄉大同村11鄰大同一街111號",
+    "category": "托嬰中心",
+    "public_contract": true,
+    "source_x": 198426.53,
+    "source_y": 2671902.97,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣伸港鄉大同村011鄰大同一街１１１號",
+    "coordinate_review_status": "pending_review"
+   }
+  }
+ ]
+}

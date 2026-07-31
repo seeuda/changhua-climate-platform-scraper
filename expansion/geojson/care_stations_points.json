@@ -1,0 +1,8279 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "source": "彰化縣社區照顧關懷據點名冊 115/07/21（來源無序號180、序號177重複兩處，共377處）",
+  "pii_removed": [
+   "聯絡人姓名",
+   "聯絡電話(含個人手機)"
+  ],
+  "total_records": 377,
+  "geocoded": 325,
+  "geocode_missing_ids": [
+   "CARE_006",
+   "CARE_009",
+   "CARE_012",
+   "CARE_015",
+   "CARE_017",
+   "CARE_020",
+   "CARE_029",
+   "CARE_033",
+   "CARE_040",
+   "CARE_064",
+   "CARE_081",
+   "CARE_086",
+   "CARE_092",
+   "CARE_094",
+   "CARE_095",
+   "CARE_116",
+   "CARE_156",
+   "CARE_171",
+   "CARE_177",
+   "CARE_177b",
+   "CARE_203",
+   "CARE_212",
+   "CARE_213",
+   "CARE_214",
+   "CARE_216",
+   "CARE_228",
+   "CARE_229",
+   "CARE_238",
+   "CARE_251",
+   "CARE_258",
+   "CARE_259",
+   "CARE_261",
+   "CARE_278",
+   "CARE_293",
+   "CARE_295",
+   "CARE_297",
+   "CARE_299",
+   "CARE_313",
+   "CARE_316",
+   "CARE_320",
+   "CARE_324",
+   "CARE_325",
+   "CARE_328",
+   "CARE_329",
+   "CARE_330",
+   "CARE_333",
+   "CARE_338",
+   "CARE_341",
+   "CARE_351",
+   "CARE_367",
+   "CARE_369",
+   "CARE_373"
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.541403,
+     24.070965
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "成功里",
+    "name": "成功社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣彰化市成功里旭光西路39號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_001",
+    "source_x": 203366.91,
+    "source_y": 2662958.49,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市成功里018鄰旭光西路３９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.565127,
+     24.070401
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "桃源里",
+    "name": "國軍退除役官兵輔導委員會中彰榮譽國民之家",
+    "category": "社區照顧關懷據點",
+    "venue_type": "機構內",
+    "address": "彰化縣彰化市桃源里公園路2段301號",
+    "meal_service": null,
+    "id": "CARE_002",
+    "source_x": 205779.16,
+    "source_y": 2662888.28,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市桃源里012鄰公園路二段３０１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.616013,
+     24.064921
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "牛埔里",
+    "name": "牛埔社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣彰化市牛埔里彰南路3段226號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_003",
+    "source_x": 210952.02,
+    "source_y": 2662266.32,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市快官里008鄰彰南路五段２２６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.539711,
+     24.074232
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "西安里",
+    "name": "西安社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣彰化市民族路369號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_004",
+    "source_x": 203195.98,
+    "source_y": 2663320.85,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市西安里011鄰民族路３６９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.599101,
+     24.070941
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "台鳳里",
+    "name": "台鳳社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣彰化市互助一街42號",
+    "meal_service": "共餐",
+    "id": "CARE_005",
+    "source_x": 209234.09,
+    "source_y": 2662937.83,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市台鳳里013鄰互助一街臨４２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.53925,
+     24.077962
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "中央里",
+    "name": "財團法人台灣基督長老教會彰化教會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "教會內",
+    "address": "彰化縣彰化市中華路195號",
+    "meal_service": null,
+    "id": "CARE_007",
+    "source_x": 203150.5,
+    "source_y": 2663734.14,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市中央里008鄰中華路１９５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.539918,
+     24.084012
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "長樂里",
+    "name": "長樂社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "租用民宅",
+    "address": "彰化縣彰化市長樂里和平路173號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_008",
+    "source_x": 203220.58,
+    "source_y": 2664403.86,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市長樂里001鄰和平路１７３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.537092,
+     24.086069
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "忠權里",
+    "name": "國有土地之建築物忠權社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣彰化市忠權里自立街146號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_010",
+    "source_x": 202934.05,
+    "source_y": 2664632.66,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市忠權里008鄰自立街１４６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.577939,
+     24.085842
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "竹中里",
+    "name": "會館梅鑒霧全人關懷協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣彰化市彰南路二段55巷7號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_011",
+    "source_x": 207087.11,
+    "source_y": 2664594.45,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市竹中里006鄰彰南路二段５５巷７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.547331,
+     24.086654
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "萬安里",
+    "name": "會館財團法人福智慈善基金會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣彰化市三民路407號2樓",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_013",
+    "source_x": 203975.32,
+    "source_y": 2664694.06,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市萬安里005鄰三民路４０７號二樓",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.552617,
+     24.069532
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "介壽里",
+    "name": "介壽社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣彰化市介壽新村21號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_014",
+    "source_x": 204506.71,
+    "source_y": 2662796.08,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市介壽里003鄰介壽新村２１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.543135,
+     24.068127
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "延平里",
+    "name": "會館財團法人天主教聖心基金會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣彰化市大埔路666號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_016",
+    "source_x": 203541.99,
+    "source_y": 2662643.6,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市延平里006鄰大埔路６６６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.534562,
+     24.083829
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "西勢里",
+    "name": "西勢社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣彰化市西勢里忠誠路1號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_018",
+    "source_x": 202675.99,
+    "source_y": 2664385.47,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市西勢里001鄰忠誠路１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.54503,
+     24.079858
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "永福里",
+    "name": "會館金齡關懷協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣彰化市陳稜路2號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_019",
+    "source_x": 203738.9,
+    "source_y": 2663942.13,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市永福里010鄰陳稜路２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.553455,
+     24.084495
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "和調里",
+    "name": "里長家樂齡關懷-和調里",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣彰化市中山路三段21之1號",
+    "meal_service": "共餐",
+    "id": "CARE_021",
+    "source_x": 204597.21,
+    "source_y": 2664453.01,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市和調里009鄰中山路三段２１號之１",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.543865,
+     24.072346
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "華北里",
+    "name": "彰山宮幼兒園1樓（無償使用）樂齡關懷-華北里",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣彰化市南校街160號1樓",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_022",
+    "source_x": 203617.76,
+    "source_y": 2663110.54,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市華北里010鄰南校街１６０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.541962,
+     24.087934
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "新華里",
+    "name": "樂齡關懷-新華里",
+    "category": "社區照顧關懷據點",
+    "venue_type": "廟宇",
+    "address": "彰化縣彰化市彰美路一段8巷42弄30之7號",
+    "meal_service": "共餐",
+    "id": "CARE_023",
+    "source_x": 203429.85,
+    "source_y": 2664837.54,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市新華里006鄰彰美路一段８巷４２弄３０之７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.524265,
+     24.068186
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "平和里",
+    "name": "平和社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣彰化市平順街8號",
+    "meal_service": "共餐",
+    "id": "CARE_024",
+    "source_x": 201623.15,
+    "source_y": 2662656.5,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市平和里012鄰平順街８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.575616,
+     24.086657
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "福山里",
+    "name": "財團法人台灣基督長老教會彰化中會彰山教會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "教會內",
+    "address": "彰化縣彰化市彰南路一段395巷19號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_025",
+    "source_x": 206851.17,
+    "source_y": 2664685.36,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市福山里007鄰彰南路一段３９５巷１９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.529436,
+     24.069994
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "崙平里",
+    "name": "崙平社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣彰化市中華西路283巷49弄1號",
+    "meal_service": "共餐",
+    "id": "CARE_026",
+    "source_x": 202149.62,
+    "source_y": 2662854.89,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市崙平里011鄰中華西路２８３巷４９弄１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.545457,
+     24.063337
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "延平里",
+    "name": "無償使用教會基督教青年會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣彰化市延平里埔陽街60號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_027",
+    "source_x": 203776.39,
+    "source_y": 2662112.31,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市延平里040鄰埔陽街６０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.613435,
+     24.054997
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "石牌里",
+    "name": "石牌社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣彰化市石牌里石牌路一段192巷3號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_028",
+    "venue_note": "無償使用民宅",
+    "needs_review": true,
+    "source_x": 210686.76,
+    "source_y": 2661167.93,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市石牌里002鄰石牌路一段１９２巷３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.539691,
+     24.059627
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "延和里",
+    "name": "延和社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣彰化市延和里埔西街111號",
+    "meal_service": "共餐",
+    "id": "CARE_030",
+    "source_x": 203188.65,
+    "source_y": 2661703.31,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市延和里021鄰埔西街１１１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.542256,
+     24.079842
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "光華里",
+    "name": "里長家光華社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣彰化市民生路229巷13號",
+    "meal_service": "共餐",
+    "id": "CARE_031",
+    "source_x": 203456.85,
+    "source_y": 2663941.33,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市光華里013鄰民生路２２９巷１３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.532718,
+     24.057587
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "南興里",
+    "name": "南興社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣彰化市中山路一段189巷49號",
+    "meal_service": "共餐",
+    "id": "CARE_032",
+    "source_x": 202478.84,
+    "source_y": 2661479.77,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市南興里009鄰中山路一段１８９巷４９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.57003,
+     24.082416
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "福山里",
+    "name": "（玉皇宮2樓）福山社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "廟宇",
+    "address": "彰化縣彰化市福山街168號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_034",
+    "source_x": 206281.82,
+    "source_y": 2664217.5,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市福山里027鄰福山街１６８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.537902,
+     24.091355
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "新興里",
+    "name": "新興社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣彰化市新興里彰新路一段117號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_035",
+    "source_x": 203018.28,
+    "source_y": 2665217.82,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市新興里017鄰彰新路一段１１７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.539988,
+     24.076655
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "民權里",
+    "name": "民權社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣彰化市民族路467號",
+    "meal_service": "共餐",
+    "id": "CARE_036",
+    "source_x": 203225.05,
+    "source_y": 2663589.14,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市民權里004鄰民族路４６７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.57796,
+     24.080891
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "安溪里",
+    "name": "安溪社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣彰化市安溪里安溪路81巷5號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_037",
+    "source_x": 207087.55,
+    "source_y": 2664046.07,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市安溪里010鄰安溪路８１巷５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.546979,
+     24.074355
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "卦山里",
+    "name": "卦山社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣彰化市旭光路69號",
+    "meal_service": "共餐",
+    "id": "CARE_038",
+    "venue_note": "聯合活動中心",
+    "needs_review": true,
+    "source_x": 203935.07,
+    "source_y": 2663332.07,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市華北里002鄰旭光路６９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.552047,
+     24.093898
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "阿夷里",
+    "name": "市民集會所阿夷社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣彰化市建國東路69號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_039",
+    "source_x": 204457.38,
+    "source_y": 2665494.85,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市阿夷里010鄰建國東路６９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.541451,
+     24.077824
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "大同里",
+    "name": "租借民宅大同社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣彰化市中華路111巷17號",
+    "meal_service": "共餐",
+    "id": "CARE_041",
+    "source_x": 203374.27,
+    "source_y": 2663718.13,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市大同里022鄰中華路１１１巷１７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.519497,
+     24.060994
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "莿桐里",
+    "name": "廟埕莿桐社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣彰化市莿桐里彰水路53巷17號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_042",
+    "source_x": 201135.54,
+    "source_y": 2661861.63,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市莿桐里007鄰彰水路５３巷１７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.557679,
+     24.072677
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "桃源里",
+    "name": "佛寺教室龍泉寺",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣彰化市公園路二段76號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_043",
+    "source_x": 205022.54,
+    "source_y": 2663142.79,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市桃源里005鄰公園路二段７６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.56162,
+     24.102547
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "寶廍里",
+    "name": "寶廍社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣彰化市寶廍里寶廍路139號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_044",
+    "source_x": 205433.64,
+    "source_y": 2666449.59,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市寶廍里006鄰寶廍路１３９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.592099,
+     24.081886
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "香山里",
+    "name": "香山社區發展會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣彰化市香山里彰南路2段618巷11號",
+    "meal_service": "共餐",
+    "id": "CARE_045",
+    "source_x": 208525.52,
+    "source_y": 2664152.02,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市香山里009鄰彰南路二段６１８巷１１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.543087,
+     24.091375
+    ]
+   },
+   "properties": {
+    "town": "彰化市",
+    "village": "新興里",
+    "name": "會館新興關懷協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣彰化市永安街336號",
+    "meal_service": null,
+    "id": "CARE_046",
+    "source_x": 203545.5,
+    "source_y": 2665218.31,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市新興里033鄰永安街３３６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.547893,
+     24.045774
+    ]
+   },
+   "properties": {
+    "town": "花壇鄉",
+    "village": "白沙村",
+    "name": "白沙社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣花壇鄉白沙村虎山街350號",
+    "meal_service": "共餐",
+    "id": "CARE_047",
+    "source_x": 204017.92,
+    "source_y": 2660166.36,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣花壇鄉白沙村002鄰虎山街３５０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.540138,
+     24.023818
+    ]
+   },
+   "properties": {
+    "town": "花壇鄉",
+    "village": "花壇村",
+    "name": "花壇社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣花壇鄉花壇村平和街76號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_048",
+    "source_x": 203221.21,
+    "source_y": 2657737.29,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣花壇鄉花壇村009鄰平和街７６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.549507,
+     24.028523
+    ]
+   },
+   "properties": {
+    "town": "花壇鄉",
+    "village": "長沙村",
+    "name": "民眾服務社婦女新知交流協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣花壇鄉長沙村彰員路二段542號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_049",
+    "source_x": 204175.96,
+    "source_y": 2658255.34,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣花壇鄉長沙村025鄰彰員路二段５４２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.551405,
+     24.013589
+    ]
+   },
+   "properties": {
+    "town": "花壇鄉",
+    "village": "中庄村",
+    "name": "廟埕中庄社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣花壇鄉中庄村中山路一段125號",
+    "meal_service": "共餐",
+    "id": "CARE_050",
+    "source_x": 204363.68,
+    "source_y": 2656600.82,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣花壇鄉中庄村004鄰中山路一段１２５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.53625,
+     24.033651
+    ]
+   },
+   "properties": {
+    "town": "花壇鄉",
+    "village": "南口村",
+    "name": "南口社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣花壇鄉南口村中山路二段369號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_051",
+    "source_x": 202829.27,
+    "source_y": 2658827.59,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣花壇鄉南口村004鄰中山路二段３６９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.545391,
+     24.041441
+    ]
+   },
+   "properties": {
+    "town": "花壇鄉",
+    "village": "文德村",
+    "name": "文德社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "廟宇",
+    "address": "彰化縣花壇鄉文德村溪南街66巷16號",
+    "meal_service": "共餐",
+    "id": "CARE_052",
+    "source_x": 203761.8,
+    "source_y": 2659687.36,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣花壇鄉文德村013鄰溪南街６６巷１６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.550178,
+     24.022846
+    ]
+   },
+   "properties": {
+    "town": "花壇鄉",
+    "village": "橋頭村",
+    "name": "橋頭社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣花壇鄉橋頭村花橋街117-1號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_053",
+    "source_x": 204242.12,
+    "source_y": 2657626.42,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣花壇鄉橋頭村014鄰花橋街１１７之１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.527945,
+     24.02257
+    ]
+   },
+   "properties": {
+    "town": "花壇鄉",
+    "village": "劉厝村",
+    "name": "劉厝社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "廟宇",
+    "address": "彰化縣花壇鄉劉厝村明德街447巷2號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_054",
+    "source_x": 201980.37,
+    "source_y": 2657603.22,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣花壇鄉劉厝村004鄰明德街４４７巷２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.560871,
+     24.043908
+    ]
+   },
+   "properties": {
+    "town": "花壇鄉",
+    "village": "岩竹村",
+    "name": "岩竹社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣花壇鄉岩竹村大嶺巷9號",
+    "meal_service": null,
+    "id": "CARE_055",
+    "source_x": 205337.18,
+    "source_y": 2659955.52,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣花壇鄉岩竹村014鄰大嶺巷９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.547631,
+     24.017403
+    ]
+   },
+   "properties": {
+    "town": "花壇鄉",
+    "village": "金墩村",
+    "name": "金墩社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣花壇鄉金墩村金墩村101號",
+    "meal_service": null,
+    "id": "CARE_056",
+    "source_x": 203981.16,
+    "source_y": 2657024.42,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣花壇鄉金墩村011鄰金墩街１０１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.49484,
+     24.06119
+    ]
+   },
+   "properties": {
+    "town": "秀水鄉",
+    "village": "馬興村",
+    "name": "馬興社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣秀水鄉馬興村鎮南巷20號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_057",
+    "source_x": 198628.059,
+    "source_y": 2661892.138,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉馬興村003鄰鎮南巷２０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.507207,
+     24.031837
+    ]
+   },
+   "properties": {
+    "town": "秀水鄉",
+    "village": "莊雅村",
+    "name": "莊雅社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣秀中街82巷67弄3號",
+    "meal_service": "共餐",
+    "id": "CARE_058",
+    "source_x": 199874.332,
+    "source_y": 2658636.79,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉莊雅村011鄰秀中街８２巷６７弄３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.495277,
+     24.021872
+    ]
+   },
+   "properties": {
+    "town": "秀水鄉",
+    "village": "埔崙村",
+    "name": "埔崙社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣秀水鄉埔崙村蘇周巷162號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_059",
+    "source_x": 198656.936,
+    "source_y": 2657537.465,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉埔崙村007鄰蘇周巷臨１６２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.498876,
+     24.075165
+    ]
+   },
+   "properties": {
+    "town": "秀水鄉",
+    "village": "馬興村",
+    "name": "雅興社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣秀水鄉馬興村雅興街260巷8-1號",
+    "meal_service": "共餐",
+    "id": "CARE_060",
+    "source_x": 199044.05,
+    "source_y": 2663438.37,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉馬興村016鄰雅興街２６０巷８之１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.50229,
+     24.058471
+    ]
+   },
+   "properties": {
+    "town": "秀水鄉",
+    "village": "鶴鳴村",
+    "name": "鶴鳴社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣秀水鄉鶴鳴村明山街臨182號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_061",
+    "source_x": 199384.683,
+    "source_y": 2661588.3,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉鶴鳴村010鄰明山街臨１８２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.489009,
+     24.055705
+    ]
+   },
+   "properties": {
+    "town": "秀水鄉",
+    "village": "鶴鳴村",
+    "name": "頭前社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣秀水鄉鶴鳴村永興巷臨61號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_062",
+    "source_x": 198032.93,
+    "source_y": 2661286.767,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉鶴鳴村018鄰永興巷臨６１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.506409,
+     24.007741
+    ]
+   },
+   "properties": {
+    "town": "秀水鄉",
+    "village": "金陵村",
+    "name": "金陵社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣秀水鄉金陵村竹圍巷3號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_063",
+    "source_x": 199783.85,
+    "source_y": 2655968.4,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉金陵村004鄰竹圍巷３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.48558,
+     24.049699
+    ]
+   },
+   "properties": {
+    "town": "秀水鄉",
+    "village": "鶴鳴村",
+    "name": "靜思堂財團法人中華民國佛教慈濟慈善事業基金會-",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣秀水鄉彰鹿路626號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_065",
+    "needs_review": true,
+    "source_x": 197681.71,
+    "source_y": 2660622.897,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉鶴鳴村022鄰彰鹿路６２６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.495739,
+     24.034903
+    ]
+   },
+   "properties": {
+    "town": "秀水鄉",
+    "village": "福安村",
+    "name": "福安社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣秀水鄉福安村長美巷臨53號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_066",
+    "source_x": 198709.06,
+    "source_y": 2658980.51,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉福安村003鄰長美巷臨５３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.525243,
+     24.01286
+    ]
+   },
+   "properties": {
+    "town": "秀水鄉",
+    "village": "金興村",
+    "name": "金興社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣秀水鄉正興路126巷臨9號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_067",
+    "source_x": 201701.919,
+    "source_y": 2656528.803,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉金興村004鄰正興路１２６巷臨９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.509934,
+     24.044939
+    ]
+   },
+   "properties": {
+    "town": "秀水鄉",
+    "village": "安溪村",
+    "name": "安溪社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣秀水鄉安溪村安溪街98號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_068",
+    "source_x": 200156.853,
+    "source_y": 2660086.817,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉安溪村005鄰安溪街９８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.510959,
+     24.040186
+    ]
+   },
+   "properties": {
+    "town": "秀水鄉",
+    "village": "秀水村",
+    "name": "秀水天主堂財團法人天主教會台中教區-彰化天主堂（秀水站）",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣秀水鄉花秀路212號",
+    "meal_service": "共餐",
+    "id": "CARE_069",
+    "source_x": 200259.292,
+    "source_y": 2659560.145,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉秀水村010鄰花秀路２１２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.501245,
+     24.039284
+    ]
+   },
+   "properties": {
+    "town": "秀水鄉",
+    "village": "安東村",
+    "name": "安東社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣秀水鄉安東村枋林巷60號",
+    "meal_service": "共餐",
+    "id": "CARE_070",
+    "source_x": 199270.82,
+    "source_y": 2659463.64,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉安東村012鄰枋林巷６０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.50618,
+     24.001748
+    ]
+   },
+   "properties": {
+    "town": "秀水鄉",
+    "village": "下崙村",
+    "name": "廟埕下崙社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣秀水鄉下崙村民生街206號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_071",
+    "source_x": 199758.232,
+    "source_y": 2655304.786,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉下崙村008鄰民生街２０６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.493216,
+     24.065933
+    ]
+   },
+   "properties": {
+    "town": "秀水鄉",
+    "village": "義興村",
+    "name": "廟埕義興社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣秀水鄉義興村義雅巷8-12號",
+    "meal_service": "共餐",
+    "id": "CARE_072",
+    "source_x": 198464.83,
+    "source_y": 2662417.97,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉義興村001鄰義雅巷８之１２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.525076,
+     24.024757
+    ]
+   },
+   "properties": {
+    "town": "秀水鄉",
+    "village": "秀水村",
+    "name": "港墘社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣秀水鄉秀水村開南巷30號",
+    "meal_service": "共餐",
+    "id": "CARE_073",
+    "source_x": 201689.371,
+    "source_y": 2657846.417,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉秀水村021鄰開南巷３０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.509303,
+     24.020612
+    ]
+   },
+   "properties": {
+    "town": "秀水鄉",
+    "village": "曾厝村",
+    "name": "曾厝社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣秀水鄉曾厝村大厝巷臨66號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_074",
+    "source_x": 200083.237,
+    "source_y": 2657392.856,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉曾厝村003鄰大厝巷臨６６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.517829,
+     24.009506
+    ]
+   },
+   "properties": {
+    "town": "秀水鄉",
+    "village": "陝西村",
+    "name": "陝西社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣秀水鄉陝西村埔南巷92號",
+    "meal_service": null,
+    "id": "CARE_075",
+    "source_x": 200946.37,
+    "source_y": 2656159.82,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉陝西村006鄰埔南巷９２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.544287,
+     23.998141
+    ]
+   },
+   "properties": {
+    "town": "大村鄉",
+    "village": "大村",
+    "name": "村V大村社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣大村鄉大村村茄苳路1段203號",
+    "meal_service": "共餐",
+    "id": "CARE_076",
+    "source_x": 203634.023,
+    "source_y": 2654892.282,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大村鄉大村村015鄰茄苳路一段２０３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.538452,
+     23.988251
+    ]
+   },
+   "properties": {
+    "town": "大村鄉",
+    "village": "貢旗村",
+    "name": "貢旗社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣大村鄉貢旗村大崙路4-2號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_077",
+    "source_x": 203036.72,
+    "source_y": 2653798.83,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大村鄉貢旗村008鄰大崙路４之２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.559718,
+     23.985299
+    ]
+   },
+   "properties": {
+    "town": "大村鄉",
+    "village": "擺塘村",
+    "name": "擺塘社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣大村鄉擺塘村擺塘橫巷1-1號",
+    "meal_service": "共餐",
+    "id": "CARE_078",
+    "source_x": 205199.666,
+    "source_y": 2653465.059,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大村鄉擺塘村012鄰擺塘橫巷１號之１",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.525623,
+     23.985378
+    ]
+   },
+   "properties": {
+    "town": "大村鄉",
+    "village": "加錫村",
+    "name": "加錫社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣大村鄉加錫村加錫二巷3-8號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_079",
+    "source_x": 201730.29,
+    "source_y": 2653485.05,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大村鄉加錫村002鄰加錫二巷３之８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.550376,
+     23.981294
+    ]
+   },
+   "properties": {
+    "town": "大村鄉",
+    "village": "南勢村",
+    "name": "南勢社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣大村鄉南勢村南一橫巷3-12號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_080",
+    "source_x": 204247.647,
+    "source_y": 2653024.479,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大村鄉南勢村009鄰南一橫巷３號之１２",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.577319,
+     23.997925
+    ]
+   },
+   "properties": {
+    "town": "大村鄉",
+    "village": "平和村",
+    "name": "平和社區發展協會(聖瑤宮旁邊)",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣大村鄉聖瑤東路79號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_082",
+    "venue_note": "無償使用民宅",
+    "needs_review": true,
+    "source_x": 206994.8,
+    "source_y": 2654857.8,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大村鄉平和村009鄰聖瑤東路７９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.555699,
+     23.999631
+    ]
+   },
+   "properties": {
+    "town": "大村鄉",
+    "village": "大橋村",
+    "name": "大橋社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣大村鄉大橋村中山路3段193巷69號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_083",
+    "source_x": 204795.63,
+    "source_y": 2655053.52,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大村鄉大橋村010鄰中山路三段１９３巷６９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.514656,
+     23.989142
+    ]
+   },
+   "properties": {
+    "town": "大村鄉",
+    "village": "大崙村",
+    "name": "大崙社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣大村鄉大崙村7鄰大崙2巷28-2號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_084",
+    "source_x": 200615.83,
+    "source_y": 2653905.65,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大村鄉大崙村018鄰大崙二巷２８之２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.572303,
+     23.977739
+    ]
+   },
+   "properties": {
+    "town": "大村鄉",
+    "village": "美港村",
+    "name": "(賜福宮)美港社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "廟宇",
+    "address": "彰化縣大村鄉美港村中山路一段118號",
+    "meal_service": "共餐",
+    "id": "CARE_085",
+    "source_x": 206477.639,
+    "source_y": 2652623.748,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大村鄉美港村011鄰中山路一段１１８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.566688,
+     23.988849
+    ]
+   },
+   "properties": {
+    "town": "大村鄉",
+    "village": "村",
+    "name": "上村鄉托幼兒園村上社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣大村鄉村上村中正東路98巷2號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_087",
+    "source_x": 205910.035,
+    "source_y": 2653855.956,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大村鄉村上村011鄰中正東路９８巷２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.538887,
+     24.008638
+    ]
+   },
+   "properties": {
+    "town": "大村鄉",
+    "village": "茄苳村",
+    "name": "茄苳社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣大村鄉茄苳路二段141巷31號",
+    "meal_service": "共餐",
+    "id": "CARE_088",
+    "venue_note": "活動中心",
+    "needs_review": true,
+    "source_x": 203088.45,
+    "source_y": 2656056.58,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大村鄉茄苳村006鄰茄苳路二段１４１巷３１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.458471,
+     24.087848
+    ]
+   },
+   "properties": {
+    "town": "鹿港鎮",
+    "village": "頭南里",
+    "name": "南勢社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣鹿港鎮頭南里南勢巷57-21號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_089",
+    "venue_note": "無償使用民宅",
+    "needs_review": true,
+    "source_x": 194940.84,
+    "source_y": 2664858.34,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣鹿港鎮頭南里015鄰南勢巷臨５７之２１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.451933,
+     24.099508
+    ]
+   },
+   "properties": {
+    "town": "鹿港鎮",
+    "village": "洋厝里",
+    "name": "洋厝社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣鹿港鎮洋厝里洋厝巷42-3號",
+    "meal_service": "共餐",
+    "id": "CARE_090",
+    "source_x": 194281.22,
+    "source_y": 2666152.22,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣鹿港鎮洋厝里001鄰洋厝巷４２之３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.433873,
+     24.058228
+    ]
+   },
+   "properties": {
+    "town": "鹿港鎮",
+    "village": "順興里",
+    "name": "公所租用老人文康中心財團法人老五老基金會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣鹿港鎮順興里忠孝路403號3樓(地下室1樓",
+    "meal_service": null,
+    "id": "CARE_091",
+    "source_x": 192426.62,
+    "source_y": 2661587.67,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣鹿港鎮順興里010鄰忠孝路４０３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.476972,
+     24.091569
+    ]
+   },
+   "properties": {
+    "town": "鹿港鎮",
+    "village": "頭崙里",
+    "name": "廟埕萬興社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣鹿港鎮頭崙里頂草路2段150號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_093",
+    "source_x": 196823.5,
+    "source_y": 2665263.23,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣鹿港鎮頭崙里007鄰頂草路二段１５０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.474975,
+     24.056106
+    ]
+   },
+   "properties": {
+    "town": "鹿港鎮",
+    "village": "東崎里",
+    "name": "東崎社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣鹿港鎮東崎里東崎七巷1號",
+    "meal_service": "共餐",
+    "id": "CARE_096",
+    "source_x": 196605.75,
+    "source_y": 2661336.41,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣鹿港鎮東崎里011鄰東崎七巷１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.453774,
+     24.119374
+    ]
+   },
+   "properties": {
+    "town": "鹿港鎮",
+    "village": "山崙里",
+    "name": "山寮社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣鹿港鎮山崙里山寮巷26號",
+    "meal_service": "共餐",
+    "id": "CARE_097",
+    "source_x": 194476.95,
+    "source_y": 2668351.68,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣鹿港鎮山崙里002鄰山寮巷２６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.483385,
+     24.079788
+    ]
+   },
+   "properties": {
+    "town": "鹿港鎮",
+    "village": "溝墘里",
+    "name": "廟埕永順社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣鹿港鎮溝墘里溝墘巷臨72-8號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_098",
+    "source_x": 197470.79,
+    "source_y": 2663956.05,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣鹿港鎮溝墘里001鄰溝墘巷臨７２之８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.435825,
+     24.065365
+    ]
+   },
+   "properties": {
+    "town": "鹿港鎮",
+    "village": "埔崙里",
+    "name": "財團法人福智慈善基金會(鹿港)",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣鹿港鎮埔崙里鹿草路1段441號1樓",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_099",
+    "venue_note": "無償使用民宅",
+    "needs_review": true,
+    "source_x": 192628.39,
+    "source_y": 2662377.32,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣鹿港鎮埔崙里017鄰鹿草路一段４４１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.434353,
+     24.062445
+    ]
+   },
+   "properties": {
+    "town": "鹿港鎮",
+    "village": "埔崙里",
+    "name": "廟埕埔崙社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣鹿港鎮埔崙里八德路26號",
+    "meal_service": "共餐",
+    "id": "CARE_100",
+    "source_x": 192477.38,
+    "source_y": 2662054.54,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣鹿港鎮埔崙里014鄰八德路２６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.446552,
+     24.091172
+    ]
+   },
+   "properties": {
+    "town": "鹿港鎮",
+    "village": "洋厝里",
+    "name": "新厝社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣鹿港鎮洋厝里新厝巷51-1號",
+    "meal_service": "共餐",
+    "id": "CARE_101",
+    "source_x": 193730.5,
+    "source_y": 2665231.17,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣鹿港鎮洋厝里017鄰新厝巷臨５１之１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.469997,
+     24.111296
+    ]
+   },
+   "properties": {
+    "town": "線西鄉",
+    "village": "下犁村",
+    "name": "下犁社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣線西鄉下犁村下犁路139-1號",
+    "meal_service": null,
+    "id": "CARE_102",
+    "status_note": "7/22因配合線西鄉公所辦理發放台電補助款作業據點暫停服務1日彰化縣",
+    "needs_review": true,
+    "source_x": 196122.6,
+    "source_y": 2667450.76,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣線西鄉下犁村013鄰下犁路１３９之１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.463257,
+     24.136219
+    ]
+   },
+   "properties": {
+    "town": "線西鄉",
+    "village": "線西村",
+    "name": "線西社區發展協會彰化縣",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣線西鄉線西村中央路二段536巷31號",
+    "meal_service": null,
+    "id": "CARE_103",
+    "source_x": 195448.04,
+    "source_y": 2670213.62,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣線西鄉線西村011鄰中央路二段５３６巷３１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.471607,
+     24.13044
+    ]
+   },
+   "properties": {
+    "town": "線西鄉",
+    "village": "寓埔村",
+    "name": "彰化縣線西鄉老人會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣線西鄉寓埔村中央路二段15號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_104",
+    "venue_note": "線西鄉老人會",
+    "needs_review": true,
+    "source_x": 196294.31,
+    "source_y": 2669570.31,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣線西鄉寓埔村002鄰中央路二段１５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.467389,
+     24.140347
+    ]
+   },
+   "properties": {
+    "town": "線西鄉",
+    "village": "頂庄村",
+    "name": "頂庄社區發展協會彰化縣",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣線西鄉頂庄村沿海路二段334巷32號",
+    "meal_service": null,
+    "id": "CARE_105",
+    "source_x": 195869.71,
+    "source_y": 2670669.16,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣線西鄉頂庄村002鄰沿海路二段３３４巷３２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.45987,
+     24.133636
+    ]
+   },
+   "properties": {
+    "town": "線西鄉",
+    "village": "寓埔村",
+    "name": "寓埔社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣線西鄉寓埔村寓埔路177-1號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_106",
+    "source_x": 195102.66,
+    "source_y": 2669928.86,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣線西鄉寓埔村016鄰寓埔路１７７之１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.483075,
+     24.099258
+    ]
+   },
+   "properties": {
+    "town": "和美鎮",
+    "village": "面前里",
+    "name": "面前社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣和美鎮面前里雅安路265號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_107",
+    "source_x": 197447.17,
+    "source_y": 2666112.49,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮面前里006鄰雅安路２６５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.533616,
+     24.097056
+    ]
+   },
+   "properties": {
+    "town": "和美鎮",
+    "village": "新庄里",
+    "name": "新庄社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣和美鎮新庄里東發路100巷36-1號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_108",
+    "source_x": 202584.6,
+    "source_y": 2665850.69,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮新庄里003鄰東發路１００巷３６之１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.510692,
+     24.085316
+    ]
+   },
+   "properties": {
+    "town": "和美鎮",
+    "village": "源埤里",
+    "name": "源埤社區發展協會（慶安宮）",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣和美鎮源埤里南安路105號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_109",
+    "source_x": 200249.46,
+    "source_y": 2664558.34,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮源埤里003鄰南安路１０５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.500434,
+     24.085248
+    ]
+   },
+   "properties": {
+    "town": "和美鎮",
+    "village": "南佃里",
+    "name": "南佃社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣和美鎮南佃里嘉佃路157號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_110",
+    "status_note": "7/30辦理長青幸福卡異地教學據點暫停服務1日8/27下午因適逢中元節據點暫停服務1次",
+    "venue_note": "集會所",
+    "needs_review": true,
+    "source_x": 199206.45,
+    "source_y": 2664554.47,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮南佃里011鄰嘉佃路１５７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.491738,
+     24.099322
+    ]
+   },
+   "properties": {
+    "town": "和美鎮",
+    "village": "雅溝里",
+    "name": "雅溝社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣和美鎮雅溝里南軒路359巷7號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_111",
+    "source_x": 198327.92,
+    "source_y": 2666116.46,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮雅溝里009鄰南軒路３５９巷７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.509086,
+     24.082075
+    ]
+   },
+   "properties": {
+    "town": "和美鎮",
+    "village": "鎮平里",
+    "name": "鎮平社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣和美鎮鎮平里南平路11號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_112",
+    "source_x": 200084.98,
+    "source_y": 2664200.05,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮鎮平里005鄰南平路１１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.538071,
+     24.113047
+    ]
+   },
+   "properties": {
+    "town": "和美鎮",
+    "village": "中圍里",
+    "name": "彰化縣和美鎮中寮大庄社區關懷協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣和美鎮中圍里桂東路159巷18號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_113",
+    "venue_note": "和美鎮中寮大庄社區關懷協會",
+    "needs_review": true,
+    "source_x": 203043.41,
+    "source_y": 2667620.13,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮中圍里002鄰桂東路１５９巷１８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.529805,
+     24.090752
+    ]
+   },
+   "properties": {
+    "town": "和美鎮",
+    "village": "詔安里",
+    "name": "詔安社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣和美鎮詔安里彰和路二段172號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_114",
+    "source_x": 202194.83,
+    "source_y": 2665153.74,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮詔安里006鄰彰和路二段１７２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.514411,
+     24.139551
+    ]
+   },
+   "properties": {
+    "town": "和美鎮",
+    "village": "地潭里",
+    "name": "地潭社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣和美鎮地潭里和厝路二段772號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_115",
+    "source_x": 200648.39,
+    "source_y": 2670563.62,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮地潭里001鄰和厝路二段臨７７２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.490535,
+     24.110116
+    ]
+   },
+   "properties": {
+    "town": "和美鎮",
+    "village": "面前里",
+    "name": "協會會所財團法人和美天佑宮",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣和美鎮面前里和順路232號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_117",
+    "source_x": 198209.95,
+    "source_y": 2667312.31,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮面前里013鄰和順路２３２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.524989,
+     24.119687
+    ]
+   },
+   "properties": {
+    "town": "和美鎮",
+    "village": "竹園里",
+    "name": "竹園社區發展協會(保安宮)",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣和美鎮竹園里彰新路四段115號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_118",
+    "source_x": 201716.01,
+    "source_y": 2668359.99,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮竹園里006鄰彰新路四段１１５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.518121,
+     24.120935
+    ]
+   },
+   "properties": {
+    "town": "和美鎮",
+    "village": "還社里",
+    "name": "廟埕還社社區發展協會（北極宮)",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣和美鎮還社里孝義路366巷6號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_119",
+    "source_x": 201018.39,
+    "source_y": 2668500.63,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮還社里008鄰孝義路３６６巷６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.516423,
+     24.110944
+    ]
+   },
+   "properties": {
+    "town": "和美鎮",
+    "village": "柑井里",
+    "name": "柑井社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣和美鎮柑井里柑竹路340號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_120",
+    "source_x": 200841.96,
+    "source_y": 2667394.72,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮柑井里008鄰柑竹路３４０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.501569,
+     24.114482
+    ]
+   },
+   "properties": {
+    "town": "和美鎮",
+    "village": "竹營里",
+    "name": "財團法人福智慈善基金會(和美)",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣和美鎮竹營里德美路306號3樓",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_121",
+    "venue_note": "無償使用民宅",
+    "needs_review": true,
+    "source_x": 199333.35,
+    "source_y": 2667791.78,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮竹營里021鄰德美路３０６號三樓",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.512808,
+     24.126662
+    ]
+   },
+   "properties": {
+    "town": "和美鎮",
+    "village": "嘉寶里",
+    "name": "嘉寶社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣和美鎮嘉寶里福北路219號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_122",
+    "source_x": 200480.59,
+    "source_y": 2669136.78,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮嘉寶里005鄰福北路２１９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.539363,
+     24.113705
+    ]
+   },
+   "properties": {
+    "town": "和美鎮",
+    "village": "中寮里",
+    "name": "中寮社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣和美鎮中寮里東興路25號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_123",
+    "source_x": 203175.0,
+    "source_y": 2667692.57,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮中寮里007鄰東興路２５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.52821,
+     24.103406
+    ]
+   },
+   "properties": {
+    "town": "和美鎮",
+    "village": "犁盛里",
+    "name": "犁盛社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣和美鎮犁盛里東平路221巷11號",
+    "meal_service": "共餐",
+    "id": "CARE_124",
+    "source_x": 202037.41,
+    "source_y": 2666555.76,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮犁盛里014鄰東平路２２１巷１１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.503687,
+     24.101702
+    ]
+   },
+   "properties": {
+    "town": "和美鎮",
+    "village": "大霞里",
+    "name": "大霞社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣和美鎮大霞里彰和路3段422號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_125",
+    "source_x": 199543.66,
+    "source_y": 2666375.65,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮大霞里009鄰彰和路三段４２２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.496466,
+     24.102952
+    ]
+   },
+   "properties": {
+    "town": "和美鎮",
+    "village": "山犁里",
+    "name": "山犁社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣和美鎮山犁里惠來五街45號3樓",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_126",
+    "source_x": 198810.07,
+    "source_y": 2666516.75,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮山犁里022鄰惠來五街４５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.502497,
+     24.156758
+    ]
+   },
+   "properties": {
+    "town": "伸港鄉",
+    "village": "溪底村",
+    "name": "溪底社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣伸港鄉溪底村溪底路103-2號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_127",
+    "source_x": 199444.36,
+    "source_y": 2672473.65,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣伸港鄉溪底村008鄰溪底路１０３之２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.484643,
+     24.144227
+    ]
+   },
+   "properties": {
+    "town": "伸港鄉",
+    "village": "新港村",
+    "name": "財團法人福智慈善基金會(",
+    "category": "社區照顧關懷據點",
+    "venue_type": "租用民宅",
+    "address": "彰化縣伸港鄉新港村自強路138號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_128",
+    "needs_review": true,
+    "source_x": 197624.85,
+    "source_y": 2671092.33,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣伸港鄉新港村017鄰自強路１３８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.499111,
+     24.156897
+    ]
+   },
+   "properties": {
+    "town": "伸港鄉",
+    "village": "定興村",
+    "name": "定興社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣伸港鄉定興村定興路63-2號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_129",
+    "source_x": 199100.34,
+    "source_y": 2672490.24,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣伸港鄉定興村006鄰定興路６３之２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.486868,
+     24.143899
+    ]
+   },
+   "properties": {
+    "town": "伸港鄉",
+    "village": "新港村",
+    "name": "新港社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣伸港鄉新港村自強路臨30號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_130",
+    "source_x": 197850.9,
+    "source_y": 2671055.24,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣伸港鄉新港村017鄰自強路臨３０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.492529,
+     24.160027
+    ]
+   },
+   "properties": {
+    "town": "伸港鄉",
+    "village": "大同村",
+    "name": "協會會所寶光紹興茂源講堂",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣伸港鄉大同村彰新路七段722號",
+    "meal_service": "共餐",
+    "id": "CARE_131",
+    "source_x": 198432.68,
+    "source_y": 2672839.34,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣伸港鄉大同村007鄰彰新路七段７２２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.49073,
+     24.176327
+    ]
+   },
+   "properties": {
+    "town": "伸港鄉",
+    "village": "全興村",
+    "name": "全興社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣伸港鄉全興村東全路11號",
+    "meal_service": "共餐",
+    "id": "CARE_132",
+    "source_x": 198256.44,
+    "source_y": 2674645.22,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣伸港鄉全興村009鄰東全路１１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.492985,
+     24.142959
+    ]
+   },
+   "properties": {
+    "town": "伸港鄉",
+    "village": "埤墘村",
+    "name": "埤墘社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣伸港鄉埤墘村埤墘一路154號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_133",
+    "venue_note": "無償使用民宅",
+    "needs_review": true,
+    "source_x": 198472.13,
+    "source_y": 2670948.8,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣伸港鄉埤墘村013鄰埤墘一路１５４號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.438942,
+     24.039578
+    ]
+   },
+   "properties": {
+    "town": "福興鄉",
+    "village": "西勢村",
+    "name": "西勢社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣福興鄉西勢村西勢街18-3號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_134",
+    "source_x": 192933.968,
+    "source_y": 2659520.06,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉西勢村005鄰西勢街１８號之３",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.458025,
+     24.023338
+    ]
+   },
+   "properties": {
+    "town": "福興鄉",
+    "village": "番社村",
+    "name": "番社社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣福興鄉番社村番社街臨17-15號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_135",
+    "source_x": 194867.98,
+    "source_y": 2657713.87,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉番社村014鄰番社街臨１７之１５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.472284,
+     24.01531
+    ]
+   },
+   "properties": {
+    "town": "福興鄉",
+    "village": "外中村",
+    "name": "外中社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣福興鄉外中村外中街108-2號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_136",
+    "venue_note": "無償使用民宅",
+    "needs_review": true,
+    "source_x": 196315.146,
+    "source_y": 2656819.302,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉外中村003鄰外中街１０８之２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.475968,
+     24.03062
+    ]
+   },
+   "properties": {
+    "town": "福興鄉",
+    "village": "外埔村",
+    "name": "外埔社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣福興鄉外埔村復興路16-1號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_137",
+    "source_x": 196696.24,
+    "source_y": 2658513.48,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉外埔村006鄰復興路１６號之１",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.455643,
+     24.039448
+    ]
+   },
+   "properties": {
+    "town": "福興鄉",
+    "village": "番婆村",
+    "name": "番婆社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣福興鄉番婆村番婆街16-1號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_138",
+    "source_x": 194632.63,
+    "source_y": 2659499.08,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉番婆村012鄰番婆街１６號之１",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.446275,
+     24.050054
+    ]
+   },
+   "properties": {
+    "town": "福興鄉",
+    "village": "橋頭村",
+    "name": "橋頭社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣福興鄉橋頭村彰鹿路七段444巷99號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_139",
+    "venue_note": "無償使用民宅",
+    "needs_review": true,
+    "source_x": 193684.404,
+    "source_y": 2660677.338,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉橋頭村002鄰彰鹿路七段４４４巷９９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.47909,
+     24.042925
+    ]
+   },
+   "properties": {
+    "town": "福興鄉",
+    "village": "大崙村",
+    "name": "大崙社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣福興鄉大崙村大崙街31-5號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_140",
+    "source_x": 197018.92,
+    "source_y": 2659875.09,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉大崙村006鄰大崙街臨３１之５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.487935,
+     24.018329
+    ]
+   },
+   "properties": {
+    "town": "福興鄉",
+    "village": "三汴村",
+    "name": "三汴社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣福興鄉三汴村彰水路346巷47號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_141",
+    "source_x": 197908.65,
+    "source_y": 2657147.71,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉三汴村004鄰彰水路３４６巷４７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.482418,
+     24.024708
+    ]
+   },
+   "properties": {
+    "town": "福興鄉",
+    "village": "元中村",
+    "name": "廟埕元中社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣福興鄉元中村橫圳巷6號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_142",
+    "source_x": 197349.95,
+    "source_y": 2657856.28,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉元中村001鄰橫圳巷６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.441522,
+     24.031275
+    ]
+   },
+   "properties": {
+    "town": "福興鄉",
+    "village": "同安村",
+    "name": "倉庫同安社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "廟宇",
+    "address": "彰化縣福興鄉同安村同安巷33-7號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_143",
+    "source_x": 193192.647,
+    "source_y": 2658599.529,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉同安村004鄰同安巷３３號之７",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.402059,
+     24.019914
+    ]
+   },
+   "properties": {
+    "town": "福興鄉",
+    "village": "麥厝村",
+    "name": "麥厝社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "廟宇",
+    "address": "彰化縣福興鄉麥厝村沿海路一段678號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_144",
+    "source_x": 189173.123,
+    "source_y": 2657357.794,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉麥厝村014鄰沿海路一段６７８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.427606,
+     24.04623
+    ]
+   },
+   "properties": {
+    "town": "福興鄉",
+    "village": "福興村",
+    "name": "福興社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣福興鄉福興村福興路51巷6號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_145",
+    "source_x": 191783.84,
+    "source_y": 2660261.48,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉福興村008鄰福興路５１巷６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.417752,
+     24.045127
+    ]
+   },
+   "properties": {
+    "town": "福興鄉",
+    "village": "二港村",
+    "name": "二港社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣福興鄉二港村福正路21巷13-33號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_146",
+    "source_x": 190781.14,
+    "source_y": 2660143.42,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉二港村011鄰福正路２１巷１３之３３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.425806,
+     24.03192
+    ]
+   },
+   "properties": {
+    "town": "福興鄉",
+    "village": "秀厝村",
+    "name": "秀厝社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣福興鄉秀厝村秀厝二街147號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_147",
+    "source_x": 191594.371,
+    "source_y": 2658677.356,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉秀厝村018鄰秀厝二街１４７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.404084,
+     24.034524
+    ]
+   },
+   "properties": {
+    "town": "福興鄉",
+    "village": "頂粘村",
+    "name": "頂粘社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣福興鄉頂粘村頂粘街203號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_148",
+    "source_x": 189386.014,
+    "source_y": 2658974.906,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉頂粘村012鄰頂粘街２０３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.438495,
+     24.041921
+    ]
+   },
+   "properties": {
+    "town": "福興鄉",
+    "village": "西勢村",
+    "name": "協會會所正宇人文發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣福興鄉西勢村西勢街34-38號",
+    "meal_service": "共餐",
+    "id": "CARE_149",
+    "source_x": 192889.487,
+    "source_y": 2659779.828,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉西勢村004鄰西勢街３４之３８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.408705,
+     24.009606
+    ]
+   },
+   "properties": {
+    "town": "福興鄉",
+    "village": "三和村",
+    "name": "三和社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣福興鄉三和村南興街66-8號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_150",
+    "source_x": 189844.48,
+    "source_y": 2656213.3,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉三和村002鄰南興街６６之８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.404398,
+     24.029216
+    ]
+   },
+   "properties": {
+    "town": "福興鄉",
+    "village": "廈粘村",
+    "name": "廟埕廈粘社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣福興鄉廈粘村廈粘街60-5號",
+    "meal_service": "共餐",
+    "id": "CARE_151",
+    "source_x": 189415.427,
+    "source_y": 2658386.967,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉廈粘村009鄰廈粘街臨６０之５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.422386,
+     24.008351
+    ]
+   },
+   "properties": {
+    "town": "福興鄉",
+    "village": "鎮平村",
+    "name": "廟埕鎮平社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣福興鄉鎮平村阿力街22號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_152",
+    "source_x": 191235.737,
+    "source_y": 2656068.486,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉鎮平村005鄰阿力街２２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.449873,
+     24.025895
+    ]
+   },
+   "properties": {
+    "town": "福興鄉",
+    "village": "番社村",
+    "name": "永豐社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣福興鄉番社村番花路二段558號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_153",
+    "venue_note": "無償使用民宅",
+    "needs_review": true,
+    "source_x": 194039.83,
+    "source_y": 2658000.27,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉番社村005鄰番花路二段５５８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.462196,
+     24.03044
+    ]
+   },
+   "properties": {
+    "town": "福興鄉",
+    "village": "社尾村",
+    "name": "協會會所中華民國众益書坊學會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣福興鄉社尾村浮景巷6-12號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_154",
+    "source_x": 195295.29,
+    "source_y": 2658498.843,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉社尾村006鄰浮景巷６號之１２",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.484988,
+     24.011871
+    ]
+   },
+   "properties": {
+    "town": "福興鄉",
+    "village": "萬豐村",
+    "name": "教會萬豐社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣福興鄉萬豐村萬豐巷12號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_155",
+    "source_x": 197606.187,
+    "source_y": 2656433.644,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉萬豐村006鄰萬豐巷１２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.368873,
+     24.005789
+    ]
+   },
+   "properties": {
+    "town": "芳苑鄉",
+    "village": "漢寶村",
+    "name": "漢寶社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣芳苑鄉漢寶村成功一路45號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_157",
+    "source_x": 185790.1,
+    "source_y": 2655808.14,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芳苑鄉漢寶村010鄰成功一路４５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.38996,
+     23.984705
+    ]
+   },
+   "properties": {
+    "town": "芳苑鄉",
+    "village": "新生村",
+    "name": "新生社區發展協會據點地址：週一至週四-",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣芳苑鄉草漢路草二段228巷7號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_158",
+    "source_x": 187925.455,
+    "source_y": 2653463.632,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芳苑鄉新生村008鄰草漢路草二段２２８巷７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.36419,
+     23.969248
+    ]
+   },
+   "properties": {
+    "town": "芳苑鄉",
+    "village": "崙腳村",
+    "name": "崙腳社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣芳苑鄉崙腳村中正路33號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_159",
+    "source_x": 185295.455,
+    "source_y": 2651763.308,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芳苑鄉崙腳村004鄰中正路３３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.381925,
+     23.955144
+    ]
+   },
+   "properties": {
+    "town": "芳苑鄉",
+    "village": "草湖村",
+    "name": "草湖社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣芳苑鄉草湖村二溪路草二段319號",
+    "meal_service": "共餐",
+    "id": "CARE_160",
+    "source_x": 187093.41,
+    "source_y": 2650193.26,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芳苑鄉草湖村001鄰二溪路草二段３１９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.330459,
+     23.942829
+    ]
+   },
+   "properties": {
+    "town": "芳苑鄉",
+    "village": "永興村",
+    "name": "永興社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣芳苑鄉永興村太平路218號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_161",
+    "venue_note": "無償使用民宅",
+    "needs_review": true,
+    "source_x": 181848.698,
+    "source_y": 2648853.184,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芳苑鄉永興村022鄰太平路永興段２１８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.352264,
+     23.904645
+    ]
+   },
+   "properties": {
+    "town": "芳苑鄉",
+    "village": "三合村",
+    "name": "三合社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣芳苑鄉三合村斗苑路三合段238巷86號",
+    "meal_service": "共餐、C據點、送餐",
+    "id": "CARE_162",
+    "source_x": 184048.876,
+    "source_y": 2644613.953,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芳苑鄉三合村008鄰斗苑路三合段２３８巷８６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.31855,
+     23.924784
+    ]
+   },
+   "properties": {
+    "town": "芳苑鄉",
+    "village": "仁愛村",
+    "name": "財團法人台灣基督長老教會彰化中會（芳苑教會）",
+    "category": "社區照顧關懷據點",
+    "venue_type": "教會內",
+    "address": "彰化縣芳苑鄉仁愛村斗苑路245號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_163",
+    "source_x": 180626.795,
+    "source_y": 2646860.511,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芳苑鄉仁愛村002鄰斗苑路芳苑段２４５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.340464,
+     23.964243
+    ]
+   },
+   "properties": {
+    "town": "芳苑鄉",
+    "village": "王功村",
+    "name": "王功社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣芳苑鄉王功村育嬰巷1號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_164",
+    "source_x": 182878.19,
+    "source_y": 2651220.09,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芳苑鄉王功村010鄰育嬰巷１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.340304,
+     23.96578
+    ]
+   },
+   "properties": {
+    "town": "芳苑鄉",
+    "village": "博愛村",
+    "name": "博愛社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣芳苑鄉博愛村北頭巷6號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_165",
+    "source_x": 182862.698,
+    "source_y": 2651390.378,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芳苑鄉博愛村001鄰北頭巷６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.399353,
+     23.97297
+    ]
+   },
+   "properties": {
+    "town": "芳苑鄉",
+    "village": "建平村",
+    "name": "建平社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣芳苑鄉建平村新興巷33號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_166",
+    "source_x": 188875.726,
+    "source_y": 2652159.828,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芳苑鄉建平村001鄰新興巷３３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.347695,
+     23.93294
+    ]
+   },
+   "properties": {
+    "town": "芳苑鄉",
+    "village": "五俊村",
+    "name": "五俊社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣芳苑鄉五俊村新生巷5號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_167",
+    "source_x": 183598.1,
+    "source_y": 2647749.82,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芳苑鄉五俊村009鄰新生巷５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.317274,
+     23.925103
+    ]
+   },
+   "properties": {
+    "town": "芳苑鄉",
+    "village": "仁愛村",
+    "name": "仁愛社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣芳苑鄉仁愛村中央路38號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_168",
+    "venue_note": "無償使用民宅",
+    "needs_review": true,
+    "source_x": 180497.085,
+    "source_y": 2646896.481,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芳苑鄉仁愛村004鄰中央路３８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.306231,
+     23.903773
+    ]
+   },
+   "properties": {
+    "town": "芳苑鄉",
+    "village": "新街村",
+    "name": "廟前廣場新街社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣芳苑鄉新街村新東路20號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_169",
+    "source_x": 179361.241,
+    "source_y": 2644539.662,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芳苑鄉新街村005鄰新東路２０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.318992,
+     23.925591
+    ]
+   },
+   "properties": {
+    "town": "芳苑鄉",
+    "village": "芳苑村",
+    "name": "芳苑社區發展協會無健促服務",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣芳苑鄉斗苑路芳苑段230號",
+    "meal_service": "共餐",
+    "id": "CARE_170",
+    "source_x": 180672.292,
+    "source_y": 2646949.66,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芳苑鄉芳苑村012鄰斗苑路芳苑段２３０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.330904,
+     23.912628
+    ]
+   },
+   "properties": {
+    "town": "芳苑鄉",
+    "village": "頂廍村",
+    "name": "頂廍社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣芳苑鄉頂廍村北平巷8號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_172",
+    "source_x": 181878.155,
+    "source_y": 2645508.221,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芳苑鄉頂廍村001鄰北平巷８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.340366,
+     23.962397
+    ]
+   },
+   "properties": {
+    "town": "芳苑鄉",
+    "village": "興仁村",
+    "name": "興仁社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣芳苑鄉興仁村97巷11號",
+    "meal_service": "共餐",
+    "id": "CARE_173",
+    "source_x": 182867.34,
+    "source_y": 2651015.608,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芳苑鄉興仁村001鄰建成路９７巷１１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.283772,
+     23.847438
+    ]
+   },
+   "properties": {
+    "town": "大城鄉",
+    "village": "頂庄村",
+    "name": "頂庄社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣大城鄉頂庄村東厝路70號",
+    "meal_service": "共餐",
+    "id": "CARE_174",
+    "source_x": 177042.915,
+    "source_y": 2638311.828,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大城鄉頂庄村008鄰東厝路７０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.288982,
+     23.861319
+    ]
+   },
+   "properties": {
+    "town": "大城鄉",
+    "village": "東港村",
+    "name": "東港社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣大城鄉東港村中央路2號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_175",
+    "source_x": 177581.278,
+    "source_y": 2639846.54,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大城鄉東港村004鄰中央路２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.348376,
+     23.835808
+    ]
+   },
+   "properties": {
+    "town": "大城鄉",
+    "village": "潭墘村",
+    "name": "潭墘社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣大城鄉潭墘村潭城路1號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_176",
+    "source_x": 183617.94,
+    "source_y": 2636992.08,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大城鄉潭墘村007鄰潭城路１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.338301,
+     23.844884
+    ]
+   },
+   "properties": {
+    "town": "大城鄉",
+    "village": "上山村",
+    "name": "台灣弱勢族群就業促進協會-大城上山村",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣大城鄉上山村大山路2號之1",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_178",
+    "source_x": 182596.228,
+    "source_y": 2638002.018,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大城鄉上山村004鄰大山路２之１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.353497,
+     23.843748
+    ]
+   },
+   "properties": {
+    "town": "大城鄉",
+    "village": "潭墘村",
+    "name": "尤仕社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣大城鄉天惠路40-2號",
+    "meal_service": "共餐",
+    "id": "CARE_179",
+    "source_x": 184143.652,
+    "source_y": 2637869.001,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大城鄉潭墘村017鄰天惠路４０之２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.628844,
+     24.008047
+    ]
+   },
+   "properties": {
+    "town": "芬園鄉",
+    "village": "進芬村",
+    "name": "進芬社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣芬園鄉進芬村中華路9號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_181",
+    "source_x": 212240.16,
+    "source_y": 2655964.12,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芬園鄉進芬村005鄰中華路９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.610351,
+     24.02871
+    ]
+   },
+   "properties": {
+    "town": "芬園鄉",
+    "village": "舊社村",
+    "name": "德興社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣芬園鄉舊社村德興路1段651號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_182",
+    "source_x": 210365.08,
+    "source_y": 2658257.56,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芬園鄉舊社村013鄰德興路一段６５１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.640324,
+     23.982956
+    ]
+   },
+   "properties": {
+    "town": "芬園鄉",
+    "village": "圳墘村",
+    "name": "寶山社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣芬園鄉圳墘村碧園路1段403號",
+    "meal_service": "共餐",
+    "id": "CARE_183",
+    "venue_note": "無償使用民宅",
+    "needs_review": true,
+    "source_x": 213401.0,
+    "source_y": 2653182.29,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芬園鄉圳墘村009鄰碧園路一段４０３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.627797,
+     24.01279
+    ]
+   },
+   "properties": {
+    "town": "芬園鄉",
+    "village": "社口村",
+    "name": "社口社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "廟宇",
+    "address": "彰化縣芬園鄉社口村忠孝路27號",
+    "meal_service": "共餐",
+    "id": "CARE_184",
+    "source_x": 212134.99,
+    "source_y": 2656489.6,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芬園鄉社口村011鄰忠孝路２７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.627062,
+     24.02054
+    ]
+   },
+   "properties": {
+    "town": "芬園鄉",
+    "village": "竹林村",
+    "name": "竹林社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣芬園鄉竹林村太平路77巷12號",
+    "meal_service": "共餐",
+    "id": "CARE_185",
+    "source_x": 212062.52,
+    "source_y": 2657348.1,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芬園鄉竹林村007鄰太平路７７巷１２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.643104,
+     23.973432
+    ]
+   },
+   "properties": {
+    "town": "芬園鄉",
+    "village": "溪頭村",
+    "name": "溪頭社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣芬園鄉溪頭村碧園路1段23號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_186",
+    "source_x": 213681.24,
+    "source_y": 2652126.73,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芬園鄉溪頭村014鄰碧園路一段２３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.634007,
+     23.992615
+    ]
+   },
+   "properties": {
+    "town": "芬園鄉",
+    "village": "縣庄村",
+    "name": "縣庄社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣芬園鄉縣庄村彰南路二段385巷21號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_187",
+    "source_x": 212761.0,
+    "source_y": 2654253.6,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芬園鄉縣庄村011鄰彰南路二段３８５巷２１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.625024,
+     24.0285
+    ]
+   },
+   "properties": {
+    "town": "芬園鄉",
+    "village": "大埔村",
+    "name": "舊社社區發展協會（僅請領1個據點經費）",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣芬園鄉舊社村彰南路五段2巷41號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_188",
+    "source_x": 211857.61,
+    "source_y": 2658230.2,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芬園鄉舊社村001鄰彰南路五段２巷４１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.615099,
+     23.988208
+    ]
+   },
+   "properties": {
+    "town": "芬園鄉",
+    "village": "中崙村",
+    "name": "中崙社區發展協會(僅請領1個據點經費)無健促服務",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣芬園鄉中崙村大彰路二段934巷11號",
+    "meal_service": "共餐",
+    "id": "CARE_189",
+    "source_x": 210835.79,
+    "source_y": 2653770.71,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芬園鄉中崙村015鄰大彰路二段９３４巷１１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.646978,
+     24.00925
+    ]
+   },
+   "properties": {
+    "town": "芬園鄉",
+    "village": "嘉興村",
+    "name": "理事長家彰化縣觀光農業文創社會福利協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣芬園鄉嘉興村芬草路1段83號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_190",
+    "source_x": 214085.4,
+    "source_y": 2656092.61,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芬園鄉嘉興村009鄰芬草路一段８３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.644047,
+     24.008805
+    ]
+   },
+   "properties": {
+    "town": "芬園鄉",
+    "village": "嘉興村",
+    "name": "茄荖社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣芬園鄉嘉興村芬草路一段93巷126號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_191",
+    "venue_note": "集會所",
+    "needs_review": true,
+    "source_x": 213787.08,
+    "source_y": 2656044.01,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芬園鄉嘉興村011鄰芬草路一段９３巷１２６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.62265,
+     24.011067
+    ]
+   },
+   "properties": {
+    "town": "芬園鄉",
+    "village": "芬園村",
+    "name": "芬園社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "廟宇",
+    "address": "彰化縣芬園鄉社口村南妙街74號",
+    "meal_service": "共餐",
+    "id": "CARE_192",
+    "source_x": 211610.95,
+    "source_y": 2656300.23,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芬園鄉社口村022鄰南妙街７４號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.667168,
+     24.012164
+    ]
+   },
+   "properties": {
+    "town": "芬園鄉",
+    "village": "嘉興村",
+    "name": "（國有地）嘉東社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣芬園鄉嘉興村嘉東街845巷26號",
+    "meal_service": "共餐",
+    "id": "CARE_193",
+    "source_x": 216140.19,
+    "source_y": 2656410.22,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芬園鄉嘉興村005鄰嘉東街８４５巷２６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.62955,
+     23.95786
+    ]
+   },
+   "properties": {
+    "town": "芬園鄉",
+    "village": "大竹村",
+    "name": "大竹社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "廟宇",
+    "address": "彰化縣芬園鄉大竹村大彰路一段345巷臨67號",
+    "meal_service": "共餐",
+    "id": "CARE_194",
+    "source_x": 212297.42,
+    "source_y": 2650405.8,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芬園鄉大竹村020鄰大彰路一段３４５巷臨６７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.647267,
+     24.026035
+    ]
+   },
+   "properties": {
+    "town": "芬園鄉",
+    "village": "茄荖村",
+    "name": "嘉北社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "廟宇",
+    "address": "彰化縣芬園鄉茄荖村慶功街211巷48號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_195",
+    "source_x": 214119.48,
+    "source_y": 2657951.35,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芬園鄉茄荖村002鄰慶功街２１１巷４８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.54979,
+     23.966162
+    ]
+   },
+   "properties": {
+    "town": "員林市",
+    "village": "源潭里",
+    "name": "源潭社區發展協會(承天宮)",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣員林市源潭里三潭巷27-1號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_196",
+    "source_x": 204182.59,
+    "source_y": 2651348.8,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市源潭里005鄰三潭巷２７之１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.575963,
+     23.958615
+    ]
+   },
+   "properties": {
+    "town": "員林市",
+    "village": "中正里",
+    "name": "會館社團法人彰化縣家樂福人文生活關懷協進會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣員林市中正里林森路231巷30號",
+    "meal_service": "共餐",
+    "id": "CARE_197",
+    "source_x": 206843.79,
+    "source_y": 2650504.68,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市中正里039鄰林森路２３１巷３０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.595163,
+     23.95025
+    ]
+   },
+   "properties": {
+    "town": "員林市",
+    "village": "崙雅里",
+    "name": "崙雅社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣員林市崙雅里員水路一段449巷47號",
+    "meal_service": "共餐",
+    "id": "CARE_198",
+    "source_x": 208795.18,
+    "source_y": 2649572.53,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市崙雅里009鄰員水路一段４４９巷４７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.603135,
+     23.960819
+    ]
+   },
+   "properties": {
+    "town": "員林市",
+    "village": "鎮興里",
+    "name": "鎮興社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣員林市鎮興里山腳路3段2巷150號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_199",
+    "source_x": 209609.86,
+    "source_y": 2650740.79,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市鎮興里013鄰山脚路三段２巷１５０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.567325,
+     23.955407
+    ]
+   },
+   "properties": {
+    "town": "員林市",
+    "village": "三義里",
+    "name": "靈糧堂愛加倍社區服務協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣員林市三義路105號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_200",
+    "source_x": 205963.56,
+    "source_y": 2650152.13,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市三義里022鄰三義路１０５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.564228,
+     23.958697
+    ]
+   },
+   "properties": {
+    "town": "員林市",
+    "village": "新生里",
+    "name": "新生社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣員林市新生里雙景街50號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_201",
+    "source_x": 205649.45,
+    "source_y": 2650517.45,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市新生里025鄰雙景街５０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.574677,
+     23.933517
+    ]
+   },
+   "properties": {
+    "town": "員林市",
+    "village": "中央里",
+    "name": "中央社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣員林市中央路115巷170號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_202",
+    "source_x": 206704.47,
+    "source_y": 2647725.56,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市中央里012鄰中央路１１５巷１７０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.58959,
+     23.961711
+    ]
+   },
+   "properties": {
+    "town": "員林市",
+    "village": "浮圳里",
+    "name": "靜思堂財團法人中華民國佛教慈濟慈善事業基金會(",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣員林市浮圳里員東路一段465號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_204",
+    "needs_review": true,
+    "source_x": 208231.64,
+    "source_y": 2650843.49,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市浮圳里021鄰員東路一段４６５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.575801,
+     23.959224
+    ]
+   },
+   "properties": {
+    "town": "員林市",
+    "village": "中正里",
+    "name": "會館社團法人愛心協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣員林市中正里三民東街25號",
+    "meal_service": "共餐",
+    "id": "CARE_205",
+    "source_x": 206827.43,
+    "source_y": 2650572.18,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市中正里023鄰三民東街２５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.577643,
+     23.951334
+    ]
+   },
+   "properties": {
+    "town": "員林市",
+    "village": "民生里",
+    "name": "民生社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "廟宇",
+    "address": "彰化縣員林市民生里四平街19巷7號",
+    "meal_service": "共餐",
+    "id": "CARE_206",
+    "source_x": 207012.27,
+    "source_y": 2649697.84,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市民生里010鄰四平街１９巷７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.586607,
+     23.945357
+    ]
+   },
+   "properties": {
+    "town": "員林市",
+    "village": "萬年里",
+    "name": "萬年社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣員林市萬年里萬年巷8號",
+    "meal_service": "共餐",
+    "id": "CARE_207",
+    "source_x": 207922.75,
+    "source_y": 2649033.23,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市萬年里002鄰萬年巷８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.574683,
+     23.96078
+    ]
+   },
+   "properties": {
+    "town": "員林市",
+    "village": "新興里",
+    "name": "會館財團法人福智慈善基金會(",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣員林市新興里育英路85號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_208",
+    "needs_review": true,
+    "source_x": 206714.17,
+    "source_y": 2650744.86,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市新興里009鄰育英路８５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.580532,
+     23.938512
+    ]
+   },
+   "properties": {
+    "town": "員林市",
+    "village": "大明里",
+    "name": "大明社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣員林市大明里大饒路803巷21號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_209",
+    "source_x": 207302.16,
+    "source_y": 2648277.0,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市大明里013鄰大饒路８０３巷２１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.598784,
+     23.967491
+    ]
+   },
+   "properties": {
+    "town": "員林市",
+    "village": "南東里",
+    "name": "南東社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣員林市南東里員東路一段68巷87號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_210",
+    "source_x": 209169.16,
+    "source_y": 2651480.9,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市南東里001鄰員東路一段６８巷臨８７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.575043,
+     23.971535
+    ]
+   },
+   "properties": {
+    "town": "員林市",
+    "village": "三多里",
+    "name": "十七份社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣員林市三多里興華街21號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_211",
+    "source_x": 206754.39,
+    "source_y": 2651935.92,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市三多里006鄰興華街２１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.568378,
+     23.948897
+    ]
+   },
+   "properties": {
+    "town": "員林市",
+    "village": "溝皂里",
+    "name": "溝皂社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣員林市溝皂里溝皂八街28號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_215",
+    "source_x": 206068.45,
+    "source_y": 2649430.83,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市溝皂里006鄰溝皂八街２８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.562796,
+     23.958038
+    ]
+   },
+   "properties": {
+    "town": "員林市",
+    "village": "南興里",
+    "name": "南興社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣員林市源泉路78-100號",
+    "meal_service": "共餐",
+    "id": "CARE_217",
+    "source_x": 205503.45,
+    "source_y": 2650444.94,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市南興里002鄰源泉路７８之１００號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.571832,
+     23.952961
+    ]
+   },
+   "properties": {
+    "town": "員林市",
+    "village": "惠來里",
+    "name": "惠來社區發展會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣員林市中山南路一六七巷一五弄22號",
+    "meal_service": "共餐",
+    "id": "CARE_218",
+    "source_x": 206421.42,
+    "source_y": 2649879.78,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市惠來里023鄰中山南路１６７巷１５弄２２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.578103,
+     23.962463
+    ]
+   },
+   "properties": {
+    "town": "員林市",
+    "village": "三和里",
+    "name": "三和社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣員林市和平東街61號",
+    "meal_service": "共餐",
+    "id": "CARE_219",
+    "source_x": 207062.79,
+    "source_y": 2650930.18,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市三和里011鄰和平東街６１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.563931,
+     23.952576
+    ]
+   },
+   "properties": {
+    "town": "員林市",
+    "village": "三義里",
+    "name": "三義社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣員林市員鹿路245巷112號",
+    "meal_service": "共餐",
+    "id": "CARE_220",
+    "source_x": 205617.14,
+    "source_y": 2649839.63,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市三義里019鄰員鹿路２４５巷１１２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.607878,
+     23.883471
+    ]
+   },
+   "properties": {
+    "town": "社頭鄉",
+    "village": "埤斗村",
+    "name": "埤斗社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣社頭鄉埤斗村山腳路一段178號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_221",
+    "source_x": 210068.818,
+    "source_y": 2642173.344,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣社頭鄉埤斗村009鄰山腳路一段１７８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.592493,
+     23.899987
+    ]
+   },
+   "properties": {
+    "town": "社頭鄉",
+    "village": "松竹村",
+    "name": "福竹社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣社頭鄉松竹村社石路979-1號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_222",
+    "source_x": 208507.37,
+    "source_y": 2644006.84,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣社頭鄉松竹村011鄰社石路９７９之１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.577074,
+     23.902459
+    ]
+   },
+   "properties": {
+    "town": "社頭鄉",
+    "village": "張厝村",
+    "name": "張厝社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣社頭鄉張厝村張厝一巷30號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_223",
+    "source_x": 206938.21,
+    "source_y": 2644285.15,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣社頭鄉張厝村002鄰張厝一巷３０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.58024,
+     23.915957
+    ]
+   },
+   "properties": {
+    "town": "社頭鄉",
+    "village": "湳底村",
+    "name": "湳底社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣社頭鄉湳底村湳底一巷475號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_224",
+    "source_x": 207265.04,
+    "source_y": 2645779.17,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣社頭鄉湳底村005鄰湳底一巷４７５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.607458,
+     23.916229
+    ]
+   },
+   "properties": {
+    "town": "社頭鄉",
+    "village": "仁和村",
+    "name": "仁和社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣社頭鄉山腳路三段128號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_225",
+    "venue_note": "無償使用民宅",
+    "needs_review": true,
+    "source_x": 210036.164,
+    "source_y": 2645801.235,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣社頭鄉泰安村011鄰山腳路三段１２８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.593088,
+     23.899544
+    ]
+   },
+   "properties": {
+    "town": "社頭鄉",
+    "village": "舊社村",
+    "name": "舊社社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣社頭鄉清水岩路219號",
+    "meal_service": "共餐",
+    "id": "CARE_226",
+    "source_x": 208567.806,
+    "source_y": 2643957.634,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣社頭鄉松竹村010鄰清水岩路２１９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.588253,
+     23.890043
+    ]
+   },
+   "properties": {
+    "town": "社頭鄉",
+    "village": "美雅村",
+    "name": "美雅社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣社頭鄉美雅村民生路371號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_227",
+    "source_x": 208072.39,
+    "source_y": 2642906.8,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣社頭鄉美雅村002鄰民生路３７１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.559186,
+     23.952526
+    ]
+   },
+   "properties": {
+    "town": "埔心鄉",
+    "village": "瓦中村",
+    "name": "瓦中社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "廟宇",
+    "address": "彰化縣埔心鄉瓦中村明聖路4段172號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_230",
+    "source_x": 205134.132,
+    "source_y": 2649835.626,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔心鄉瓦中村006鄰明聖路四段１７２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.538784,
+     23.943185
+    ]
+   },
+   "properties": {
+    "town": "埔心鄉",
+    "village": "大華村",
+    "name": "大華社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣埔心鄉大華村大明路202號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_231",
+    "source_x": 203054.21,
+    "source_y": 2648807.75,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔心鄉大華村002鄰大明路２０２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.538591,
+     23.937979
+    ]
+   },
+   "properties": {
+    "town": "埔心鄉",
+    "village": "仁里",
+    "name": "村V仁里社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣埔心鄉仁里村仁聖路171號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_232",
+    "source_x": 203032.708,
+    "source_y": 2648231.273,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔心鄉仁里村004鄰仁聖路１７１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.516085,
+     23.939859
+    ]
+   },
+   "properties": {
+    "town": "埔心鄉",
+    "village": "羅厝村",
+    "name": "村長家羅厝社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣埔心鄉羅厝村羅厝路二段138號",
+    "meal_service": null,
+    "id": "CARE_233",
+    "source_x": 200742.416,
+    "source_y": 2648447.079,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔心鄉羅厝村011鄰羅厝路二段１３８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.513985,
+     23.977273
+    ]
+   },
+   "properties": {
+    "town": "埔心鄉",
+    "village": "埤腳村",
+    "name": "埤腳社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "廟宇",
+    "address": "彰化縣埔心鄉埤腳村菜寮路136巷31號",
+    "meal_service": null,
+    "id": "CARE_234",
+    "source_x": 200543.012,
+    "source_y": 2652591.415,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔心鄉埤脚村010鄰菜寮路１３６巷３１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.528717,
+     23.97167
+    ]
+   },
+   "properties": {
+    "town": "埔心鄉",
+    "village": "埤霞村",
+    "name": "埤霞社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣埔心鄉埤霞村五通北路23號",
+    "meal_service": null,
+    "id": "CARE_235",
+    "source_x": 202040.042,
+    "source_y": 2651965.841,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔心鄉埤霞村006鄰五通北路２３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.513739,
+     23.918716
+    ]
+   },
+   "properties": {
+    "town": "永靖鄉",
+    "village": "福興村",
+    "name": "福興社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣永靖鄉福興村中肚巷52號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_236",
+    "source_x": 200495.59,
+    "source_y": 2646106.363,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣永靖鄉福興村011鄰中肚巷５２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.553134,
+     23.927034
+    ]
+   },
+   "properties": {
+    "town": "永靖鄉",
+    "village": "瑚璉村",
+    "name": "靜思堂會館財團法人中華民國佛教慈濟慈善事業基金會（",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣永靖鄉瑚璉村5鄰中山路二段428號",
+    "meal_service": "共餐",
+    "id": "CARE_237",
+    "needs_review": true,
+    "source_x": 204509.202,
+    "source_y": 2647014.313,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣永靖鄉瑚璉村005鄰中山路二段４２８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.555776,
+     23.927123
+    ]
+   },
+   "properties": {
+    "town": "永靖鄉",
+    "village": "光雲村",
+    "name": "光雲社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣永靖鄉光雲村意善巷79號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_239",
+    "source_x": 204778.182,
+    "source_y": 2647023.358,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣永靖鄉光雲村011鄰意善巷７９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.548685,
+     23.910613
+    ]
+   },
+   "properties": {
+    "town": "永靖鄉",
+    "village": "湳港村",
+    "name": "湳港社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣永靖鄉湳港村永社路186號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_240",
+    "venue_note": "無償使用民宅",
+    "needs_review": true,
+    "source_x": 204050.489,
+    "source_y": 2645197.189,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣永靖鄉湳港村005鄰永社路１８６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.548046,
+     23.924092
+    ]
+   },
+   "properties": {
+    "town": "永靖鄉",
+    "village": "永西村",
+    "name": "彰化縣承恩社區服務關懷協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "租用民宅",
+    "address": "彰化縣永靖鄉永西村瑚璉路245巷7號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_241",
+    "source_x": 203990.262,
+    "source_y": 2646690.12,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣永靖鄉永西村015鄰瑚璉路２４５巷７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.523994,
+     23.923941
+    ]
+   },
+   "properties": {
+    "town": "永靖鄉",
+    "village": "四芳村",
+    "name": "四芳社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣永靖鄉四芳村四湳路55-1號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_242",
+    "source_x": 201541.54,
+    "source_y": 2646681.43,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣永靖鄉四芳村010鄰四湳路５５之１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.552363,
+     23.926763
+    ]
+   },
+   "properties": {
+    "town": "永靖鄉",
+    "village": "瑚璉村",
+    "name": "無償使用廟宇瑚璉社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣永靖鄉瑚璉村錫壽路3號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_243",
+    "source_x": 204430.62,
+    "source_y": 2646984.53,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣永靖鄉瑚璉村003鄰錫壽路３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.504003,
+     23.924283
+    ]
+   },
+   "properties": {
+    "town": "永靖鄉",
+    "village": "竹子村",
+    "name": "竹子社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣永靖鄉竹子村竹中巷41號",
+    "meal_service": null,
+    "id": "CARE_244",
+    "source_x": 199506.59,
+    "source_y": 2646726.31,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣永靖鄉竹子村007鄰竹中巷臨４１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.476834,
+     23.956356
+    ]
+   },
+   "properties": {
+    "town": "溪湖鎮",
+    "village": "汴頭里",
+    "name": "之活動中心汴頭社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "廟宇",
+    "address": "彰化縣溪湖鎮福德路261巷30號",
+    "meal_service": "共餐、C據點、送餐",
+    "id": "CARE_245",
+    "source_x": 196753.787,
+    "source_y": 2650288.352,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮大竹里023鄰福德路３０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.466888,
+     23.968621
+    ]
+   },
+   "properties": {
+    "town": "溪湖鎮",
+    "village": "大突里",
+    "name": "大突社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣溪湖鎮大突里大突巷70號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_246",
+    "source_x": 195746.696,
+    "source_y": 2651650.49,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮大突里004鄰二溪路大突巷７０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.476644,
+     23.931225
+    ]
+   },
+   "properties": {
+    "town": "溪湖鎮",
+    "village": "西勢里",
+    "name": "西勢社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣溪湖鎮西勢里西安路117巷36號",
+    "meal_service": "共餐、C據點、送餐",
+    "id": "CARE_247",
+    "source_x": 196724.172,
+    "source_y": 2647505.227,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮西勢里005鄰西安路１１７巷３６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.482748,
+     23.961348
+    ]
+   },
+   "properties": {
+    "town": "溪湖鎮",
+    "village": "湖東里",
+    "name": "財團法人弘道老人福利基金會（憶智樂活之家)",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣溪湖鎮湖東里興學街75號2樓",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_248",
+    "venue_note": "無償使用民宅",
+    "needs_review": true,
+    "source_x": 197357.77,
+    "source_y": 2650839.06,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮湖東里014鄰興學街７５號二樓",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.465024,
+     23.956539
+    ]
+   },
+   "properties": {
+    "town": "溪湖鎮",
+    "village": "田中里",
+    "name": "田中社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣溪湖鎮田中里二溪路1段695巷125弄59號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_249",
+    "source_x": 195551.842,
+    "source_y": 2650313.125,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮田中里003鄰二溪路一段６９５巷１２５弄５９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.494964,
+     23.969688
+    ]
+   },
+   "properties": {
+    "town": "溪湖鎮",
+    "village": "中山里",
+    "name": "中山社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣溪湖鎮大溪路一段466巷53號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_250",
+    "source_x": 198604.364,
+    "source_y": 2651758.175,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮中山里003鄰大溪路一段４６６巷５３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.490719,
+     23.947412
+    ]
+   },
+   "properties": {
+    "town": "溪湖鎮",
+    "village": "忠覺里",
+    "name": "忠覺社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣溪湖鎮崙子腳路8鄰94號",
+    "meal_service": "共餐",
+    "id": "CARE_252",
+    "source_x": 198163.454,
+    "source_y": 2649292.644,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮忠覺里008鄰崙子脚路９４號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.498129,
+     23.939799
+    ]
+   },
+   "properties": {
+    "town": "溪湖鎮",
+    "village": "湳底里",
+    "name": "湳底社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣溪湖鎮媽厝里湳底路臨27-1號",
+    "meal_service": "共餐",
+    "id": "CARE_253",
+    "source_x": 198914.72,
+    "source_y": 2648446.85,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮媽厝里001鄰湳底路臨２７之１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.485096,
+     23.957306
+    ]
+   },
+   "properties": {
+    "town": "溪湖鎮",
+    "village": "湖東里",
+    "name": "福智基金會溪湖站",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣溪湖鎮湖東里英山街71號1樓",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_254",
+    "venue_note": "無償使用民宅",
+    "needs_review": true,
+    "source_x": 197595.079,
+    "source_y": 2650390.542,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮湖東里032鄰英山街７１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.480385,
+     23.95095
+    ]
+   },
+   "properties": {
+    "town": "溪湖鎮",
+    "village": "大竹里",
+    "name": "溪湖糖廠全家3樓大竹社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣溪湖鎮大竹里彰水路二段745號3樓(全家樓上3樓",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_255",
+    "source_x": 197113.044,
+    "source_y": 2649688.345,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮大竹里008鄰彰水路二段７４５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.497887,
+     23.9487
+    ]
+   },
+   "properties": {
+    "town": "溪湖鎮",
+    "village": "大庭里",
+    "name": "大庭社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣溪湖鎮大庭里崙子腳路35-1號",
+    "meal_service": "共餐",
+    "id": "CARE_256",
+    "source_x": 198893.577,
+    "source_y": 2649432.747,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮大庭里010鄰崙子脚路３５之１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.485706,
+     23.957419
+    ]
+   },
+   "properties": {
+    "town": "溪湖鎮",
+    "village": "湖東里",
+    "name": "溪湖鎮果菜市場公司2樓會議室湖東社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣溪湖鎮長青街22號2樓",
+    "meal_service": "共餐",
+    "id": "CARE_257",
+    "status_note": "7月27日辦理水患自主社區演練，據點暫停服務1次",
+    "needs_review": true,
+    "source_x": 197657.182,
+    "source_y": 2650402.787,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮湖東里032鄰長青街２２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.502042,
+     23.955017
+    ]
+   },
+   "properties": {
+    "town": "溪湖鎮",
+    "village": "東溪里",
+    "name": "彰化縣溪湖鎮東溪里肇霖宮福德寺暨巫厝社區聯合活動中心巫厝社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣溪湖鎮東溪里石鵝路臨121號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_260",
+    "source_x": 199318.93,
+    "source_y": 2650130.86,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮東溪里008鄰石鵝路臨１２１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.487856,
+     23.936049
+    ]
+   },
+   "properties": {
+    "town": "溪湖鎮",
+    "village": "媽厝里",
+    "name": "媽厝社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣溪湖鎮媽厝里湳底路88號",
+    "meal_service": null,
+    "id": "CARE_262",
+    "venue_note": "無償使用民宅",
+    "needs_review": true,
+    "source_x": 197867.499,
+    "source_y": 2648035.35,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮媽厝里010鄰湳底路８８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.433574,
+     23.98061
+    ]
+   },
+   "properties": {
+    "town": "埔鹽鄉",
+    "village": "太平村",
+    "name": "太平社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣埔鹽鄉太平村番金路58號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_263",
+    "source_x": 192361.685,
+    "source_y": 2652991.518,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔鹽鄉太平村006鄰番金路５８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.45246,
+     24.015041
+    ]
+   },
+   "properties": {
+    "town": "埔鹽鄉",
+    "village": "大有村",
+    "name": "大有社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣埔鹽鄉大有村員鹿路3段68之1號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_264",
+    "source_x": 194298.35,
+    "source_y": 2656797.2,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔鹽鄉大有村010鄰員鹿路三段６８之１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.495038,
+     23.979461
+    ]
+   },
+   "properties": {
+    "town": "埔鹽鄉",
+    "village": "打廉村",
+    "name": "打廉社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣埔鹽鄉打廉村埔打路19-15號",
+    "meal_service": "共餐",
+    "id": "CARE_265",
+    "source_x": 198615.766,
+    "source_y": 2652840.506,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔鹽鄉打廉村008鄰埔打路臨１９之１５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.434094,
+     24.000135
+    ]
+   },
+   "properties": {
+    "town": "埔鹽鄉",
+    "village": "永樂村",
+    "name": "永樂社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣埔鹽鄉永樂村永樂路435號",
+    "meal_service": "共餐、C據點、送餐",
+    "id": "CARE_266",
+    "source_x": 192423.28,
+    "source_y": 2655153.73,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔鹽鄉永樂村005鄰永樂路４３５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.446436,
+     23.975587
+    ]
+   },
+   "properties": {
+    "town": "埔鹽鄉",
+    "village": "三省村",
+    "name": "三省社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣埔鹽鄉三省村好金路2巷5-1號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_267",
+    "source_x": 193668.26,
+    "source_y": 2652430.01,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔鹽鄉三省村007鄰好金路２巷５號之１",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.486488,
+     24.009116
+    ]
+   },
+   "properties": {
+    "town": "埔鹽鄉",
+    "village": "廍子村",
+    "name": "廍子社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣埔鹽鄉廍子村光明路一段101號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_268",
+    "source_x": 197757.66,
+    "source_y": 2656127.92,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔鹽鄉廍子村006鄰光明路一段１０１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.451554,
+     24.004744
+    ]
+   },
+   "properties": {
+    "town": "埔鹽鄉",
+    "village": "西湖村",
+    "name": "西湖社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣埔鹽鄉西湖村大新路2巷22-6號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_269",
+    "source_x": 194201.687,
+    "source_y": 2655657.144,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔鹽鄉西湖村013鄰大新路２巷臨２２之６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.428811,
+     23.983044
+    ]
+   },
+   "properties": {
+    "town": "埔鹽鄉",
+    "village": "天盛村",
+    "name": "天盛社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣埔鹽鄉番金路67-5號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_270",
+    "source_x": 191878.046,
+    "source_y": 2653263.072,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔鹽鄉天盛村001鄰番金路６７號之５",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.474531,
+     24.010851
+    ]
+   },
+   "properties": {
+    "town": "埔鹽鄉",
+    "village": "瓦磘村",
+    "name": "瓦磘社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "廟宇",
+    "address": "彰化縣埔鹽鄉瓦磘村光明路2段60之1號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_271",
+    "source_x": 196541.948,
+    "source_y": 2656324.578,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔鹽鄉瓦磘村003鄰光明路二段臨６０之１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.42073,
+     23.989718
+    ]
+   },
+   "properties": {
+    "town": "埔鹽鄉",
+    "village": "石埤村",
+    "name": "石埤社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "廟宇",
+    "address": "彰化縣埔鹽鄉石埤村番金路2巷臨12號",
+    "meal_service": "共餐",
+    "id": "CARE_272",
+    "source_x": 191058.778,
+    "source_y": 2654005.578,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔鹽鄉石埤村002鄰番金路２巷臨１２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.471896,
+     23.996854
+    ]
+   },
+   "properties": {
+    "town": "埔鹽鄉",
+    "village": "埔鹽村",
+    "name": "埔鹽社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "廟宇",
+    "address": "彰化縣埔鹽鄉埔鹽村中正路120號",
+    "meal_service": "共餐、C據點、送餐",
+    "id": "CARE_273",
+    "source_x": 196268.08,
+    "source_y": 2654775.41,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔鹽鄉埔鹽村013鄰中正路１２０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.454505,
+     24.01659
+    ]
+   },
+   "properties": {
+    "town": "埔鹽鄉",
+    "village": "角樹村",
+    "name": "角樹社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣埔鹽鄉角樹村(日月池)員鹿路一段53號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_274",
+    "source_x": 194507.019,
+    "source_y": 2656967.955,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔鹽鄉大有村002鄰員鹿路三段５３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.444915,
+     24.022044
+    ]
+   },
+   "properties": {
+    "town": "埔鹽鄉",
+    "village": "永平村",
+    "name": "永平社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣埔鹽鄉永平村員鹿路3段227-2號",
+    "meal_service": null,
+    "id": "CARE_275",
+    "source_x": 193533.82,
+    "source_y": 2657575.792,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔鹽鄉永平村003鄰員鹿路三段２２７之２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.478254,
+     23.994618
+    ]
+   },
+   "properties": {
+    "town": "埔鹽鄉",
+    "village": "埔南村",
+    "name": "老人會館埔南社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣埔鹽鄉埔南村彰水路1段340巷32號",
+    "meal_service": null,
+    "id": "CARE_276",
+    "source_x": 196914.031,
+    "source_y": 2654525.367,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔鹽鄉埔南村014鄰彰水路一段３４０巷３２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.546215,
+     23.866144
+    ]
+   },
+   "properties": {
+    "town": "北斗鎮",
+    "village": "中和里",
+    "name": "中和社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣北斗鎮中和里中圳路305號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_277",
+    "source_x": 203783.193,
+    "source_y": 2640273.153,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣北斗鎮中和里006鄰中圳路３０５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.52584,
+     23.873939
+    ]
+   },
+   "properties": {
+    "town": "北斗鎮",
+    "village": "居仁里",
+    "name": "居仁社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "租用民宅",
+    "address": "彰化縣北斗鎮居仁里宮後二巷11號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_279",
+    "source_x": 201710.921,
+    "source_y": 2641143.251,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣北斗鎮居仁里013鄰宮後二巷１１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.528043,
+     23.857746
+    ]
+   },
+   "properties": {
+    "town": "北斗鎮",
+    "village": "七星里",
+    "name": "七星社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣北斗鎮七星里神農路2-3號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_280",
+    "source_x": 201929.35,
+    "source_y": 2639349.11,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣北斗鎮七星里014鄰神農路２之３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.538099,
+     23.859507
+    ]
+   },
+   "properties": {
+    "town": "北斗鎮",
+    "village": "新生里",
+    "name": "新生社區發展協會原活動中心重建中臨時",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣北斗鎮新生里興農路二段105號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_281",
+    "source_x": 202954.255,
+    "source_y": 2639540.737,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣北斗鎮新生里003鄰興農路二段１０５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.510239,
+     23.881357
+    ]
+   },
+   "properties": {
+    "town": "北斗鎮",
+    "village": "中寮里",
+    "name": "中寮社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣北斗鎮中寮里中央路30巷31號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_282",
+    "source_x": 200124.952,
+    "source_y": 2641970.099,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣北斗鎮中寮里004鄰中央路３０巷３１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.515286,
+     23.86897
+    ]
+   },
+   "properties": {
+    "town": "北斗鎮",
+    "village": "西德里",
+    "name": "西德社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣北斗鎮舜耕路27之4號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_283",
+    "source_x": 200634.269,
+    "source_y": 2640596.53,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣北斗鎮西德里013鄰舜耕路２７之４號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.533473,
+     23.872993
+    ]
+   },
+   "properties": {
+    "town": "北斗鎮",
+    "village": "東光里",
+    "name": "東光社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣北斗鎮東光里東斗路1-13號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_284",
+    "source_x": 202487.95,
+    "source_y": 2641035.83,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣北斗鎮東光里003鄰東斗路１之１３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.51593,
+     23.874812
+    ]
+   },
+   "properties": {
+    "town": "北斗鎮",
+    "village": "西安里",
+    "name": "螺陽社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣北斗鎮西安里復興路862巷7號",
+    "meal_service": null,
+    "id": "CARE_285",
+    "venue_note": "無償使用民宅",
+    "needs_review": true,
+    "source_x": 200701.991,
+    "source_y": 2641243.289,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣北斗鎮西安里010鄰復興路８６２巷７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.458327,
+     23.845119
+    ]
+   },
+   "properties": {
+    "town": "埤頭鄉",
+    "village": "中和村",
+    "name": "中和社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣埤頭鄉中和村廟前路68號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_286",
+    "source_x": 194823.046,
+    "source_y": 2637976.07,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埤頭鄉中和村008鄰廟前路６８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.469348,
+     23.885529
+    ]
+   },
+   "properties": {
+    "town": "埤頭鄉",
+    "village": "平原村",
+    "name": "平原社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣埤頭鄉平原村平原路170號",
+    "meal_service": "共餐、C據點、送餐",
+    "id": "CARE_287",
+    "source_x": 195962.44,
+    "source_y": 2642447.25,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埤頭鄉平原村004鄰平原路１７０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.460213,
+     23.84411
+    ]
+   },
+   "properties": {
+    "town": "埤頭鄉",
+    "village": "庄內村",
+    "name": "庄內社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣埤頭鄉庄內村光明路292號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_288",
+    "source_x": 195014.657,
+    "source_y": 2637863.676,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埤頭鄉庄內村001鄰光明路２９２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.484176,
+     23.86066
+    ]
+   },
+   "properties": {
+    "town": "埤頭鄉",
+    "village": "新庄村",
+    "name": "新庄社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣埤頭鄉新庄村光華路124號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_289",
+    "source_x": 197462.371,
+    "source_y": 2639687.417,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埤頭鄉新庄村012鄰光華路１２４號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.468276,
+     23.882392
+    ]
+   },
+   "properties": {
+    "town": "埤頭鄉",
+    "village": "崙腳村",
+    "name": "崙腳社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣埤頭鄉崙腳村和平路271巷12號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_290",
+    "source_x": 195851.977,
+    "source_y": 2642100.163,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埤頭鄉崙腳村008鄰和平路２７１巷１２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.458439,
+     23.917443
+    ]
+   },
+   "properties": {
+    "town": "埤頭鄉",
+    "village": "豐崙村",
+    "name": "豐崙社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣埤頭鄉豐崙村校前路128號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_291",
+    "source_x": 194865.1,
+    "source_y": 2645985.86,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埤頭鄉豊崙村014鄰校前路１２８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.454611,
+     23.851679
+    ]
+   },
+   "properties": {
+    "town": "埤頭鄉",
+    "village": "竹圍村",
+    "name": "竹圍社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣埤頭鄉竹圍村竹圍路187號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_292",
+    "source_x": 194447.276,
+    "source_y": 2638704.021,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埤頭鄉竹圍村009鄰竹圍路１８７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.479808,
+     23.846181
+    ]
+   },
+   "properties": {
+    "town": "溪州鄉",
+    "village": "溪厝村",
+    "name": "中華電信土地之建築物溪厝社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣溪州鄉溪厝村中山路2段357號",
+    "meal_service": "共餐、C據點、送餐",
+    "id": "CARE_294",
+    "source_x": 197011.637,
+    "source_y": 2638085.578,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪州鄉溪厝村010鄰中山路二段３５７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.517517,
+     23.814614
+    ]
+   },
+   "properties": {
+    "town": "溪州鄉",
+    "village": "潮洋村",
+    "name": "（5年）潮洋社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣溪州鄉民生路一段55號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_296",
+    "venue_note": "無償使用民宅",
+    "needs_review": true,
+    "source_x": 200840.93,
+    "source_y": 2634576.02,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪州鄉潮洋村005鄰民生路一段５５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.545094,
+     23.826373
+    ]
+   },
+   "properties": {
+    "town": "溪州鄉",
+    "village": "成功村",
+    "name": "成功社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣溪州鄉登山路二段350號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_298",
+    "source_x": 203654.89,
+    "source_y": 2635868.92,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪州鄉成功村012鄰登山路二段３５０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.49156,
+     23.854579
+    ]
+   },
+   "properties": {
+    "town": "溪州鄉",
+    "village": "瓦厝村",
+    "name": "無償私宅彰化縣長青樂活關懷協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣溪州鄉瓦厝村長安巷3-1號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_300",
+    "source_x": 198212.11,
+    "source_y": 2639011.25,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪州鄉瓦厝村002鄰長安巷３之１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.511926,
+     23.850777
+    ]
+   },
+   "properties": {
+    "town": "溪州鄉",
+    "village": "舊眉村",
+    "name": "無償私宅舊眉社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣溪州鄉舊眉村林厝巷70號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_301",
+    "source_x": 200285.065,
+    "source_y": 2638582.935,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪州鄉舊眉村003鄰林厝巷７０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.505527,
+     23.851437
+    ]
+   },
+   "properties": {
+    "town": "溪州鄉",
+    "village": "東州村",
+    "name": "東州社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣溪州鄉東州村保安路16號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_302",
+    "venue_note": "活動中心",
+    "needs_review": true,
+    "source_x": 199633.52,
+    "source_y": 2638658.2,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪州鄉東州村006鄰保安路１６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.531635,
+     23.824771
+    ]
+   },
+   "properties": {
+    "town": "溪州鄉",
+    "village": "柑園村",
+    "name": "柑園社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣溪州鄉柑園村面前巷50號",
+    "meal_service": "共餐",
+    "id": "CARE_303",
+    "venue_note": "活動中心",
+    "needs_review": true,
+    "source_x": 202283.09,
+    "source_y": 2635695.97,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪州鄉柑園村009鄰面前巷５０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.513303,
+     23.815595
+    ]
+   },
+   "properties": {
+    "town": "溪州鄉",
+    "village": "張厝村",
+    "name": "有償私宅張厝社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣溪州鄉張厝村民生路一段246號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_304",
+    "source_x": 200412.001,
+    "source_y": 2634686.065,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪州鄉張厝村003鄰民生路一段２４６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.498126,
+     23.815199
+    ]
+   },
+   "properties": {
+    "town": "溪州鄉",
+    "village": "菜公村",
+    "name": "菜公社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣溪州鄉菜公村民生路二段154號",
+    "meal_service": null,
+    "id": "CARE_305",
+    "source_x": 198865.41,
+    "source_y": 2634647.63,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪州鄉菜公村004鄰民生路二段１５４號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.509078,
+     23.813936
+    ]
+   },
+   "properties": {
+    "town": "竹塘鄉",
+    "village": "土庫村",
+    "name": "土庫社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣溪州鄉菜公村竹圍西巷2號之2",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_306",
+    "needs_review": true,
+    "address_original": "彰化縣溪州鄉菜公村竹圍西巷2號之2",
+    "address_conflict_note": "名冊住址欄為 溪州鄉，與登記鄉鎮 竹塘鄉 不符；疑為來源名冊整格錯位",
+    "needs_manual_address": true,
+    "source_x": 199980.831,
+    "source_y": 2634503.85,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪州鄉菜公村002鄰竹圍西巷２號之２",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.426354,
+     23.860283
+    ]
+   },
+   "properties": {
+    "town": "竹塘鄉",
+    "village": "竹塘村",
+    "name": "竹塘社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣竹塘鄉竹塘街28巷67號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_307",
+    "source_x": 191572.837,
+    "source_y": 2639668.275,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣竹塘鄉竹塘村007鄰竹塘街２８巷６７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.413171,
+     23.868421
+    ]
+   },
+   "properties": {
+    "town": "竹塘鄉",
+    "village": "小西村",
+    "name": "無償使用小西社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "廟宇",
+    "address": "彰化縣竹塘鄉小西村竹西路122號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_308",
+    "source_x": 190233.824,
+    "source_y": 2640575.077,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣竹塘鄉小西村001鄰竹西路１２２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.383773,
+     23.847216
+    ]
+   },
+   "properties": {
+    "town": "竹塘鄉",
+    "village": "長安村",
+    "name": "長安社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣竹塘鄉東陽路2段150-18號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_309",
+    "source_x": 187229.508,
+    "source_y": 2638239.42,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣竹塘鄉長安村002鄰東陽路二段１５０之１８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.430043,
+     23.846404
+    ]
+   },
+   "properties": {
+    "town": "竹塘鄉",
+    "village": "新廣村",
+    "name": "新廣社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣竹塘鄉新廣村光明路廣福巷57號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_310",
+    "source_x": 191942.348,
+    "source_y": 2638129.752,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣竹塘鄉新廣村002鄰光明路廣福巷５７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.450894,
+     23.837044
+    ]
+   },
+   "properties": {
+    "town": "竹塘鄉",
+    "village": "田頭村",
+    "name": "田頭社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣竹塘鄉田頭村光明路竹田巷74號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_311",
+    "source_x": 194062.33,
+    "source_y": 2637084.77,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣竹塘鄉田頭村004鄰光明路竹田巷７４號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.417926,
+     23.875285
+    ]
+   },
+   "properties": {
+    "town": "竹塘鄉",
+    "village": "民靖村",
+    "name": "民靖社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣竹塘鄉民靖村成功路85號",
+    "meal_service": "共餐",
+    "id": "CARE_312",
+    "source_x": 190721.216,
+    "source_y": 2641333.306,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣竹塘鄉民靖村007鄰成功路８５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.435656,
+     23.854978
+    ]
+   },
+   "properties": {
+    "town": "竹塘鄉",
+    "village": "樹腳村",
+    "name": "樹腳社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣竹塘鄉樹腳村竹林路1段大新巷42號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_314",
+    "source_x": 192517.905,
+    "source_y": 2639076.968,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣竹塘鄉樹腳村010鄰竹林路一段大新巷４２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.448079,
+     23.944798
+    ]
+   },
+   "properties": {
+    "town": "二林鎮",
+    "village": "華崙里",
+    "name": "華崙社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣二林鎮華崙里光復路37號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_315",
+    "venue_note": "無償使用民宅",
+    "needs_review": true,
+    "source_x": 193822.116,
+    "source_y": 2649019.485,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二林鎮華崙里006鄰光復路３７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.412392,
+     23.903948
+    ]
+   },
+   "properties": {
+    "town": "二林鎮",
+    "village": "西斗里",
+    "name": "西斗社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣二林鎮西斗里再發路45-1號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_317",
+    "source_x": 190170.858,
+    "source_y": 2644510.009,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二林鎮西斗里007鄰再發路４５號之１",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.391404,
+     23.933846
+    ]
+   },
+   "properties": {
+    "town": "二林鎮",
+    "village": "趙甲里",
+    "name": "趙甲社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣二林鎮趙甲里鎮平巷21-9號",
+    "meal_service": "共餐",
+    "id": "CARE_318",
+    "source_x": 188048.117,
+    "source_y": 2647830.304,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二林鎮趙甲里006鄰鎮平巷２１號之９",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.437602,
+     23.940413
+    ]
+   },
+   "properties": {
+    "town": "二林鎮",
+    "village": "梅芳里",
+    "name": "梅芳社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣二林鎮梅芳里太平路四段臨69號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_319",
+    "source_x": 192753.78,
+    "source_y": 2648538.11,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二林鎮梅芳里010鄰太平路四段臨６９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.427034,
+     23.896283
+    ]
+   },
+   "properties": {
+    "town": "二林鎮",
+    "village": "原斗里",
+    "name": "原斗社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣二林鎮斗苑路一段865號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_321",
+    "source_x": 191658.211,
+    "source_y": 2643654.966,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二林鎮原斗里002鄰斗苑路一段８６５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.347406,
+     23.877262
+    ]
+   },
+   "properties": {
+    "town": "二林鎮",
+    "village": "中西里",
+    "name": "中西社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣二林鎮中西里中三路1號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_322",
+    "source_x": 183540.258,
+    "source_y": 2641583.56,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二林鎮中西里007鄰中三路１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.400148,
+     23.89357
+    ]
+   },
+   "properties": {
+    "town": "二林鎮",
+    "village": "興華里",
+    "name": "興華社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣二林鎮興華里中農路20號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_323",
+    "source_x": 188919.277,
+    "source_y": 2643365.892,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二林鎮興華里006鄰中農路２０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.362335,
+     23.857807
+    ]
+   },
+   "properties": {
+    "town": "二林鎮",
+    "village": "廣興里",
+    "name": "溝頭社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣二林鎮廣興里溝頭巷51號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_326",
+    "venue_note": "無償使用民宅",
+    "needs_review": true,
+    "source_x": 185050.957,
+    "source_y": 2639422.044,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二林鎮廣興里007鄰溝頭巷５１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.376421,
+     23.874022
+    ]
+   },
+   "properties": {
+    "town": "二林鎮",
+    "village": "香田里",
+    "name": "香田社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣二林鎮香田里儒林路10之1號",
+    "meal_service": "共餐",
+    "id": "CARE_327",
+    "source_x": 186493.59,
+    "source_y": 2641211.44,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二林鎮香田里011鄰儒林路１０號之１",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.583097,
+     23.851116
+    ]
+   },
+   "properties": {
+    "town": "田中鎮",
+    "village": "沙崙里",
+    "name": "舊街社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣田中鎮沙崙路281號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_331",
+    "source_x": 207534.74,
+    "source_y": 2638597.26,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮沙崙里002鄰沙崙路２８１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.58284,
+     23.860803
+    ]
+   },
+   "properties": {
+    "town": "田中鎮",
+    "village": "碧峰里",
+    "name": "國軍退除官兵輔導委員會彰化榮譽國民之家",
+    "category": "社區照顧關懷據點",
+    "venue_type": "機構內",
+    "address": "彰化縣田中鎮中2段421號",
+    "meal_service": null,
+    "id": "CARE_332",
+    "source_x": 207511.674,
+    "source_y": 2639670.137,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮西路里005鄰中正路４２１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.591089,
+     23.851521
+    ]
+   },
+   "properties": {
+    "town": "田中鎮",
+    "village": "南路里",
+    "name": "財團法人中華民國佛教慈濟慈善事業基金會-",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣田中鎮員集路一段854號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_334",
+    "venue_note": "環保站",
+    "needs_review": true,
+    "source_x": 208348.911,
+    "source_y": 2638639.801,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮南路里015鄰員集路一段８５４號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.58767,
+     23.875938
+    ]
+   },
+   "properties": {
+    "town": "田中鎮",
+    "village": "頂潭里",
+    "name": "會址內台灣家庭關懷成長協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣田中鎮頂潭里員集路三段518巷6號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_335",
+    "source_x": 208008.49,
+    "source_y": 2641344.92,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮頂潭里013鄰員集路三段５１８巷６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.603135,
+     23.866571
+    ]
+   },
+   "properties": {
+    "town": "田中鎮",
+    "village": "復興里",
+    "name": "東興社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣田中鎮山腳路四段160號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_336",
+    "venue_note": "無償使用民宅",
+    "needs_review": true,
+    "source_x": 209580.53,
+    "source_y": 2640302.96,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮復興里012鄰山脚路四段１６０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.580995,
+     23.85488
+    ]
+   },
+   "properties": {
+    "town": "田中鎮",
+    "village": "碧峰里",
+    "name": "碧峰社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣田中鎮中二段509號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_337",
+    "source_x": 207321.837,
+    "source_y": 2639014.722,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮沙崙里005鄰沙崙路５０９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.603113,
+     23.861411
+    ]
+   },
+   "properties": {
+    "town": "田中鎮",
+    "village": "復興里",
+    "name": "復興社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣田中鎮山腳路三段499巷45號",
+    "meal_service": "共餐",
+    "id": "CARE_339",
+    "venue_note": "無償使用民宅",
+    "needs_review": true,
+    "source_x": 209576.728,
+    "source_y": 2639731.535,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮復興里007鄰山脚路三段４９９巷４５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.604997,
+     23.874309
+    ]
+   },
+   "properties": {
+    "town": "田中鎮",
+    "village": "平和里",
+    "name": "太平社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣田中鎮平和里山腳路五段246號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_340",
+    "source_x": 209772.58,
+    "source_y": 2641159.48,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮平和里010鄰山脚路五段２４６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.585975,
+     23.868057
+    ]
+   },
+   "properties": {
+    "town": "田中鎮",
+    "village": "中潭里",
+    "name": "幼兒園場域財團法人天主教聖心基金會（聖心修女會）",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣田中鎮中潭里員集路三段125巷54號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_342",
+    "source_x": 207833.337,
+    "source_y": 2640472.623,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮中潭里004鄰員集路三段１２５巷５４號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.581364,
+     23.861466
+    ]
+   },
+   "properties": {
+    "town": "田中鎮",
+    "village": "西路里",
+    "name": "西路社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣田中鎮西路里長順巷8號",
+    "meal_service": "共餐",
+    "id": "CARE_343",
+    "source_x": 207361.573,
+    "source_y": 2639743.979,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮西路里022鄰建國路８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.586499,
+     23.859546
+    ]
+   },
+   "properties": {
+    "town": "田中鎮",
+    "village": "東路里",
+    "name": "靈糧堂社團法人彰化縣愛鄰社會福利協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣田中鎮東路里南北街80號4樓",
+    "meal_service": "共餐",
+    "id": "CARE_344",
+    "source_x": 207884.01,
+    "source_y": 2639529.85,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮東路里011鄰南北街８０號四樓",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.59095,
+     23.860589
+    ]
+   },
+   "properties": {
+    "town": "田中鎮",
+    "village": "北路里",
+    "name": "台鐵用地北路社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣田中鎮北路里中山街359巷33號",
+    "meal_service": "共餐",
+    "id": "CARE_345",
+    "source_x": 208337.626,
+    "source_y": 2639644.094,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮北路里001鄰中山街３５９巷３３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.586772,
+     23.860818
+    ]
+   },
+   "properties": {
+    "town": "田中鎮",
+    "village": "東路里",
+    "name": "會址內財團法人切膚之愛社會福利慈善事業基金會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣田中鎮復興路788號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_346",
+    "source_x": 207912.151,
+    "source_y": 2639670.641,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮東路里013鄰復興路７８８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.574745,
+     23.88145
+    ]
+   },
+   "properties": {
+    "town": "田中鎮",
+    "village": "大社里",
+    "name": "大社社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣田中鎮大社路三段316巷60號",
+    "meal_service": null,
+    "id": "CARE_347",
+    "source_x": 206694.075,
+    "source_y": 2641959.236,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮大社里001鄰大社路三段３１６巷６０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.537019,
+     23.902769
+    ]
+   },
+   "properties": {
+    "town": "田尾鄉",
+    "village": "溪畔村",
+    "name": "溪畔社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣田尾鄉溪畔村溪畔巷101弄4號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_348",
+    "needs_review": true,
+    "address_original": "彰化縣田中鎮大社里大社路二段649號",
+    "address_conflict_note": "名冊住址欄為 田中鎮，與登記鄉鎮 田尾鄉 不符；疑為來源名冊整格錯位",
+    "address_source": "社區發展協會名冊（活動中心）",
+    "source_x": 202859.938,
+    "source_y": 2644332.283,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉溪畔村006鄰溪畔巷１０１弄４號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.55088,
+     23.889243
+    ]
+   },
+   "properties": {
+    "town": "田尾鄉",
+    "village": "新生村",
+    "name": "新生社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣田尾鄉新生村延平路150號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_349",
+    "source_x": 204266.496,
+    "source_y": 2642829.728,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉新生村001鄰延平路１５０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.557187,
+     23.892496
+    ]
+   },
+   "properties": {
+    "town": "田尾鄉",
+    "village": "南鎮村",
+    "name": "南鎮社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣田尾鄉平和路一段140號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_350",
+    "source_x": 204909.804,
+    "source_y": 2643187.965,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉南鎮村003鄰平和路一段１４０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.51935,
+     23.897862
+    ]
+   },
+   "properties": {
+    "town": "田尾鄉",
+    "village": "田尾村",
+    "name": "田尾社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣田尾鄉光復路3段538巷1號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_352",
+    "source_x": 201058.976,
+    "source_y": 2643794.909,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉田尾村005鄰光復路三段５３８巷１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.536093,
+     23.894772
+    ]
+   },
+   "properties": {
+    "town": "田尾鄉",
+    "village": "北曾村",
+    "name": "社區長壽俱樂部北曾社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣田尾鄉北曾村福德巷359號",
+    "meal_service": null,
+    "id": "CARE_353",
+    "source_x": 202762.741,
+    "source_y": 2643446.926,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉北曾村004鄰福德巷３５９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.560873,
+     23.898481
+    ]
+   },
+   "properties": {
+    "town": "田尾鄉",
+    "village": "新興村",
+    "name": "(私人)新興社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣田尾鄉新興村新興路280號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_354",
+    "source_x": 205287.21,
+    "source_y": 2643849.628,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉新興村003鄰新興路２８０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.506647,
+     23.904154
+    ]
+   },
+   "properties": {
+    "town": "田尾鄉",
+    "village": "仁里",
+    "name": "村V仁里社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣田尾鄉仁里村中正路二段103巷9號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_355",
+    "source_x": 199767.908,
+    "source_y": 2644496.135,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉仁里村017鄰中正路二段１０３巷９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.510506,
+     23.897422
+    ]
+   },
+   "properties": {
+    "town": "田尾鄉",
+    "village": "溪頂村",
+    "name": "溪頂社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣田尾鄉溪頂村三溪路一段209號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_356",
+    "source_x": 200158.335,
+    "source_y": 2643749.232,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉溪頂村007鄰三溪路一段２０９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.532001,
+     23.904865
+    ]
+   },
+   "properties": {
+    "town": "田尾鄉",
+    "village": "打簾村",
+    "name": "打簾社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣田尾鄉民生路一段245號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_357",
+    "source_x": 202349.753,
+    "source_y": 2644566.128,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉打簾村005鄰民生路一段２４５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.511065,
+     23.90355
+    ]
+   },
+   "properties": {
+    "town": "田尾鄉",
+    "village": "豐田村",
+    "name": "豐田社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣田尾鄉光復路四段161號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_358",
+    "venue_note": "集會所",
+    "needs_review": true,
+    "source_x": 200217.57,
+    "source_y": 2644427.74,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉豐田村004鄰光復路四段１６１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.518741,
+     23.891339
+    ]
+   },
+   "properties": {
+    "town": "田尾鄉",
+    "village": "正義村",
+    "name": "正義社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣田尾鄉正義村中正路一段233號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_359",
+    "source_x": 200994.533,
+    "source_y": 2643072.676,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉正義村005鄰中正路一段２３３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.55111,
+     23.884077
+    ]
+   },
+   "properties": {
+    "town": "田尾鄉",
+    "village": "睦宜村",
+    "name": "(私人)睦宜社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣田尾鄉睦宜村聖德巷162號",
+    "meal_service": "共餐",
+    "id": "CARE_360",
+    "source_x": 204288.039,
+    "source_y": 2642257.558,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉睦宜村008鄰聖德巷１６２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.506046,
+     23.90052
+    ]
+   },
+   "properties": {
+    "town": "田尾鄉",
+    "village": "新厝村",
+    "name": "新厝社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣田尾鄉新厝村光明巷54號",
+    "meal_service": "共餐",
+    "id": "CARE_361",
+    "source_x": 199705.326,
+    "source_y": 2644093.867,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉新厝村001鄰光明巷５４號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.529295,
+     23.888154
+    ]
+   },
+   "properties": {
+    "town": "田尾鄉",
+    "village": "饒平村",
+    "name": "(私人)饒平社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣田尾鄉饒平村東平巷143號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_362",
+    "source_x": 202068.055,
+    "source_y": 2642716.291,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉饒平村013鄰東平巷１４３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.503328,
+     23.919486
+    ]
+   },
+   "properties": {
+    "town": "田尾鄉",
+    "village": "陸豐村",
+    "name": "陸豐社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣田尾鄉陸豐村陸豐路48號",
+    "meal_service": "共餐",
+    "id": "CARE_363",
+    "source_x": 199435.987,
+    "source_y": 2646195.301,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉陸豐村008鄰陸豐路４８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.565193,
+     23.888748
+    ]
+   },
+   "properties": {
+    "town": "田尾鄉",
+    "village": "福田村",
+    "name": "(私人)福田社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣田尾鄉福田村光復路1段98巷19號",
+    "meal_service": "共餐",
+    "id": "CARE_364",
+    "source_x": 205723.766,
+    "source_y": 2642770.379,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉福田村006鄰光復路一段９８巷１９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.518046,
+     23.911075
+    ]
+   },
+   "properties": {
+    "town": "田尾鄉",
+    "village": "柳鳳村",
+    "name": "柳鳳社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣田尾鄉柳鳳村民生路二段338號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_365",
+    "source_x": 200931.23,
+    "source_y": 2645258.59,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉柳鳳村006鄰民生路二段３３８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.641164,
+     23.795517
+    ]
+   },
+   "properties": {
+    "town": "二水鄉",
+    "village": "合興村",
+    "name": "合興社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣二水鄉合興村英義路12巷46號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_366",
+    "source_x": 213433.838,
+    "source_y": 2632423.676,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二水鄉合興村008鄰英義路１２巷４６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.649299,
+     23.797481
+    ]
+   },
+   "properties": {
+    "town": "二水鄉",
+    "village": "倡和村",
+    "name": "倡和社區發展協會活動中心耐震補強",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣二水鄉倡和村倡和路41-1號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_368",
+    "status_note": "於115年4月起健康促進改為電話問安",
+    "needs_review": true,
+    "source_x": 214263.38,
+    "source_y": 2632639.19,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二水鄉倡和村009鄰倡和路４１之１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.637152,
+     23.804172
+    ]
+   },
+   "properties": {
+    "town": "二水鄉",
+    "village": "大園村",
+    "name": "大園社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣二水鄉大園村大園巷11-9號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_370",
+    "source_x": 213027.43,
+    "source_y": 2633383.29,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二水鄉大園村003鄰大園巷１１號之９",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.619924,
+     23.809734
+    ]
+   },
+   "properties": {
+    "town": "二水鄉",
+    "village": "文化村",
+    "name": "財團法人天主教會台中教區（二水天主堂）",
+    "category": "社區照顧關懷據點",
+    "venue_type": "教會內",
+    "address": "彰化縣二水鄉文化村員集路三段452號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_371",
+    "source_x": 211273.672,
+    "source_y": 2634003.815,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二水鄉文化村011鄰員集路三段４５２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.604764,
+     23.829556
+    ]
+   },
+   "properties": {
+    "town": "二水鄉",
+    "village": "復興村",
+    "name": "復興社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣二水鄉復興村員集路5段472號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_372",
+    "source_x": 209735.046,
+    "source_y": 2636203.272,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二水鄉復興村010鄰員集路五段４７２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.601496,
+     23.828596
+    ]
+   },
+   "properties": {
+    "town": "二水鄉",
+    "village": "十五村",
+    "name": "十五社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣二水鄉十五村十五路33-1號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_374",
+    "source_x": 209401.787,
+    "source_y": 2636097.9,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二水鄉十五村003鄰十五路３３號之１",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.616648,
+     23.809951
+    ]
+   },
+   "properties": {
+    "town": "二水鄉",
+    "village": "聖化村",
+    "name": "災民收容所聖化社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣二水鄉聖化村溪邊巷72號",
+    "meal_service": "共餐、C據點",
+    "id": "CARE_375",
+    "source_x": 210939.855,
+    "source_y": 2634028.732,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二水鄉聖化村009鄰溪邊巷７２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.630814,
+     23.799714
+    ]
+   },
+   "properties": {
+    "town": "二水鄉",
+    "village": "修仁村",
+    "name": "修仁社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": "活動中心",
+    "address": "彰化縣二水鄉修仁村修仁路27-3號",
+    "meal_service": "共餐",
+    "id": "CARE_376",
+    "source_x": 212380.35,
+    "source_y": 2632891.21,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二水鄉修仁村003鄰修仁路２７之３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.620185,
+     23.808243
+    ]
+   },
+   "properties": {
+    "town": "二水鄉",
+    "village": "裕民村",
+    "name": "廟埕裕民社區發展協會",
+    "category": "社區照顧關懷據點",
+    "venue_type": null,
+    "address": "彰化縣二水鄉裕民村過溪巷90號",
+    "meal_service": null,
+    "id": "CARE_377",
+    "source_x": 211299.739,
+    "source_y": 2633838.654,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二水鄉裕民村009鄰過溪巷９０號",
+    "coordinate_review_status": "pending_review"
+   }
+  }
+ ]
+}

@@ -1,0 +1,7883 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "source": "彰化縣115年各鄉鎮救濟站資料清冊",
+  "pii_removed": null,
+  "total_records": 334,
+  "geocoded": 314,
+  "geocode_missing_ids": [
+   "RELIEF_045",
+   "RELIEF_048",
+   "RELIEF_051",
+   "RELIEF_054",
+   "RELIEF_058",
+   "RELIEF_140",
+   "RELIEF_147",
+   "RELIEF_165",
+   "RELIEF_168",
+   "RELIEF_171",
+   "RELIEF_177",
+   "RELIEF_206",
+   "RELIEF_212",
+   "RELIEF_225",
+   "RELIEF_232",
+   "RELIEF_262",
+   "RELIEF_283",
+   "RELIEF_288",
+   "RELIEF_301",
+   "RELIEF_308"
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.604312,
+     24.08649
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_001",
+    "town": "彰化市",
+    "name": "三民國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣彰化市三民國民小學",
+    "address": "彰化縣彰化市田中路125號",
+    "floors": "1",
+    "source_x": 209768.78,
+    "source_y": 2664658.42,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市田中里009鄰田中路１２５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.59846,
+     24.07672
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_002",
+    "town": "彰化市",
+    "name": "聯興國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣彰化市聯興國民小學",
+    "address": "彰化縣彰化市牛埔里一心南街208號",
+    "floors": "1",
+    "source_x": 209170.72,
+    "source_y": 2663578.07,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市牛埔里019鄰一心南街２０８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.580408,
+     24.08292
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_003",
+    "town": "彰化市",
+    "name": "大竹國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣彰化市大竹國民小學",
+    "address": "彰化縣彰化市彰南路二段164巷41號",
+    "floors": "1",
+    "source_x": 207337.19,
+    "source_y": 2664270.05,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市大竹里008鄰彰南路二段１６４巷４１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.54843,
+     24.091619
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_004",
+    "town": "彰化市",
+    "name": "彰泰",
+    "category": "救濟站",
+    "sub_type": "國中",
+    "org_name": "國中彰化縣立彰泰國民中學",
+    "address": "彰化縣彰化市自強路357號",
+    "floors": "1",
+    "source_x": 204088.86,
+    "source_y": 2665243.58,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市下廍里001鄰自強路３５７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.543075,
+     24.08382
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_005",
+    "town": "彰化市",
+    "name": "民生國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣彰化市民生國民小學",
+    "address": "彰化縣彰化市民生路338號",
+    "floors": "1",
+    "source_x": 203541.54,
+    "source_y": 2664381.63,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市民生里009鄰民生路３３８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.56853,
+     24.092092
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_006",
+    "town": "彰化市",
+    "name": "國聖國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣彰化市國聖國民小學",
+    "address": "彰化縣彰化市中山路三段608號",
+    "floors": "1",
+    "source_x": 206132.61,
+    "source_y": 2665289.58,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市國聖里010鄰中山路三段６０８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.534049,
+     24.058115
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_007",
+    "town": "彰化市",
+    "name": "南興國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣彰化市南興國民小學",
+    "address": "彰化縣彰化市中山路1段213號",
+    "floors": "1",
+    "source_x": 202614.35,
+    "source_y": 2661537.72,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市南興里009鄰中山路一段２１３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.516112,
+     24.062458
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_008",
+    "town": "彰化市",
+    "name": "東芳國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣彰化市東芳國民小學",
+    "address": "彰化縣彰化市彰馬路45號",
+    "floors": "1",
+    "source_x": 200791.85,
+    "source_y": 2662024.89,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市東芳里017鄰彰馬路４５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.551711,
+     24.092992
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_009",
+    "town": "彰化市",
+    "name": "泰和國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣彰化市泰和國民小學",
+    "address": "彰化縣彰化市泰和路2段145巷1號",
+    "floors": "1",
+    "source_x": 204422.86,
+    "source_y": 2665394.57,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市阿夷里013鄰泰和路二段１４５巷１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.612007,
+     24.068545
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_010",
+    "town": "彰化市",
+    "name": "快官",
+    "category": "救濟站",
+    "sub_type": "國小/小學",
+    "org_name": "彰化縣彰化市快官國民小學",
+    "address": "彰化縣彰化市彰南路四段566號",
+    "floors": "1",
+    "source_x": 210545.66,
+    "source_y": 2662668.78,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市快官里002鄰彰南路四段５６６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.614359,
+     24.058414
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_011",
+    "town": "彰化市",
+    "name": "石牌",
+    "category": "救濟站",
+    "sub_type": "國小/小學",
+    "org_name": "彰化縣彰化市石牌國民小學",
+    "address": "彰化縣彰化市石牌里田坑路一段9號",
+    "floors": "1",
+    "source_x": 210781.85,
+    "source_y": 2661546.19,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市石牌里001鄰田坑路一段９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.532196,
+     24.084239
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_012",
+    "town": "彰化市",
+    "name": "忠孝",
+    "category": "救濟站",
+    "sub_type": "國小/小學",
+    "org_name": "彰化縣彰化市忠孝國民小學",
+    "address": "彰化縣彰化市忠誠路61號",
+    "floors": "1",
+    "source_x": 202435.54,
+    "source_y": 2664431.68,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市西勢里009鄰忠誠路６１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.5471,
+     24.091362
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_013",
+    "town": "彰化市",
+    "name": "大成",
+    "category": "救濟站",
+    "sub_type": "國小/小學",
+    "org_name": "彰化縣彰化市大成國民小學",
+    "address": "彰化縣彰化市自強路303號",
+    "floors": "1",
+    "source_x": 203953.49,
+    "source_y": 2665215.58,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市下廍里017鄰自強路３０３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.554489,
+     24.078765
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_014",
+    "town": "彰化市",
+    "name": "彰化藝術高中",
+    "category": "救濟站",
+    "sub_type": "高中(職)",
+    "org_name": "彰化縣立藝術高級中學",
+    "address": "彰化縣彰化市卦山路13號",
+    "floors": "1",
+    "source_x": 204700.35,
+    "source_y": 2663817.97,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市卦山里009鄰卦山路１３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.550462,
+     24.086152
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_015",
+    "town": "彰化市",
+    "name": "陽明",
+    "category": "救濟站",
+    "sub_type": "國中",
+    "org_name": "國中彰化縣立陽明國民中學",
+    "address": "彰化縣彰化市長順街76號",
+    "floors": "1",
+    "source_x": 204293.47,
+    "source_y": 2664637.44,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市陽明里006鄰長順街７６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.535264,
+     24.070666
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_016",
+    "town": "彰化市",
+    "name": "彰安",
+    "category": "救濟站",
+    "sub_type": "國中",
+    "org_name": "國中彰化縣立彰安國民中學",
+    "address": "彰化縣彰化市中正路二段530號",
+    "floors": "1",
+    "source_x": 202742.54,
+    "source_y": 2662927.44,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市彰安里014鄰中正路二段５３０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.589534,
+     24.08036
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_017",
+    "town": "彰化市",
+    "name": "彰德",
+    "category": "救濟站",
+    "sub_type": "國中",
+    "org_name": "國中彰化縣立彰德國民中學",
+    "address": "彰化縣彰化市彰南路二段512巷97號",
+    "floors": "1",
+    "source_x": 208264.23,
+    "source_y": 2663983.85,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市香山里011鄰彰南路二段５１２巷９７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.538213,
+     24.059505
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_018",
+    "town": "彰化市",
+    "name": "彰興",
+    "category": "救濟站",
+    "sub_type": "國中",
+    "org_name": "國中彰化縣立彰興國民中學",
+    "address": "彰化縣彰化市埔西街107號",
+    "floors": "1",
+    "source_x": 203038.38,
+    "source_y": 2661690.33,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市延和里021鄰埔西街１０７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.528452,
+     24.062891
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_019",
+    "town": "彰化市",
+    "name": "信義國中(小)國中彰化縣立信義國民中",
+    "category": "救濟站",
+    "sub_type": "小學",
+    "org_name": null,
+    "address": "彰化縣彰化市向陽街168號",
+    "floors": "1",
+    "source_x": 202046.98,
+    "source_y": 2662068.56,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市向陽里004鄰向陽街１６８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.54348,
+     24.081178
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_020",
+    "town": "彰化市",
+    "name": "彰化女中",
+    "category": "救濟站",
+    "sub_type": "高中(職)",
+    "org_name": "彰化女中",
+    "address": "彰化縣彰化市光復里光復路62號",
+    "floors": "1",
+    "source_x": 203581.74,
+    "source_y": 2664088.91,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市光復里001鄰光復路６２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.555981,
+     24.082589
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_021",
+    "town": "彰化市",
+    "name": "國立彰化師大附工",
+    "category": "救濟站",
+    "sub_type": "高中(職)",
+    "org_name": "國立彰化師大附工",
+    "address": "彰化縣彰化市和調里工校街1號",
+    "floors": "1",
+    "source_x": 204853.34,
+    "source_y": 2664241.02,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市和調里001鄰工校街１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.558557,
+     24.081515
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_022",
+    "town": "彰化市",
+    "name": "彰化師範大學",
+    "category": "救濟站",
+    "sub_type": "大專",
+    "org_name": "院校彰化師範大學",
+    "address": "彰化縣彰化市復興里進德路1號",
+    "floors": "1",
+    "source_x": 205114.91,
+    "source_y": 2664121.32,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市復興里017鄰進德路１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.551531,
+     24.07105
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_023",
+    "town": "彰化市",
+    "name": "彰化高中",
+    "category": "救濟站",
+    "sub_type": "高中(職)",
+    "org_name": "彰化高中",
+    "address": "彰化縣彰化市介壽里中興路78號",
+    "floors": "1",
+    "source_x": 204396.87,
+    "source_y": 2662964.57,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市介壽里005鄰中興路７８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.557702,
+     24.065253
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_024",
+    "town": "彰化市",
+    "name": "彰化師範大學",
+    "category": "救濟站",
+    "sub_type": "學校/大專",
+    "org_name": "院校彰化師範大學",
+    "address": "彰化縣彰化市介壽里師大路2號",
+    "floors": "1",
+    "source_x": 205022.29,
+    "source_y": 2662320.57,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市介壽里003鄰師大路２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.553114,
+     24.072555
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_025",
+    "town": "彰化市",
+    "name": "彰化高商學校",
+    "category": "救濟站",
+    "sub_type": "高中(職)",
+    "org_name": "彰化高商",
+    "address": "彰化縣彰化市華陽里南郭路1段326號",
+    "floors": "1",
+    "source_x": 204558.37,
+    "source_y": 2663130.74,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市華陽里010鄰南郭路一段３２６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.546638,
+     24.081909
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_026",
+    "town": "彰化市",
+    "name": "中山國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣彰化市中山國民小學",
+    "address": "彰化縣彰化市中山路二段678號",
+    "floors": "1",
+    "source_x": 203903.1,
+    "source_y": 2664168.75,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市中山里008鄰中山路二段６７８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.535156,
+     24.072469
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_027",
+    "town": "彰化市",
+    "name": "平和國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣彰化市平和國民小學",
+    "address": "彰化縣彰化市中正路2段450號",
+    "floors": "1",
+    "source_x": 202732.22,
+    "source_y": 2663127.07,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市彰安里014鄰中正路二段４５０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.548293,
+     24.070062
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_028",
+    "town": "彰化市",
+    "name": "南郭國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣彰化市南郭國民小學",
+    "address": "彰化縣彰化市中興路98號",
+    "floors": "1",
+    "source_x": 204067.16,
+    "source_y": 2662856.22,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣彰化市介壽里015鄰中興路９８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.457055,
+     24.072564
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_029",
+    "town": "鹿港鎮",
+    "name": "新興",
+    "category": "救濟站",
+    "sub_type": "國小/小學",
+    "org_name": "彰化縣鹿港鎮新興國民小學",
+    "address": "彰化縣鹿港鎮詔安里某旦巷85號",
+    "floors": "1",
+    "source_x": 194790.39,
+    "source_y": 2663166.14,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣鹿港鎮詔安里004鄰某旦巷８５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.43369,
+     24.051213
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_030",
+    "town": "鹿港鎮",
+    "name": "鹿港",
+    "category": "救濟站",
+    "sub_type": "國小/小學",
+    "org_name": "彰化縣鹿港鎮鹿港國民小學",
+    "address": "彰化縣鹿港鎮三民路192號",
+    "floors": "1",
+    "source_x": 192404.94,
+    "source_y": 2660810.8,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣鹿港鎮菜園里001鄰三民路１９２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.438673,
+     24.046263
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_031",
+    "town": "鹿港鎮",
+    "name": "鹿港鎮圖書藝文中心彰化縣鹿港鎮公所",
+    "category": "救濟站",
+    "sub_type": null,
+    "org_name": null,
+    "address": "彰化縣鹿港鎮街尾里龍舟路22號",
+    "floors": "地上3樓地下1樓",
+    "source_x": 192909.47,
+    "source_y": 2660260.55,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣鹿港鎮街尾里009鄰龍舟路２２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.435936,
+     24.06262
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_032",
+    "town": "鹿港鎮",
+    "name": "亞太鹿港渡假村亞太鹿港渡假村",
+    "category": "救濟站",
+    "sub_type": null,
+    "org_name": null,
+    "address": "彰化縣鹿港鎮埔崙里中正路588號",
+    "floors": "地上14樓地下3樓",
+    "source_x": 192638.44,
+    "source_y": 2662073.22,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣鹿港鎮埔崙里012鄰中正路５８８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.433873,
+     24.058228
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_033",
+    "town": "鹿港鎮",
+    "name": "老人文康中心彰化縣鹿港鎮公所",
+    "category": "救濟站",
+    "sub_type": null,
+    "org_name": null,
+    "address": "彰化縣鹿港鎮順興里忠孝路403號4樓",
+    "floors": "地上4樓地下1樓",
+    "source_x": 192426.62,
+    "source_y": 2661587.67,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣鹿港鎮順興里010鄰忠孝路４０３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.438163,
+     24.065385
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_034",
+    "town": "鹿港鎮",
+    "name": "鹿江國中小國中彰化縣立鹿江國際中",
+    "category": "救濟站",
+    "sub_type": "小學",
+    "org_name": null,
+    "address": "彰化縣鹿港鎮自由路300號",
+    "floors": "1",
+    "source_x": 192866.08,
+    "source_y": 2662378.64,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣鹿港鎮埔崙里008鄰自由路３００號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.480191,
+     24.08795
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_035",
+    "town": "鹿港鎮",
+    "name": "頂番",
+    "category": "救濟站",
+    "sub_type": "國小/小學",
+    "org_name": "彰化縣鹿港鎮頂番國民小學",
+    "address": "彰化縣鹿港鎮頂草路1段100號",
+    "floors": "1",
+    "source_x": 197149.31,
+    "source_y": 2664861.27,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣鹿港鎮頂番里001鄰頂草路一段１００號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.475378,
+     24.057639
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_036",
+    "town": "鹿港鎮",
+    "name": "東興",
+    "category": "救濟站",
+    "sub_type": "國小/小學",
+    "org_name": "彰化縣鹿港鎮東興國民小學",
+    "address": "彰化縣鹿港鎮東崎里東崎七巷52號",
+    "floors": "1",
+    "source_x": 196647.43,
+    "source_y": 2661506.09,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣鹿港鎮東崎里011鄰東崎七巷５２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.443305,
+     24.058343
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_037",
+    "town": "鹿港鎮",
+    "name": "鹿東",
+    "category": "救濟站",
+    "sub_type": "國小/小學",
+    "org_name": "彰化縣鹿港鎮鹿東國民小學",
+    "address": "彰化縣鹿港鎮長安路125號",
+    "floors": "1",
+    "source_x": 193385.88,
+    "source_y": 2661596.6,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣鹿港鎮頂厝里017鄰長安路１２５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.468931,
+     24.098483
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_038",
+    "town": "鹿港鎮",
+    "name": "鹿鳴",
+    "category": "救濟站",
+    "sub_type": "國中",
+    "org_name": "國中彰化縣立鹿鳴國民中學",
+    "address": "彰化縣鹿港鎮頂草路3段167號",
+    "floors": "1",
+    "source_x": 196008.84,
+    "source_y": 2666032.1,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣鹿港鎮頭南里018鄰頂草路三段１６７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.444279,
+     24.083928
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_039",
+    "town": "鹿港鎮",
+    "name": "海埔",
+    "category": "救濟站",
+    "sub_type": "國小/小學",
+    "org_name": "彰化縣鹿港鎮海埔國民小學",
+    "address": "彰化縣鹿港鎮鹿草路2段889號",
+    "floors": "1",
+    "source_x": 193496.19,
+    "source_y": 2664429.77,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣鹿港鎮海埔里021鄰鹿草路二段８８９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.461445,
+     24.106522
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_040",
+    "town": "鹿港鎮",
+    "name": "草港",
+    "category": "救濟站",
+    "sub_type": "國小/小學",
+    "org_name": "彰化縣鹿港鎮草港國民小學",
+    "address": "彰化縣鹿港鎮頂草路四段251號",
+    "floors": "1",
+    "source_x": 195251.16,
+    "source_y": 2666925.35,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣鹿港鎮草中里016鄰頂草路四段２５１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.430642,
+     24.054531
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_041",
+    "town": "鹿港鎮",
+    "name": "洛津",
+    "category": "救濟站",
+    "sub_type": "國小/小學",
+    "org_name": "彰化縣鹿港鎮洛津國民小學",
+    "address": "彰化縣鹿港鎮公園三路51號",
+    "floors": "1",
+    "source_x": 192096.39,
+    "source_y": 2661179.52,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣鹿港鎮洛津里016鄰公園三路５１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.430235,
+     24.057192
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_042",
+    "town": "鹿港鎮",
+    "name": "文開",
+    "category": "救濟站",
+    "sub_type": "國小/小學",
+    "org_name": "彰化縣鹿港鎮文開國民小學",
+    "address": "彰化縣鹿港鎮文開路60號",
+    "floors": "1",
+    "source_x": 192056.22,
+    "source_y": 2661474.41,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣鹿港鎮新宮里001鄰文開路６０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.495711,
+     24.111803
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_043",
+    "town": "和美鎮",
+    "name": "和美國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣和美鎮和美國民小學",
+    "address": "彰化縣和美鎮和平街19號",
+    "floors": "1",
+    "source_x": 198736.78,
+    "source_y": 2667497.26,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮和西里018鄰和平街１９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.501453,
+     24.109256
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_044",
+    "town": "和美鎮",
+    "name": "和東國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣和美鎮和東國民小學",
+    "address": "彰化縣和美鎮彰美路5段210號",
+    "floors": "1",
+    "source_x": 199319.51,
+    "source_y": 2667213.02,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮和東里023鄰彰美路五段２１０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.501859,
+     24.088074
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_046",
+    "town": "和美鎮",
+    "name": "大榮國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣和美鎮大榮國民小學",
+    "address": "彰化縣和美鎮嘉佃路296號",
+    "floors": "1",
+    "source_x": 199352.43,
+    "source_y": 2664867.01,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮鎮平里002鄰嘉佃路２９６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.519718,
+     24.111716
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_047",
+    "town": "和美鎮",
+    "name": "和群國中",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立和群國民中學",
+    "address": "彰化縣和美鎮美寮路１段390號",
+    "floors": "1",
+    "source_x": 201177.22,
+    "source_y": 2667479.02,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮柑井里001鄰美寮路一段３９０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.494662,
+     24.104386
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_049",
+    "town": "和美鎮",
+    "name": "和仁國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣和美鎮和仁國民小學",
+    "address": "彰化縣和美鎮仁愛路279號",
+    "floors": "1",
+    "source_x": 198627.21,
+    "source_y": 2666676.18,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮山犁里015鄰仁愛路２７９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.511306,
+     24.134816
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_050",
+    "town": "和美鎮",
+    "name": "培英國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣和美鎮培英國民小學",
+    "address": "彰化縣和美鎮彰新路5段310號",
+    "floors": "1",
+    "source_x": 200331.07,
+    "source_y": 2670040.3,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮塗厝里014鄰彰新路五段３１０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.493557,
+     24.113009
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_052",
+    "town": "和美鎮",
+    "name": "和美高中學校",
+    "category": "救濟站",
+    "sub_type": "高中(職)",
+    "org_name": "彰化縣立和美高級中學",
+    "address": "彰化縣和美鎮西園路31號",
+    "floors": "1",
+    "source_x": 198518.28,
+    "source_y": 2667631.65,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣和美鎮和西里008鄰西園路３１號（和美國中）",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.469997,
+     24.111296
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_053",
+    "town": "線西鄉",
+    "name": "下犁社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心線西鄉公所",
+    "address": "彰化縣線西鄉下犁村下犁路139之1號",
+    "floors": "1",
+    "source_x": 196122.6,
+    "source_y": 2667450.76,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣線西鄉下犁村013鄰下犁路１３９之１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.48163,
+     24.135298
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_055",
+    "town": "線西鄉",
+    "name": "德興社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心線西鄉公所",
+    "address": "彰化縣線西鄉線東路2段447號",
+    "floors": "1",
+    "source_x": 197315.02,
+    "source_y": 2670104.62,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣線西鄉德興村006鄰線東路二段４４７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.480131,
+     24.122223
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_056",
+    "town": "線西鄉",
+    "name": "頂犁社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心線西鄉公所",
+    "address": "彰化縣線西鄉頂犁路48之1號",
+    "floors": "1",
+    "source_x": 197157.29,
+    "source_y": 2668657.07,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣線西鄉頂犁村005鄰頂犁路４８號之１",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.468927,
+     24.13211
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_057",
+    "town": "線西鄉",
+    "name": "線西國中",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立線西國民中學",
+    "address": "彰化縣線西鄉寓埔村中央路二段145號",
+    "floors": "1",
+    "source_x": 196022.58,
+    "source_y": 2669756.29,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣線西鄉寓埔村002鄰中央路二段１４５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.45987,
+     24.133636
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_059",
+    "town": "線西鄉",
+    "name": "寓埔社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心線西鄉公所",
+    "address": "彰化縣線西鄉寓埔路177-1號",
+    "floors": "1",
+    "source_x": 195102.66,
+    "source_y": 2669928.86,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣線西鄉寓埔村016鄰寓埔路１７７之１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.467389,
+     24.140347
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_060",
+    "town": "線西鄉",
+    "name": "頂庄社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心線西鄉公所",
+    "address": "彰化縣線西鄉頂庄村沿海路2段334巷32號",
+    "floors": null,
+    "source_x": 195869.71,
+    "source_y": 2670669.16,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣線西鄉頂庄村002鄰沿海路二段３３４巷３２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.463257,
+     24.136219
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_061",
+    "town": "線西鄉",
+    "name": "線西社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心線西鄉公所",
+    "address": "彰化縣線西鄉線西村中央路2段536巷31號",
+    "floors": "1",
+    "source_x": 195448.04,
+    "source_y": 2670213.62,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣線西鄉線西村011鄰中央路二段５３６巷３１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.467173,
+     24.136882
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_062",
+    "town": "線西鄉",
+    "name": "線西鄉立幼兒園",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "線西鄉公所",
+    "address": "彰化縣線西鄉寓埔村中央路2段386巷128號",
+    "floors": "1",
+    "source_x": 195846.27,
+    "source_y": 2670285.54,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣線西鄉線西村007鄰中央路二段３８６巷１２８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.469708,
+     24.13127
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_063",
+    "town": "線西鄉",
+    "name": "線西國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣線西鄉線西國民小學",
+    "address": "彰化縣線西鄉中央路二段135號",
+    "floors": "1",
+    "source_x": 196101.55,
+    "source_y": 2669663.04,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣線西鄉寓埔村002鄰中央路二段１３５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.502497,
+     24.156758
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_064",
+    "town": "伸港鄉",
+    "name": "溪底社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心伸港鄉公所",
+    "address": "彰化縣伸港鄉溪底村溪底路103-2號",
+    "floors": "1",
+    "source_x": 199444.36,
+    "source_y": 2672473.65,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣伸港鄉溪底村008鄰溪底路１０３之２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.459457,
+     24.148969
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_065",
+    "town": "伸港鄉",
+    "name": "蚵寮社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心蚵寮社區",
+    "address": "彰化縣伸港鄉蚵寮村蚵寮路132-5號",
+    "floors": "1",
+    "source_x": 195067.23,
+    "source_y": 2671627.23,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣伸港鄉蚵寮村015鄰蚵寮路１３２之５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.481432,
+     24.14944
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_066",
+    "town": "伸港鄉",
+    "name": "泉厝社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心泉厝社區",
+    "address": "彰化縣伸港鄉泉厝村泉厝路44-3號",
+    "floors": "1",
+    "source_x": 197300.72,
+    "source_y": 2671670.89,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣伸港鄉泉厝村003鄰泉厝路４４之３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.487268,
+     24.165061
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_067",
+    "town": "伸港鄉",
+    "name": "海尾社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心海尾社區",
+    "address": "彰化縣伸港鄉海尾村海尾路3-2號",
+    "floors": "1",
+    "source_x": 197900.07,
+    "source_y": 2673398.77,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣伸港鄉海尾村001鄰海尾路３之２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.49073,
+     24.176327
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_068",
+    "town": "伸港鄉",
+    "name": "全興社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心伸港鄉公所",
+    "address": "彰化縣伸港鄉全興村東全路11號",
+    "floors": "1",
+    "source_x": 198256.44,
+    "source_y": 2674645.22,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣伸港鄉全興村009鄰東全路１１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.499111,
+     24.156897
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_069",
+    "town": "伸港鄉",
+    "name": "定興社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心伸港鄉公所",
+    "address": "彰化縣伸港鄉定興村定興路63-2號",
+    "floors": "1",
+    "source_x": 199100.34,
+    "source_y": 2672490.24,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣伸港鄉定興村006鄰定興路６３之２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.486868,
+     24.143899
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_070",
+    "town": "伸港鄉",
+    "name": "新港社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心新港社區",
+    "address": "彰化縣伸港鄉新港村自強路臨30號",
+    "floors": "1",
+    "source_x": 197850.9,
+    "source_y": 2671055.24,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣伸港鄉新港村017鄰自強路臨３０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.478257,
+     24.156575
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_071",
+    "town": "伸港鄉",
+    "name": "什股社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心什股社區",
+    "address": "彰化縣伸港鄉什股村什股路100-1號",
+    "floors": "1",
+    "source_x": 196980.94,
+    "source_y": 2672462.35,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣伸港鄉什股村007鄰什股路１００之１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.489977,
+     24.159695
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_072",
+    "town": "伸港鄉",
+    "name": "大同社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心大同社區",
+    "address": "彰化縣伸港鄉大同村大同路82號",
+    "floors": "1",
+    "source_x": 198173.26,
+    "source_y": 2672803.52,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣伸港鄉大同村009鄰大同路８２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.495681,
+     24.146004
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_073",
+    "town": "伸港鄉",
+    "name": "伸東國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣伸港鄉伸東國民小學",
+    "address": "彰化縣伸港鄉七嘉村中華路565號",
+    "floors": "1",
+    "source_x": 198747.44,
+    "source_y": 2671285.08,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣伸港鄉七嘉村009鄰中華路５６５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.494607,
+     24.148296
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_074",
+    "town": "伸港鄉",
+    "name": "文德宮",
+    "category": "救濟站",
+    "sub_type": "宗教場所",
+    "org_name": "文德宮",
+    "address": "彰化縣伸港鄉七嘉村嘉二路47號",
+    "floors": "1",
+    "source_x": 198639.18,
+    "source_y": 2671539.28,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣伸港鄉七嘉村005鄰嘉二路４７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.497824,
+     24.143437
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_075",
+    "town": "伸港鄉",
+    "name": "汴頭社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心汴頭社區",
+    "address": "彰化縣伸港鄉汴頭村汴頭路187-3號",
+    "floors": "1",
+    "source_x": 198964.19,
+    "source_y": 2671000.0,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣伸港鄉汴頭村015鄰汴頭路１８７之３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.487765,
+     24.148637
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_076",
+    "town": "伸港鄉",
+    "name": "伸港鄉老人文康",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心伸港鄉公所",
+    "address": "彰化縣伸港鄉新港村忠孝東街50號1~4樓",
+    "floors": null,
+    "source_x": 197943.93,
+    "source_y": 2671579.62,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣伸港鄉新港村012鄰忠孝東街５０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.484819,
+     24.149003
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_077",
+    "town": "伸港鄉",
+    "name": "新港國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣伸港鄉新港國民小學",
+    "address": "彰化縣伸港鄉新港村和平路60號",
+    "floors": "1",
+    "source_x": 197644.72,
+    "source_y": 2671621.26,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣伸港鄉新港村019鄰和平路６０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.491908,
+     24.15998
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_078",
+    "town": "伸港鄉",
+    "name": "大同國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣伸港鄉大同國民小學",
+    "address": "彰化縣伸港鄉大同村彰新路七段724號",
+    "floors": "1",
+    "source_x": 198369.61,
+    "source_y": 2672834.3,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣伸港鄉大同村007鄰彰新路七段７２４號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.484987,
+     24.150165
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_079",
+    "town": "伸港鄉",
+    "name": "伸港國中",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立伸港國民中學",
+    "address": "彰化縣伸港鄉新港村新港路280巷101號",
+    "floors": "1",
+    "source_x": 197662.29,
+    "source_y": 2671749.92,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣伸港鄉新港村009鄰新港路２８０巷１０１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.476436,
+     24.147314
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_080",
+    "town": "伸港鄉",
+    "name": "伸仁國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣伸港鄉伸仁國民小學",
+    "address": "彰化縣伸港鄉曾家村曾家路3-15號",
+    "floors": "1",
+    "source_x": 196792.03,
+    "source_y": 2671437.33,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣伸港鄉曾家村001鄰曾家路３之１５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.473083,
+     24.14538
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_081",
+    "town": "伸港鄉",
+    "name": "曾家社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心伸港鄉公所",
+    "address": "彰化縣伸港鄉曾家村曾家路65-1號",
+    "floors": "1",
+    "source_x": 196450.54,
+    "source_y": 2671224.47,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣伸港鄉曾家村005鄰曾家路６５之１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.482617,
+     24.148081
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_082",
+    "town": "伸港鄉",
+    "name": "泉州社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心泉州社區",
+    "address": "彰化縣伸港鄉泉州村仁愛路123號",
+    "floors": "1",
+    "source_x": 197420.58,
+    "source_y": 2671519.94,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣伸港鄉泉州村011鄰仁愛路１２３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.491978,
+     24.14473
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_083",
+    "town": "伸港鄉",
+    "name": "伸港國中第二校區",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立伸港國民中學",
+    "address": "彰化縣伸港鄉埤墘村建興路168號",
+    "floors": "1",
+    "source_x": 198370.59,
+    "source_y": 2671145.38,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣伸港鄉埤墘村012鄰建興路１６８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.413066,
+     24.041373
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_084",
+    "town": "福興鄉",
+    "name": "育新國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣福興鄉育新國民小學",
+    "address": "彰化縣福興鄉福正路4號",
+    "floors": "1",
+    "source_x": 190302.85,
+    "source_y": 2659729.68,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉二港村007鄰福正路４號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.439457,
+     24.050983
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_085",
+    "town": "福興鄉",
+    "name": "鹿港國中",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立鹿港國民中學",
+    "address": "彰化縣福興鄉橋頭村復興路78號",
+    "floors": "1",
+    "source_x": 192991.352,
+    "source_y": 2660783.055,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉橋頭村009鄰復興路７８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.473617,
+     24.026671
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_086",
+    "town": "福興鄉",
+    "name": "大興國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣福興鄉大興國民小學",
+    "address": "彰化縣福興鄉外埔村復興路15號",
+    "floors": "1",
+    "source_x": 196455.507,
+    "source_y": 2658077.054,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉外埔村013鄰復興路１５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.412814,
+     24.028129
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_087",
+    "town": "福興鄉",
+    "name": "管嶼國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣福興鄉管嶼國民小學",
+    "address": "彰化縣福興鄉沿海路3段100號",
+    "floors": "1",
+    "source_x": 190271.083,
+    "source_y": 2658262.982,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉廈粘村004鄰沿海路三段１００號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.419099,
+     24.008062
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_088",
+    "town": "福興鄉",
+    "name": "文昌國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣福興鄉文昌國民小學",
+    "address": "彰化縣福興鄉鎮平村鎮平街一號",
+    "floors": "1",
+    "source_x": 190901.18,
+    "source_y": 2656037.82,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉鎮平村004鄰鎮平街１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.437273,
+     24.044033
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_089",
+    "town": "福興鄉",
+    "name": "西勢國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣福興鄉西勢國民小學",
+    "address": "彰化縣福興鄉西勢村員鹿路二段412號",
+    "floors": "1",
+    "source_x": 192766.086,
+    "source_y": 2660014.23,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉西勢村002鄰員鹿路二段４１２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.436684,
+     24.040965
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_090",
+    "town": "福興鄉",
+    "name": "福興國中",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立福興國民中學",
+    "address": "彰化縣福興鄉員鹿路二段270號",
+    "floors": "1",
+    "source_x": 192704.834,
+    "source_y": 2659674.636,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉西勢村003鄰員鹿路二段２７０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.454707,
+     24.025696
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_091",
+    "town": "福興鄉",
+    "name": "永豐國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣福興鄉永豐國民小學",
+    "address": "彰化縣福興鄉番社街80號",
+    "floors": "1",
+    "source_x": 194531.5,
+    "source_y": 2657976.37,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉番社村009鄰番社街８０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.459488,
+     24.046227
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_092",
+    "town": "福興鄉",
+    "name": "日新國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣福興鄉日新國民小學",
+    "address": "彰化縣福興鄉彰鹿路六段546號",
+    "floors": "1",
+    "source_x": 195026.53,
+    "source_y": 2660248.359,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣福興鄉番婆村004鄰彰鹿路六段５４６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.502657,
+     24.034866
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_093",
+    "town": "秀水鄉",
+    "name": "秀水國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣秀水鄉秀水國民小學",
+    "address": "彰化縣秀水鄉安東村中山路257號",
+    "floors": "1",
+    "source_x": 199412.694,
+    "source_y": 2658973.867,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉安東村007鄰中山路２５７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.499242,
+     24.034413
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_094",
+    "town": "秀水鄉",
+    "name": "秀水高工學校",
+    "category": "救濟站",
+    "sub_type": "高中(職)",
+    "org_name": "秀水高工",
+    "address": "彰化縣秀水鄉安東村中山路364號",
+    "floors": "2",
+    "source_x": 199065.153,
+    "source_y": 2658924.968,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉福安村025鄰中山路３６４號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.505293,
+     24.036209
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_095",
+    "town": "秀水鄉",
+    "name": "秀水國中",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立秀水國民中學",
+    "address": "彰化縣秀水鄉安東村中山路202號",
+    "floors": "1",
+    "source_x": 199681.418,
+    "source_y": 2659121.679,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉安東村005鄰中山路２０２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.514168,
+     24.03805
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_096",
+    "town": "秀水鄉",
+    "name": "華龍國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣秀水鄉華龍國民小學",
+    "address": "彰化縣秀水鄉秀水村花秀路51號",
+    "floors": "1",
+    "source_x": 200584.856,
+    "source_y": 2659322.382,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉秀水村004鄰花秀路５１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.501464,
+     24.035008
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_097",
+    "town": "秀水鄉",
+    "name": "秀水鄉農會",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "秀水鄉農會",
+    "address": "彰化縣秀水鄉安東村安東村中山路328號",
+    "floors": "7",
+    "source_x": 199291.433,
+    "source_y": 2658990.044,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉安東村008鄰中山路３２８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.517463,
+     24.012014
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_098",
+    "town": "秀水鄉",
+    "name": "陜西國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣秀水鄉陝西國民小學",
+    "address": "彰化縣秀水鄉金興村番花路261號",
+    "floors": "1",
+    "source_x": 200910.043,
+    "source_y": 2656437.72,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉金興村014鄰番花路２６１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.492732,
+     24.026724
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_099",
+    "town": "秀水鄉",
+    "name": "明正國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣秀水鄉明正國民小學",
+    "address": "彰化縣秀水鄉福安村彰水路二段341號",
+    "floors": "1",
+    "source_x": 198399.984,
+    "source_y": 2658075.773,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉埔崙村012鄰彰水路二段３４１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.49698,
+     24.062156
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_100",
+    "town": "秀水鄉",
+    "name": "馬興國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣秀水鄉馬興國民小學",
+    "address": "彰化縣秀水鄉馬興村培英巷1號",
+    "floors": "1",
+    "source_x": 198846.146,
+    "source_y": 2661998.318,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉馬興村009鄰培英巷１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.506287,
+     24.046034
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_101",
+    "town": "秀水鄉",
+    "name": "秀水鄉立體育館運動場館秀水鄉立體育館",
+    "category": "救濟站",
+    "sub_type": null,
+    "org_name": null,
+    "address": "彰化縣秀水鄉安東村瓦磘街17號",
+    "floors": "1",
+    "source_x": 199786.28,
+    "source_y": 2660209.44,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉安東村023鄰瓦磘街１７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.505593,
+     24.004344
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_102",
+    "town": "秀水鄉",
+    "name": "育民國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣秀水鄉育民國民小學",
+    "address": "彰化縣秀水鄉下崙村民生街262號",
+    "floors": "1",
+    "source_x": 199699.47,
+    "source_y": 2655592.493,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣秀水鄉下崙村013鄰民生街２６２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.540138,
+     24.023818
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_103",
+    "town": "花壇鄉",
+    "name": "花壇",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心花壇鄉公所",
+    "address": "彰化縣花壇鄉平和街76號",
+    "floors": "3",
+    "source_x": 203221.21,
+    "source_y": 2657737.29,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣花壇鄉花壇村009鄰平和街７６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.550178,
+     24.022846
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_104",
+    "town": "花壇鄉",
+    "name": "橋頭",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心橋頭社區",
+    "address": "彰化縣花壇鄉花橋街117-1號",
+    "floors": "1",
+    "source_x": 204242.12,
+    "source_y": 2657626.42,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣花壇鄉橋頭村014鄰花橋街１１７之１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.562995,
+     24.01707
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_105",
+    "town": "花壇鄉",
+    "name": "灣雅",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心灣雅社區",
+    "address": "彰化縣花壇鄉楓腳巷128號",
+    "floors": "1",
+    "source_x": 205543.97,
+    "source_y": 2656982.63,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣花壇鄉灣雅村006鄰楓腳巷１２８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.535399,
+     24.036759
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_106",
+    "town": "花壇鄉",
+    "name": "彰化監理站",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "彰化監理站",
+    "address": "彰化縣花壇鄉中山路2段457號",
+    "floors": "地下室",
+    "source_x": 202743.8,
+    "source_y": 2659172.15,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣花壇鄉南口村010鄰中山路二段４５７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.547222,
+     24.04305
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_107",
+    "town": "花壇鄉",
+    "name": "文德宮",
+    "category": "救濟站",
+    "sub_type": "宗教場所",
+    "org_name": "文德宮",
+    "address": "彰化縣花壇鄉彰員路3段2號",
+    "floors": "2",
+    "source_x": 203948.63,
+    "source_y": 2659864.98,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣花壇鄉白沙村022鄰彰員路三段２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.549487,
+     24.02986
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_108",
+    "town": "花壇鄉",
+    "name": "花壇國中",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立花壇國民中學",
+    "address": "彰化縣花壇鄉彰員路二段580號",
+    "floors": "1",
+    "source_x": 204174.37,
+    "source_y": 2658403.44,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣花壇鄉長沙村018鄰彰員路二段５８０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.571096,
+     24.017125
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_109",
+    "town": "花壇鄉",
+    "name": "老人文康中心社會福利機關(構)花壇鄉公所",
+    "category": "救濟站",
+    "sub_type": null,
+    "org_name": null,
+    "address": "彰化縣花壇鄉長青路25號",
+    "floors": "2",
+    "source_x": 206368.14,
+    "source_y": 2656986.1,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣花壇鄉永春村003鄰長青路２５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.545546,
+     24.027655
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_110",
+    "town": "花壇鄉",
+    "name": "花壇圖書館",
+    "category": "救濟站",
+    "sub_type": "文化場所(含圖書館)",
+    "org_name": "花壇鄉公所",
+    "address": "彰化縣花壇鄉中正路72號",
+    "floors": "地下室",
+    "source_x": 203772.72,
+    "source_y": 2658160.51,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣花壇鄉長沙村022鄰中正路７２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.545078,
+     24.047756
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_111",
+    "town": "花壇鄉",
+    "name": "白沙國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣花壇鄉白沙國民小學",
+    "address": "彰化縣花壇鄉白沙村彰員路三段225號",
+    "floors": "1",
+    "source_x": 203732.27,
+    "source_y": 2660386.85,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣花壇鄉白沙村004鄰彰員路三段２２５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.566068,
+     24.017046
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_112",
+    "town": "花壇鄉",
+    "name": "三春國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣花壇鄉三春國民小學",
+    "address": "彰化縣花壇鄉三芬路47號",
+    "floors": "1",
+    "source_x": 205856.55,
+    "source_y": 2656978.95,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣花壇鄉三春村012鄰三芬路４７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.534726,
+     24.038577
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_113",
+    "town": "花壇鄉",
+    "name": "僑愛國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣花壇鄉僑愛國民小學",
+    "address": "彰化縣花壇鄉中口村中山路二段471號",
+    "floors": "1",
+    "source_x": 202676.03,
+    "source_y": 2659373.73,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣花壇鄉中口村010鄰中山路二段４７１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.551405,
+     24.01596
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_114",
+    "town": "花壇鄉",
+    "name": "華南國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣花壇鄉華南國民小學",
+    "address": "彰化縣花壇鄉中橋街226號",
+    "floors": "1",
+    "source_x": 204364.57,
+    "source_y": 2656863.37,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣花壇鄉中庄村004鄰中橋街２２６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.526235,
+     24.025543
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_115",
+    "town": "花壇鄉",
+    "name": "文祥國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣花壇鄉文祥國民小學",
+    "address": "彰化縣花壇鄉劉厝村明雅街131號",
+    "floors": "1",
+    "source_x": 201807.51,
+    "source_y": 2657933.12,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣花壇鄉劉厝村012鄰明雅街１３１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.543208,
+     24.026315
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_116",
+    "town": "花壇鄉",
+    "name": "花壇國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣花壇鄉花壇國民小學",
+    "address": "彰化縣花壇鄉學前路108號",
+    "floors": "1",
+    "source_x": 203534.41,
+    "source_y": 2658012.81,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣花壇鄉長沙村024鄰學前路１０８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.576082,
+     24.010291
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_117",
+    "town": "花壇鄉",
+    "name": "長春社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心長春社區發展協會",
+    "address": "彰化縣花壇鄉長春村彰員路1段172巷45號",
+    "floors": "1",
+    "source_x": 206873.06,
+    "source_y": 2656227.76,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣花壇鄉長春村004鄰彰員路一段１７２巷４５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.640063,
+     23.986868
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_118",
+    "town": "芬園鄉",
+    "name": "寶山國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣芬園鄉寶山國民小學",
+    "address": "彰化縣芬園鄉圳墘村彰南路二段36號",
+    "floors": "1",
+    "source_x": 213375.54,
+    "source_y": 2653615.61,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芬園鄉圳墘村004鄰彰南路二段３６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.62808,
+     24.012008
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_119",
+    "town": "芬園鄉",
+    "name": "芬園鄉立圖書館",
+    "category": "救濟站",
+    "sub_type": "文化場所(含圖書館)",
+    "org_name": "彰化縣芬園鄉立圖書館",
+    "address": "彰化縣芬園鄉社口村彰南路四段25號1樓及",
+    "floors": "地下室",
+    "source_x": 212163.58,
+    "source_y": 2656402.92,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芬園鄉社口村012鄰彰南路四段２５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.627062,
+     24.02054
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_120",
+    "town": "芬園鄉",
+    "name": "竹林社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心彰化縣芬園鄉竹林社區活動中心",
+    "address": "彰化縣芬園鄉竹林村太平路77巷12號",
+    "floors": "1",
+    "source_x": 212062.52,
+    "source_y": 2657348.1,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芬園鄉竹林村007鄰太平路７７巷１２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.643418,
+     24.015331
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_121",
+    "town": "芬園鄉",
+    "name": "茄荖國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣芬園鄉茄荖國民小學",
+    "address": "彰化縣芬園鄉茄荖村嘉北街96號",
+    "floors": "1",
+    "source_x": 213724.94,
+    "source_y": 2656766.98,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芬園鄉茄荖村010鄰嘉北街９６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.628327,
+     23.963363
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_122",
+    "town": "芬園鄉",
+    "name": "文德國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣芬園鄉文德國民小學",
+    "address": "彰化縣芬園鄉大竹村大彰路一段617號",
+    "floors": "1",
+    "source_x": 212174.53,
+    "source_y": 2651015.56,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芬園鄉大竹村016鄰大彰路一段６１７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.621268,
+     23.977809
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_123",
+    "town": "芬園鄉",
+    "name": "同安國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣芬園鄉同安國民小學",
+    "address": "彰化縣芬園鄉大彰路二段400巷36號",
+    "floors": "1",
+    "source_x": 211460.44,
+    "source_y": 2652617.31,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芬園鄉中崙村005鄰大彰路二段４００巷３６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.644047,
+     24.008805
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_124",
+    "town": "芬園鄉",
+    "name": "茄荖嘉興社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心彰化縣芬園鄉公所",
+    "address": "彰化縣芬園鄉嘉興村芬草路一段93巷126號",
+    "floors": "1",
+    "source_x": 213787.08,
+    "source_y": 2656044.01,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芬園鄉嘉興村011鄰芬草路一段９３巷１２６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.629031,
+     24.013718
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_125",
+    "town": "芬園鄉",
+    "name": "芬園鄉公所隔壁鐵馬驛站及風雨籃球場運動場館彰化縣芬園鄉公所",
+    "category": "救濟站",
+    "sub_type": null,
+    "org_name": null,
+    "address": "彰化縣芬園鄉社口村芬草路2段300號",
+    "floors": "1",
+    "source_x": 212260.83,
+    "source_y": 2656592.05,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芬園鄉社口村003鄰芬草路二段３００號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.62717,
+     24.012068
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_126",
+    "town": "芬園鄉",
+    "name": "芬園國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣芬園鄉芬園國民小學",
+    "address": "彰化縣芬園鄉社口村彰南路四段27巷28號",
+    "floors": "1",
+    "source_x": 212071.01,
+    "source_y": 2656409.85,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芬園鄉社口村012鄰彰南路四段２７巷２８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.626327,
+     24.011935
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_127",
+    "town": "芬園鄉",
+    "name": "芬園國中",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立芬園國民中學",
+    "address": "彰化縣芬園鄉社口村彰南路四段27巷80號",
+    "floors": "1",
+    "source_x": 211985.25,
+    "source_y": 2656395.34,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芬園鄉社口村012鄰彰南路四段２７巷８０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.619494,
+     24.027191
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_128",
+    "town": "芬園鄉",
+    "name": "富山國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣芬園鄉富山國民小學",
+    "address": "彰化縣芬園鄉大埔村大埔路6號",
+    "floors": "1",
+    "source_x": 211294.63,
+    "source_y": 2658086.81,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芬園鄉大埔村009鄰大埔路６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.628753,
+     24.010327
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_129",
+    "town": "芬園鄉",
+    "name": "中華電信芬園服務中心住宿休閒會館中華電信股份有限公司南投營運處芬園服務中心",
+    "category": "救濟站",
+    "sub_type": null,
+    "org_name": null,
+    "address": "彰化縣芬園鄉芬園村彰南路三段496號1、B",
+    "floors": "1",
+    "source_x": 212231.54,
+    "source_y": 2656216.56,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芬園鄉芬園村001鄰彰南路三段４９６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.576496,
+     23.95047
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_130",
+    "town": "員林市",
+    "name": "員林家商學校",
+    "category": "救濟站",
+    "sub_type": "高中(職)",
+    "org_name": "員林家商",
+    "address": "彰化縣員林市大饒里中正路56號B",
+    "floors": "1",
+    "source_x": 206895.24,
+    "source_y": 2649602.48,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市大饒里006鄰中正路５６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.578974,
+     23.963386
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_131",
+    "town": "員林市",
+    "name": "大同國中",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立大同國民中學",
+    "address": "彰化縣員林市大同路一段345號",
+    "floors": "1",
+    "source_x": 207151.82,
+    "source_y": 2651032.15,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市三和里018鄰大同路一段３４５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.581827,
+     23.954661
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_132",
+    "town": "員林市",
+    "name": "員林農工學校",
+    "category": "救濟站",
+    "sub_type": "高中(職)",
+    "org_name": "員林農工",
+    "address": "彰化縣員林市萬年里員水路2段313號B",
+    "floors": "1",
+    "source_x": 207439.29,
+    "source_y": 2650065.03,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市萬年里014鄰員水路二段３１３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.575292,
+     23.961161
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_133",
+    "town": "員林市",
+    "name": "崇實高工學校",
+    "category": "救濟站",
+    "sub_type": "高中(職)",
+    "org_name": "崇實高工",
+    "address": "彰化縣員林市新興里育英路103號B",
+    "floors": "1",
+    "source_x": 206776.31,
+    "source_y": 2650786.86,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市新興里009鄰育英路１０３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.579224,
+     23.960162
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_134",
+    "town": "員林市",
+    "name": "員林國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣員林市員林國民小學",
+    "address": "彰化縣員林市三民東街221號",
+    "floors": "1",
+    "source_x": 207176.1,
+    "source_y": 2650675.03,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市三和里019鄰三民東街２２１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.574194,
+     23.952572
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_135",
+    "town": "員林市",
+    "name": "育英國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣員林市育英國民小學",
+    "address": "彰化縣員林市光明街31號",
+    "floors": "1",
+    "source_x": 206661.65,
+    "source_y": 2649836.01,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市黎明里022鄰光明街３１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.565529,
+     23.962529
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_136",
+    "town": "員林市",
+    "name": "靜修國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣員林市靜修國民小學",
+    "address": "彰化縣員林市靜修路74號",
+    "floors": "1",
+    "source_x": 205783.12,
+    "source_y": 2650941.4,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市南平里003鄰靜修路７４號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.571613,
+     23.967029
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_137",
+    "town": "員林市",
+    "name": "僑信國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣員林市僑信國民小學",
+    "address": "彰化縣員林市中山路2段280號",
+    "floors": "1",
+    "source_x": 206403.86,
+    "source_y": 2651437.91,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市三信里014鄰中山路二段２８０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.587327,
+     23.96191
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_138",
+    "town": "員林市",
+    "name": "員東國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣員林市員東國民小學",
+    "address": "彰化縣員林市員東路二段12號",
+    "floors": "1",
+    "source_x": 208001.38,
+    "source_y": 2650866.15,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市浮圳里015鄰員東路二段１２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.6021,
+     23.944435
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_139",
+    "town": "員林市",
+    "name": "青山國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣員林市青山國民小學",
+    "address": "彰化縣員林市出水里湶洲巷3號",
+    "floors": "1",
+    "source_x": 209499.44,
+    "source_y": 2648926.57,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市出水里011鄰湶洲巷３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.601306,
+     23.967939
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_141",
+    "town": "員林市",
+    "name": "東山國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣員林市東山國民小學",
+    "address": "彰化縣員林市南東里山腳路四段212號",
+    "floors": "1",
+    "source_x": 209425.98,
+    "source_y": 2651529.77,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市南東里010鄰山脚路四段２１２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.576109,
+     23.939385
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_142",
+    "town": "員林市",
+    "name": "饒明國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣員林市饒明國民小學",
+    "address": "彰化縣員林市員集路二段131號",
+    "floors": "1",
+    "source_x": 206852.22,
+    "source_y": 2648375.0,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市中央里014鄰員集路二段１３１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.560253,
+     23.962929
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_143",
+    "town": "員林市",
+    "name": "員林國中",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立員林國民中學",
+    "address": "彰化縣員林市南潭路2號",
+    "floors": "1",
+    "source_x": 205246.32,
+    "source_y": 2650987.34,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市南興里014鄰南潭路２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.585749,
+     23.947434
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_144",
+    "town": "員林市",
+    "name": "明倫國中",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立明倫國民中學",
+    "address": "彰化縣員林市明倫路2號",
+    "floors": "1",
+    "source_x": 207836.07,
+    "source_y": 2649263.52,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市萬年里001鄰明倫路２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.563728,
+     23.962296
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_145",
+    "town": "員林市",
+    "name": "員林高中學校",
+    "category": "救濟站",
+    "sub_type": "高中(職)",
+    "org_name": "員林高中",
+    "address": "彰化縣員林市新生里靜修路79號B",
+    "floors": "1",
+    "source_x": 205599.73,
+    "source_y": 2650916.2,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣員林市新生里019鄰靜修路７９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.480162,
+     23.950044
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_146",
+    "town": "溪湖鎮",
+    "name": "湖南國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣溪湖鎮湖南國民小學",
+    "address": "彰化縣溪湖鎮彰水路二段725號",
+    "floors": "1",
+    "source_x": 197089.967,
+    "source_y": 2649588.086,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮大竹里008鄰彰水路二段７２５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.497999,
+     23.954129
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_148",
+    "town": "溪湖鎮",
+    "name": "東溪國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣溪湖鎮東溪國民小學",
+    "address": "彰化縣溪湖鎮員鹿路一段538號",
+    "floors": "1",
+    "source_x": 198907.04,
+    "source_y": 2650033.929,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮東溪里006鄰員鹿路一段５３８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.478529,
+     23.95923
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_149",
+    "town": "溪湖鎮",
+    "name": "溪湖國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣溪湖鎮溪湖國民小學",
+    "address": "彰化縣溪湖鎮二溪路一段35號",
+    "floors": "1",
+    "source_x": 196927.507,
+    "source_y": 2650606.083,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮光華里003鄰二溪路一段３５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.479896,
+     23.958127
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_150",
+    "town": "溪湖鎮",
+    "name": "溪湖零售市場市場彰化縣溪湖鎮公所",
+    "category": "救濟站",
+    "sub_type": null,
+    "org_name": null,
+    "address": "彰化縣溪湖鎮民生街9號號1f",
+    "floors": "4",
+    "source_x": 197066.2,
+    "source_y": 2650483.41,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮平和里006鄰民生街９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.487192,
+     23.968019
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_151",
+    "town": "溪湖鎮",
+    "name": "國立溪湖高中學校",
+    "category": "救濟站",
+    "sub_type": "高中(職)",
+    "org_name": "國立溪湖高中",
+    "address": "彰化縣溪湖鎮大溪路二段86號",
+    "floors": "4",
+    "source_x": 197812.733,
+    "source_y": 2651576.205,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮湖東里022鄰大溪路二段８６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.47189,
+     23.95152
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_152",
+    "town": "溪湖鎮",
+    "name": "成功高中學校",
+    "category": "救濟站",
+    "sub_type": "高中(職)",
+    "org_name": "彰化縣立成功高級中學",
+    "address": "彰化縣溪湖鎮福德路310號",
+    "floors": "1",
+    "source_x": 196248.62,
+    "source_y": 2649754.72,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮汴頭里012鄰福德路３１０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.480417,
+     23.966875
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_153",
+    "town": "溪湖鎮",
+    "name": "溪湖國中",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立溪湖國民中學",
+    "address": "彰化縣溪湖鎮彰水路4段60號",
+    "floors": "1",
+    "source_x": 197122.785,
+    "source_y": 2651452.022,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮東寮里015鄰彰水路四段６０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.467706,
+     23.959967
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_154",
+    "town": "溪湖鎮",
+    "name": "湖西國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣溪湖鎮湖西國民小學",
+    "address": "彰化縣溪湖鎮北聖路20號",
+    "floors": "1",
+    "source_x": 195826.264,
+    "source_y": 2650691.761,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮大突里013鄰北聖路２０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.475729,
+     23.965371
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_155",
+    "town": "溪湖鎮",
+    "name": "湖北國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣溪湖鎮湖北國民小學",
+    "address": "彰化縣溪湖鎮太平里地政路201號",
+    "floors": "1",
+    "source_x": 196645.015,
+    "source_y": 2651287.275,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮太平里014鄰地政路２０１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.496023,
+     23.941184
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_156",
+    "town": "溪湖鎮",
+    "name": "媽厝國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣溪湖鎮媽厝國民小學",
+    "address": "彰化縣溪湖鎮媽厝里湳底路67號",
+    "floors": "1",
+    "source_x": 198700.806,
+    "source_y": 2648600.996,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪湖鎮媽厝里004鄰湳底路６７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.587504,
+     23.857327
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_157",
+    "town": "田中鎮",
+    "name": "田中國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣田中鎮田中國民小學",
+    "address": "彰化縣田中鎮中州路一段177號",
+    "floors": "1",
+    "source_x": 207985.647,
+    "source_y": 2639283.864,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮南路里007鄰中州路一段１７７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.585127,
+     23.8653
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_158",
+    "town": "田中鎮",
+    "name": "三潭國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣田中鎮三潭國民小學",
+    "address": "彰化縣田中鎮中正路715號",
+    "floors": "1",
+    "source_x": 207746.13,
+    "source_y": 2640167.49,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮北路里015鄰中正路７１５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.58574,
+     23.854283
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_159",
+    "town": "田中鎮",
+    "name": "新民國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣田中鎮新民國民小學",
+    "address": "彰化縣田中鎮公館路320號",
+    "floors": "1",
+    "source_x": 207804.91,
+    "source_y": 2638947.186,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮新民里020鄰公館路３２０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.599733,
+     23.853688
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_160",
+    "town": "田中鎮",
+    "name": "內安國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣田中鎮內安國民小學",
+    "address": "彰化縣田中鎮中南路三段54號",
+    "floors": "1",
+    "source_x": 209230.029,
+    "source_y": 2638877.198,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮新庄里010鄰中南路三段５４號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.581199,
+     23.857892
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_161",
+    "town": "田中鎮",
+    "name": "景崧文化教育園區-龍江館",
+    "category": "救濟站",
+    "sub_type": "文化場所(含圖書館)",
+    "org_name": "田中高中",
+    "address": "彰化縣田中鎮梅州里中州路一段416號",
+    "floors": "1",
+    "source_x": 207343.56,
+    "source_y": 2639348.28,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮梅州里008鄰中州路一段４１６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.588722,
+     23.854968
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_162",
+    "town": "田中鎮",
+    "name": "田中高中學校",
+    "category": "救濟站",
+    "sub_type": "高中(職)",
+    "org_name": "彰化縣立田中高級中學",
+    "address": "彰化縣田中鎮文化街23號",
+    "floors": "1",
+    "source_x": 208108.867,
+    "source_y": 2639022.168,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮南路里011鄰文化街２３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.586491,
+     23.868346
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_163",
+    "town": "田中鎮",
+    "name": "聖心堂",
+    "category": "救濟站",
+    "sub_type": "宗教場所",
+    "org_name": "聖心堂JTA134",
+    "address": "彰化縣田中鎮中潭里員集路3段125巷34號",
+    "floors": "地下室",
+    "source_x": 207886.042,
+    "source_y": 2640504.471,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮中潭里004鄰員集路三段１２５巷３４號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.605936,
+     23.852114
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_164",
+    "town": "田中鎮",
+    "name": "彰化榮家社會福利機關(構)彰化榮家JTA033",
+    "category": "救濟站",
+    "sub_type": null,
+    "org_name": null,
+    "address": "彰化縣田中鎮碧峰里中南路2段421號",
+    "floors": "地下室",
+    "source_x": 209861.373,
+    "source_y": 2638701.167,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮碧峰里002鄰中南路二段４２１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.580754,
+     23.861529
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_166",
+    "town": "田中鎮",
+    "name": "田中鎮民",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心田中鎮公所",
+    "address": "彰化縣田中鎮西路里斗中路一段210號",
+    "floors": "1",
+    "source_x": 207299.492,
+    "source_y": 2639751.201,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮西路里021鄰斗中路一段２１０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.580808,
+     23.867647
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_167",
+    "town": "田中鎮",
+    "name": "龍潭社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心龍潭社區發展協會",
+    "address": "彰化縣田中鎮龍潭里大社路一段216巷100弄20號",
+    "floors": "2",
+    "source_x": 207306.944,
+    "source_y": 2640428.74,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮龍潭里004鄰大社路一段２１６巷１００弄２０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.566971,
+     23.875935
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_169",
+    "town": "田中鎮",
+    "name": "三光社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心三光社區發展協會",
+    "address": "彰化縣田中鎮三光里民光路一段392巷25號",
+    "floors": "1",
+    "source_x": 205900.48,
+    "source_y": 2641350.85,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮三光里005鄰民光路一段３９２巷２５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.59486,
+     23.83192
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_170",
+    "town": "田中鎮",
+    "name": "昭天宮",
+    "category": "救濟站",
+    "sub_type": "宗教場所",
+    "org_name": "昭天宮",
+    "address": "彰化縣田中鎮大崙里大安路二段臨312號",
+    "floors": "1",
+    "source_x": 208726.8,
+    "source_y": 2636467.87,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮大崙里005鄰大安路二段（臨）３１２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.594421,
+     23.84064
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_172",
+    "town": "田中鎮",
+    "name": "大安國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣田中鎮大安國民小學",
+    "address": "彰化縣田中鎮三安里大安路一段200號",
+    "floors": "1",
+    "source_x": 208684.85,
+    "source_y": 2637433.797,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮三安里007鄰大安路一段２００號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.606235,
+     23.867481
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_173",
+    "town": "田中鎮",
+    "name": "東和國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣田中鎮東和國民小學",
+    "address": "彰化縣田中鎮復興里山腳路四段188巷109號",
+    "floors": "1",
+    "source_x": 209896.572,
+    "source_y": 2640402.904,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮復興里015鄰山脚路四段１８８巷１０９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.583097,
+     23.851116
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_174",
+    "town": "田中鎮",
+    "name": "舊街社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心舊街社區發展協會",
+    "address": "彰化縣田中鎮沙崙里沙崙路281號",
+    "floors": "1",
+    "source_x": 207534.74,
+    "source_y": 2638597.26,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田中鎮沙崙里002鄰沙崙路２８１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.585559,
+     23.993551
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_175",
+    "town": "大村鄉",
+    "name": "村東國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣大村鄉村東國民小學",
+    "address": "彰化縣大村鄉福興村山腳路102號之1",
+    "floors": "1",
+    "source_x": 207831.78,
+    "source_y": 2654370.9,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大村鄉福興村010鄰山脚路１０２號之１",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.565504,
+     23.988171
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_176",
+    "town": "大村鄉",
+    "name": "大村國中",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立大村國民中學",
+    "address": "彰化縣大村鄉村上村中山路二段240號",
+    "floors": "1",
+    "source_x": 205789.324,
+    "source_y": 2653781.242,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大村鄉村上村008鄰中山路二段２４０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.545413,
+     23.993722
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_178",
+    "town": "大村鄉",
+    "name": "大村國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣大村鄉大村國民小學",
+    "address": "彰化縣大村鄉中正西路381號",
+    "floors": "1",
+    "source_x": 203747.006,
+    "source_y": 2654402.513,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大村鄉大村村001鄰中正西路３８１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.52538,
+     23.984697
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_179",
+    "town": "大村鄉",
+    "name": "大西國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣大村鄉大西國民小學",
+    "address": "彰化縣大村鄉大崙村大崙路10-55號",
+    "floors": "1",
+    "source_x": 201705.3,
+    "source_y": 2653409.67,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大村鄉大崙村020鄰大崙路１０之５５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.564763,
+     23.988947
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_180",
+    "town": "大村鄉",
+    "name": "村上國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣大村鄉村上國民小學",
+    "address": "彰化縣大村鄉中山路二段242號",
+    "floors": "1",
+    "source_x": 205714.214,
+    "source_y": 2653867.384,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大村鄉村上村011鄰中山路二段２４２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.428786,
+     23.984992
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_181",
+    "town": "埔鹽鄉",
+    "name": "天盛國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣埔鹽鄉天盛國民小學",
+    "address": "彰化縣埔鹽鄉天盛村番金路68-1號",
+    "floors": "1",
+    "source_x": 191876.38,
+    "source_y": 2653478.77,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔鹽鄉天盛村001鄰番金路６８之１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.442789,
+     23.985281
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_182",
+    "town": "埔鹽鄉",
+    "name": "新水國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣埔鹽鄉新水國民小學",
+    "address": "彰化縣埔鹽鄉新水村大新路一巷15號",
+    "floors": "1",
+    "source_x": 193301.443,
+    "source_y": 2653505.153,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔鹽鄉新水村006鄰大新路１巷１５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.466031,
+     23.999488
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_183",
+    "town": "埔鹽鄉",
+    "name": "埔鹽國中",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立埔鹽國民中學",
+    "address": "彰化縣埔鹽鄉好修村中正路162號",
+    "floors": "1",
+    "source_x": 195672.431,
+    "source_y": 2655069.348,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔鹽鄉好修村013鄰中正路１６２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.459559,
+     24.007211
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_184",
+    "town": "埔鹽鄉",
+    "name": "好修國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣埔鹽鄉好修國民小學",
+    "address": "彰化縣埔鹽鄉好修村員鹿路2段149號",
+    "floors": "1",
+    "source_x": 195017.183,
+    "source_y": 2655927.24,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔鹽鄉好修村010鄰員鹿路二段１４９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.463235,
+     24.000519
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_185",
+    "town": "埔鹽鄉",
+    "name": "埔鹽鄉立圖書館",
+    "category": "救濟站",
+    "sub_type": "文化場所(含圖書館)",
+    "org_name": "埔鹽鄉公所",
+    "address": "彰化縣埔鹽鄉員鹿路二段60號B",
+    "floors": "1",
+    "source_x": 195388.331,
+    "source_y": 2655184.629,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔鹽鄉好修村007鄰員鹿路二段６０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.477896,
+     23.992812
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_186",
+    "town": "埔鹽鄉",
+    "name": "埔鹽國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣埔鹽鄉埔鹽國民小學",
+    "address": "彰化縣埔鹽鄉彰水路一段252號",
+    "floors": "1",
+    "source_x": 196876.83,
+    "source_y": 2654325.52,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔鹽鄉埔南村011鄰彰水路一段２５２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.431277,
+     24.000544
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_187",
+    "town": "埔鹽鄉",
+    "name": "永樂國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣埔鹽鄉永樂國民小學",
+    "address": "彰化縣埔鹽鄉永樂村永樂路600號",
+    "floors": "1",
+    "source_x": 192136.843,
+    "source_y": 2655200.142,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔鹽鄉永樂村006鄰永樂路６００號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.495773,
+     23.987977
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_188",
+    "town": "埔鹽鄉",
+    "name": "南港國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣埔鹽鄉南港國民小學",
+    "address": "彰化縣埔鹽鄉南港村埔菜路29-2號",
+    "floors": "1",
+    "source_x": 198693.955,
+    "source_y": 2653783.376,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔鹽鄉南港村016鄰埔菜路２９號之２",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.48825,
+     23.979785
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_189",
+    "town": "埔鹽鄉",
+    "name": "大園國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣埔鹽鄉大園國民小學",
+    "address": "彰化縣埔鹽鄉埔打路45-1號",
+    "floors": "1",
+    "source_x": 197925.093,
+    "source_y": 2652878.902,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔鹽鄉豐澤村003鄰埔打路４５號之１",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.557567,
+     23.951181
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_190",
+    "town": "埔心鄉",
+    "name": "明聖國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣埔心鄉明聖國民小學",
+    "address": "彰化縣埔心鄉西安南路178號",
+    "floors": "1",
+    "source_x": 204968.876,
+    "source_y": 2649687.124,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔心鄉瓦北村001鄰西安南路１７８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.525725,
+     23.970028
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_191",
+    "town": "埔心鄉",
+    "name": "鳳霞國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣埔心鄉鳳霞國民小學",
+    "address": "彰化縣埔心鄉五通南路82號",
+    "floors": "1",
+    "source_x": 201734.965,
+    "source_y": 2651784.946,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔心鄉二重村005鄰五通南路８２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.552955,
+     23.937869
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_192",
+    "town": "埔心鄉",
+    "name": "太平國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣埔心鄉太平國民小學",
+    "address": "彰化縣埔心鄉太平路289號",
+    "floors": "1",
+    "source_x": 204494.822,
+    "source_y": 2648214.312,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔心鄉太平村005鄰太平路２８９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.541968,
+     23.954646
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_193",
+    "town": "埔心鄉",
+    "name": "埔心國中",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立埔心國民中學",
+    "address": "彰化縣埔心鄉忠義北路57號",
+    "floors": "1",
+    "source_x": 203382.45,
+    "source_y": 2650075.97,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔心鄉義民村012鄰忠義北路５７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.551378,
+     23.938404
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_194",
+    "town": "埔心鄉",
+    "name": "埔心鄉立幼兒園",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "埔心鄉公所",
+    "address": "彰化縣埔心鄉太平村太平路336號",
+    "floors": "1",
+    "source_x": 204334.516,
+    "source_y": 2648274.108,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔心鄉太平村012鄰太平路３３６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.544343,
+     23.953161
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_195",
+    "town": "埔心鄉",
+    "name": "埔心鄉圖書館",
+    "category": "救濟站",
+    "sub_type": "文化場所(含圖書館)",
+    "org_name": "埔心鄉公所",
+    "address": "彰化縣埔心鄉義民村員鹿路二段328號",
+    "floors": "1",
+    "source_x": 203623.614,
+    "source_y": 2649910.728,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔心鄉義民村012鄰員鹿路二段３２８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.545323,
+     23.953344
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_196",
+    "town": "埔心鄉",
+    "name": "埔心國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣埔心鄉埔心國民小學",
+    "address": "彰化縣埔心鄉員鹿路二段254號",
+    "floors": "1",
+    "source_x": 203723.473,
+    "source_y": 2649930.715,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔心鄉義民村013鄰員鹿路二段２５４號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.513079,
+     23.942067
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_197",
+    "town": "埔心鄉",
+    "name": "羅厝國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣埔心鄉羅厝國民小學",
+    "address": "彰化縣埔心鄉文昌東路100號",
+    "floors": "1",
+    "source_x": 200437.313,
+    "source_y": 2648692.743,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔心鄉羅厝村013鄰文昌東路１００號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.525814,
+     23.947679
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_198",
+    "town": "埔心鄉",
+    "name": "舊館國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣埔心鄉舊館國民小學",
+    "address": "彰化縣埔心鄉員鹿路四段201號",
+    "floors": "1",
+    "source_x": 201735.7,
+    "source_y": 2649309.854,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔心鄉舊舘村010鄰員鹿路四段２０１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.512377,
+     23.970384
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_199",
+    "town": "埔心鄉",
+    "name": "梧鳳國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣埔心鄉梧鳳國民小學",
+    "address": "彰化縣埔心鄉大溪路三段175號",
+    "floors": "1",
+    "source_x": 200376.66,
+    "source_y": 2651829.04,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埔心鄉梧鳳村005鄰大溪路三段１７５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.548018,
+     23.920637
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_200",
+    "town": "永靖鄉",
+    "name": "永靖國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣永靖鄉永靖國民小學",
+    "address": "彰化縣永靖鄉永東村中山路二段65號",
+    "floors": "1",
+    "source_x": 203986.186,
+    "source_y": 2646307.551,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣永靖鄉永東村005鄰中山路二段６５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.54602,
+     23.921135
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_201",
+    "town": "永靖鄉",
+    "name": "永靖鄉立圖書館",
+    "category": "救濟站",
+    "sub_type": "文化場所(含圖書館)",
+    "org_name": "永靖鄉公所",
+    "address": "彰化縣永靖鄉永安街86號2-3樓",
+    "floors": "1",
+    "source_x": 203782.94,
+    "source_y": 2646363.327,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣永靖鄉永東村010鄰永安街８６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.545505,
+     23.926688
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_202",
+    "town": "永靖鄉",
+    "name": "永靖高工學校",
+    "category": "救濟站",
+    "sub_type": "高中(職)",
+    "org_name": "國立永靖高級工業職業學校",
+    "address": "彰化縣永靖鄉永坡路101號",
+    "floors": "1",
+    "source_x": 203732.483,
+    "source_y": 2646978.549,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣永靖鄉永北村014鄰永坡路１０１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.522627,
+     23.919923
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_203",
+    "town": "永靖鄉",
+    "name": "福興國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣永靖鄉福興國民小學",
+    "address": "彰化縣永靖鄉永靖鄉永福路2段160號",
+    "floors": "1",
+    "source_x": 201400.912,
+    "source_y": 2646237.017,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣永靖鄉福興村001鄰永福路二段１６０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.55118,
+     23.930029
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_204",
+    "town": "永靖鄉",
+    "name": "永靖國中",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立永靖國民中學",
+    "address": "彰化縣永靖鄉瑚璉村錫壽路123號",
+    "floors": "1",
+    "source_x": 204311.385,
+    "source_y": 2647346.626,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣永靖鄉瑚璉村001鄰錫壽路１２３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.541409,
+     23.914785
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_205",
+    "town": "永靖鄉",
+    "name": "福德國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣永靖鄉福德國民小學",
+    "address": "彰化縣永靖鄉福德巷36號",
+    "floors": "1",
+    "source_x": 203311.222,
+    "source_y": 2645661.637,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣永靖鄉永南村011鄰福德巷３６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.549733,
+     23.923606
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_207",
+    "town": "永靖鄉",
+    "name": "永靖鄉果菜市場市場永靖鄉公所",
+    "category": "救濟站",
+    "sub_type": null,
+    "org_name": null,
+    "address": "彰化縣永靖鄉裕農路58號",
+    "floors": "1",
+    "source_x": 204161.76,
+    "source_y": 2646635.808,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣永靖鄉瑚璉村013鄰裕農路５８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.566865,
+     23.925461
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_208",
+    "town": "永靖鄉",
+    "name": "永興國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣永靖鄉永興國民小學",
+    "address": "彰化縣永靖鄉永興路2段32號",
+    "floors": "1",
+    "source_x": 205906.574,
+    "source_y": 2646835.772,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣永靖鄉東寧村002鄰永興路二段３２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.58656,
+     23.897501
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_209",
+    "town": "社頭鄉",
+    "name": "社頭國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣社頭鄉社頭國民小學",
+    "address": "彰化縣社頭鄉社斗路一段258號",
+    "floors": "1",
+    "source_x": 207902.435,
+    "source_y": 2643733.291,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣社頭鄉社頭村012鄰社斗路一段２５８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.591832,
+     23.900756
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_210",
+    "town": "社頭鄉",
+    "name": "舊社國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣社頭鄉舊社國民小學",
+    "address": "彰化縣社頭鄉社石路956號",
+    "floors": "1",
+    "source_x": 208440.312,
+    "source_y": 2644092.205,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣社頭鄉松竹村003鄰社石路９５６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.584506,
+     23.892718
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_211",
+    "town": "社頭鄉",
+    "name": "特殊教育",
+    "category": "救濟站",
+    "sub_type": "學校",
+    "org_name": "學校小學國立彰化特殊教育學校",
+    "address": "彰化縣社頭鄉仁雅村中山路1段306號B",
+    "floors": "1",
+    "source_x": 207691.754,
+    "source_y": 2643204.197,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣社頭鄉仁雅村012鄰中山路一段３０６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.586997,
+     23.889205
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_213",
+    "town": "社頭鄉",
+    "name": "崙雅國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣社頭鄉崙雅國民小學",
+    "address": "彰化縣社頭鄉員集路一段615號",
+    "floors": "1",
+    "source_x": 207944.24,
+    "source_y": 2642814.355,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣社頭鄉美雅村006鄰員集路一段６１５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.60348,
+     23.92045
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_214",
+    "town": "社頭鄉",
+    "name": "湳雅國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣社頭鄉湳雅國民小學",
+    "address": "彰化縣社頭鄉山腳路三段395號",
+    "floors": "1",
+    "source_x": 209632.44,
+    "source_y": 2646269.83,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣社頭鄉湳雅村007鄰山腳路三段３９５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.609319,
+     23.906616
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_215",
+    "town": "社頭鄉",
+    "name": "清水國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣社頭鄉清水國民小學",
+    "address": "彰化縣社頭鄉山腳路一段486號",
+    "floors": "1",
+    "source_x": 210222.643,
+    "source_y": 2644736.14,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣社頭鄉朝興村004鄰山腳路二段４８６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.606492,
+     23.908322
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_216",
+    "town": "社頭鄉",
+    "name": "朝興國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣社頭鄉朝興國民小學",
+    "address": "彰化縣社頭鄉朝興村社石路91號",
+    "floors": "1",
+    "source_x": 209935.39,
+    "source_y": 2644925.91,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣社頭鄉朝興村007鄰社石路９１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.583955,
+     23.901475
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_217",
+    "town": "社頭鄉",
+    "name": "社頭國中",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立社頭國民中學",
+    "address": "彰化縣社頭鄉中興路1號",
+    "floors": "1",
+    "source_x": 207638.521,
+    "source_y": 2644174.161,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣社頭鄉廣興村017鄰中興路１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.585033,
+     23.889812
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_218",
+    "town": "社頭鄉",
+    "name": "社頭運動公園-體育館運動場館社頭社頭運動公園",
+    "category": "救濟站",
+    "sub_type": null,
+    "org_name": null,
+    "address": "彰化縣社頭鄉美雅村中山路一段172號",
+    "floors": "1",
+    "source_x": 207744.46,
+    "source_y": 2642882.17,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣社頭鄉崙雅村008鄰中山路一段１７２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.616648,
+     23.809951
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_219",
+    "town": "二水鄉",
+    "name": "二水鄉圖書館二水鄉公所",
+    "category": "救濟站",
+    "sub_type": null,
+    "org_name": null,
+    "address": "彰化縣二水鄉溪邊巷72號",
+    "floors": "3",
+    "source_x": 210939.855,
+    "source_y": 2634028.732,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二水鄉聖化村009鄰溪邊巷７２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.604764,
+     23.829556
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_220",
+    "town": "二水鄉",
+    "name": "復興",
+    "category": "救濟站",
+    "sub_type": "國小/小學",
+    "org_name": "彰化縣二水鄉復興國民小學",
+    "address": "彰化縣二水鄉復興村員集路五段472號",
+    "floors": "1",
+    "source_x": 209735.046,
+    "source_y": 2636203.272,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二水鄉復興村010鄰員集路五段４７２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.61785,
+     23.810772
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_221",
+    "town": "二水鄉",
+    "name": "二水",
+    "category": "救濟站",
+    "sub_type": "國小/小學",
+    "org_name": "彰化縣二水鄉二水國民小學",
+    "address": "彰化縣二水鄉光文路119號",
+    "floors": "1",
+    "source_x": 211062.572,
+    "source_y": 2634119.341,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二水鄉文化村001鄰光文路１１９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.645785,
+     23.803848
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_222",
+    "town": "二水鄉",
+    "name": "二水",
+    "category": "救濟站",
+    "sub_type": "國中",
+    "org_name": "國中彰化縣立二水國民中學",
+    "address": "彰化縣二水鄉月眉巷13號",
+    "floors": "1",
+    "source_x": 213907.045,
+    "source_y": 2633345.204,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二水鄉源泉村001鄰月眉巷１３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.611513,
+     23.819205
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_223",
+    "town": "二水鄉",
+    "name": "源泉",
+    "category": "救濟站",
+    "sub_type": "國小/小學",
+    "org_name": "彰化縣二水鄉源泉國民小學",
+    "address": "彰化縣二水鄉大園村員集路二段316號",
+    "floors": "1",
+    "source_x": 210419.492,
+    "source_y": 2635055.065,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二水鄉上豊村001鄰員集路四段３１６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.526559,
+     23.872326
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_224",
+    "town": "北斗鎮",
+    "name": "北斗鎮市場市場北斗鎮公所",
+    "category": "救濟站",
+    "sub_type": null,
+    "org_name": null,
+    "address": "彰化縣北斗鎮七星里斗苑路1段73號地上2地下",
+    "floors": "1",
+    "source_x": 201783.599,
+    "source_y": 2640964.288,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣北斗鎮七星里003鄰斗苑路一段７３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.521627,
+     23.875374
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_226",
+    "town": "北斗鎮",
+    "name": "北斗台電公司",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "台灣電力公司彰化區營業處",
+    "address": "彰化縣北斗鎮大道里文苑路1段107號地上4地下",
+    "floors": "1",
+    "source_x": 201282.468,
+    "source_y": 2641303.573,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣北斗鎮新政里009鄰文苑路一段１０７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.557239,
+     23.85495
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_227",
+    "town": "北斗鎮",
+    "name": "大新國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣北斗鎮大新國民小學",
+    "address": "彰化縣北斗鎮大新里大新路556號",
+    "floors": "1",
+    "source_x": 204902.131,
+    "source_y": 2639029.93,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣北斗鎮大新里002鄰大新路５５６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.534599,
+     23.871091
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_228",
+    "town": "北斗鎮",
+    "name": "螺青國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣北斗鎮螺青國民小學",
+    "address": "彰化縣北斗鎮東光里斗中路712號",
+    "floors": "1",
+    "source_x": 202601.991,
+    "source_y": 2640824.882,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣北斗鎮東光里005鄰斗中路７１２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.52205,
+     23.870288
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_229",
+    "town": "北斗鎮",
+    "name": "萬來國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣北斗鎮萬來國民小學",
+    "address": "彰化縣北斗鎮西德里文賢街35號",
+    "floors": "1",
+    "source_x": 201323.61,
+    "source_y": 2640740.117,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣北斗鎮西德里011鄰文賢街３５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.523379,
+     23.875748
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_230",
+    "town": "北斗鎮",
+    "name": "北斗國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣北斗鎮北斗國民小學",
+    "address": "彰化縣北斗鎮新政里文苑路一段32號",
+    "floors": "1",
+    "source_x": 201460.965,
+    "source_y": 2641344.408,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣北斗鎮新政里010鄰文苑路一段３２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.521586,
+     23.875935
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_231",
+    "town": "北斗鎮",
+    "name": "北斗國中",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立北斗國民中學",
+    "address": "彰化縣北斗鎮大道里文苑路一段136號",
+    "floors": "1",
+    "source_x": 201278.462,
+    "source_y": 2641365.7,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣北斗鎮大道里013鄰文苑路一段１３６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.522079,
+     23.8785
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_233",
+    "town": "北斗鎮",
+    "name": "北斗家商學校",
+    "category": "救濟站",
+    "sub_type": "高中(職)",
+    "org_name": "國立北斗家商",
+    "address": "彰化縣北斗鎮大道里學府路50號地上4地下",
+    "floors": "1",
+    "source_x": 201329.643,
+    "source_y": 2641649.647,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣北斗鎮大道里002鄰學府路５０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.550932,
+     23.868416
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_234",
+    "town": "北斗鎮",
+    "name": "中華電信營運處北斗線路中心住宿休閒會館中華電信彰化營運處",
+    "category": "救濟站",
+    "sub_type": null,
+    "org_name": null,
+    "address": "彰化縣北斗鎮大新里新工一路1段80號B",
+    "floors": "1",
+    "source_x": 204264.49,
+    "source_y": 2640523.207,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣北斗鎮大新里009鄰新工一路８０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.514719,
+     23.87624
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_235",
+    "town": "北斗鎮",
+    "name": "螺陽國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣北斗鎮螺陽國民小學",
+    "address": "彰化縣北斗鎮斗苑路二段150號",
+    "floors": "1",
+    "source_x": 200579.268,
+    "source_y": 2641401.887,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣北斗鎮西安里008鄰斗苑路二段１５０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.377267,
+     23.899921
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_236",
+    "town": "二林鎮",
+    "name": "二林工商學校",
+    "category": "救濟站",
+    "sub_type": "高中(職)",
+    "org_name": "二林工商",
+    "address": "彰化縣二林鎮豐田里斗苑路4段500號",
+    "floors": "2",
+    "source_x": 186592.406,
+    "source_y": 2644079.377,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二林鎮豐田里007鄰斗苑路四段５００號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.376547,
+     23.895614
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_237",
+    "town": "二林鎮",
+    "name": "中正國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣二林鎮中正國民小學",
+    "address": "彰化縣二林鎮育英街178巷56號",
+    "floors": "1",
+    "source_x": 186516.96,
+    "source_y": 2643602.62,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二林鎮東興里012鄰育英街１７８巷５６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.415117,
+     23.956079
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_238",
+    "town": "二林鎮",
+    "name": "萬興國中",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立萬興國民中學",
+    "address": "彰化縣二林鎮萬興里二溪路六段626號",
+    "floors": "1",
+    "source_x": 190472.174,
+    "source_y": 2650282.418,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二林鎮萬興里010鄰二溪路六段６２６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.395294,
+     23.891507
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_239",
+    "town": "二林鎮",
+    "name": "興華國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣二林鎮興華國民小學",
+    "address": "彰化縣二林鎮東興里竹林路3段393號",
+    "floors": "1",
+    "source_x": 188424.009,
+    "source_y": 2643139.519,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二林鎮東興里001鄰竹林路三段３９３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.387604,
+     23.874154
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_240",
+    "town": "二林鎮",
+    "name": "育德國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣二林鎮育德國民小學",
+    "address": "彰化縣二林鎮外竹里中南巷41之1號",
+    "floors": "1",
+    "source_x": 187632.65,
+    "source_y": 2641221.1,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二林鎮外竹里003鄰中南巷４１之１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.376421,
+     23.874022
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_241",
+    "town": "二林鎮",
+    "name": "香田國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣二林鎮香田國民小學",
+    "address": "彰化縣二林鎮香田里儒林路10之1號",
+    "floors": "1",
+    "source_x": 186493.59,
+    "source_y": 2641211.44,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二林鎮香田里011鄰儒林路１０號之１",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.36269,
+     23.87617
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_242",
+    "town": "二林鎮",
+    "name": "廣興國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣二林鎮廣興國民小學",
+    "address": "彰化縣二林鎮廣興里廣興巷2-1號",
+    "floors": "1",
+    "source_x": 185096.22,
+    "source_y": 2641455.57,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二林鎮廣興里001鄰廣興巷２之１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.419934,
+     23.954285
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_243",
+    "town": "二林鎮",
+    "name": "萬興國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣二林鎮萬興國民小學",
+    "address": "彰化縣二林鎮二溪路六段433號",
+    "floors": "1",
+    "source_x": 190961.63,
+    "source_y": 2650081.67,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二林鎮永興里011鄰二溪路六段４３３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.394881,
+     23.937523
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_244",
+    "town": "二林鎮",
+    "name": "新生國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣二林鎮新生國民小學",
+    "address": "彰化縣二林鎮鎮平巷59號",
+    "floors": "1",
+    "source_x": 188403.801,
+    "source_y": 2648235.991,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二林鎮趙甲里002鄰鎮平巷５９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.409554,
+     23.925389
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_245",
+    "town": "二林鎮",
+    "name": "萬合國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣二林鎮萬合國民小學",
+    "address": "彰化縣二林鎮萬合里江山巷1號",
+    "floors": "1",
+    "source_x": 189891.817,
+    "source_y": 2646885.827,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二林鎮萬合里008鄰江山巷１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.436171,
+     23.907182
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_246",
+    "town": "二林鎮",
+    "name": "東勢",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心東勢社區協會",
+    "address": "彰化縣二林鎮東勢里面前巷2-20號",
+    "floors": "1",
+    "source_x": 192593.417,
+    "source_y": 2644858.371,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二林鎮東勢里003鄰面前巷２號之２０",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.358906,
+     23.890303
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_247",
+    "town": "二林鎮",
+    "name": "二林高中學校",
+    "category": "救濟站",
+    "sub_type": "高中(職)",
+    "org_name": "彰化縣立二林高級中學",
+    "address": "彰化縣二林鎮二城路6號",
+    "floors": "1",
+    "source_x": 184717.951,
+    "source_y": 2643022.515,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二林鎮中西里008鄰二城路６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.375424,
+     23.900455
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_248",
+    "town": "二林鎮",
+    "name": "二林鎮立幼兒園",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "二林鎮公所",
+    "address": "彰化縣二林鎮豐田里斗苑路四段586號",
+    "floors": "3",
+    "source_x": 186404.988,
+    "source_y": 2644139.359,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二林鎮豐田里010鄰斗苑路四段５８６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.366171,
+     23.893959
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_249",
+    "town": "二林鎮",
+    "name": "南光",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心南光社區協會",
+    "address": "彰化縣二林鎮南光里懷仁街8號",
+    "floors": "2",
+    "source_x": 185459.646,
+    "source_y": 2643424.119,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二林鎮南光里023鄰懷仁街８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.426702,
+     23.894314
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_250",
+    "town": "二林鎮",
+    "name": "原斗國中(小)",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立原斗國民中小學",
+    "address": "彰化縣二林鎮原斗里原竹路872號",
+    "floors": "1",
+    "source_x": 191623.541,
+    "source_y": 2643437.052,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二林鎮原斗里009鄰原竹路８７２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.442785,
+     23.94819
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_251",
+    "town": "二林鎮",
+    "name": "中興國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣二林鎮中興國民小學",
+    "address": "彰化縣二林鎮光復路73號",
+    "floors": "1",
+    "source_x": 193284.767,
+    "source_y": 2649397.303,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二林鎮華崙里018鄰光復路７３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.371585,
+     23.89992
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_252",
+    "town": "二林鎮",
+    "name": "二林國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣二林鎮二林國民小學",
+    "address": "彰化縣二林鎮東和里斗苑路5段22號",
+    "floors": "1",
+    "source_x": 186013.82,
+    "source_y": 2644081.778,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二林鎮東和里006鄰斗苑路五段２２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.36207,
+     23.897339
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_253",
+    "town": "二林鎮",
+    "name": "二林文化園區",
+    "category": "救濟站",
+    "sub_type": "文化場所(含圖書館)",
+    "org_name": "中正國小",
+    "address": "彰化縣二林鎮西平里西和一街65號",
+    "floors": "1",
+    "source_x": 185043.66,
+    "source_y": 2643800.3,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣二林鎮西平里013鄰西和一街６５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.55111,
+     23.884077
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_254",
+    "town": "田尾鄉",
+    "name": "睦宜社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心睦宜社區",
+    "address": "彰化縣田尾鄉聖德巷162號",
+    "floors": "1",
+    "source_x": 204288.039,
+    "source_y": 2642257.558,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉睦宜村008鄰聖德巷１６２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.537523,
+     23.904474
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_255",
+    "town": "田尾鄉",
+    "name": "溪畔社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心溪畔社區",
+    "address": "彰化縣田尾鄉溪畔巷157號",
+    "floors": "1",
+    "source_x": 202911.844,
+    "source_y": 2644520.973,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉溪畔村002鄰溪畔巷１５７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.503328,
+     23.919486
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_256",
+    "town": "田尾鄉",
+    "name": "陸豐社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心陸豐社區",
+    "address": "彰化縣田尾鄉陸豐路48號",
+    "floors": "1",
+    "source_x": 199435.987,
+    "source_y": 2646195.301,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉陸豐村008鄰陸豐路４８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.505044,
+     23.917345
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_257",
+    "town": "田尾鄉",
+    "name": "陸豐國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣田尾鄉陸豐國民小學",
+    "address": "彰化縣田尾鄉陸豐村民生路三段200號",
+    "floors": "1",
+    "source_x": 199609.881,
+    "source_y": 2645957.631,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉陸豐村006鄰民生路三段２００號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.501105,
+     23.921948
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_258",
+    "town": "田尾鄉",
+    "name": "海豐社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心海豐社區",
+    "address": "彰化縣田尾鄉中正路三段396巷36號",
+    "floors": "1",
+    "source_x": 199210.63,
+    "source_y": 2646468.78,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉海豐村011鄰中正路三段３９６巷３６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.518911,
+     23.891448
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_259",
+    "town": "田尾鄉",
+    "name": "正義社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心正義社區",
+    "address": "彰化縣田尾鄉中正路一段232號",
+    "floors": "1",
+    "source_x": 201011.923,
+    "source_y": 2643084.706,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉正義村005鄰中正路一段２３２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.506647,
+     23.904154
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_260",
+    "town": "田尾鄉",
+    "name": "仁里社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心仁里社區",
+    "address": "彰化縣田尾鄉中正路二段103巷9號",
+    "floors": "1",
+    "source_x": 199767.908,
+    "source_y": 2644496.135,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉仁里村017鄰中正路二段１０３巷９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.536093,
+     23.894772
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_261",
+    "town": "田尾鄉",
+    "name": "北曾社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心北曾社區",
+    "address": "彰化縣田尾鄉福德巷359號",
+    "floors": "1",
+    "source_x": 202762.741,
+    "source_y": 2643446.926,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉北曾村004鄰福德巷３５９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.536976,
+     23.891505
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_263",
+    "town": "田尾鄉",
+    "name": "南曾社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心南曾社區",
+    "address": "彰化縣田尾鄉福德巷185號",
+    "floors": "1",
+    "source_x": 202851.48,
+    "source_y": 2643084.831,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉南曾村001鄰福德巷１８５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.557187,
+     23.892496
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_264",
+    "town": "田尾鄉",
+    "name": "南鎮社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心南鎮社區",
+    "address": "彰化縣田尾鄉平和路一段140號",
+    "floors": "1",
+    "source_x": 204909.804,
+    "source_y": 2643187.965,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉南鎮村003鄰平和路一段１４０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.528733,
+     23.885556
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_265",
+    "town": "田尾鄉",
+    "name": "天乙宮",
+    "category": "救濟站",
+    "sub_type": "宗教場所",
+    "org_name": "天乙宮蘇府王爺",
+    "address": "彰化縣田尾鄉建平路一段66號",
+    "floors": "1",
+    "source_x": 202009.91,
+    "source_y": 2642428.83,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉饒平村006鄰建平路一段６６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.532001,
+     23.904865
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_266",
+    "town": "田尾鄉",
+    "name": "打簾社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心打簾社區活動中心",
+    "address": "彰化縣田尾鄉民生路一段245號",
+    "floors": "1",
+    "source_x": 202349.753,
+    "source_y": 2644566.128,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉打簾村005鄰民生路一段２４５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.55088,
+     23.889243
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_267",
+    "town": "田尾鄉",
+    "name": "新生社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心新生社區",
+    "address": "彰化縣田尾鄉延平路150號",
+    "floors": "1",
+    "source_x": 204266.496,
+    "source_y": 2642829.728,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉新生村001鄰延平路１５０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.560873,
+     23.898481
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_268",
+    "town": "田尾鄉",
+    "name": "新興社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心新興社區",
+    "address": "彰化縣田尾鄉新興路280號",
+    "floors": "1",
+    "source_x": 205287.21,
+    "source_y": 2643849.628,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉新興村003鄰新興路２８０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.510506,
+     23.897422
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_269",
+    "town": "田尾鄉",
+    "name": "溪頂社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心溪頂社區",
+    "address": "彰化縣田尾鄉三溪路一段209號",
+    "floors": "1",
+    "source_x": 200158.335,
+    "source_y": 2643749.232,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉溪頂村007鄰三溪路一段２０９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.51935,
+     23.897862
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_270",
+    "town": "田尾鄉",
+    "name": "田尾社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心田尾社區",
+    "address": "彰化縣田尾鄉光復路三段538巷1號",
+    "floors": "1",
+    "source_x": 201058.976,
+    "source_y": 2643794.909,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉田尾村005鄰光復路三段５３８巷１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.564335,
+     23.889907
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_271",
+    "town": "田尾鄉",
+    "name": "福田社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心福田社區",
+    "address": "彰化縣田尾鄉光復路一段98巷181號",
+    "floors": "1",
+    "source_x": 205636.81,
+    "source_y": 2642899.005,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉福田村009鄰光復路一段９８巷１８１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.511065,
+     23.90355
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_272",
+    "town": "田尾鄉",
+    "name": "豐田社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心豐田社區",
+    "address": "彰化縣田尾鄉光復路四段161號",
+    "floors": "1",
+    "source_x": 200217.57,
+    "source_y": 2644427.74,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉豐田村004鄰光復路四段１６１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.533797,
+     23.890784
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_273",
+    "town": "田尾鄉",
+    "name": "田尾國中",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立田尾國民中學",
+    "address": "彰化縣田尾鄉中學路二段18號",
+    "floors": "1",
+    "source_x": 202527.491,
+    "source_y": 2643006.078,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉饒平村017鄰中學路二段１８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.518046,
+     23.911075
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_274",
+    "town": "田尾鄉",
+    "name": "柳鳳社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心柳鳳社區",
+    "address": "彰化縣田尾鄉民生路二段338號",
+    "floors": "1",
+    "source_x": 200931.23,
+    "source_y": 2645258.59,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉柳鳳村006鄰民生路二段３３８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.528588,
+     23.891877
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_275",
+    "town": "田尾鄉",
+    "name": "田尾國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣田尾鄉田尾國民小學",
+    "address": "彰化縣田尾鄉中山路一段449號",
+    "floors": "1",
+    "source_x": 201997.437,
+    "source_y": 2643128.93,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉饒平村004鄰中山路一段４４９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.560701,
+     23.886533
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_276",
+    "town": "田尾鄉",
+    "name": "南鎮國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣田尾鄉南鎮國民小學",
+    "address": "彰化縣田尾鄉南鎮村光復路一段295號",
+    "floors": "1",
+    "source_x": 205265.596,
+    "source_y": 2642526.555,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉南鎮村004鄰光復路一段２９５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.508227,
+     23.902513
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_277",
+    "town": "田尾鄉",
+    "name": "仁豐國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣田尾鄉仁豐國民小學",
+    "address": "彰化縣田尾鄉中正路二段101號",
+    "floors": "1",
+    "source_x": 199928.165,
+    "source_y": 2644313.81,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉新厝村003鄰中正路二段１０１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.506046,
+     23.90052
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_278",
+    "town": "田尾鄉",
+    "name": "新厝社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心新厝社區",
+    "address": "彰化縣田尾鄉光明巷54號",
+    "floors": "1",
+    "source_x": 199705.326,
+    "source_y": 2644093.867,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣田尾鄉新厝村001鄰光明巷５４號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.460345,
+     23.847387
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_279",
+    "town": "埤頭鄉",
+    "name": "中和國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣埤頭鄉中和國民小學",
+    "address": "彰化縣埤頭鄉中和村溪林路284號",
+    "floors": "1",
+    "source_x": 195029.552,
+    "source_y": 2638226.49,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埤頭鄉中和村002鄰溪林路２８４號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.452754,
+     23.865914
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_280",
+    "town": "埤頭鄉",
+    "name": "大湖國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣埤頭鄉大湖國民小學",
+    "address": "彰化縣埤頭鄉大湖村大湖路260號",
+    "floors": "1",
+    "source_x": 194264.244,
+    "source_y": 2640281.299,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埤頭鄉大湖村010鄰大湖路２６０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.460495,
+     23.880609
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_281",
+    "town": "埤頭鄉",
+    "name": "埤頭國中",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立埤頭國民中學",
+    "address": "彰化縣埤頭鄉崙腳村中學路67號",
+    "floors": "1",
+    "source_x": 195058.79,
+    "source_y": 2641905.728,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埤頭鄉崙腳村004鄰中學路６７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.477653,
+     23.893136
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_282",
+    "town": "埤頭鄉",
+    "name": "埤頭國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣埤頭鄉埤頭國民小學",
+    "address": "彰化縣埤頭鄉埤頭村中南路145號",
+    "floors": "1",
+    "source_x": 196811.339,
+    "source_y": 2643286.547,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埤頭鄉埤頭村005鄰中南路１４５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.480886,
+     23.870075
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_284",
+    "town": "埤頭鄉",
+    "name": "芙朝國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣埤頭鄉芙朝國民小學",
+    "address": "彰化縣埤頭鄉芙朝村芙朝路205號",
+    "floors": "1",
+    "source_x": 197131.09,
+    "source_y": 2640731.314,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埤頭鄉芙朝村020鄰芙朝路２０５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.460031,
+     23.889014
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_285",
+    "town": "埤頭鄉",
+    "name": "老人文康中心",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "埤頭鄉公所",
+    "address": "彰化縣埤頭鄉平原村安康街72號",
+    "floors": null,
+    "source_x": 195015.178,
+    "source_y": 2642836.79,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埤頭鄉平原村016鄰安康街７２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.458739,
+     23.893272
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_286",
+    "town": "埤頭鄉",
+    "name": "圖書館一樓",
+    "category": "救濟站",
+    "sub_type": "文化場所(含圖書館)",
+    "org_name": "埤頭鄉公所",
+    "address": "彰化縣埤頭鄉合興村文鄉路135號",
+    "floors": "1",
+    "source_x": 194885.4,
+    "source_y": 2643308.78,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埤頭鄉合興村006鄰文鄉路１３５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.460179,
+     23.917168
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_287",
+    "town": "埤頭鄉",
+    "name": "豐崙國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣埤頭鄉豐崙國民小學",
+    "address": "彰化縣埤頭鄉豊崙村校前路50號",
+    "floors": "1",
+    "source_x": 195042.07,
+    "source_y": 2645954.717,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埤頭鄉豊崙村014鄰校前路５０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.458805,
+     23.893897
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_289",
+    "town": "埤頭鄉",
+    "name": "合興國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣埤頭鄉合興國民小學",
+    "address": "彰化縣埤頭鄉合興村文鄉路161號",
+    "floors": "1",
+    "source_x": 194892.355,
+    "source_y": 2643378.076,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣埤頭鄉合興村006鄰文鄉路１６１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.384692,
+     24.006965
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_290",
+    "town": "芳苑鄉",
+    "name": "漢寶國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣芳苑鄉漢寶國民小學",
+    "address": "彰化縣芳苑鄉漢寶村草漢路漢寶段541號",
+    "floors": "1",
+    "source_x": 187400.122,
+    "source_y": 2655931.29,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芳苑鄉漢寶村020鄰草漢路漢寶段５４１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.318992,
+     23.925591
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_291",
+    "town": "芳苑鄉",
+    "name": "芳苑國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣芳苑鄉芳苑國民小學",
+    "address": "彰化縣芳苑鄉斗苑路芳苑段230號",
+    "floors": "1",
+    "source_x": 180672.292,
+    "source_y": 2646949.66,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芳苑鄉芳苑村012鄰斗苑路芳苑段２３０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.345102,
+     23.978273
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_292",
+    "town": "芳苑鄉",
+    "name": "新寶國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣芳苑鄉新寶國民小學",
+    "address": "彰化縣芳苑鄉新寶村芳漢路新寶段129巷100號",
+    "floors": "1",
+    "source_x": 183357.499,
+    "source_y": 2652771.726,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芳苑鄉新寶村001鄰芳漢路新寶段１２９巷１００號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.378361,
+     23.9583
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_293",
+    "town": "芳苑鄉",
+    "name": "草湖國中",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立草湖國民中學",
+    "address": "彰化縣芳苑鄉草湖村功湖路草湖段140號",
+    "floors": "1",
+    "source_x": 186732.287,
+    "source_y": 2650544.312,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芳苑鄉草湖村013鄰功湖路草湖段１４０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.319907,
+     23.923582
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_294",
+    "town": "芳苑鄉",
+    "name": "芳苑國中",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立芳苑國民中學",
+    "address": "彰化縣芳苑鄉仁愛村斗苑路芳苑段211號",
+    "floors": "1",
+    "source_x": 180764.4,
+    "source_y": 2646726.685,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芳苑鄉仁愛村002鄰斗苑路芳苑段２１１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.32831,
+     23.896073
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_295",
+    "town": "芳苑鄉",
+    "name": "路上國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣芳苑鄉路上國民小學",
+    "address": "彰化縣芳苑鄉路上村新上路12號",
+    "floors": "1",
+    "source_x": 181605.356,
+    "source_y": 2643675.995,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芳苑鄉路上村008鄰新上路１２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.391331,
+     23.981042
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_296",
+    "town": "芳苑鄉",
+    "name": "建新國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣芳苑鄉建新國民小學",
+    "address": "彰化縣芳苑鄉新生村草漢路草二段86號",
+    "floors": "1",
+    "source_x": 188063.165,
+    "source_y": 2653057.317,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芳苑鄉新生村005鄰草漢路草二段８６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.357632,
+     23.934679
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_297",
+    "town": "芳苑鄉",
+    "name": "草湖國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣芳苑鄉草湖國民小學",
+    "address": "彰化縣芳苑鄉文津村芳草路66號",
+    "floors": "1",
+    "source_x": 184610.62,
+    "source_y": 2647937.71,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芳苑鄉文津村009鄰芳草路６６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.331906,
+     23.945967
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_298",
+    "town": "芳苑鄉",
+    "name": "育華國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣芳苑鄉育華國民小學",
+    "address": "彰化縣芳苑鄉永興村太平路300號",
+    "floors": "1",
+    "source_x": 181997.67,
+    "source_y": 2649200.079,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芳苑鄉永興村022鄰太平路永興段３００號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.341748,
+     23.920851
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_299",
+    "town": "芳苑鄉",
+    "name": "後寮國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣芳苑鄉後寮國民小學",
+    "address": "彰化縣芳苑鄉芳寮路30號",
+    "floors": "1",
+    "source_x": 182986.494,
+    "source_y": 2646413.696,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芳苑鄉後寮村001鄰芳寮路３０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.342089,
+     23.965045
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_300",
+    "town": "芳苑鄉",
+    "name": "王功國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣芳苑鄉王功國民小學",
+    "address": "彰化縣芳苑鄉王功村功湖路481號",
+    "floors": "1",
+    "source_x": 183043.994,
+    "source_y": 2651308.107,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣芳苑鄉王功村004鄰功湖路王功段４８１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.348376,
+     23.835808
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_302",
+    "town": "大城鄉",
+    "name": "潭墘國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣大城鄉潭墘國民小學",
+    "address": "彰化縣大城鄉潭墘村潭城路1號",
+    "floors": "1",
+    "source_x": 183617.94,
+    "source_y": 2636992.08,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大城鄉潭墘村007鄰潭城路１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.320641,
+     23.853137
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_303",
+    "town": "大城鄉",
+    "name": "大城演藝廳",
+    "category": "救濟站",
+    "sub_type": "文化場所(含圖書館)",
+    "org_name": "大城鄉公所",
+    "address": "彰化縣大城鄉大城村中平路132號",
+    "floors": "1",
+    "source_x": 180801.617,
+    "source_y": 2638924.523,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大城鄉東城村009鄰中平路１３２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.324019,
+     23.85294
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_304",
+    "town": "大城鄉",
+    "name": "大城國中",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立大城國民中學",
+    "address": "彰化縣大城鄉東城村南平路224號",
+    "floors": "1",
+    "source_x": 181145.651,
+    "source_y": 2638901.112,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大城鄉東城村009鄰南平路２２４號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.288982,
+     23.861319
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_305",
+    "town": "大城鄉",
+    "name": "西港國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣大城鄉西港國民小學",
+    "address": "彰化縣大城鄉東港村中央路2號",
+    "floors": "1",
+    "source_x": 177581.278,
+    "source_y": 2639846.54,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大城鄉東港村004鄰中央路２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.301574,
+     23.885072
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_306",
+    "town": "大城鄉",
+    "name": "美豐國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣大城鄉美豐國民小學",
+    "address": "彰化縣大城鄉三豐村東盛路1號",
+    "floors": "1",
+    "source_x": 178876.893,
+    "source_y": 2642470.761,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大城鄉三豐村007鄰東盛路１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.321148,
+     23.852636
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_307",
+    "town": "大城鄉",
+    "name": "大城圖書館",
+    "category": "救濟站",
+    "sub_type": "文化場所(含圖書館)",
+    "org_name": "大城鄉公所",
+    "address": "彰化縣大城鄉東城村中平路163號",
+    "floors": "地下室",
+    "source_x": 180853.045,
+    "source_y": 2638868.836,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大城鄉東城村008鄰中平路１６３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.284759,
+     23.848699
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_309",
+    "town": "大城鄉",
+    "name": "頂庄國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "頂庄國小",
+    "address": "彰化縣大城鄉頂庄村東厝路63-1號",
+    "floors": "1",
+    "source_x": 177144.14,
+    "source_y": 2638451.041,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大城鄉頂庄村008鄰東厝路６３之１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.32034,
+     23.85302
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_310",
+    "town": "大城鄉",
+    "name": "大城國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣大城鄉大城國民小學",
+    "address": "彰化縣大城鄉中平路176號",
+    "floors": "1",
+    "source_x": 180770.881,
+    "source_y": 2638911.71,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大城鄉大城村009鄰中平路１７６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.302662,
+     23.840251
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_311",
+    "town": "大城鄉",
+    "name": "永光國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "永光國小",
+    "address": "彰化縣大城鄉公館村青埔路7-8號",
+    "floors": "1",
+    "source_x": 178963.26,
+    "source_y": 2637506.246,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣大城鄉公館村020鄰青埔路７之８號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.449279,
+     23.837088
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_312",
+    "town": "竹塘鄉",
+    "name": "田頭國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣竹塘鄉田頭國民小學",
+    "address": "彰化縣竹塘鄉田頭村光明路60號",
+    "floors": "1",
+    "source_x": 193897.911,
+    "source_y": 2637090.199,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣竹塘鄉田頭村007鄰光明路６０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.428849,
+     23.861272
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_313",
+    "town": "竹塘鄉",
+    "name": "竹塘國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣竹塘鄉竹塘國民小學",
+    "address": "彰化縣竹塘鄉竹塘村文化街20號",
+    "floors": "1",
+    "source_x": 191827.421,
+    "source_y": 2639776.777,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣竹塘鄉竹塘村001鄰文化街２０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.386916,
+     23.847871
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_314",
+    "town": "竹塘鄉",
+    "name": "長安國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣竹塘鄉長安國民小學",
+    "address": "彰化縣竹塘鄉長安村東陽路二段123號",
+    "floors": "1",
+    "source_x": 187549.988,
+    "source_y": 2638310.563,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣竹塘鄉長安村001鄰東陽路二段１２３號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.426442,
+     23.864555
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_315",
+    "town": "竹塘鄉",
+    "name": "竹塘國中",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立竹塘國民中學",
+    "address": "彰化縣竹塘鄉竹林路一段550號",
+    "floors": "1",
+    "source_x": 191583.668,
+    "source_y": 2640141.455,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣竹塘鄉竹塘村003鄰竹林路一段５５０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.416261,
+     23.875837
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_316",
+    "town": "竹塘鄉",
+    "name": "民靖國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣竹塘鄉民靖國民小學",
+    "address": "彰化縣竹塘鄉民靖村文昌路152號",
+    "floors": "1",
+    "source_x": 190551.887,
+    "source_y": 2641395.156,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣竹塘鄉民靖村007鄰文昌路１５２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.41142,
+     23.886612
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_317",
+    "town": "竹塘鄉",
+    "name": "老人文康中心",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "竹塘鄉公所",
+    "address": "彰化縣竹塘鄉民靖村金山路40號",
+    "floors": "1",
+    "source_x": 190063.838,
+    "source_y": 2642590.479,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣竹塘鄉民靖村009鄰金山路４０號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.402954,
+     23.860372
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_318",
+    "town": "竹塘鄉",
+    "name": "竹林社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心竹林村村長",
+    "address": "彰化縣竹塘鄉竹林村竹鹿路保安巷45號",
+    "floors": "1",
+    "source_x": 189189.458,
+    "source_y": 2639688.002,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣竹塘鄉竹林村004鄰竹鹿路保安巷４５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.432062,
+     23.873163
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_319",
+    "town": "竹塘鄉",
+    "name": "五庄社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心五庄村村長",
+    "address": "彰化縣竹塘鄉五庄村竹五路222號",
+    "floors": "1",
+    "source_x": 192159.918,
+    "source_y": 2641092.376,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣竹塘鄉五庄村005鄰竹五路２２２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.447762,
+     23.844406
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_320",
+    "town": "竹塘鄉",
+    "name": "樹腳社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心樹腳村村長",
+    "address": "彰化縣竹塘鄉樹腳村福田路6號",
+    "floors": "1",
+    "source_x": 193746.441,
+    "source_y": 2637901.31,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣竹塘鄉樹腳村001鄰福田路６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.430043,
+     23.846404
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_321",
+    "town": "竹塘鄉",
+    "name": "新廣社區",
+    "category": "救濟站",
+    "sub_type": "活動中心",
+    "org_name": "活動中心新廣社區",
+    "address": "彰化縣竹塘鄉新廣村光明路廣福巷57號",
+    "floors": "1",
+    "source_x": 191942.348,
+    "source_y": 2638129.752,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣竹塘鄉新廣村002鄰光明路廣福巷５７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.409506,
+     23.850017
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_322",
+    "town": "竹塘鄉",
+    "name": "土庫國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣竹塘鄉土庫國民小學",
+    "address": "彰化縣竹塘鄉土庫村東陽路一段362號",
+    "floors": "1",
+    "source_x": 189852.074,
+    "source_y": 2638538.45,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣竹塘鄉土庫村005鄰東陽路一段３６２號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.543997,
+     23.82456
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_323",
+    "town": "溪州鄉",
+    "name": "溪陽國中",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立溪陽國民中學",
+    "address": "彰化縣溪州鄉成功村下柑路1號",
+    "floors": "1",
+    "source_x": 203542.474,
+    "source_y": 2635668.509,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪州鄉柑園村003鄰下柑路１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.56755,
+     23.816026
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_324",
+    "town": "溪州鄉",
+    "name": "大莊國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣溪州鄉大莊國民小學",
+    "address": "彰化縣溪州鄉大庄村中橫巷1號",
+    "floors": "1",
+    "source_x": 205939.24,
+    "source_y": 2634715.92,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪州鄉大庄村010鄰中橫巷１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.495082,
+     23.850358
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_325",
+    "town": "溪州鄉",
+    "name": "溪州國中",
+    "category": "救濟站",
+    "sub_type": "學校/國中",
+    "org_name": "彰化縣立溪州國民中學",
+    "address": "彰化縣溪州鄉中央路三段300號",
+    "floors": "1",
+    "source_x": 198569.121,
+    "source_y": 2638542.491,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪州鄉溪州村017鄰中央路三段３００號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.490911,
+     23.852997
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_326",
+    "town": "溪州鄉",
+    "name": "南州國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣溪州鄉南州國民小學",
+    "address": "彰化縣溪州鄉溪州村公園路95號",
+    "floors": "1",
+    "source_x": 198145.39,
+    "source_y": 2638836.282,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪州鄉溪州村011鄰公園路９５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.522925,
+     23.839076
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_327",
+    "town": "溪州鄉",
+    "name": "圳寮國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣溪州鄉圳寮國民小學",
+    "address": "彰化縣溪州鄉圳寮村下樹巷29號",
+    "floors": "1",
+    "source_x": 201401.079,
+    "source_y": 2637283.183,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪州鄉圳寮村006鄰下樹巷２９號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.544774,
+     23.826089
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_328",
+    "town": "溪州鄉",
+    "name": "成功國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣溪州鄉成功國民小學",
+    "address": "彰化縣溪州鄉登山路二段365號",
+    "floors": "1",
+    "source_x": 203622.17,
+    "source_y": 2635837.57,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪州鄉成功村012鄰登山路二段３６５號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.519475,
+     23.814253
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_329",
+    "town": "溪州鄉",
+    "name": "潮洋國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣溪州鄉潮洋國民小學",
+    "address": "彰化縣溪州鄉陸軍路一段146號",
+    "floors": "1",
+    "source_x": 201040.282,
+    "source_y": 2634535.377,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪州鄉潮洋村007鄰陸軍路一段１４６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.471631,
+     23.831865
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_330",
+    "town": "溪州鄉",
+    "name": "水尾國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣溪州鄉水尾國民小學",
+    "address": "彰化縣溪州鄉水尾村太平路137號",
+    "floors": "1",
+    "source_x": 196172.713,
+    "source_y": 2636503.113,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪州鄉水尾村002鄰太平路１３７號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.497475,
+     23.853494
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_331",
+    "town": "溪州鄉",
+    "name": "溪州國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣溪州鄉溪州國民小學",
+    "address": "彰化縣溪州鄉中山路三段451號",
+    "floors": "1",
+    "source_x": 198814.182,
+    "source_y": 2638888.979,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪州鄉尾厝村012鄰中山路三段４５１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.495154,
+     23.826855
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_332",
+    "town": "溪州鄉",
+    "name": "三條國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣溪州鄉三條國民小學",
+    "address": "彰化縣溪州鄉中央路2段31號",
+    "floors": "1",
+    "source_x": 198567.21,
+    "source_y": 2635939.6,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪州鄉三條村001鄰中央路二段３１號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.494417,
+     23.852926
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_333",
+    "town": "溪州鄉",
+    "name": "僑義國小",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣溪州鄉僑義國民小學",
+    "address": "彰化縣溪州鄉中山路二段326號",
+    "floors": "1",
+    "source_x": 198502.446,
+    "source_y": 2638827.116,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪州鄉溪州村010鄰中山路三段３２６號",
+    "coordinate_review_status": "pending_review"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.539912,
+     23.842884
+    ]
+   },
+   "properties": {
+    "id": "RELIEF_334",
+    "town": "溪州鄉",
+    "name": "成功國小西畔分校",
+    "category": "救濟站",
+    "sub_type": "學校/小學",
+    "org_name": "彰化縣溪州鄉成功國民小學",
+    "address": "彰化縣溪州鄉廣一巷24號",
+    "floors": "1",
+    "source_x": 203132.937,
+    "source_y": 2637699.253,
+    "source_crs": "TWD97 / TM2 zone 121 (EPSG:3826)",
+    "geocoded_full_address": "彰化縣溪州鄉西畔村014鄰廣一巷２４號",
+    "coordinate_review_status": "pending_review"
+   }
+  }
+ ]
+}
