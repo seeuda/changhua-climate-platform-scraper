@@ -1998,7 +1998,7 @@
    "seq": 178,
    "town": "大城鄉",
    "village": "上山村",
-   "name": "台灣弱勢族群就業促進協會-大城上山村據點1：",
+   "name": "台灣弱勢族群就業促進協會-大城上山村",
    "category": "社區照顧關懷據點",
    "venue_type": "活動中心",
    "address": "彰化縣大城鄉上山村大山路2號之1",
@@ -2156,7 +2156,7 @@
    "seq": 192,
    "town": "芬園鄉",
    "village": "芬園村",
-   "name": "芬園社區發展協會據點地址：",
+   "name": "芬園社區發展協會",
    "category": "社區照顧關懷據點",
    "venue_type": "廟宇",
    "address": "彰化縣芬園鄉社口村南妙街74號",
@@ -3152,7 +3152,7 @@
    "seq": 281,
    "town": "北斗鎮",
    "village": "新生里",
-   "name": "新生社區發展協會原活動中心重建中臨時據點：",
+   "name": "新生社區發展協會原活動中心重建中臨時",
    "category": "社區照顧關懷據點",
    "venue_type": "活動中心",
    "address": "彰化縣北斗鎮新生里興農路二段105號",
@@ -3435,12 +3435,16 @@
    "seq": 306,
    "town": "竹塘鄉",
    "village": "土庫村",
-   "name": "土庫社區發展協會公文：",
+   "name": "土庫社區發展協會",
    "category": "社區照顧關懷據點",
    "venue_type": "活動中心",
    "address": "彰化縣溪州鄉菜公村竹圍西巷2號之2",
    "meal_service": "共餐、C據點",
-   "id": "CARE_306"
+   "id": "CARE_306",
+   "needs_review": true,
+   "address_original": "彰化縣溪州鄉菜公村竹圍西巷2號之2",
+   "address_conflict_note": "名冊住址欄為 溪州鄉，與登記鄉鎮 竹塘鄉 不符；疑為來源名冊整格錯位",
+   "needs_manual_address": true
   },
   {
    "seq": 307,
@@ -3523,7 +3527,7 @@
    "seq": 314,
    "town": "竹塘鄉",
    "village": "樹腳村",
-   "name": "樹腳社區發展協會據點1：",
+   "name": "樹腳社區發展協會",
    "category": "社區照顧關懷據點",
    "venue_type": "活動中心",
    "address": "彰化縣竹塘鄉樹腳村竹林路1段大新巷42號",
@@ -3602,7 +3606,7 @@
    "seq": 321,
    "town": "二林鎮",
    "village": "原斗里",
-   "name": "原斗社區發展協會據點1：",
+   "name": "原斗社區發展協會",
    "category": "社區照顧關懷據點",
    "venue_type": "活動中心",
    "address": "彰化縣二林鎮斗苑路一段865號",
@@ -3694,25 +3698,32 @@
    "seq": 329,
    "town": "田中鎮",
    "village": "頂潭里",
-   "name": "頂潭社區發展協會據點2週五：",
+   "name": "頂潭社區發展協會",
    "category": "社區照顧關懷據點",
    "venue_type": "活動中心",
-   "address": "彰化縣二林鎮東勢里東勢巷9號",
+   "address": "彰化縣田中鎮頂潭里崁頂路143號",
    "meal_service": null,
-   "id": "CARE_329"
+   "id": "CARE_329",
+   "needs_review": true,
+   "address_original": "彰化縣二林鎮東勢里東勢巷9號",
+   "address_conflict_note": "名冊住址欄為 二林鎮，與登記鄉鎮 田中鎮 不符；疑為來源名冊整格錯位",
+   "address_source": "社區發展協會名冊（活動中心）"
   },
   {
    "seq": 330,
    "town": "田中鎮",
    "village": "新民里",
-   "name": "新民社區發展協會526",
+   "name": "新民社區發展協會",
    "category": "社區照顧關懷據點",
    "venue_type": null,
-   "address": "彰化縣二林鎮東勢里中路巷5號",
+   "address": "彰化縣田中鎮新民里公館路258號",
    "meal_service": "共餐、C據點",
    "id": "CARE_330",
    "venue_note": "無償使用民宅",
-   "needs_review": true
+   "needs_review": true,
+   "address_original": "彰化縣二林鎮東勢里中路巷5號",
+   "address_conflict_note": "名冊住址欄為 二林鎮，與登記鄉鎮 田中鎮 不符；疑為來源名冊整格錯位",
+   "address_source": "社區發展協會名冊（活動中心）"
   },
   {
    "seq": 331,
@@ -3911,12 +3922,16 @@
    "seq": 348,
    "town": "田尾鄉",
    "village": "溪畔村",
-   "name": "溪畔社區發展協會據點：",
+   "name": "溪畔社區發展協會",
    "category": "社區照顧關懷據點",
    "venue_type": "活動中心",
-   "address": "彰化縣田中鎮大社里大社路二段649號",
+   "address": "彰化縣田尾鄉溪畔村溪畔巷101弄4號",
    "meal_service": "共餐、C據點",
-   "id": "CARE_348"
+   "id": "CARE_348",
+   "needs_review": true,
+   "address_original": "彰化縣田中鎮大社里大社路二段649號",
+   "address_conflict_note": "名冊住址欄為 田中鎮，與登記鄉鎮 田尾鄉 不符；疑為來源名冊整格錯位",
+   "address_source": "社區發展協會名冊（活動中心）"
   },
   {
    "seq": 349,
@@ -4241,5 +4256,10 @@
    "meal_service": null,
    "id": "CARE_377"
   }
- ]
+ ],
+ "crosscheck": {
+  "rule": "住址欄鄉鎮 ≠ 登記鄉鎮者視為可疑，優先採用協會名冊的活動中心地址",
+  "corrected": 3,
+  "manual_needed": 1
+ }
 }
