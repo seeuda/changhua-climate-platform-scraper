@@ -88,7 +88,8 @@ def variants(addr, town=None):
     # 「之」還原成「-」
     if '之' in base:
         out.append(base.replace('之', '-'))
-    # 原地址門牌含異常符號時，另備「N之N」讀法一併送查
+    # 原地址門牌含異常符號時，另備「N之N」讀法一併送查。
+    # 已人工查核者（clean 前就是正規門牌）不會走到這裡。
     m = re.search(r"(\d)['’‘`\"]+(\d+)號", addr or '')
     if m:
         alt = re.sub(r'(\d+)號', f'{m.group(1)}之{m.group(2)}號', base, count=1)
